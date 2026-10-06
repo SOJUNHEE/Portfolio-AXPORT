@@ -39,10 +39,12 @@
     <script defer src="/static/js/junhee-report.js?v=3"></script>
     <script defer src="/static/js/axport-workspace-tools.js?v=4"></script>
     <link rel="stylesheet" href="/static/css/axport-workspace-tools.css?v=14" />
+    <link rel="stylesheet" href="/static/css/key-notice.css?v=1" /><!-- (2026-10-06) 공개 데모 키 안내 -->
     <link rel="stylesheet" href="/static/css/chatbot.css?v=2" />
     <script defer src="/static/js/chatbot-i18n.js"></script>
     <script defer src="/static/js/chatbot-demo.js"></script>
     <script defer src="/static/js/chatbot.js?v=2"></script>
+    <script defer src="/static/js/key-notice.js?v=1"></script><!-- (2026-10-06) 공개 데모 키 안내 -->
   </head>
   <body>
     <div id="workspace-loading" class="workspace-loading" role="status">
@@ -66,6 +68,34 @@
         </button>
       </div>
     </header>
+    {#- (2026-10-06 공개 데모) 외부 기관 API 키를 넣지 않은 배포본 안내. 키가 모두 있으면 표시하지 않는다 -#}
+    {% if axport_missing_keys %}
+    <button type="button" class="key-notice-btn" id="key-notice-btn" aria-haspopup="dialog">
+      <i class="ph ph-shield-warning" aria-hidden="true"></i>공개 데모 · 외부 API 키 미적용
+    </button>
+    <dialog id="key-notice-dialog" class="modal small" aria-labelledby="key-notice-title">
+      <div class="modal-title">
+        <div>
+          <span class="eyebrow">PUBLIC DEMO</span>
+          <h2 id="key-notice-title">외부 API 키를 넣지 않은 공개 데모입니다</h2>
+        </div>
+        <button class="icon-btn modal-close" aria-label="닫기"><i class="ph ph-x"></i></button>
+      </div>
+      <p class="modal-description">
+        분석 엔진은 아래 외부 기관 API로 최신 통계·법령을 조회합니다. API 키는 개인에게 발급된 인증 정보라,
+        누구나 접속하는 공개 서버에 두면 키 노출과 무단 사용(호출 한도 소진) 위험이 있습니다.
+        그래서 보안상 이 배포본에는 키를 넣지 않았습니다.
+      </p>
+      <ul class="help-list">
+        {% for label in axport_missing_keys %}<li>{{ label }}</li>{% endfor %}
+      </ul>
+      <div class="demo-notice">
+        키가 필요한 지표는 분석 결과에 ‘키 없음’ 또는 ‘검색 불가’로 표시되고, 근거가 부족하면 종합 등급이
+        ‘판단 근거 부족’으로 나올 수 있습니다. 오른쪽 위젯(환율·뉴스·수출 통계)은 실시간 조회 대신 저장된 예시 자료로 보여 줍니다.
+        키를 넣은 로컬 환경에서는 같은 화면이 실제 조회 결과로 계산됩니다.
+      </div>
+    </dialog>
+    {% endif %}
     <main id="desktop" aria-label="분석 바탕화면">
       <div class="desktop-heading">
         <span class="eyebrow">YOUR EXPORT, IN PERSPECTIVE.</span>

@@ -39,6 +39,11 @@ from .workspace_store import SupabaseRest, WorkspaceError
 ROOT = Path(__file__).resolve().parents[2]
 SAMPLES = ROOT / 'junhee' / 'data' / 'engine_samples.json'  # sanghyeob 샘플(상세양식) + 간편입력 예시
 KEY_NAMES = ('KCS_TRADE_API_KEY', 'UN_COMTRADE_API_KEY', 'ECOS_API_KEY', 'LAW_API_KEY')
+# (2026-10-06) 공개 데모 안내용: 키 이름 → 어떤 자료·영역에 쓰이는지
+KEY_LABELS = {'UN_COMTRADE_API_KEY': 'UN Comtrade 국가별 수입 통계 (시장성·가격)',
+              'KCS_TRADE_API_KEY': '관세청 수출입 무역통계 (시장성·가격)',
+              'ECOS_API_KEY': '한국은행 ECOS 환율 (안정성)',
+              'LAW_API_KEY': '국가법령정보 (규제)'}
 UUID = re.compile(r'[0-9a-f]{8}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{12}')
 log = logging.getLogger(__name__)
 
@@ -431,6 +436,14 @@ def attach_analysis(app):
 
     app.extensions['junhee_analysis'] = JunheeAnalysis(database, ROOT, keys, repository,
                                                        inline=os.environ.get('AXPORT_ANALYSIS_INLINE') == '1')
+
+    @app.context_processor
+    def _external_key_notice():
+        """(2026-10-06 공개 데모) 외부 기관 API 키가 빠진 배포본이면 작업공간에 안내를 띄운다(키 값은 화면에 내보내지 않음)."""
+        if request.path != '/app':
+            return {}
+        current = keys()
+        return {'axport_missing_keys': [label for name, label in KEY_LABELS.items() if not current.get(name)]}
 
     @app.before_request
     def _upload_limit():

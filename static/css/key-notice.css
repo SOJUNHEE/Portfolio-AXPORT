@@ -1,0 +1,30 @@
+/* (2026-10-06 공개 데모) 외부 API 키 미적용 안내 버튼·창 */
+.key-notice-btn {
+  position: fixed;
+  left: 16px;
+  bottom: 16px;
+  z-index: 40;
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  min-height: 36px;
+  padding: 0 14px;
+  border: 1px solid #f0c98a;
+  border-radius: 999px;
+  background: #fff8ec;
+  color: #8a5300;
+  font: inherit;
+  font-size: 12px;
+  font-weight: 700;
+  box-shadow: 0 4px 14px rgba(20, 30, 60, 0.12);
+  cursor: pointer;
+}
+.key-notice-btn i { font-size: 16px; }
+.key-notice-btn:hover { background: #fff1d6; }
+.key-notice-btn:focus-visible { outline: 3px solid #2f6bff; outline-offset: 2px; }
+#key-notice-dialog .modal-description { line-height: 1.7; }
+#key-notice-dialog .help-list { margin: 12px 0 0; }
+#key-notice-dialog .demo-notice { font-size: 12px; color: #5d6378; }
+@media (max-width: 760px) {
+  .key-notice-btn { left: 10px; bottom: 12px; min-height: 32px; font-size: 11px; }
+}
