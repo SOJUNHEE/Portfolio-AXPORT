@@ -16,6 +16,7 @@ import json
 from pathlib import Path
 import re
 import sqlite3
+import time
 import unicodedata
 from urllib.error import HTTPError, URLError
 from urllib.parse import urlencode
@@ -113,7 +114,10 @@ class LocalWorkspaceRepository:
         self.path = str(path)
         Path(self.path).parent.mkdir(parents=True, exist_ok=True)
         with self._db() as db:
-            db.execute('CREATE TABLE IF NOT EXISTS visitor_workspaces (user_id TEXT PRIMARY KEY, revision INTEGER NOT NULL, state TEXT NOT NULL)')
+            db.execute('CREATE TABLE IF NOT EXISTS visitor_workspaces (user_id TEXT PRIMARY KEY, revision INTEGER NOT NULL, '
+                       'state TEXT NOT NULL, updated_at REAL NOT NULL DEFAULT 0)')
+            if 'updated_at' not in {r[1] for r in db.execute('PRAGMA table_info(visitor_workspaces)')}:
+                db.execute('ALTER TABLE visitor_workspaces ADD COLUMN updated_at REAL NOT NULL DEFAULT 0')  # 10-05 판 DB
 
     def _db(self):
         return closing_commit(sqlite3.connect(self.path, timeout=10))
@@ -122,22 +126,29 @@ class LocalWorkspaceRepository:
         try:
             with self._db() as db:
                 row = db.execute('SELECT revision, state FROM visitor_workspaces WHERE user_id=?', (user_id,)).fetchone()
-        except sqlite3.Error:
+            return {'user_id': user_id, 'revision': row[0], 'state': json.loads(row[1])} if row else None
+        except (sqlite3.Error, ValueError):
             raise WorkspaceError('unavailable', 503) from None
-        return {'user_id': user_id, 'revision': row[0], 'state': json.loads(row[1])} if row else None
 
     def save(self, user_id, token, state, revision):
         try:
             with self._db() as db:
                 db.execute('BEGIN IMMEDIATE')
                 row = db.execute('SELECT revision FROM visitor_workspaces WHERE user_id=?', (user_id,)).fetchone()
-                if (row[0] if row else 0) != revision:
+                # 행이 없으면(첫 저장, 또는 재시작·보관기간 정리로 서버 기록이 사라진 경우) 열린 창의 상태를 그대로 받는다
+                if row and row[0] != revision:
                     raise WorkspaceError('conflict', 409)
-                db.execute('INSERT OR REPLACE INTO visitor_workspaces VALUES (?, ?, ?)',
-                           (user_id, revision + 1, json.dumps(state, ensure_ascii=False)))
+                db.execute('INSERT OR REPLACE INTO visitor_workspaces VALUES (?, ?, ?, ?)',
+                           (user_id, revision + 1, json.dumps(state, ensure_ascii=False), time.time()))
         except sqlite3.Error:
             raise WorkspaceError('unavailable', 503) from None
         return {'user_id': user_id, 'revision': revision + 1}
+
+    def purge(self, prefix, before):
+        """(2026-10-06) 마지막 저장이 before(초) 이전인 방문자 바탕화면을 지운다."""
+        with self._db() as db:
+            return db.execute('DELETE FROM visitor_workspaces WHERE user_id LIKE ? AND updated_at < ?',
+                              (prefix + '%', before)).rowcount
 
 
 class closing_commit:

@@ -558,7 +558,9 @@ def _tariff(inputs, root_path):
 def _read_bok(path, mtime_ns, size):
     from openpyxl import load_workbook
     content = Path(path).read_bytes()
-    workbook = load_workbook(BytesIO(content), read_only=True, data_only=True)
+    # (2026-10-06 공개 데모) 이 원표에는 약 30MB 의 외부 링크(externalLinks) XML 이 있어 기본값(keep_links=True)으로
+    # 열면 메모리를 약 360MB 써서 512MB 무료 서버가 종료된다. 값만 읽으므로 외부 링크는 읽지 않는다(결과는 같음).
+    workbook = load_workbook(BytesIO(content), read_only=True, data_only=True, keep_links=False)
     try:
         sheet = workbook['1.수출(기본분류)']
         rows = list(sheet.iter_rows(values_only=True))

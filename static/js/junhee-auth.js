@@ -91,7 +91,7 @@
   const avatar = $("#profile-btn");
   if (info.visitor) {
     if (avatar) {
-      const note = "로그인 없이 사용 중입니다. 올린 파일·분석·바탕화면은 이 브라우저에 연결되어 서버에 저장됩니다.";
+      const note = "로그인 없이 사용 중입니다. 올린 파일·분석·바탕화면은 이 브라우저에 연결되어 서버에 저장되며, 마지막 사용 후 7일이 지나거나 서버가 다시 시작되면 지워질 수 있습니다.";
       avatar.setAttribute("aria-label", "작업공간 안내");
       avatar.title = note;
       avatar.onclick = () => (window.AXWorkspace && AXWorkspace.toast ? AXWorkspace.toast(note) : null);

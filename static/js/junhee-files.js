@@ -204,7 +204,7 @@
       );
     } else {
       if (auth) $("#files-description").textContent = auth.visitor
-        ? "이 브라우저의 작업공간에 저장된 파일입니다. 같은 브라우저로 다시 열면 그대로 남습니다." // (2026-10-05) 로그인 없는 방문자
+        ? "이 브라우저의 작업공간에 저장된 파일입니다. 공개 데모 서버라 마지막 사용 후 7일이 지나거나 서버가 다시 시작되면 지워질 수 있습니다." // (2026-10-06) 로그인 없는 방문자
         : "이 계정에 저장된 파일입니다. 다시 로그인해도 그대로 남습니다.";
       W.files().forEach((f) => {
         const d = f.parent_id && folders.find((x) => x.id === f.parent_id);
@@ -536,6 +536,16 @@
         revision = e.data.revision;
         apply(e.data.state);
         W.toast("다른 창에서 저장한 바탕화면을 불러왔습니다.");
+      } else if (code === "conflict") {
+        // (2026-10-06) 서버 기록이 없어진 경우(재시작·보관기간 정리): 이 창의 상태로 다시 저장한다
+        revision = e.data.revision || 0;
+        dirty = true;
+      } else if (code === "csrf_failed" || e.status === 403) {
+        // (2026-10-06) 세션이 바뀌면 같은 요청을 계속 반복하지 않는다
+        disabled = true;
+        W.toast("작업 저장 연결이 끊겼습니다. 페이지를 새로고침해 주세요.");
+      } else if (code === "rate_limited") {
+        dirty = true;
       } else if (code === "setup_required") {
         disabled = true;
         W.toast("계정 저장소 설정(Supabase SQL)이 아직 없어 이 창에서만 유지됩니다.");

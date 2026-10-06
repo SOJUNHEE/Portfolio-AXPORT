@@ -15,7 +15,9 @@ from unittest import mock
 
 ROOT = Path(__file__).resolve().parents[2]
 sys.path.insert(0, str(ROOT))
-os.environ.update(AXPORT_ANALYSIS_INLINE='1', AXPORT_ANALYSIS_DB=os.path.join(tempfile.mkdtemp(), 'analysis.sqlite3'))
+_TMP = tempfile.mkdtemp()
+os.environ.update(AXPORT_ANALYSIS_INLINE='1', AXPORT_ANALYSIS_DB=os.path.join(_TMP, 'analysis.sqlite3'),
+                  AXPORT_VISITOR_DB=os.path.join(_TMP, 'visitor.sqlite3'))  # (2026-10-06) 저장소 instance/ 에 쓰지 않음
 for _k in ('UN_COMTRADE_API_KEY', 'KCS_TRADE_API_KEY', 'ECOS_API_KEY', 'LAW_API_KEY'):
     os.environ[_k] = ''
 from junhee.tests.test_accounts import ENV, TOKENS, USER, csrf, load_app  # noqa: E402

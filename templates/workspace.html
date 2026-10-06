@@ -28,9 +28,9 @@
     <script defer src="/static/js/junhee-dashboard.js?v=34"></script>
     <script defer src="/static/js/workspace.js?v=30"></script>
     <!-- (junhee) 2026-09-27 로그인 계정 창·세션 확인 (workspace.js 다음에 로드) -->
-    <script defer src="/static/js/junhee-auth.js?v=3"></script>
+    <script defer src="/static/js/junhee-auth.js?v=4"></script>
     <!-- (junhee) 2026-09-27 계정별 저장 · 폴더 · 우클릭 메뉴 · 이름 바꾸기 · 삭제 확인 -->
-    <script defer src="/static/js/junhee-files.js?v=8"></script>
+    <script defer src="/static/js/junhee-files.js?v=9"></script>
     <!-- (junhee) 2026-09-27 기업 파일 → 서버 분석 엔진 -->
     <script defer src="/static/js/junhee-analysis.js?v=5"></script>
     <!-- (junhee) 2026-09-28 juyeon 신규 기능: 세계 시계 추가·삭제 · ⚙️위젯 메뉴 · 테마(axport-workspace-tools) · 보고서 틀·다국어(axport-report-l10n · junhee-report) -->
@@ -39,7 +39,7 @@
     <script defer src="/static/js/junhee-report.js?v=3"></script>
     <script defer src="/static/js/axport-workspace-tools.js?v=4"></script>
     <link rel="stylesheet" href="/static/css/axport-workspace-tools.css?v=14" />
-    <link rel="stylesheet" href="/static/css/key-notice.css?v=1" /><!-- (2026-10-06) 공개 데모 키 안내 -->
+    <link rel="stylesheet" href="/static/css/key-notice.css?v=2" /><!-- (2026-10-06) 공개 데모 키 안내 -->
     <link rel="stylesheet" href="/static/css/chatbot.css?v=2" />
     <script defer src="/static/js/chatbot-i18n.js"></script>
     <script defer src="/static/js/chatbot-demo.js"></script>
@@ -91,8 +91,12 @@
       </ul>
       <div class="demo-notice">
         키가 필요한 지표는 분석 결과에 ‘키 없음’ 또는 ‘검색 불가’로 표시되고, 근거가 부족하면 종합 등급이
-        ‘판단 근거 부족’으로 나올 수 있습니다. 오른쪽 위젯(환율·뉴스·수출 통계)은 실시간 조회 대신 저장된 예시 자료로 보여 줍니다.
+        ‘판단 근거 부족’으로 나올 수 있습니다. 오른쪽 위젯 중 키가 필요한 자료는 실시간 조회 대신 저장된 예시 자료로 보여 줍니다.
         키를 넣은 로컬 환경에서는 같은 화면이 실제 조회 결과로 계산됩니다.
+      </div>
+      <div class="demo-notice">
+        로그인 없이 쓰는 공개 데모입니다. 올린 파일·분석 결과는 이 브라우저에만 연결되고 마지막 사용 후 7일이 지나면 자동으로
+        지워지며, 서버가 다시 시작되면 더 일찍 사라질 수 있습니다. 업로드는 5 MB 이하로 제한되며, 실제 기업의 민감한 자료는 올리지 마세요.
       </div>
     </dialog>
     {% endif %}

@@ -21,7 +21,7 @@ import threading
 import time
 from urllib.parse import urlsplit
 
-from flask import Blueprint, g, jsonify, redirect, render_template, request, session
+from flask import Blueprint, abort, g, jsonify, redirect, render_template, request, session
 
 from .auth_core import AuthError, ConfirmQueryMiddleware, MailCooldown, SessionStore, SupabaseAuth, public_user
 
@@ -109,6 +109,9 @@ def request_user():
     user = current_user()
     if user is not None:
         return user
+    if g.get('junhee_auth_unavailable'):
+        # (2026-10-06) 로그인 확인 서버가 잠시 안 될 때 로그인 사용자를 방문자로 바꿔 작업이 엉뚱한 곳에 저장되지 않게 한다
+        abort(503)
     vid = session.get('visitor_id')
     if not (isinstance(vid, str) and re.fullmatch(r'visitor-[0-9a-f]{32}', vid)):
         vid = session['visitor_id'] = 'visitor-' + secrets.token_hex(16)
@@ -432,11 +435,17 @@ def attach_accounts(app):
     # (2026-09-27 배포 QA) 전체 요청 본문 상한 2MB. 기업 엑셀 업로드(20MB)·챗봇(120KB)은 각 경로에서 따로 정한다.
     if app.config.get('MAX_CONTENT_LENGTH') is None:  # Flask 기본값 None(무제한)일 때만
         app.config['MAX_CONTENT_LENGTH'] = 2 * 1024 * 1024
-    if problem is not None and not app.config.get('SECRET_KEY'):
-        # (2026-10-05) 로그인 설정이 없어도 방문자 세션·CSRF 를 쓴다. FLASK_SECRET_KEY 가 있으면 그 값, 없으면 임시 키(재시작하면 바뀜).
-        app.config.update(SECRET_KEY=secret if isinstance(secret, str) and len(secret) >= 32 else secrets.token_hex(32), SESSION_COOKIE_NAME='axport_session', SESSION_COOKIE_HTTPONLY=True,
+    if problem is not None:
+        # (2026-10-05) 로그인 설정이 없어도 방문자 세션·CSRF 를 쓴다. 쿠키 보안 설정은 키 선택과 관계없이 적용한다.
+        app.config.update(SESSION_COOKIE_NAME='axport_session', SESSION_COOKIE_HTTPONLY=True,
                           SESSION_COOKIE_SECURE=_env_bool('SESSION_COOKIE_SECURE', on_render), SESSION_COOKIE_SAMESITE='Lax',
-                          PERMANENT_SESSION_LIFETIME=timedelta(days=7))
+                          SESSION_REFRESH_EACH_REQUEST=False, PERMANENT_SESSION_LIFETIME=timedelta(days=7))
+        if not app.config.get('SECRET_KEY'):
+            if isinstance(secret, str) and len(secret) >= 32:
+                app.config['SECRET_KEY'] = secret
+            else:
+                app.config['SECRET_KEY'] = secrets.token_hex(32)
+                app.logger.warning('FLASK_SECRET_KEY 가 없어 임시 세션 키를 씁니다. 서버를 다시 시작하면 방문자 작업이 이어지지 않습니다.')
     if problem is None:
         db = os.environ.get('AXPORT_AUTH_DB') or str(ROOT / 'instance' / 'auth-sessions.sqlite3')  # 테스트는 임시 경로
         app.config.update(
@@ -451,6 +460,8 @@ def attach_accounts(app):
     attach_workspace(app)
     from .analysis import attach_analysis  # 기업 파일 분석 엔진 (/api/analysis)
     attach_analysis(app)
+    from .visitor_guard import attach_visitor_guard  # (2026-10-06) 공개 데모: 방문자 요청 제한·업로드 상한·보관기간 정리
+    attach_visitor_guard(app)
     from .widget_refresh import start as start_widget_refresh  # (2026-09-27) 위젯 공식 자료 자동 갱신(Render 기본 켜짐)
     start_widget_refresh()
 

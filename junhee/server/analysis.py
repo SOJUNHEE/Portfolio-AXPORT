@@ -119,7 +119,10 @@ class JunheeAnalysis(CompanyAnalysis):
 
     def submit_for(self, user_id, token, payload):
         self.reap_orphans()
-        self.tokens[user_id] = token
+        if token:
+            self.tokens[user_id] = token
+        else:
+            self.tokens.pop(user_id, None)  # (2026-10-06) 방문자는 토큰이 없으므로 기록하지 않는다(메모리 누적 방지)
         item = self.submit(user_id, payload)
         if item.get('status') in ('QUEUED', 'RUNNING'):
             with self.store.connection() as db:

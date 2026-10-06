@@ -3,7 +3,7 @@
   position: fixed;
   left: 16px;
   bottom: 16px;
-  z-index: 40;
+  z-index: 15; /* 분석 창(20)보다 아래: 창을 최대화하면 가려진다 */
   display: inline-flex;
   align-items: center;
   gap: 6px;
