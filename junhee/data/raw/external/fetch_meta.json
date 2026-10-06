@@ -1,0 +1,105 @@
+{
+  "fetched_at": "2026-09-23T12:38:26",
+  "series": {
+    "EXKOUS": {
+      "ok": true,
+      "url": "https://fred.stlouisfed.org/graph/fredgraph.csv?id=EXKOUS",
+      "file": "fred_EXKOUS_krw_per_usd_monthly.csv",
+      "desc": "원/달러 월평균 (H.10)",
+      "freq": "monthly",
+      "rows": 545,
+      "first": "1981-04-01",
+      "last": "2026-08-01"
+    },
+    "DEXKOUS": {
+      "ok": true,
+      "url": "https://fred.stlouisfed.org/graph/fredgraph.csv?id=DEXKOUS",
+      "file": "fred_DEXKOUS_daily.csv",
+      "desc": "KRW per USD 일별",
+      "freq": "daily",
+      "rows": 11357,
+      "first": "1981-04-13",
+      "last": "2026-09-18"
+    },
+    "DEXCHUS": {
+      "ok": true,
+      "url": "https://fred.stlouisfed.org/graph/fredgraph.csv?id=DEXCHUS",
+      "file": "fred_DEXCHUS_daily.csv",
+      "desc": "CNY per USD 일별",
+      "freq": "daily",
+      "rows": 11411,
+      "first": "1981-01-02",
+      "last": "2026-09-18"
+    },
+    "DEXJPUS": {
+      "ok": true,
+      "url": "https://fred.stlouisfed.org/graph/fredgraph.csv?id=DEXJPUS",
+      "file": "fred_DEXJPUS_daily.csv",
+      "desc": "JPY per USD 일별",
+      "freq": "daily",
+      "rows": 13965,
+      "first": "1971-01-04",
+      "last": "2026-09-18"
+    },
+    "DEXUSUK": {
+      "ok": true,
+      "url": "https://fred.stlouisfed.org/graph/fredgraph.csv?id=DEXUSUK",
+      "file": "fred_DEXUSUK_daily.csv",
+      "desc": "USD per GBP 일별",
+      "freq": "daily",
+      "rows": 13971,
+      "first": "1971-01-04",
+      "last": "2026-09-18"
+    },
+    "DEXUSEU": {
+      "ok": true,
+      "url": "https://fred.stlouisfed.org/graph/fredgraph.csv?id=DEXUSEU",
+      "file": "fred_DEXUSEU_daily.csv",
+      "desc": "USD per EUR 일별",
+      "freq": "daily",
+      "rows": 6950,
+      "first": "1999-01-04",
+      "last": "2026-09-18"
+    },
+    "DEXCAUS": {
+      "ok": true,
+      "url": "https://fred.stlouisfed.org/graph/fredgraph.csv?id=DEXCAUS",
+      "file": "fred_DEXCAUS_daily.csv",
+      "desc": "CAD per USD 일별",
+      "freq": "daily",
+      "rows": 13977,
+      "first": "1971-01-04",
+      "last": "2026-09-18"
+    },
+    "DEXMXUS": {
+      "ok": true,
+      "url": "https://fred.stlouisfed.org/graph/fredgraph.csv?id=DEXMXUS",
+      "file": "fred_DEXMXUS_daily.csv",
+      "desc": "MXN per USD 일별",
+      "freq": "daily",
+      "rows": 8239,
+      "first": "1993-11-08",
+      "last": "2026-09-18"
+    },
+    "DEXINUS": {
+      "ok": true,
+      "url": "https://fred.stlouisfed.org/graph/fredgraph.csv?id=DEXINUS",
+      "file": "fred_DEXINUS_daily.csv",
+      "desc": "INR per USD 일별",
+      "freq": "daily",
+      "rows": 13463,
+      "first": "1973-01-02",
+      "last": "2026-09-18"
+    },
+    "DEXSZUS": {
+      "ok": true,
+      "url": "https://fred.stlouisfed.org/graph/fredgraph.csv?id=DEXSZUS",
+      "file": "fred_DEXSZUS_daily.csv",
+      "desc": "CHF per USD 일별",
+      "freq": "daily",
+      "rows": 13971,
+      "first": "1971-01-04",
+      "last": "2026-09-18"
+    }
+  }
+}

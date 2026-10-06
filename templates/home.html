@@ -1,0 +1,288 @@
+<!doctype html>
+<html lang="ko">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#06172f">
+  <meta name="description" content="반도체 수출을 위한 데이터 분석 작업공간, AXPORT. 기업 데이터와 HS 코드로 수출의 가능성을 살펴보세요.">
+  <title>AXPORT — 수출의 가능성을 확신으로</title>
+  <link rel="icon" href="/static/assets/axport-logo.png">
+  <link rel="preload" href="/static/assets/hero-poster.jpg" as="image" fetchpriority="high">
+  <link rel="preload" href="/static/assets/feature-default.jpg?v=16" as="image">
+  <link rel="stylesheet" href="/static/vendor/phosphor/regular/style.css">
+  <link rel="stylesheet" href="/static/vendor/font/index.css">
+  <link rel="stylesheet" href="/static/css/home.css?v=19">
+  <link rel="stylesheet" href="/static/css/junhee-contact.css?v=1"><!-- (junhee) Contact Us -->
+
+  <script src="/static/js/axport-i18n.js?v=4" defer></script>
+  <script src="/static/js/home.js?v=15" defer></script>
+  <script src="/static/js/junhee-contact.js?v=1" defer></script><!-- (junhee) Contact Us -->
+  <link rel="stylesheet" href="/static/css/chatbot.css" />
+  <script defer src="/static/js/chatbot-i18n.js"></script>
+  <script defer src="/static/js/chatbot-demo.js"></script>
+  <script defer src="/static/js/chatbot.js"></script>
+</head>
+<body>
+  <a class="skip-link" href="#main">본문으로 바로가기</a>
+  <!-- First-design visual language: a single floating, pill-shaped navigation bar. -->
+  <header class="site-header" id="site-header">
+    <div class="header-inner shell">
+      <a class="brand" href="/" aria-label="AXPORT 홈">
+        <img class="brand-logo brand-logo--white" src="/static/assets/axport-logo-white.png" alt="AXPORT" width="100" height="65">
+        <img class="brand-logo brand-logo--color" src="/static/assets/axport-logo-color.png" alt="" aria-hidden="true" width="100" height="65">
+      </a>
+      <nav class="desktop-nav" aria-label="주요 메뉴">
+        <a href="#features">서비스 소개</a>
+        <a href="#how-it-works">이용 방법</a>
+        <a href="#workspace-story">워크스페이스</a>
+        <a href="#contact">Contact Us</a><!-- (junhee) -->
+      </nav>
+      <div class="header-actions">
+        <div class="language-picker" id="language-picker">
+          <select id="axp-language" class="visually-hidden-native" aria-hidden="true" tabindex="-1" aria-label="표시 언어"><option value="ko">한국어</option><option value="en">EN</option><option value="zh">中文</option><option value="ja">日本語</option></select>
+          <button class="language-trigger" id="language-trigger" type="button" aria-label="표시 언어 선택" aria-haspopup="menu" aria-expanded="false" aria-controls="language-menu"><span class="language-orb" aria-hidden="true"></span><span class="language-current" data-no-translate>KO</span><i class="ph ph-caret-down" aria-hidden="true"></i></button>
+          <div id="language-menu" class="language-menu" role="menu" aria-label="표시 언어" hidden>
+            <button type="button" class="language-option" role="menuitemradio" aria-checked="true" data-language="ko">KO <span class="language-option-check" aria-hidden="true">✓</span></button>
+            <button type="button" class="language-option" role="menuitemradio" aria-checked="false" data-language="en">EN <span class="language-option-check" aria-hidden="true">✓</span></button>
+            <button type="button" class="language-option" role="menuitemradio" aria-checked="false" data-language="zh">中文 <span class="language-option-check" aria-hidden="true">✓</span></button>
+            <button type="button" class="language-option" role="menuitemradio" aria-checked="false" data-language="ja">日本語 <span class="language-option-check" aria-hidden="true">✓</span></button>
+          </div>
+        </div>
+        <a class="button button-blue button-small" href="/app" data-launch-app>대시보드 시작 <i class="ph ph-arrow-up-right" aria-hidden="true"></i></a>
+        <button class="menu-toggle" type="button" aria-label="메뉴 열기" aria-controls="mobile-nav" aria-expanded="false"><i class="ph ph-list" aria-hidden="true"></i></button>
+      </div>
+    </div>
+    <nav id="mobile-nav" class="mobile-nav" aria-label="모바일 메뉴" hidden>
+      <a href="#features">서비스 소개</a><a href="#how-it-works">이용 방법</a><a href="#workspace-story">워크스페이스</a><a href="#contact">Contact Us</a><a href="/app" data-launch-app>대시보드 시작하기</a>
+    </nav>
+  </header>
+
+  <main id="main">
+    <!-- Cinematic dark hero from the original concept; all text follows test1. -->
+    <section class="hero" id="hero" aria-labelledby="hero-title">
+      <div class="hero-media" aria-hidden="true">
+        <video class="hero-video" autoplay muted loop playsinline preload="metadata" poster="/static/assets/hero-poster.jpg">
+          <source src="/static/assets/hero-semiconductor.mp4" type="video/mp4">
+        </video>
+        <div class="hero-video-shade"></div>
+        <div class="hero-mesh"></div>
+      </div>
+      <div class="hero-inner shell">
+        <div class="hero-copy">
+
+          <h1 id="hero-title">반도체 수출의 시작<br><span>확신을 더하다</span></h1>
+          <p class="hero-description">우리 기업의 가능성을 AXPORT에서 확인하세요.</p>
+          <div class="hero-buttons">
+            <a class="button button-blue button-main" href="/app" data-launch-app>대시보드 시작하기 <i class="ph ph-arrow-up-right" aria-hidden="true"></i></a>
+            <a class="button button-outline" href="#how-it-works">이용 방법 알아보기 <i class="ph ph-arrow-down" aria-hidden="true"></i></a>
+          </div>
+        </div>
+      </div>
+      <div class="hero-bottom shell">
+        <a class="hero-scroll-cue" href="#features" aria-label="서비스 소개로 스크롤"><span data-no-translate>SCROLL</span><span class="scroll-line" aria-hidden="true"></span></a>
+      </div>
+    </section>
+
+    <div class="cinematic-transition" aria-hidden="true"><div class="cinematic-grid"></div></div>
+<div class="signal-marquee" aria-hidden="true">
+      <div class="signal-marquee-track"><span>REGULATION</span><i>✧</i><span>MARKET</span><i>✧</i><span>PRICE</span><i>✧</i><span>LOGISTICS</span><i>✧</i><span>STABILITY</span><i>✧</i><span>REGULATION</span><i>✧</i><span>MARKET</span><i>✧</i><span>PRICE</span><i>✧</i><span>LOGISTICS</span><i>✧</i><span>STABILITY</span><i>✧</i></div>
+    </div>
+
+<!-- 다섯 가지 판단 기준: 숫자·아이콘·보조 문구 없이 제목과 핵심 설명만 표시합니다. -->
+<section id="features" class="features section-space criteria-section" aria-labelledby="features-title">
+  <div class="shell criteria-shell">
+    <header class="criteria-heading">
+      <p class="eyebrow">A CLEARER VIEW OF EXPORTS</p>
+      <h2 id="features-title">복잡한 판단을<br>다섯 가지 관점으로</h2>
+      <p class="section-description">핵심은 한눈에, 근거는 자세하게.<br>필요한 정보에 집중하는 분석 환경을 제공합니다.</p>
+    </header>
+    <!-- 기본 이미지와 다섯 호버 이미지는 최종 너비를 유지합니다. 클리핑 영역만 중앙에서 좌우로 열립니다. -->
+    <div class="criteria-stage" id="criteria-stage" aria-label="수출적합도 판단 기준 5개">
+      <div class="criteria-stage__images" aria-hidden="true">
+        <!-- 다섯 가지 관점 기본 이미지: 첨부받은 feature-default.jpg를 직접 사용합니다. -->
+        <img class="criteria-stage__image criteria-stage__image--default" data-criteria-default src="/static/assets/feature-default.jpg?v=16" alt="" decoding="async" fetchpriority="high">
+        <img class="criteria-stage__image" data-criteria-image="0" src="/static/assets/feature-regulation.jpg?v=13" alt="" decoding="async">
+        <img class="criteria-stage__image" data-criteria-image="1" src="/static/assets/feature-market.jpg?v=13" alt="" decoding="async">
+        <img class="criteria-stage__image" data-criteria-image="2" src="/static/assets/feature-price.jpg?v=13" alt="" decoding="async">
+        <img class="criteria-stage__image" data-criteria-image="3" src="/static/assets/feature-logistics.jpg?v=13" alt="" decoding="async">
+        <img class="criteria-stage__image" data-criteria-image="4" src="/static/assets/feature-stability.jpg?v=13" alt="" decoding="async">
+      </div>
+      <div class="criteria-stage__shade" aria-hidden="true"></div>
+      <div class="criteria-pane-list" aria-label="수출적합도 판단 기준" role="group">
+        <button class="criteria-pane" type="button" data-criteria="0" aria-pressed="false">
+          <span class="criteria-pane__copy"><span class="criteria-pane__title">규제</span><span class="criteria-pane__description">수출 전 확인해야 할<br>규제와 허가 조건</span></span>
+        </button>
+        <button class="criteria-pane" type="button" data-criteria="1" aria-pressed="false">
+          <span class="criteria-pane__copy"><span class="criteria-pane__title">시장성</span><span class="criteria-pane__description">시장규모와 성장 흐름으로<br>살펴보는 수출 기회</span></span>
+        </button>
+        <button class="criteria-pane" type="button" data-criteria="2" aria-pressed="false">
+          <span class="criteria-pane__copy"><span class="criteria-pane__title">가격</span><span class="criteria-pane__description">관세와 환율을 고려한<br>가격 판단의 기초</span></span>
+        </button>
+        <button class="criteria-pane" type="button" data-criteria="3" aria-pressed="false">
+          <span class="criteria-pane__copy"><span class="criteria-pane__title">물류</span><span class="criteria-pane__description">운송 조건과 납기를<br>함께 살펴보는 계획</span></span>
+        </button>
+        <button class="criteria-pane" type="button" data-criteria="4" aria-pressed="false">
+          <span class="criteria-pane__copy"><span class="criteria-pane__title">안정성</span><span class="criteria-pane__description">지표의 변동 흐름으로<br>확인하는 불확실성</span></span>
+        </button>
+      </div>
+    </div>
+  </div>
+</section>
+<section aria-labelledby="how-title" class="how-section section-space" id="how-it-works">
+<div class="shell">
+<div class="section-heading reveal">
+<div>
+<p class="eyebrow">YOUR NEXT MOVE, SIMPLIFIED</p>
+<h2 id="how-title">
+                데이터에서 인사이트까지<br/>하나의 워크스페이스
+              </h2>
+</div>
+<a class="text-link" data-launch-app="" href="/app">직접 둘러보기
+              <i aria-hidden="true" class="ph ph-arrow-up-right"></i></a>
+</div>
+<div class="steps-grid">
+<article class="step-card reveal">
+<div class="step-meta">
+<span>STEP 01</span><i aria-hidden="true" class="ph ph-upload-simple"></i>
+</div>
+<h3>기업 데이터를 올리고</h3>
+<p>
+                엑셀 파일을 작업공간에 추가하세요.<br/>파일을 아이콘으로 정리할
+                수 있습니다.
+              </p>
+<div class="step-stage step-stage--upload" aria-hidden="true">
+  <div class="demo-file"><i class="ph ph-file-xls"></i><span>기업 데이터.xlsx</span></div>
+  <div class="demo-upload-target"><span class="demo-upload-symbol"><i class="ph ph-upload-simple"></i></span><small>WORKSPACE</small><span class="demo-upload-check"><i class="ph ph-check-circle"></i></span></div>
+  <svg class="demo-cursor" width="24" height="31" viewBox="0 0 24 31" fill="none"><path d="M3 2L3 26L9.2 20.3L13.1 29L18.2 26.8L14.1 18.5L22 18L3 2Z" fill="#133755" stroke="white" stroke-width="2.2" stroke-linejoin="round"/></svg>
+  <div class="demo-upload-meter"><span></span></div>
+</div>
+</article>
+<article class="step-card reveal">
+<div class="step-meta">
+<span>STEP 02</span><i aria-hidden="true" class="ph ph-sliders-horizontal"></i>
+</div>
+<h3>분석 조건을 확인하고</h3>
+<p>
+                제품의 HS 코드와 대상국을 입력해<br/>분석할 거래의 범위를
+                설정하세요.
+              </p>
+<div class="step-stage step-stage--form" aria-hidden="true">
+  <div class="demo-form-row"><span class="demo-form-label">HS CODE</span><span class="demo-typed demo-typed--code">8542.31</span><span class="demo-form-caret"></span><i class="ph ph-check"></i></div>
+  <div class="demo-form-row"><span class="demo-form-label">대상국</span><span class="demo-typed demo-typed--country">미국</span><span class="demo-form-caret"></span><i class="ph ph-caret-down"></i></div>
+  <div class="demo-form-row"><span class="demo-form-label">거래 조건</span><span class="demo-typed demo-typed--term">FOB</span><span class="demo-form-caret"></span><i class="ph ph-caret-down"></i></div>
+</div>
+</article>
+<article class="step-card reveal">
+<div class="step-meta">
+<span>STEP 03</span><i aria-hidden="true" class="ph ph-chart-pie-slice"></i>
+</div>
+<h3>판단의 근거를 살펴보세요</h3>
+<p>
+                5개 영역의 요약을 먼저 확인하고,<br/>오른쪽 탭에서 세부 근거를
+                탐색하세요.
+              </p>
+<div class="step-stage step-stage--decision" aria-hidden="true">
+  <div class="demo-score-chart">
+    <svg class="demo-score-donut" viewBox="0 0 116 116"><circle class="demo-score-track" cx="58" cy="58" r="43"/><circle class="demo-score-progress" cx="58" cy="58" r="43"/></svg>
+    <div class="demo-score-center"><span class="demo-score-value">78</span><small>/ 100</small></div>
+  </div>
+  <div class="demo-bookmarks"><span class="demo-bookmark" style="--tab:0">규제<i class="ph ph-caret-right"></i></span><span class="demo-bookmark" style="--tab:1">시장성<i class="ph ph-caret-right"></i></span><span class="demo-bookmark" style="--tab:2">가격<i class="ph ph-caret-right"></i></span><span class="demo-bookmark" style="--tab:3">물류<i class="ph ph-caret-right"></i></span><span class="demo-bookmark" style="--tab:4">안정성<i class="ph ph-caret-right"></i></span></div>
+</div>
+</article>
+</div>
+</div>
+</section>
+<section aria-labelledby="workspace-title" class="workspace-story section-space" id="workspace-story">
+<div class="shell workspace-story-inner">
+<div class="reveal">
+<p class="eyebrow">BUILT AROUND YOUR WORKFLOW</p>
+<h2 id="workspace-title">
+              익숙한 바탕화면<br/>새로운 분석 경험
+            </h2>
+<p class="workspace-description">
+              파일을 열고, 창을 옮기고, 필요한 근거를 나란히.<br/>당신의 업무
+              방식에 맞춰 작업공간을 구성하세요.
+            </p>
+<a class="text-link" data-launch-app="" href="/app">내 작업공간 열기
+              <i aria-hidden="true" class="ph ph-arrow-up-right"></i></a>
+</div>
+<div class="workspace-benefits reveal">
+<div>
+<i aria-hidden="true" class="ph ph-squares-four"></i><span><strong>자유롭게 정리하는 바탕화면</strong><small>파일 아이콘을 원하는 위치에 배치하세요.</small></span>
+</div>
+<div>
+<i aria-hidden="true" class="ph ph-browsers"></i><span><strong>나에게 맞추는 분석 창</strong><small>창의 위치와 크기를 조절하며 살펴보세요.</small></span>
+</div>
+<div>
+<i aria-hidden="true" class="ph ph-bookmarks-simple"></i><span><strong>근거로 바로 연결되는 책갈피</strong><small>요약과 상세 내용을 자연스럽게 오가세요.</small></span>
+</div>
+</div>
+</div>
+</section>
+<!-- (junhee) 2026-09-26 Contact Us — 현업 의견·건의 접수. 스타일 static/css/junhee-contact.css, 동작 static/js/junhee-contact.js, 접수 POST /api/contact -->
+<section id="contact" class="junhee-contact section-space" aria-labelledby="contact-title">
+<div class="shell">
+<div class="section-heading contact-heading reveal">
+<div>
+<p class="eyebrow">CONTACT US</p>
+<h2 id="contact-title">Contact Us — 현업의 목소리를 들려주세요</h2>
+</div>
+<p class="section-description">반도체·무역·물류 현업에서 AXPORT를 써 보신 의견과 건의사항을 남겨 주세요. 다음 개선에 반영합니다.</p>
+</div>
+<form id="contact-form" class="contact-form reveal" novalidate>
+<div class="contact-grid">
+<label class="contact-field"><span>의견 유형 <em>필수</em></span><select name="type" required aria-required="true"><option value="">선택해 주세요</option><option value="의견">의견</option><option value="건의">건의</option><option value="오류 제보">오류 제보</option><option value="기타">기타</option></select></label>
+<label class="contact-field"><span>소속 분야 <em class="optional">선택</em></span><select name="field"><option value="">선택 안 함</option><option value="반도체 제조">반도체 제조</option><option value="무역·수출">무역·수출</option><option value="물류·포워딩">물류·포워딩</option><option value="기타">기타</option></select></label>
+<label class="contact-field"><span>이름 또는 닉네임 <em class="optional">선택</em></span><input name="name" type="text" maxlength="40" autocomplete="nickname" placeholder="40자 이내"></label>
+<label class="contact-field"><span>회신 받을 이메일 <em class="optional">선택</em></span><input name="email" type="email" autocomplete="email" inputmode="email" placeholder="name@example.com"></label>
+<label class="contact-field contact-field-full"><span>내용 <em>필수</em> <small id="contact-count" aria-live="polite">0 / 1000</small></span><textarea name="message" minlength="10" maxlength="1000" rows="6" required aria-required="true" placeholder="10자 이상 1000자 이하로 적어 주세요"></textarea></label>
+<label class="contact-consent contact-field-full"><input type="checkbox" name="consent"><span>개인정보(이메일) 수집·이용에 동의합니다. 회신 목적으로만 사용하고 프로젝트 종료 후 삭제합니다. <em>이메일을 적은 경우에만 필수</em></span></label>
+<div class="contact-hp" aria-hidden="true"><label>웹사이트<input name="website" type="text" tabindex="-1" autocomplete="off"></label></div>
+</div>
+<div class="contact-actions">
+<p id="contact-status" class="contact-status" role="status" aria-live="polite"></p>
+<button type="submit" class="button button-blue">보내기 <i class="ph ph-paper-plane-tilt" aria-hidden="true"></i></button>
+</div>
+<p class="contact-note">가상 데이터 시연 프로젝트의 의견 접수입니다. 접수 내용은 화면에 표시되지 않으며 1분에 3회까지 보낼 수 있습니다.</p>
+</form>
+</div>
+</section>
+<section class="bottom-cta-section">
+<div class="shell bottom-cta reveal">
+<div>
+<p class="eyebrow">READY FOR YOUR NEXT EXPORT?</p>
+<h2>
+              수출의 가능성을<br class="mobile-break"/>
+              지금 확인해 보세요
+            </h2>
+<p>더 명확한 의사결정의 시작, AXPORT.</p>
+</div>
+<a class="button button-white" data-launch-app="" href="/app">대시보드 시작하기
+            <i aria-hidden="true" class="ph ph-arrow-up-right"></i></a>
+</div>
+</section>
+  </main>
+<footer class="site-footer">
+<div class="shell footer-inner">
+<div>
+<a aria-label="AXPORT 홈" class="footer-brand" href="/">AXPORT<span>EXPORT INTELLIGENCE</span></a>
+<p>데이터로 연결하는 반도체 수출의 다음 기회.</p>
+</div>
+<div class="footer-right">
+<nav aria-label="하단 메뉴">
+<a href="#features">서비스 소개</a><a href="#how-it-works">이용 방법</a><a data-launch-app="" href="/app">워크스페이스</a><a href="#contact">Contact Us</a>
+</nav>
+<span>© 2026 AXPORT · Frontend prototype</span>
+</div>
+</div>
+</footer>
+<div aria-live="polite" class="app-transition" hidden="" role="status">
+<div class="transition-content">
+<i aria-hidden="true" class="ph ph-circles-four transition-symbol"></i><strong>작업공간으로 이동합니다</strong>
+<p>AXPORT WORKSPACE</p>
+<span class="loading-track"></span>
+</div>
+</div>
+  {% include "chatbot.html" %}
+</body>
+</html>

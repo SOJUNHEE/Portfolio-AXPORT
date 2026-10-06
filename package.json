@@ -1,0 +1,16 @@
+{
+  "dependencies": {
+    "@fontsource-variable/noto-sans-kr": "5.3.0",
+    "@phosphor-icons/web": "2.1.2",
+    "chart.js": "4.5.1"
+  },
+  "devDependencies": {
+    "prettier": "3.9.8"
+  },
+  "name": "axport-ui-preview",
+  "private": true,
+  "scripts": {
+    "check": "node --check static/js/home.js && node --check static/js/workspace.js && prettier --check \"templates/*.html\" \"static/css/*.css\" \"static/js/*.js\"",
+    "format": "prettier --write \"templates/*.html\" \"static/css/*.css\" \"static/js/*.js\""
+  }
+}

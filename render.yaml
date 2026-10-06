@@ -1,0 +1,57 @@
+# (junhee) 2026-09-26 Render 배포 설정 (Blueprint)
+# 빌드 때 requirements.txt + gunicorn 을 설치한다. (2026-09-27 로그인·분석 엔진 패키지는 requirements.txt 에 추가됨)
+# API 키는 여기 적지 않는다. Render 대시보드 > Environment 에서 직접 입력한다(sync: false).
+services:
+  - type: web
+    name: portfolio-axport  # (2026-10-06) 개인 포트폴리오용 별도 배포. 팀 서비스(axport)와 이름이 겹치지 않게
+    runtime: python
+    plan: free
+    region: singapore
+    branch: main
+    buildCommand: pip install -r requirements.txt
+    # 챗봇 OpenAI 호출이 최대 45초라서 gunicorn 기본 timeout(30초)보다 길게 둔다.
+    # (2026-09-27 배포 QA) 무료 플랜 512MB: 워커 1개 + 스레드 8개(분석 엔진을 워커마다 따로 올리지 않음, 요청 제한도 한 곳에서)
+    startCommand: gunicorn app:app --bind 0.0.0.0:$PORT --workers 1 --threads 8 --timeout 120
+    healthCheckPath: /
+    autoDeploy: true
+    envVars:
+      - key: PYTHON_VERSION
+        value: "3.14.7"  # (2026-09-27 배포 QA) 로컬 검증 버전과 같게 patch 까지 고정
+      - key: AXPORT_DATA_MODE
+        value: demo
+      - key: AXPORT_CHAT_MODE
+        value: demo  # (2026-09-30 조원 배포) 기본은 예시 답변. AI 연결은 본인 OPENAI_API_KEY·OPENAI_MODEL 을 Render 대시보드에 넣고 live 로 바꾼다(TEAM_SETUP.md)
+      - key: OPENAI_API_KEY
+        sync: false
+      - key: OPENAI_MODEL
+        sync: false
+      - key: EXCHANGERATE_API_KEY
+        sync: false
+      - key: THENEWS_API_KEY
+        sync: false
+      - key: CUSTOMS_API_KEY
+        sync: false
+      - key: AXPORT_WEATHER_JSON
+        sync: false
+      # (junhee) 2026-09-27 회원가입·로그인·계정별 저장 (junhee/docs/ACCOUNTS_SETUP.md)
+      # (2026-10-06) 로그인 없이 사용하므로 SUPABASE_* 는 비워 둬도 된다. 비우면 방문자 작업은 서버 디스크(instance/)에만 저장된다.
+      - key: SUPABASE_URL
+        sync: false
+      - key: SUPABASE_PUBLISHABLE_KEY
+        sync: false
+      - key: FLASK_SECRET_KEY
+        generateValue: true
+      - key: AXPORT_PUBLIC_URL
+        sync: false
+      # (junhee) 2026-09-27 기업 파일 분석 엔진 외부 자료 API 키 (없으면 해당 지표만 '검색 불가')
+      - key: UN_COMTRADE_API_KEY
+        sync: false
+      - key: KCS_TRADE_API_KEY
+        sync: false
+      - key: ECOS_API_KEY
+        sync: false
+      - key: LAW_API_KEY
+        sync: false
+      # (junhee) 2026-09-27 선택: 수출입은행 환율(위젯 환율 예비 경로). 위젯 공식 자료 자동 갱신은 Render 에서 기본 켜짐(끄려면 AXPORT_WIDGET_REFRESH=0)
+      - key: KOREAEXIM_API_KEY
+        sync: false

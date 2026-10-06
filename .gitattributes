@@ -1,2 +1,12 @@
 # Auto detect text files and perform LF normalization
 * text=auto
+
+# (2026-09-30 조원 배포) git archive 로 만든 배포 압축본에서 뺄 파일. 저장소에는 그대로 남는다(TEAM_SETUP.md).
+# 실행·분석 엔진·자료 재생성 스크립트가 읽지 않는 원문·결과물만 적는다.
+junhee/data/raw/test1_regulations/*.pdf export-ignore
+junhee/data/raw/test1_regulations/*.hwp export-ignore
+junhee/data/raw/test1_regulations/*.hwpx export-ignore
+junhee/test-results/** export-ignore
+minjung/AXPORT_widget/test-results/** export-ignore
+static/assets/earth-*.* export-ignore
+static/vendor/phosphor/regular/selection.json export-ignore

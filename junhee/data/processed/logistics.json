@@ -1,0 +1,164 @@
+{
+  "key": "logistics",
+  "headline": "8,589천원/2TEU · 전월비 +0.5%",
+  "note": "한국→미국 서부 해상수출 평균 운송비용 2026-08(관세청) · 동부 9,973천원, 전월비 +24.8%",
+  "state": "ok",
+  "source": "260915 2026년 8월 해상 수출입 컨테이너 및 항공수입 운송비용 현황.hwpx",
+  "as_of": "2026-08-31",
+  "data_class": "실제자료",
+  "detail": {
+    "press_release_date": "2026-09-15",
+    "data_period": "2026-08",
+    "direction": "해상수출(한국→해외)",
+    "unit": "천원/2TEU (40피트 컨테이너 1개당 평균 총 운송비용, 할증료·수수료 포함)",
+    "unit_note_raw": "◈ 해상 수출입 운송비용 : 컨테이너 2TEU* 당 운송비용** 평균",
+    "routes": {
+      "미국서부": {
+        "avg_cost_thousand_krw_per_2teu": 8589,
+        "mom_pct": 0.5,
+        "yoy_pct": 59.4
+      },
+      "미국동부": {
+        "avg_cost_thousand_krw_per_2teu": 9973,
+        "mom_pct": 24.8,
+        "yoy_pct": 75.8
+      },
+      "유럽연합": {
+        "avg_cost_thousand_krw_per_2teu": 5014,
+        "mom_pct": -9.4,
+        "yoy_pct": 36.3
+      },
+      "중동": {
+        "avg_cost_thousand_krw_per_2teu": 8838,
+        "mom_pct": 1.7,
+        "yoy_pct": 133.7
+      },
+      "중국": {
+        "avg_cost_thousand_krw_per_2teu": 652,
+        "mom_pct": -22.4,
+        "yoy_pct": 13.8
+      },
+      "일본": {
+        "avg_cost_thousand_krw_per_2teu": 662,
+        "mom_pct": -0.7,
+        "yoy_pct": -7.9
+      },
+      "베트남": {
+        "avg_cost_thousand_krw_per_2teu": 1558,
+        "mom_pct": -9.0,
+        "yoy_pct": 0.05
+      }
+    },
+    "monthly": {
+      "미국서부": [
+        {
+          "month": "2025-08",
+          "value": 5388.0
+        },
+        {
+          "month": "2025-09",
+          "value": 5033.0
+        },
+        {
+          "month": "2025-10",
+          "value": 5145.0
+        },
+        {
+          "month": "2025-11",
+          "value": 5187.0
+        },
+        {
+          "month": "2025-12",
+          "value": 5077.0
+        },
+        {
+          "month": "2026-01",
+          "value": 4933.0
+        },
+        {
+          "month": "2026-02",
+          "value": 4713.0
+        },
+        {
+          "month": "2026-03",
+          "value": 5646.0
+        },
+        {
+          "month": "2026-04",
+          "value": 5062.0
+        },
+        {
+          "month": "2026-05",
+          "value": 5465.0
+        },
+        {
+          "month": "2026-06",
+          "value": 7705.0
+        },
+        {
+          "month": "2026-07",
+          "value": 8547.0
+        },
+        {
+          "month": "2026-08",
+          "value": 8589.0
+        }
+      ],
+      "미국동부": [
+        {
+          "month": "2025-08",
+          "value": 3680.0
+        },
+        {
+          "month": "2025-09",
+          "value": 3426.0
+        },
+        {
+          "month": "2025-10",
+          "value": 3084.0
+        },
+        {
+          "month": "2025-11",
+          "value": 3218.0
+        },
+        {
+          "month": "2025-12",
+          "value": 3557.0
+        },
+        {
+          "month": "2026-01",
+          "value": 3385.0
+        },
+        {
+          "month": "2026-02",
+          "value": 3157.0
+        },
+        {
+          "month": "2026-03",
+          "value": 3336.0
+        },
+        {
+          "month": "2026-04",
+          "value": 3618.0
+        },
+        {
+          "month": "2026-05",
+          "value": 3590.0
+        },
+        {
+          "month": "2026-06",
+          "value": 4162.0
+        },
+        {
+          "month": "2026-07",
+          "value": 5535.0
+        },
+        {
+          "month": "2026-08",
+          "value": 5014.0
+        }
+      ]
+    },
+    "parse_method": "hwpx(Contents/section0.xml) 문단 텍스트 정규식 추출"
+  }
+}

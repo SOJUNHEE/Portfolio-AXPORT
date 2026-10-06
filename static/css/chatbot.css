@@ -1,0 +1,125 @@
+.axchat { --axchat-margin:24px; --axchat-launch-size:80px; position:fixed; inset:0; z-index:150; pointer-events:none; font-family:"Noto Sans KR Variable","Malgun Gothic",sans-serif; color:#132946; font-size:15px; line-height:1.65; }
+.axchat *, .axchat *::before, .axchat *::after { box-sizing:border-box; }
+.axchat [hidden] { display:none !important; }
+.axchat button, .axchat textarea, .axchat select { font:inherit; }
+.axchat button { cursor:pointer; color:inherit; }
+.axchat select:focus-visible, .axchat button:focus-visible, .axchat textarea:focus-visible, .axchat-body:focus-visible { outline:3px solid #326bff; outline-offset:3px; }
+.axchat-launcher { position:absolute; pointer-events:auto; width:var(--axchat-launch-size); height:var(--axchat-launch-size); border-radius:50%; border:1px solid rgba(160,180,208,.16); background:rgba(205,220,241,.28); backdrop-filter:blur(8px); -webkit-backdrop-filter:blur(8px); box-shadow:0 8px 24px rgba(25,48,80,.12), 0 2px 7px rgba(25,48,80,.05), inset 0 0 12px rgba(255,255,255,.12); display:grid; place-items:center; padding:4px; }
+.axchat-launcher img { width:100%; height:100%; object-fit:contain; transition:transform 150ms ease; }
+.axchat-badge { position:absolute; top:-6px; right:0; border-radius:12px; padding:2px 7px; background:#2458cf; color:#fff; font-size:11px; white-space:nowrap; }
+.axchat-panel { position:absolute; pointer-events:auto; display:flex; flex-direction:column; background:#fff; border:1px solid #dbe3ef; border-radius:20px; box-shadow:0 16px 60px #061a4033; overflow:hidden; }
+.axchat-header { display:flex; flex-wrap:wrap; align-items:center; gap:4px; padding:8px 12px 8px 18px; flex-shrink:0; border-bottom:1px solid #e9edf4; }
+.axchat-header > div { flex:1; min-width:0; }
+.axchat-header strong { font-size:16px; }
+.axchat-header small { display:block; font-size:11px; color:#617089; }
+.axchat-header button { width:30px; height:30px; padding:0; display:grid; place-items:center; flex-shrink:0; border:0; border-radius:10px; background:#f3f6fb; font-size:22px; }
+.axchat-body { flex:1; min-height:0; overflow-y:auto; overscroll-behavior:contain; overflow-anchor:none; padding:12px 16px; display:flex; flex-direction:column; }
+.axchat-welcome { text-align:center; padding:8px 0 12px; flex:1 0 auto; display:flex; flex-direction:column; justify-content:center; }
+.axchat-welcome img { width:64px; height:64px; display:block; object-fit:contain; margin:0 auto; }
+.axchat-welcome p { margin:8px 0 4px; font-size:15px; line-height:1.5; }
+.axchat-welcome small { display:block; font-size:12px; line-height:1.5; color:#5b6b83; }
+.axchat-messages { flex-shrink:0; display:flex; flex-direction:column; gap:14px; }
+.axchat-message { max-width:92%; white-space:pre-wrap; overflow-wrap:anywhere; padding:12px 14px; border-radius:15px; font-size:15px; line-height:1.75; }
+.axchat-user { align-self:flex-end; background:#2458cf; color:#fff; border-bottom-right-radius:4px; }
+.axchat-answer { align-self:flex-start; background:#f1f4f9; border-bottom-left-radius:4px; }
+.axchat-answer small { display:block; color:#48525f; font-size:11px; margin-bottom:5px; }
+.axchat-loading { display:flex; align-items:center; gap:9px; color:#53637b; }
+.axchat-spinner { flex-shrink:0; width:18px; height:18px; border:2px solid #cbd2dc; border-top-color:#19395f; border-radius:50%; animation:axchat-spin .9s linear infinite; }
+@keyframes axchat-spin { to { transform:rotate(360deg); } }
+.axchat .axchat-retry { display:block; margin-top:10px; border:0; border-radius:8px; background:#b52c38; color:#fff; padding:8px 13px; }
+.axchat-suggestions { display:flex; flex-direction:column; align-items:center; gap:8px; padding:8px 0 4px; flex-shrink:0; }
+.axchat-suggestions button { display:flex; align-items:center; gap:7px; width:fit-content; max-width:100%; border:1px solid #e7ebf0; border-radius:24px; background:rgba(255,255,255,.95); box-shadow:0 2px 5px rgba(24,43,70,.035); padding:8px 13px; text-align:left; font-size:12px; line-height:1.5; white-space:normal; overflow-wrap:anywhere; }
+.axchat-latest { flex-shrink:0; text-align:center; padding:5px 12px; }
+.axchat-latest button { border:1px solid #b9cdf4; background:#edf3ff; color:#214da4; border-radius:16px; font-size:12px; padding:5px 12px; }
+.axchat-form { display:flex; align-items:flex-end; gap:8px; flex-shrink:0; padding:10px 12px; border-top:1px solid #e9edf4; }
+.axchat-form textarea { display:block; flex:1; min-width:0; width:100%; resize:none; height:48px; max-height:100px; border:1px solid #d4deec; border-radius:12px; padding:9px 10px; background:#f8faff; color:#132946; font-size:16px; line-height:1.4; }
+.axchat-form button { border:0; border-radius:11px; background:#2458cf; color:#fff; padding:10px 12px; height:44px; }
+.axchat button:disabled { opacity:.45; cursor:default; }
+.axchat-resize { position:absolute; top:0; left:0; width:20px; height:20px; border:0; background:transparent; cursor:nwse-resize !important; touch-action:none; font-size:20px !important; line-height:1; }
+.axchat.axchat-resizing, .axchat.axchat-resizing * { user-select:none; }
+.axchat-status { position:absolute; width:1px; height:1px; overflow:hidden; clip-path:inset(50%); }
+.axchat-safe { position:absolute; visibility:hidden; padding:env(safe-area-inset-top,0px) env(safe-area-inset-right,0px) env(safe-area-inset-bottom,0px) env(safe-area-inset-left,0px); }
+@media (hover:hover) and (pointer:fine) and (min-width:768px) { .axchat-launcher:hover img { transform:scale(1.05); } }
+@media (max-width:767px), (pointer:coarse) { .axchat { --axchat-margin:16px; --axchat-launch-size:60px; } .axchat-launcher { padding:3px; } .axchat-resize { display:none; } .axchat-header { padding:8px 10px 8px 16px; } .axchat-body { padding:10px 14px; } }
+@media (prefers-reduced-motion:reduce) { .axchat-launcher img { transition:none; transform:none !important; } .axchat-spinner { animation:none; } }
+
+.axchat-compact .axchat-header { padding:4px 8px 4px 16px; }
+.axchat-compact .axchat-form { padding:8px; }
+.axchat-compact .axchat-form textarea { height:44px; }
+.axchat-compact .axchat-body { padding:0 12px; }
+.axchat-compact .axchat-suggestions { padding:6px 0; }
+.axchat-compact .axchat-latest { padding:2px 8px; }
+
+.axchat-compact .axchat-header small { font-size:10px; }
+
+/* One shared scroll area keeps the welcome and questions together on short screens. */
+.axchat-panel { transform-origin:bottom right; }
+.axchat-panel:not([hidden]) { animation:axchat-open 220ms cubic-bezier(.2,.75,.25,1) both; }
+@keyframes axchat-open { from { opacity:0; transform:translateY(12px) scale(.97); } to { opacity:1; transform:translateY(0) scale(1); } }
+.axchat-compact .axchat-welcome img { width:48px; height:48px; }
+.axchat-compact .axchat-welcome p { margin-top:5px; font-size:14px; }
+@media (prefers-reduced-motion:reduce) { .axchat-panel:not([hidden]) { animation:none; } }
+
+.axchat-question-heading { display:flex; align-items:center; justify-content:center; gap:8px; width:100%; margin-bottom:3px; color:#7b8595; font-size:11px; }
+.axchat-question-heading::before, .axchat-question-heading::after { content:""; height:1px; background:#edf0f4; flex:1; }
+.axchat-question-heading .ph { color:#8195b7; font-size:14px; }
+.axchat-question-icon { flex-shrink:0; font-size:15px; color:#547eb6; }
+.axchat-suggestions button:nth-of-type(2) .axchat-question-icon { color:#689b91; }
+.axchat-suggestions button:nth-of-type(3) .axchat-question-icon { color:#c29664; }
+.axchat-suggestions button > span { min-width:0; }
+.axchat-compact .axchat-welcome { padding:6px 0 8px; }
+@media (hover:hover) and (pointer:fine) { .axchat-suggestions button:hover { background:#f5f8fc; border-color:#ccd7e6; } }
+
+/* AXPORT glass finish: navy, blue and translucent white only. */
+.axchat-launcher { background:linear-gradient(145deg,rgba(238,247,255,.30),rgba(155,187,220,.13)); border-color:rgba(221,237,250,.26); box-shadow:0 10px 30px rgba(10,35,64,.16),inset 0 1px 1px rgba(255,255,255,.40); backdrop-filter:blur(14px); -webkit-backdrop-filter:blur(14px); }
+.axchat-launcher img { opacity:.84; filter:drop-shadow(0 3px 5px rgba(22,56,87,.12)); }
+.axchat-panel { background:linear-gradient(150deg,rgba(233,244,254,.74),rgba(252,254,255,.82) 48%,rgba(222,237,249,.72)); border:1px solid rgba(255,255,255,.72); border-radius:26px; backdrop-filter:blur(28px) saturate(115%); -webkit-backdrop-filter:blur(28px) saturate(115%); box-shadow:0 22px 64px rgba(9,32,61,.19),0 4px 14px rgba(9,32,61,.06),inset 0 1px 0 rgba(255,255,255,.9); }
+.axchat-header { background:rgba(255,255,255,.38); border-bottom-color:rgba(127,157,186,.13); }
+.axchat-header strong { letter-spacing:-.35px; color:#132f4d; }
+.axchat-header button { border:1px solid rgba(255,255,255,.66); border-radius:50%; background:rgba(255,255,255,.48); color:#49647d; }
+.axchat-welcome img { opacity:.90; filter:drop-shadow(0 7px 12px rgba(36,91,143,.14)); }
+.axchat-welcome p { color:#163653; letter-spacing:-.3px; }
+.axchat-welcome small { color:#536c82; }
+.axchat-suggestions button { background:rgba(255,255,255,.68); border-color:rgba(255,255,255,.87); box-shadow:0 3px 10px rgba(39,73,106,.055),inset 0 1px 0 rgba(255,255,255,.7); color:#294861; }
+.axchat-question-heading { color:#596f83; }
+.axchat-question-heading::before,.axchat-question-heading::after { background:rgba(120,151,181,.18); }
+.axchat-suggestions .axchat-question-icon { color:#537faa; }
+.axchat-suggestions button:nth-of-type(2) .axchat-question-icon { color:#65849f; }
+.axchat-suggestions button:nth-of-type(3) .axchat-question-icon { color:#355d80; }
+.axchat-user { background:linear-gradient(135deg,rgba(125,145,173,.43),rgba(104,127,158,.47)); color:#142438; border:1px solid rgba(85,108,140,.22); box-shadow:0 4px 7px rgba(30,49,65,.14),inset 0 1px 0 rgba(255,255,255,.40); backdrop-filter:blur(8px); -webkit-backdrop-filter:blur(8px); border-radius:18px 18px 6px 18px; }
+.axchat-answer { background:linear-gradient(145deg,rgba(222,226,231,.66),rgba(209,213,219,.56)); color:#15191f; border:1px solid rgba(157,166,177,.20); box-shadow:0 4px 8px rgba(30,42,56,.13),inset 0 1px 0 rgba(255,255,255,.35); backdrop-filter:blur(10px); -webkit-backdrop-filter:blur(10px); border-radius:20px; }
+.axchat-form { background:rgba(255,255,255,.42); border-top-color:rgba(127,157,186,.13); }
+.axchat-form textarea { background:rgba(255,255,255,.84); border-color:rgba(144,170,195,.23); border-radius:17px; box-shadow:inset 0 1px 3px rgba(34,65,96,.025); }
+.axchat-form textarea::placeholder { color:#63788b; }
+.axchat-form button { background:linear-gradient(145deg,#388bd5,#2877c2); border-radius:14px; box-shadow:0 3px 8px rgba(27,70,111,.16),inset 0 1px 0 rgba(255,255,255,.20); }
+.axchat-body { scrollbar-width:thin; scrollbar-color:rgba(89,125,158,.28) transparent; }
+@media (hover:hover) and (pointer:fine) { .axchat-suggestions button:hover { background:rgba(255,255,255,.95); border-color:rgba(149,184,215,.5); } .axchat-header button:hover { background:rgba(255,255,255,.84); } }
+@supports not ((backdrop-filter:blur(1px)) or (-webkit-backdrop-filter:blur(1px))) { .axchat-panel { background:linear-gradient(150deg,#edf5fc,#fbfdff 48%,#e8f1f9); } }
+
+/* Welcome character: a single entrance with a soft blue light. */
+.axchat-hero { position:relative; isolation:isolate; width:148px; height:132px; margin:0 auto 8px; display:grid; place-items:center; flex-shrink:0; }
+.axchat-hero::before { content:""; position:absolute; inset:3px -16px -6px; z-index:-1; background:radial-gradient(ellipse,rgba(55,150,232,.38),rgba(100,181,237,.19) 48%,transparent 74%); }
+.axchat-hero::after { content:""; position:absolute; bottom:0; width:90px; height:14px; border-radius:50%; background:rgba(33,76,124,.16); filter:blur(8px); z-index:-1; }
+.axchat-welcome .axchat-hero img { width:116px; height:116px; opacity:1; filter:drop-shadow(0 8px 12px rgba(32,75,117,.15)); }
+.axchat-panel:not([hidden]) .axchat-hero img { animation:axchat-hero-enter 720ms cubic-bezier(.22,.75,.25,1) both; }
+.axchat-panel:not([hidden]) .axchat-hero::before { animation:axchat-hero-glow 900ms ease-out both; }
+.axchat-panel:not([hidden]) .axchat-hero::after { animation:axchat-hero-shadow 720ms ease-out both; }
+@keyframes axchat-hero-enter { 0% { opacity:0; transform:translateY(24px) scale(.76); } 58% { opacity:1; transform:translateY(-5px) scale(1.07); } 80% { transform:translateY(2px) scale(.99); } 100% { opacity:1; transform:translateY(0) scale(1); } }
+@keyframes axchat-hero-glow { 0% { opacity:0; transform:scale(.55); } 45% { opacity:1; transform:scale(1.3); } 100% { opacity:.8; transform:scale(1); } }
+@keyframes axchat-hero-shadow { 0% { opacity:0; transform:scale(.6); } 60% { opacity:.6; transform:scale(1.12); } 100% { opacity:1; transform:scale(1); } }
+.axchat-compact .axchat-hero { width:104px; height:86px; margin-bottom:4px; }
+.axchat-compact .axchat-hero img { width:76px; height:76px; }
+@media (prefers-reduced-motion:reduce) { .axchat-panel:not([hidden]) .axchat-hero img,.axchat-panel:not([hidden]) .axchat-hero::before,.axchat-panel:not([hidden]) .axchat-hero::after { animation:none; } }
+
+/* Keep supporting labels readable over both dark and light page backgrounds. */
+.axchat-header small, .axchat-welcome small, .axchat-question-heading { color:#40586e; }
+@media (prefers-reduced-transparency:reduce) { .axchat-panel { background:linear-gradient(150deg,#edf5fc,#fbfdff 48%,#e8f1f9); backdrop-filter:none; -webkit-backdrop-filter:none; } }
+
+.axchat-header button svg { display:block; width:16px; height:16px; fill:none; stroke:currentColor; stroke-width:1.5; stroke-linecap:round; }
+
+/* Only the workspace uses the stronger contrast and draggable chat placement. */
+body.axsx-preview .axchat-launcher {background:linear-gradient(145deg,#0d2844,#173c67)!important;border:2px solid #2c5985!important;box-shadow:0 12px 34px #0a203f66, inset 0 1px 0 #ffffff22!important;cursor:grab;touch-action:none}
+body.axsx-preview .axchat-launcher img {opacity:1!important;filter:drop-shadow(0 2px 6px #9cc5ff6b)!important}
+body.axsx-preview .axchat-header {cursor:grab;touch-action:none}
+body.axsx-preview .axchat-header button {cursor:pointer;touch-action:auto}
+body.axsx-preview .axchat.axchat-moving .axchat-launcher,body.axsx-preview .axchat.axchat-moving .axchat-header {cursor:grabbing;user-select:none}

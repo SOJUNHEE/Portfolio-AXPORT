@@ -1,0 +1,19 @@
+.env
+.env.*
+!.env.example
+*.env.bak
+*.env.backup
+*.env.old
+.venv/
+__pycache__/
+*.pyc
+node_modules/
+*.log
+qa/
+
+
+# 조원 API 키·환경파일 (junhee)
+*api 키*.txt
+*.env
+# (junhee) Contact Us 접수 파일(개인정보) — 커밋 금지
+instance/

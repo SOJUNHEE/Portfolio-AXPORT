@@ -1,0 +1,261 @@
+AXPORT 수출 통계 JSON 생성 안내 — 팀 공유용
+===========================================
+
+1. 이 작업의 목적
+
+AXPORT_WEATHER_JSON은 API 키가 아닙니다.
+관세청 수출 통계를 수집·계산해 저장한 JSON 파일의 경로입니다.
+
+진행 순서:
+관세청 API 키 설정 → 수집 코드 실행 → JSON 생성 → .env에 경로 입력 → 서버 재시작
+
+JSON 내용을 직접 작성하거나 숫자를 수동으로 넣을 필요는 없습니다.
+
+2. 준비 사항
+
+- Python 3.14+ 및 기존 AXPORT 실행 환경
+- 관세청 품목별 수출입실적 API 이용 승인과 서비스키
+- 팀 프로젝트의 app.py와 아래 추가 폴더
+
+프로젝트 폴더/
+  app.py
+  .env
+  _axport_semiconductor_widgets/
+    sx_widgets/
+      __init__.py
+      providers.py
+      weather.py
+
+팀 공유 ZIP의 _axport_semiconductor_widgets 폴더 전체를 사용하세요.
+이 안내서의 실행 코드는 기존 weather.py에 있는 수집·계산 기능을 호출합니다.
+프로젝트 폴더 이름은 test1이 아니어도 됩니다.
+
+3. 프로젝트 최상위 .env에 서비스키 입력
+
+.env는 app.py와 같은 위치에 한 개만 둡니다.
+이미 있는 .env의 다른 팀원 설정은 지우지 마세요.
+다음 항목의 = 뒤에 본인의 실제 서비스키를 입력하세요.
+
+CUSTOMS_API_KEY=본인의_관세청_API_서비스키
+
+위 문구는 입력 위치를 설명하는 예시입니다. 그대로 복사한 값으로는 조회되지 않습니다.
+일반 인증키(Decoding)를 사용하는 것이 가장 명확합니다.
+현재 수집기는 URL 인코딩된 키도 한 번 해제한 뒤 요청에 넣습니다.
+
+주의: 단순 전체 수출입실적 API 승인만 있다면 품목별 수출입실적 API의
+추가 승인이 필요할 수 있습니다. 실제 요청에 사용하는 API는 다음과 같습니다.
+https://apis.data.go.kr/1220000/Itemtrade/getItemtradeList
+
+4. make_weather_json.py 파일 만들기
+
+VS Code에서 app.py와 같은 위치에 make_weather_json.py라는 새 파일을 만드세요.
+같은 이름의 파일이 이미 있다면 내용을 확인하고 덮어쓰지 마세요.
+아래 '코드 시작'과 '코드 끝' 사이의 Python 코드만 파일에 복사합니다.
+이 실행 코드 자체는 별도 패키지 설치 없이 Python 표준 라이브러리를 사용합니다.
+가져오는 팀 모듈 때문에 기존 프로젝트의 Flask 환경도 준비되어 있어야 합니다.
+
+-------------------- 코드 시작 --------------------
+import json
+from datetime import datetime
+from pathlib import Path
+
+from _axport_semiconductor_widgets.sx_widgets.weather import (
+    build_report,
+    validate_report,
+)
+
+# 수집할 기준 연도와 월입니다.
+# 예: 2026년 1~8월 누계와 2025년 1~8월 누계를 비교합니다.
+YEAR = 2026
+MONTH = 8
+
+ROOT = Path(__file__).resolve().parent
+ENV_PATH = ROOT / ".env"
+
+
+def read_customs_key():
+    if not ENV_PATH.is_file():
+        raise ValueError("프로젝트 최상위에 .env 파일이 없습니다.")
+
+    for line in ENV_PATH.read_text(encoding="utf-8-sig").splitlines():
+        line = line.strip()
+
+        if not line or line.startswith("#"):
+            continue
+
+        name, separator, value = line.partition("=")
+
+        if separator and name.strip() == "CUSTOMS_API_KEY":
+            key = value.strip().strip("\"'")
+            if key:
+                return key
+
+    raise ValueError(".env의 CUSTOMS_API_KEY를 입력하세요.")
+
+
+def main():
+    try:
+        key = read_customs_key()
+    except (ValueError, OSError) as error:
+        if isinstance(error, ValueError):
+            print(error)
+        else:
+            print(".env 파일을 읽지 못했습니다. 파일 위치와 권한을 확인하세요.")
+        return
+
+    print(
+        f"{YEAR}년 1~{MONTH}월과 "
+        f"{YEAR - 1}년 1~{MONTH}월 실적을 조회합니다."
+    )
+    print("여러 API 요청이 필요하므로 잠시 기다려 주세요.")
+
+    try:
+        report = build_report(key=key, year=YEAR, month=MONTH)
+        validate_report(report)
+    except Exception as error:
+        # 요청 주소에는 API 키가 포함될 수 있으므로 오류 종류만 출력합니다.
+        print("수집 또는 데이터 검증에 실패했습니다.")
+        print("오류 종류:", type(error).__name__)
+        print(
+            "API 이용 승인, 호출 한도, 조회 기간과 "
+            "통계 누락 여부를 확인해 주세요."
+        )
+        return
+
+    # 실행할 때마다 새 이름으로 저장하여 기존 통계 파일을 보존합니다.
+    timestamp = datetime.now().strftime("%Y%m%d_%H%M%S_%f")
+    output = ROOT / (
+        f"axport_weather_{YEAR}{MONTH:02d}_{timestamp}.json"
+    )
+
+    try:
+        with output.open("x", encoding="utf-8") as file:
+            json.dump(
+                report,
+                file,
+                ensure_ascii=False,
+                indent=2,
+                allow_nan=False,
+            )
+    except OSError:
+        print("JSON 파일 저장에 실패했습니다.")
+        print("폴더 쓰기 권한과 저장 공간을 확인해 주세요.")
+        return
+
+    print("\nJSON 생성 완료!")
+    print("저장 위치:", output)
+    print("\n아래 줄을 .env의 기존 항목에 반영하세요.")
+    print(f"AXPORT_WEATHER_JSON={output.as_posix()}")
+
+
+if __name__ == "__main__":
+    main()
+-------------------- 코드 끝 --------------------
+
+5. 터미널에서 실행
+
+VS Code에서 프로젝트 폴더를 열고 새 터미널을 엽니다.
+터미널의 현재 위치가 app.py와 make_weather_json.py가 있는 폴더인지 확인하세요.
+
+python -B make_weather_json.py
+
+기존 프로젝트에 가상환경을 사용한다면 같은 환경의 Python으로 실행하세요.
+서버를 켜 놓지 않아도 수집 코드 실행은 가능합니다.
+수집 중에는 여러 조회 요청이 발생합니다. 중복 실행하지 말고 결과를 기다리세요.
+
+성공하면 프로젝트 최상위에 다음 형태의 새 파일이 만들어집니다.
+
+axport_weather_202608_실행시각.json
+
+터미널에 실제 파일 경로와 AXPORT_WEATHER_JSON 설정 줄이 출력됩니다.
+
+6. .env에 생성된 JSON 경로 입력
+
+터미널에 출력된 AXPORT_WEATHER_JSON=... 줄을 복사하여
+기존 .env의 해당 항목을 수정합니다. 같은 항목을 여러 번 추가하지 마세요.
+
+AXPORT_DATA_MODE=live
+AXPORT_WEATHER_JSON=C:/내_프로젝트_경로/실제로_생성된_파일명.json
+
+위 파일명은 설명용입니다. 실제 실행 결과로 출력된 경로를 사용해야 합니다.
+팀원마다 프로젝트 위치가 다르면 각자 PC의 경로로 설정해야 합니다.
+JSON을 공유받은 팀원도 파일을 자기 PC에 저장한 뒤 그 경로를 입력합니다.
+
+AXPORT_DATA_MODE=live로 바꾸면 환율과 뉴스도 실제 연결 모드가 됩니다.
+EXCHANGERATE_API_KEY 또는 THENEWS_API_KEY가 비어 있으면
+해당 위젯에는 미설정/오류 안내가 나옵니다.
+
+7. 서버 재시작 후 확인
+
+기존 서버가 실행 중이라면 터미널에서 Ctrl+C로 종료하고 다시 실행합니다.
+
+python app.py
+
+브라우저 주소:
+http://127.0.0.1:5073/app
+
+팀원의 app.py에 아직 위젯 연결 코드가 없다면 공유 ZIP의 전달_안내.txt를
+확인하거나, 기존 파일을 수정하지 않는 아래 실행 방법을 사용하세요.
+
+python -B .\_axport_semiconductor_widgets\run_preview.py
+http://127.0.0.1:5075/app
+
+.env 변경은 서버 재시작이 필요합니다. 브라우저 새로고침만으로는 반영되지 않습니다.
+
+8. 집계되는 내용
+
+그룹                         HS 접두어
+메모리반도체                 854232
+프로세서·컨트롤러            854231
+기타 집적회로·부분품         854233, 854239, 854290
+반도체 소자                  8541
+
+- 각 접두어에 속하는 월별 10자리 세번의 수출액을 합산합니다.
+- 수출액(백만 USD) = 수출액(USD) 합계 / 1,000,000
+- 증감률 = (올해 누계 / 전년 같은 기간 누계 - 1) × 100
+- YEAR=2026, MONTH=8이면 2026년 1~8월과 2025년 1~8월을 비교합니다.
+  8월 한 달끼리의 비교가 아닙니다.
+- 전년 수출액이 0이면 비교 불가로 처리합니다.
+- 누락 월이나 중복 행 등이 확인되면 중단합니다. 누락을 0으로 채우지 않습니다.
+- 현재 코드는 2023년 이후의 이미 끝난 월을 허용합니다.
+  월이 끝났더라도 통계가 아직 공표되지 않았다면 조회가 실패할 수 있습니다.
+- 8541은 LED·태양전지 등을 포함하는 넓은 범위입니다.
+  이 4개 그룹은 HS 자체 분류이며 KSTAT의 MTI 공식 집계와 동일하다고 보장하지 않습니다.
+
+9. 다음 달 데이터 갱신
+
+make_weather_json.py의 YEAR와 MONTH를 바꾸고 다시 실행합니다.
+새 JSON 파일 경로를 .env에 반영한 뒤 서버를 재시작합니다.
+현재 구성은 월별 수동 수집이며 실시간 자동 수집이 아닙니다.
+
+10. 오류가 발생하면
+
+ModuleNotFoundError:
+- make_weather_json.py를 app.py와 같은 위치에 만들었는지 확인합니다.
+- _axport_semiconductor_widgets 폴더 전체가 있는지 확인합니다.
+- flask 모듈이 없다면 기존 프로젝트 실행 환경을 먼저 준비합니다.
+
+CUSTOMS_API_KEY 미입력:
+- 프로젝트 최상위 .env의 키 이름과 값을 확인합니다.
+
+HTTPError / URLError / TimeoutError:
+- API 이용 승인, 서비스키, 네트워크, 호출 한도를 확인합니다.
+
+ValueError / ParseError / 기타 수집·검증 오류:
+- 조회 기간, 공표 여부, API 응답 형식, 누락·중복 등을 확인해야 합니다.
+- 오류 종류만으로 원인을 확정할 수는 없습니다.
+- JSON 숫자를 임의로 채우거나 검증 코드를 삭제하지 마세요.
+- 오류 종류와 실행한 YEAR/MONTH를 개발 담당자에게 공유하세요.
+  서비스키가 들어간 전체 요청 URL이나 .env 내용은 공유하지 마세요.
+
+현재 4개 그룹 전체에 대한 실제 API 호출 성공은 이 안내서 작성 시점에
+검증되지 않았습니다. 실제 서비스키와 승인 상태로 실행해 확인해야 합니다.
+수집 코드의 검증이 통과하더라도 공급자의 통계 정확성이나 모든 세번의
+완전성을 독립적으로 보증하는 것은 아닙니다.
+
+11. 공유 시 주의
+
+- 이 TXT에는 실제 API 키가 들어 있지 않습니다.
+- 실제 키가 들어간 .env는 팀 공유 ZIP이나 GitHub에 넣지 마세요.
+- 생성된 JSON에는 이 수집 코드가 API 키를 기록하지 않습니다.
+- JSON 경로는 각자의 PC에 맞게 설정해야 합니다.

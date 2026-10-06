@@ -1,0 +1,10 @@
+{
+  "status": "passed",
+  "javascript_errors": [],
+  "mock_chat_calls": 6,
+  "screenshots": [
+    "desktop.png",
+    "chat.png",
+    "mobile.png"
+  ]
+}

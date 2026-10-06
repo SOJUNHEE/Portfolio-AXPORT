@@ -1,0 +1,17 @@
+﻿Metadata,
+,
+Variables,
+reporter_name,Economy whose tariff actions are considered
+reporter_iso,ISO3 code
+reporter_code,WTO country code
+partner_name,Exporter whose products are affected by the observed tariff action
+partner_iso,ISO3 code
+partner_code,WTO country code
+year_dt,Implementation date of tariff action
+hs_code,Harmonized System subheading code (six digits) (HS version 2022)
+best_avlbl,Tariff expected to be applied to imports following the implementation of respective tariff action
+imports,Latest available import values (USD) are provided to facilitate the calculation of trade-weighted averages
+,
+,
+Methodology notes:,"Effectively applied tariff rates represent the best estimate of the bilateral tariffs faced by typical imports at a given tariff line. These rates account for preferential arrangements, exceptional duties and charges, and, in some cases, rely on estimates of expected preference utilization and the foreign or domestic value-added content of usual imports under specific product codes. When analyzing changes in tariffs, it's important to note that comparisons between 6-digit and 8-digit HS codes are not always straightforward. A single 6-digit HS code may correspond to multiple 8-digit tariff lines (TLs), and only a subset of those lines may be affected by a given tariff increase.                                                                                                                                                                                                                        "
+Methodology - example:,"Example: At the beginning of 2025, a member country reports an import duty of 5% on product HS 01234567 for imports from a specific partner. This duty could reflect either the Most-Favoured Nation (MFN) rate or the best available preferential rate, depending on the trading relationship. Subsequently, tariff actions increased the total duty applied: on 1 March 2025, an additional 10% duty was introduced, raising the total to 15% (5% base + 10% additional), followed by a further increase of 20% on 1 April 2025, resulting in a total effective duty rate of 35%. These duty rates, recorded at the national tariff line level, are then aggregated to the HS6 product level using a simple average."

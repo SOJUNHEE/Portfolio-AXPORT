@@ -1,0 +1,1223 @@
+/* junhee-widgets.css — 바탕화면 위젯(minjung/AXPORT_widget, /app 응답에 끼워 넣는 widgets.css·widgets.js) 덮어쓰기 (2026-09-26 · 프롬프트 ⑥).
+   minjung 폴더는 수정하지 않는다. widgets.css 가 </head> 끝에 나중에 붙으므로 모든 선택자 앞에 body.axsx-preview 를 붙여 더 구체적으로 쓴다.
+   1) #sx-board 스크롤바 없음: 사용 가능한 높이를 채우고 overflow hidden. 오른쪽 열은 환율(항상 전체) + 뉴스·수출기상도(남는 높이, 카드 안쪽만 스크롤).
+      반도체 수출 데이터 위젯은 높이가 모자라면 여백·드롭 영역을 clamp 로 줄이고, 그래도 모자라면 위젯 안쪽만 스크롤.
+      왼쪽 끝은 바탕화면 아이콘 열 오른쪽(--jd-board-left, junhee-widgets-bridge.js 가 계산)에서 시작한다.
+   2) 위젯·세계 시간 글꼴을 대시보드와 같은 "Noto Sans KR Variable" 로, 숫자는 tabular-nums, 최소 10px.
+   3) 회사 파일 아이콘을 끌어 올 때 드롭 영역 강조(.jd-drop-hover, 브리지 JS 가 붙인다). */
+
+/* ---- 글꼴 · 색 (대시보드와 통일) ---- */
+body.axsx-preview #sx-board,
+body.axsx-preview #sx-toolbar,
+body.axsx-preview #sx-clocks,
+body.axsx-preview #sx-trash-dialog {
+  font-family: "Noto Sans KR Variable", "Noto Sans KR", "Malgun Gothic", system-ui, sans-serif;
+  font-variant-numeric: tabular-nums;
+}
+body.axsx-preview #sx-board button,
+body.axsx-preview #sx-board input,
+body.axsx-preview #sx-board select,
+body.axsx-preview #sx-trash-dialog button {
+  font-family: inherit;
+}
+body.axsx-preview .sx-card {
+  color: #334155;
+  font-size: 11.5px;
+}
+
+/* ---- 세계 시간: 도시 11px 600 · 시간 15px 700 · 시간대 10px · 칸 너비 고정 (601px 이상) ---- */
+body.axsx-preview #sx-clocks time {
+  font-family: "Noto Sans KR Variable", "Noto Sans KR", system-ui, sans-serif;
+  font-variant-numeric: tabular-nums;
+  color: #1e293b;
+  white-space: nowrap;
+}
+@media (min-width: 601px) {
+  body.axsx-preview #sx-clocks {
+    gap: 8px;
+  }
+  body.axsx-preview #sx-clocks > div {
+    width: 104px;
+    min-width: 104px;
+    box-sizing: border-box;
+    padding: 5px 10px 6px;
+    gap: 0 6px;
+    align-items: baseline;
+    border-color: #e2e8f0;
+    background: #f8fafc;
+  }
+  body.axsx-preview #sx-clocks span {
+    font-size: 11px;
+    font-weight: 600;
+    color: #475569;
+    white-space: nowrap;
+  }
+  body.axsx-preview #sx-clocks small {
+    font-size: 10px;
+    font-weight: 600;
+    color: #94a3b8;
+    text-align: right;
+  }
+  body.axsx-preview #sx-clocks time {
+    font-size: 15px;
+    font-weight: 700;
+    line-height: 1.3;
+    letter-spacing: 0.01em;
+  }
+}
+@media (min-width: 601px) and (max-width: 1150px) {
+  body.axsx-preview #sx-clocks {
+    gap: 5px;
+  }
+  body.axsx-preview #sx-clocks > div {
+    width: 92px;
+    min-width: 92px;
+    padding: 5px 8px;
+  }
+  body.axsx-preview #sx-clocks time {
+    font-size: 13.5px;
+  }
+}
+/* 600px 이하: 위젯의 한 줄 시계 배치(widgets.css)를 그대로 쓰고 글자만 10~11px 이상 */
+@media (max-width: 600px) {
+  body.axsx-preview #sx-clocks span {
+    font-size: 10px;
+    font-weight: 600;
+    color: #475569;
+  }
+  body.axsx-preview #sx-clocks time {
+    font-size: 11px;
+    font-weight: 700;
+  }
+}
+
+/* ---- 도구 막대 ---- */
+body.axsx-preview #sx-toolbar button {
+  font-size: 11px;
+  color: #475569;
+  border-color: #e2e8f0;
+}
+body.axsx-preview #sx-toolbar button[aria-pressed="true"] {
+  color: #2563eb;
+  border-color: #bfdbfe;
+  background: #eff6ff;
+}
+body.axsx-preview .sx-trash-count {
+  font-size: 10px;
+}
+
+/* ---- 위젯 머리: 제목 13px 700 · 영문 소제목 10px · 배지 10px ---- */
+body.axsx-preview .sx-handle h2 {
+  font-size: 13px;
+  font-weight: 700;
+  color: #1e293b;
+  line-height: 1.4;
+}
+body.axsx-preview .sx-handle small {
+  font-size: 10px;
+  font-weight: 600;
+  letter-spacing: 0.08em;
+  color: #94a3b8;
+  line-height: 1.3;
+  margin-bottom: 1px;
+}
+body.axsx-preview .sx-pill {
+  font-size: 10px;
+  font-weight: 600;
+  padding: 2px 6px;
+}
+body.axsx-preview .sx-grip {
+  font-size: 12px;
+  color: #94a3b8;
+}
+body.axsx-preview .sx-card footer {
+  font-size: 10px;
+  line-height: 1.45;
+  color: #64748b;
+  padding: 6px 12px;
+}
+
+/* ---- 주요 환율: 숫자 15px 700 · 등락 11px (오름 rose #E11D48 · 내림 blue #2563EB, index3 색) ---- */
+body.axsx-preview .sx-rate {
+  font-size: 12px;
+  color: #334155;
+  font-weight: 600;
+  padding: 7px 0;
+}
+body.axsx-preview .sx-rate strong {
+  font-size: 15px;
+  font-weight: 700;
+  color: #1e293b;
+  font-variant-numeric: tabular-nums;
+}
+body.axsx-preview .sx-rate small {
+  font-size: 11px;
+  font-weight: 600;
+  min-width: 58px;
+  font-variant-numeric: tabular-nums;
+}
+body.axsx-preview .sx-up {
+  color: #e11d48;
+}
+body.axsx-preview .sx-down {
+  color: #2563eb;
+}
+
+/* ---- 뉴스 · 수출기상도 ---- */
+body.axsx-preview .sx-news-item a,
+body.axsx-preview .sx-news-item strong {
+  font-size: 11.5px;
+  color: #334155;
+  font-weight: 600;
+}
+body.axsx-preview .sx-news-item small {
+  font-size: 10px;
+  color: #64748b;
+}
+body.axsx-preview .sx-weather-meta {
+  font-size: 10px;
+  color: #64748b;
+}
+body.axsx-preview .sx-table table {
+  font-size: 10.5px;
+}
+body.axsx-preview .sx-table th {
+  font-size: 10px;
+  font-weight: 600;
+}
+body.axsx-preview .sx-table td {
+  font-size: 10.5px;
+  color: #334155;
+}
+body.axsx-preview .sx-table td:first-child {
+  font-size: 10px;
+}
+body.axsx-preview .sx-table td.sx-up {
+  color: #e11d48;
+}
+body.axsx-preview .sx-table td.sx-down {
+  color: #2563eb;
+}
+body.axsx-preview .sx-legend {
+  font-size: 10px;
+  color: #64748b;
+}
+body.axsx-preview .sx-empty {
+  font-size: 11px;
+  color: #64748b;
+}
+
+/* ---- 반도체 수출 데이터 위젯 글자 ---- */
+body.axsx-preview .sx-intro {
+  font-size: 11.5px;
+  color: #64748b;
+}
+body.axsx-preview #sx-form label {
+  font-size: 11.5px;
+  font-weight: 600;
+  color: #334155;
+}
+body.axsx-preview #sx-form label small {
+  font-size: 10px;
+  color: #94a3b8;
+}
+body.axsx-preview #sx-form input:not([type="file"]),
+body.axsx-preview #sx-form select {
+  font-size: 12px;
+  color: #1e293b;
+}
+body.axsx-preview #sx-form .sx-company {
+  font-size: 11px;
+  color: #475569;
+  grid-template-columns: 56px 1fr;
+}
+body.axsx-preview #sx-form .sx-company input {
+  font-size: 11.5px;
+}
+body.axsx-preview .sx-tags button {
+  font-size: 10px;
+  color: #475569;
+}
+body.axsx-preview .sx-tags button[aria-pressed="true"] {
+  color: #2563eb;
+  border-color: #93c5fd;
+  background: #eff6ff;
+}
+body.axsx-preview #sx-drop strong {
+  font-size: 12px;
+  font-weight: 600;
+  color: #334155;
+}
+body.axsx-preview #sx-drop small {
+  font-size: 10px;
+  color: #64748b;
+}
+body.axsx-preview #sx-drop button {
+  font-size: 11px;
+  color: #2563eb;
+}
+body.axsx-preview .sx-file-label {
+  font-size: 11px;
+  font-weight: 600;
+  color: #047857;
+}
+body.axsx-preview #sx-error {
+  font-size: 11px;
+}
+body.axsx-preview #sx-sample {
+  font-size: 11px;
+  color: #2563eb;
+}
+body.axsx-preview .sx-primary {
+  font-size: 12px;
+  font-weight: 700;
+  background: #2563eb;
+}
+body.axsx-preview .sx-note {
+  font-size: 10px;
+  color: #64748b;
+  line-height: 1.6;
+}
+body.axsx-preview #sx-trash-dialog .sx-trash-row button,
+body.axsx-preview #sx-original-trash {
+  font-size: 11px;
+}
+
+/* ---- 회사 파일 아이콘을 끌어 올 때 드롭 영역 강조 (테두리 #2563EB, 옅은 파랑) ---- */
+body.axsx-preview #sx-drop.jd-drop-hover,
+body.axsx-preview #sx-drop.sx-over {
+  border: 2px solid #2563eb;
+  background: #eff6ff;
+  box-shadow: 0 0 0 4px #2563eb1f;
+}
+body.axsx-preview .sx-upload.jd-drop-card {
+  box-shadow: 0 0 0 2px #2563eb55, 0 10px 28px #2563eb26;
+}
+
+/* =====================================================================
+   배치 (901px 이상. 900px 이하 한 줄 배치는 widgets.css 그대로)
+   ===================================================================== */
+@media (min-width: 901px) {
+  body.axsx-preview #sx-board {
+    inset: 47px clamp(10px, 1.2vw, 18px) 12px var(--jd-board-left, 140px);
+    overflow: hidden; /* 오른쪽 세로 스크롤바 없음 */
+    padding: 4px;
+  }
+  body.axsx-preview #sx-canvas:not(.sx-free) {
+    height: 100%;
+    min-height: 0;
+    grid-template-columns: minmax(0, 1fr) clamp(280px, 23vw, 400px);
+    /* 환율(내용 높이) · 뉴스(남는 높이, 최소 120px) · 수출기상도(내용 높이까지, 모자라면 줄고 안쪽 스크롤) */
+    grid-template-rows: auto minmax(120px, 1fr) minmax(0, auto);
+    column-gap: clamp(14px, 2.2vw, 48px);
+    row-gap: clamp(6px, 1vh, 10px);
+    align-items: stretch;
+  }
+  /* 오른쪽 열: 주요 환율은 항상 전체, 뉴스·수출기상도는 남는 높이를 나눠 갖고 카드 안쪽만 스크롤 */
+  body.axsx-preview #sx-canvas:not(.sx-free) .sx-fx {
+    align-self: start;
+  }
+  body.axsx-preview #sx-canvas:not(.sx-free) .sx-news,
+  body.axsx-preview #sx-canvas:not(.sx-free) .sx-weather {
+    align-self: stretch;
+    min-height: 0;
+    display: flex;
+    flex-direction: column;
+  }
+  body.axsx-preview #sx-canvas:not(.sx-free):has(.sx-news[hidden]) .sx-weather,
+  body.axsx-preview #sx-canvas:not(.sx-free):has(.sx-weather[hidden]) .sx-news {
+    grid-row: 2 / 4;
+  }
+  body.axsx-preview #sx-canvas:not(.sx-free):has(.sx-fx[hidden]) .sx-news {
+    grid-row: 1 / 3;
+  }
+  body.axsx-preview #sx-canvas:not(.sx-free):has(.sx-fx[hidden]):has(.sx-news[hidden]) .sx-weather {
+    grid-row: 1 / 4;
+  }
+  body.axsx-preview #sx-canvas:not(.sx-free):has(.sx-fx[hidden]):has(.sx-weather[hidden]) .sx-news {
+    grid-row: 1 / 4;
+  }
+  body.axsx-preview #sx-canvas:not(.sx-free) .sx-news .sx-handle,
+  body.axsx-preview #sx-canvas:not(.sx-free) .sx-weather .sx-handle,
+  body.axsx-preview #sx-canvas:not(.sx-free) .sx-news footer,
+  body.axsx-preview #sx-canvas:not(.sx-free) .sx-weather footer,
+  body.axsx-preview #sx-canvas:not(.sx-free) .sx-weather-meta,
+  body.axsx-preview #sx-canvas:not(.sx-free) .sx-legend {
+    flex-shrink: 0;
+  }
+  body.axsx-preview #sx-canvas:not(.sx-free) #sx-news-rows,
+  body.axsx-preview #sx-canvas:not(.sx-free) .sx-weather .sx-table {
+    flex: 1 1 auto;
+    min-height: 0;
+    overflow: auto;
+    scrollbar-width: thin;
+    scrollbar-color: #cbd5e1 transparent;
+    overscroll-behavior: contain;
+  }
+  body.axsx-preview #sx-canvas:not(.sx-free) .sx-weather footer {
+    flex-direction: row;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 2px 8px;
+  }
+  body.axsx-preview #sx-canvas:not(.sx-free) .sx-legend {
+    gap: 3px 7px;
+    padding: 6px 5px;
+  }
+  body.axsx-preview #sx-canvas:not(.sx-free) .sx-weather .sx-table thead th {
+    position: sticky;
+    top: 0;
+    z-index: 1;
+  }
+  /* 가운데: 반도체 수출 데이터 — 화면 높이에 맞춰 여백·드롭 영역을 줄이고, 그래도 모자라면 위젯 안쪽만 스크롤 */
+  body.axsx-preview #sx-canvas:not(.sx-free) .sx-upload {
+    grid-column: 1;
+    grid-row: 1 / 4;
+    align-self: center;
+    justify-self: center;
+    width: min(100%, clamp(440px, 40vw, 640px));
+    margin: 0;
+    max-height: 100%;
+    display: flex;
+    flex-direction: column;
+  }
+  body.axsx-preview .sx-upload .sx-handle {
+    flex-shrink: 0;
+  }
+  body.axsx-preview .sx-upload-body {
+    flex: 1 1 auto;
+    min-height: 0;
+    overflow: auto;
+    scrollbar-width: thin;
+    scrollbar-color: #cbd5e1 transparent;
+    padding: clamp(12px, 2.4vh, 24px) clamp(14px, 1.8vw, 26px);
+  }
+  body.axsx-preview .sx-intro {
+    margin: 0 0 clamp(8px, 1.8vh, 18px);
+    line-height: 1.6;
+  }
+  body.axsx-preview .sx-fields {
+    gap: clamp(8px, 1.2vh, 12px) 12px;
+  }
+  body.axsx-preview #sx-form label {
+    gap: 5px;
+  }
+  body.axsx-preview #sx-form input:not([type="file"]),
+  body.axsx-preview #sx-form select {
+    height: clamp(32px, 4.4vh, 38px);
+  }
+  body.axsx-preview .sx-tags {
+    margin: clamp(6px, 1.1vh, 10px) 0 clamp(8px, 1.4vh, 14px);
+  }
+  body.axsx-preview #sx-form .sx-company {
+    margin-bottom: clamp(8px, 1.4vh, 15px);
+  }
+  body.axsx-preview #sx-drop {
+    min-height: clamp(92px, calc(20vh - 30px), 156px);
+    padding: clamp(8px, 1.4vh, 15px);
+    gap: clamp(4px, 0.8vh, 8px);
+  }
+  body.axsx-preview #sx-drop > i {
+    font-size: clamp(18px, 2.6vh, 23px);
+    padding: clamp(5px, 0.9vh, 8px);
+  }
+  body.axsx-preview .sx-form-actions {
+    margin-top: clamp(8px, 1.4vh, 15px);
+    padding-top: clamp(8px, 1.4vh, 14px);
+  }
+  body.axsx-preview .sx-note {
+    margin-top: clamp(6px, 1.2vh, 14px);
+  }
+  body.axsx-preview .sx-fx .sx-handle,
+  body.axsx-preview .sx-news .sx-handle,
+  body.axsx-preview .sx-weather .sx-handle {
+    min-height: 40px;
+    padding: 6px 10px;
+  }
+  body.axsx-preview .sx-upload .sx-handle {
+    min-height: 44px;
+    padding: 8px 12px;
+  }
+}
+/* 높이가 아주 낮으면(≤760px) 안내 문장 간격을 더 줄인다 (내용은 숨기지 않고, 넘치면 위젯 안쪽 스크롤) */
+@media (min-width: 901px) and (max-height: 760px) {
+  body.axsx-preview .sx-intro {
+    margin-bottom: 8px;
+    line-height: 1.5;
+  }
+  body.axsx-preview .sx-note {
+    line-height: 1.5;
+  }
+}
+
+/* =====================================================================
+   v3 (2026-09-26 밤): juyeon/AXPORT_dashboard_v2_preview.html 의 위젯·글꼴 룩 적용
+   (카드 흰 94% + 19px 모서리 + 옅은 그림자, 34px 아이콘 타일 ↗ ◎ ▥, 영문 소제목 자간 넓게, 14px/800 제목, 둥근 알약 배지,
+    환율 행 = 국가 칩 US→KR + 통화쌍/설명 + 20px 값). 아이콘 타일·국가 칩은 junhee-widgets-bridge.js 가 DOM 에 덧붙인다.
+   juyeon 원본의 8~9px 글자는 이 화면 규칙(최소 10px)에 맞춰 10px 로 올렸다. 외부 글꼴 CDN 은 쓰지 않는다
+   (Pretendard 는 PC 에 설치돼 있을 때만, 없으면 로컬 Noto Sans KR Variable).
+   ===================================================================== */
+body.axsx-preview #sx-board,
+body.axsx-preview #sx-toolbar,
+body.axsx-preview #sx-clocks,
+body.axsx-preview #sx-trash-dialog {
+  font-family: Pretendard, "Noto Sans KR Variable", "Noto Sans KR", -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+  -webkit-font-smoothing: antialiased;
+}
+body.axsx-preview .sx-card {
+  background: rgba(255, 255, 255, 0.94);
+  border: 1px solid rgba(225, 234, 246, 0.95);
+  border-radius: 19px;
+  box-shadow: 0 8px 27px rgba(53, 83, 125, 0.045), 0 1px 4px rgba(45, 60, 95, 0.025);
+  color: #1d2b43;
+}
+body.axsx-preview .sx-editing .sx-card {
+  outline-color: #b9cbe6;
+}
+body.axsx-preview .sx-handle,
+body.axsx-preview .sx-fx .sx-handle,
+body.axsx-preview .sx-news .sx-handle,
+body.axsx-preview .sx-weather .sx-handle,
+body.axsx-preview .sx-upload .sx-handle {
+  background: transparent;
+  border-bottom: 1px solid #e8edf5;
+  gap: 10px;
+  min-height: 0;
+  padding: 14px 16px 12px;
+}
+body.axsx-preview .jd-wicon {
+  width: 34px;
+  height: 34px;
+  border-radius: 10px;
+  display: grid;
+  place-items: center;
+  flex: none;
+  font-size: 19px;
+  font-weight: 650;
+  line-height: 1;
+}
+body.axsx-preview .jd-wicon.fx { background: #eaf1fd; color: #4979be; }
+body.axsx-preview .jd-wicon.news { background: #e7f4f6; color: #3c98a9; }
+body.axsx-preview .jd-wicon.weather { background: #f0eaf9; color: #9676bb; }
+body.axsx-preview .jd-wicon.upload { background: #eaf1fd; color: #4979be; font-size: 18px; }
+body.axsx-preview .sx-grip {
+  font-size: 11px;
+  color: #c3cdda;
+}
+body.axsx-preview .sx-handle small {
+  font-size: 10px;
+  font-weight: 750;
+  letter-spacing: 0.15em;
+  color: #9baabd;
+  margin-bottom: 3px;
+}
+body.axsx-preview .sx-handle h2 {
+  font-size: 14px;
+  font-weight: 800;
+  letter-spacing: -0.03em;
+  color: #1d2b43;
+}
+body.axsx-preview .sx-pill {
+  padding: 5px 9px;
+  border-radius: 50px;
+  font-size: 10px;
+  font-weight: 700;
+  color: #6087b7;
+  background: #eff5fe;
+}
+body.axsx-preview .sx-news .sx-pill { color: #3c94a5; background: #eaf7f8; }
+body.axsx-preview .sx-weather .sx-pill,
+body.axsx-preview .sx-upload .sx-pill { color: #8e83b3; background: #f5f3fa; }
+body.axsx-preview .sx-pill.live { color: #2f8a68; background: #e9f7f2; }
+body.axsx-preview .sx-delete {
+  color: #b3bfcf;
+}
+body.axsx-preview .sx-card footer {
+  border-top: 0;
+  padding: 10px 16px 12px;
+  font-size: 10px;
+  color: #9ba9b9;
+}
+body.axsx-preview .sx-content {
+  padding: 0 16px;
+}
+/* 주요 환율 행 (jyd-fx-row) */
+body.axsx-preview .sx-rate {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 12px 0;
+  border-bottom: 1px solid #e8edf5;
+}
+body.axsx-preview .sx-rate:last-child {
+  border-bottom: 0;
+}
+body.axsx-preview .jd-flag {
+  width: 49px;
+  height: 30px;
+  display: grid;
+  place-items: center;
+  grid-auto-flow: column;
+  gap: 1px;
+  flex: none;
+  border-radius: 7px;
+  background: #f4f7fb;
+  color: #516d95;
+  font-size: 10px;
+  font-weight: 850;
+}
+body.axsx-preview .jd-flag i {
+  font-style: normal;
+  color: #c3cdda;
+}
+body.axsx-preview .jd-fx-meta {
+  display: flex;
+  flex-direction: column;
+  gap: 3px;
+  min-width: 0;
+}
+body.axsx-preview .jd-fx-meta > span:first-child {
+  font-size: 12px;
+  font-weight: 750;
+  color: #1d2b43;
+  white-space: nowrap;
+}
+body.axsx-preview .jd-fx-meta > em {
+  font-style: normal;
+  font-size: 10px;
+  color: #a0aebe;
+  white-space: nowrap;
+}
+body.axsx-preview .sx-rate strong {
+  margin-left: auto;
+  font-size: 20px;
+  font-weight: 800;
+  letter-spacing: -0.05em;
+  color: #273c5b;
+}
+body.axsx-preview .sx-rate small {
+  flex: none;
+  min-width: 56px;
+  text-align: right;
+  font-size: 11px;
+  font-weight: 700;
+}
+/* 뉴스 (jyd-news-list: 선으로 나눈 목록) */
+body.axsx-preview .sx-news-item {
+  background: none;
+  border-radius: 0;
+  margin: 0;
+  padding: 11px 2px;
+  border-bottom: 1px solid #e8edf5;
+}
+body.axsx-preview .sx-news-item a,
+body.axsx-preview .sx-news-item strong {
+  font-size: 11.5px;
+  line-height: 1.52;
+  font-weight: 670;
+  color: #43536b;
+}
+body.axsx-preview .sx-news-item a:hover {
+  color: #356baf;
+}
+body.axsx-preview .sx-news-item small {
+  font-size: 10px;
+  color: #a4b0be;
+  margin-top: 4px;
+}
+/* 수출기상도 표 */
+body.axsx-preview .sx-weather-meta {
+  padding: 10px 16px 8px;
+  color: #8c9bad;
+}
+body.axsx-preview .sx-table {
+  padding: 0 16px;
+}
+body.axsx-preview .sx-table th {
+  background: #f4f7fb;
+  color: #6f7f96;
+  font-weight: 700;
+}
+body.axsx-preview .sx-table td {
+  color: #43536b;
+  border-bottom-color: #e8edf5;
+}
+body.axsx-preview .sx-legend {
+  color: #9ba9b9;
+}
+/* 반도체 수출 데이터 (입력·드롭 영역을 juyeon 톤으로) */
+body.axsx-preview .sx-intro {
+  color: #738199;
+}
+body.axsx-preview #sx-form label {
+  color: #1d2b43;
+  font-weight: 650;
+}
+body.axsx-preview #sx-form input:not([type="file"]),
+body.axsx-preview #sx-form select {
+  border: 1px solid #e2eaf3;
+  border-radius: 10px;
+  background: #fbfcfe;
+  color: #1d2b43;
+}
+body.axsx-preview .sx-tags button {
+  border-radius: 50px;
+  border-color: #e2eaf3;
+  background: #f4f7fb;
+  color: #516d95;
+  padding: 4px 10px;
+}
+body.axsx-preview .sx-tags button[aria-pressed="true"] {
+  color: #28548d;
+  border-color: #a9c1e3;
+  background: #eaf1fd;
+}
+body.axsx-preview #sx-drop {
+  border: 1px dashed #dfe6f0;
+  border-radius: 12px;
+  background: linear-gradient(180deg, #fafbfe 0%, #f6f8fc 100%);
+}
+body.axsx-preview #sx-drop > i {
+  background: #eaf1fd;
+  color: #4979be;
+  border-radius: 10px;
+}
+body.axsx-preview #sx-drop button {
+  border-radius: 50px;
+  background: #eff5fe;
+  color: #28548d;
+  font-weight: 700;
+}
+body.axsx-preview .sx-primary {
+  background: #28548d;
+  border-radius: 10px;
+}
+body.axsx-preview .sx-primary:hover {
+  background: #213f6b;
+}
+body.axsx-preview #sx-sample {
+  color: #28548d;
+  font-weight: 650;
+}
+body.axsx-preview .sx-form-actions {
+  border-top-color: #e8edf5;
+}
+body.axsx-preview .sx-note {
+  color: #9aaabc;
+}
+/* 드롭 강조는 대시보드 색 #2563EB 유지 */
+body.axsx-preview #sx-drop.jd-drop-hover,
+body.axsx-preview #sx-drop.sx-over {
+  border: 2px solid #2563eb;
+  background: #eff6ff;
+}
+
+/* ---- 세계 시간 (juyeon 카드·알약 톤: 흰 카드, 도시 회색 라벨, 시간대 알약, 시간 800 자간 좁게) ---- */
+@media (min-width: 601px) {
+  body.axsx-preview #sx-clocks > div {
+    width: 110px;
+    min-width: 110px;
+    padding: 6px 10px 7px;
+    border: 1px solid #e2eaf3;
+    border-radius: 12px;
+    background: rgba(255, 255, 255, 0.94);
+    box-shadow: 0 1px 4px rgba(45, 60, 95, 0.04);
+    align-items: center;
+    gap: 2px 6px;
+  }
+  body.axsx-preview #sx-clocks span {
+    font-size: 11px;
+    font-weight: 650;
+    color: #738199;
+  }
+  body.axsx-preview #sx-clocks small {
+    justify-self: end;
+    padding: 1px 7px;
+    border-radius: 50px;
+    background: #eff5fe;
+    color: #6087b7;
+    font-size: 10px;
+    font-weight: 700;
+    line-height: 1.5;
+  }
+  body.axsx-preview #sx-clocks time {
+    font-size: 16px;
+    font-weight: 800;
+    letter-spacing: -0.02em;
+    color: #273c5b;
+    line-height: 1.25;
+  }
+}
+@media (min-width: 601px) and (max-width: 1150px) {
+  body.axsx-preview #sx-clocks > div {
+    width: 96px;
+    min-width: 96px;
+    padding: 5px 8px 6px;
+  }
+  body.axsx-preview #sx-clocks time {
+    font-size: 14px;
+  }
+}
+
+/* ---- 위젯을 시계(머리글) 바로 아래까지 옮길 수 있게: 위젯 영역 위쪽 끝을 8px 로 ----
+   자유 배치(편집 모드)는 y=0 이 머리글 바로 아래. 기본 배치에서는 가운데 위젯이 도구 막대(위젯 편집 모드·배치 초기화) 아래에서 가운데 정렬된다. */
+@media (min-width: 901px) {
+  body.axsx-preview #sx-board {
+    top: 8px;
+  }
+  body.axsx-preview #sx-canvas:not(.sx-free) {
+    grid-template-columns: minmax(0, 1fr) clamp(300px, 24vw, 390px);
+    /* 카드가 overflow:hidden 이라 auto 행이 내용보다 작게 줄 수 있다 → 환율 행은 내용 높이(max-content) 고정 */
+    grid-template-rows: max-content minmax(120px, 1fr) minmax(0, auto);
+  }
+  body.axsx-preview .sx-rate {
+    padding: 10px 0;
+  }
+  body.axsx-preview #sx-canvas:not(.sx-free) .sx-upload {
+    margin-top: 44px;
+    max-height: calc(100% - 44px);
+  }
+}
+/* 좁은 폭: 영문 소제목은 한 줄(말줄임), 환율 설명은 값과 겹치지 않게 말줄임 */
+body.axsx-preview .sx-handle > div {
+  min-width: 0;
+}
+body.axsx-preview .sx-handle small {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  letter-spacing: 0.12em;
+}
+body.axsx-preview .jd-fx-meta {
+  flex: 1 1 auto;
+  overflow: hidden;
+}
+body.axsx-preview .jd-fx-meta > em {
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+body.axsx-preview .sx-rate strong {
+  flex: none;
+}
+/* 낮은 화면(높이 800px 이하): 오른쪽 열 카드 머리·행 간격을 줄여 뉴스·수출기상도 목록 공간 확보 */
+@media (min-width: 901px) and (max-height: 800px) {
+  body.axsx-preview .sx-handle,
+  body.axsx-preview .sx-fx .sx-handle,
+  body.axsx-preview .sx-news .sx-handle,
+  body.axsx-preview .sx-weather .sx-handle,
+  body.axsx-preview .sx-upload .sx-handle {
+    padding: 8px 14px 7px;
+  }
+  body.axsx-preview .jd-wicon {
+    width: 28px;
+    height: 28px;
+    border-radius: 9px;
+    font-size: 16px;
+  }
+  body.axsx-preview .sx-handle small {
+    margin-bottom: 1px;
+  }
+  body.axsx-preview .sx-rate {
+    padding: 6px 0;
+  }
+  body.axsx-preview .sx-rate strong {
+    font-size: 17px;
+  }
+  body.axsx-preview .jd-flag {
+    height: 26px;
+    width: 44px;
+  }
+  body.axsx-preview .sx-card footer {
+    padding: 6px 16px 7px;
+  }
+  body.axsx-preview .sx-news-item {
+    padding: 7px 2px;
+  }
+  body.axsx-preview .sx-weather-meta {
+    padding: 6px 16px 4px;
+  }
+  body.axsx-preview .sx-legend {
+    padding: 4px 5px;
+  }
+  body.axsx-preview .sx-table td {
+    padding: 6px 4px;
+  }
+}
+@media (min-width: 901px) and (max-width: 1400px) {
+  body.axsx-preview .sx-rate strong {
+    font-size: 17px;
+  }
+}
+
+/* 자유 배치(편집 모드)에서도 카드 안쪽만 스크롤 — 카드 max-height 는 브리지가 위젯 영역 아래 끝까지로 넣는다 */
+@media (min-width: 901px) {
+  body.axsx-preview #sx-canvas.sx-free .sx-news,
+  body.axsx-preview #sx-canvas.sx-free .sx-weather,
+  body.axsx-preview #sx-canvas.sx-free .sx-fx,
+  body.axsx-preview #sx-canvas.sx-free .sx-upload {
+    display: flex;
+    flex-direction: column;
+  }
+  body.axsx-preview #sx-canvas.sx-free .sx-handle,
+  body.axsx-preview #sx-canvas.sx-free footer,
+  body.axsx-preview #sx-canvas.sx-free .sx-weather-meta,
+  body.axsx-preview #sx-canvas.sx-free .sx-legend {
+    flex-shrink: 0;
+  }
+  body.axsx-preview #sx-canvas.sx-free #sx-news-rows,
+  body.axsx-preview #sx-canvas.sx-free #sx-fx-rows,
+  body.axsx-preview #sx-canvas.sx-free .sx-weather .sx-table {
+    flex: 1 1 auto;
+    min-height: 0;
+    overflow: auto;
+    scrollbar-width: thin;
+    scrollbar-color: #cbd5e1 transparent;
+  }
+}
+
+/* =====================================================================
+   v4 (2026-09-26 밤): 도구 막대를 머리글(세계 시간 오른쪽)로 · 위젯 아이콘을 대시보드 카드 타일 모양으로 ·
+   '반도체 수출 데이터' 위젯을 '기업 데이터 업로드' 창(#upload-dialog)과 같은 형식으로 (구조 변경은 브리지 buildUploadForm)
+   ===================================================================== */
+/* ---- 도구 막대 → 머리글 ---- */
+body.axsx-preview .desktop-header #sx-toolbar.jd-in-header {
+  position: static;
+  top: auto;
+  left: auto;
+  z-index: auto;
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  margin-left: 10px;
+  flex-shrink: 0;
+}
+body.axsx-preview #sx-toolbar.jd-in-header button {
+  height: 38px;
+  min-height: 0;
+  padding: 0 12px;
+  gap: 6px;
+  border-radius: 12px;
+  border: 1px solid #e2e8f0;
+  background: #fff;
+  color: #475569;
+  font-size: 11.5px;
+  font-weight: 600;
+  box-shadow: 0 1px 3px #0f172a0a;
+  white-space: nowrap;
+}
+body.axsx-preview #sx-toolbar.jd-in-header button:hover {
+  background: #f8fafc;
+  color: #0f172a;
+}
+body.axsx-preview #sx-toolbar.jd-in-header button[aria-pressed="true"] {
+  color: #2563eb;
+  border-color: #bfdbfe;
+  background: #eff6ff;
+}
+body.axsx-preview #sx-toolbar.jd-in-header i {
+  font-size: 15px;
+}
+@media (max-width: 1500px) {
+  body.axsx-preview #sx-toolbar.jd-in-header button {
+    width: 38px;
+    padding: 0;
+    justify-content: center;
+  }
+  body.axsx-preview #sx-toolbar.jd-in-header button span {
+    display: none;
+  }
+}
+@media (max-width: 600px) {
+  body.axsx-preview #sx-toolbar.jd-in-header {
+    margin-left: 0;
+  }
+  body.axsx-preview #sx-toolbar.jd-in-header button {
+    width: 30px;
+    height: 30px;
+    border-radius: 9px;
+  }
+}
+/* ---- 위젯 아이콘: 대시보드 카드 타일 (28px · 둥근 8px · 영역 색) ---- */
+body.axsx-preview .jd-wicon {
+  width: 28px;
+  height: 28px;
+  border-radius: 8px;
+  font-size: 14px;
+  box-shadow: 0 1px 2px #0f172a0d;
+}
+body.axsx-preview .jd-wicon.fx { background: #f0f9ff; color: #0284c7; }
+body.axsx-preview .jd-wicon.news { background: #faf5ff; color: #8b5cf6; }
+body.axsx-preview .jd-wicon.weather { background: #fffbeb; color: #d97706; }
+body.axsx-preview .jd-wicon.upload { background: #eff6ff; color: #2563eb; }
+body.axsx-preview .jd-flag {
+  width: 54px;
+  gap: 2px;
+  border-radius: 8px;
+  background: #f8fafc;
+  border: 1px solid #eef1f6;
+  color: #334155;
+  font-weight: 800;
+}
+body.axsx-preview .jd-flag i {
+  font-size: 10px;
+  color: #94a3b8;
+}
+/* ---- '기업 데이터 업로드' 형식 위젯 ---- */
+body.axsx-preview .jd-upload-form .jd-head-text {
+  flex: 1;
+  min-width: 0;
+}
+body.axsx-preview .jd-upload-form .sx-handle .sx-pill,
+body.axsx-preview .jd-upload-form .sx-tags,
+body.axsx-preview .jd-upload-form ~ .sx-note,
+body.axsx-preview .jd-upload-form .sx-note {
+  display: none;
+}
+body.axsx-preview .jd-upload-form #sx-hs[hidden] {
+  display: none !important;
+}
+body.axsx-preview .jd-upload-form .sx-intro {
+  color: #64748b;
+  font-size: 12px;
+}
+body.axsx-preview .jd-upload-form #sx-drop {
+  min-height: 0;
+  padding: clamp(14px, 2.4vh, 24px) 16px;
+  gap: 8px;
+  border: 1px dashed #bbc9e4;
+  border-radius: 12px;
+  background: #f7f9fe;
+}
+body.axsx-preview .jd-upload-form #sx-drop > i {
+  font-size: clamp(26px, 3.6vh, 32px);
+  color: #7192ba;
+  background: none;
+  padding: 0;
+}
+body.axsx-preview .jd-upload-form #sx-drop strong {
+  font-size: 12.5px;
+  font-weight: 600;
+  color: #334155;
+}
+body.axsx-preview .jd-upload-form #sx-drop small {
+  font-size: 10.5px;
+  color: #94a3b8;
+}
+body.axsx-preview .jd-upload-form #sx-drop button {
+  border-radius: 10px;
+  background: #eff6ff;
+  color: #2563eb;
+  padding: 6px 16px;
+}
+body.axsx-preview .jd-upload-form #sx-drop.jd-drop-hover,
+body.axsx-preview .jd-upload-form #sx-drop.sx-over {
+  border: 2px solid #2563eb;
+  background: #eff6ff;
+}
+body.axsx-preview .jd-sx-privacy {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  margin: 8px 0 clamp(6px, 1.4vh, 14px);
+  font-size: 10.5px;
+  color: #94a3b8;
+  line-height: 1.6;
+}
+body.axsx-preview .jd-sx-privacy i {
+  font-size: 13px;
+}
+body.axsx-preview .jd-upload-form .jd-field,
+body.axsx-preview .jd-upload-form #sx-form .sx-company.jd-field {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  margin: 0 0 clamp(8px, 1.4vh, 14px);
+  font-size: 11.5px;
+  font-weight: 600;
+  color: #334155;
+}
+body.axsx-preview .jd-upload-form .sx-fields {
+  grid-template-columns: 1fr 1fr;
+  gap: 14px;
+}
+body.axsx-preview .jd-upload-form .sx-fields .jd-field {
+  margin-bottom: 0;
+}
+body.axsx-preview .jd-upload-form #sx-form input:not([type="file"]),
+body.axsx-preview .jd-upload-form #sx-form select {
+  height: clamp(34px, 4.6vh, 42px);
+  border: 1px solid #dfe5ee;
+  border-radius: 10px;
+  background: #fff;
+  color: #1e293b;
+  font-size: 12px;
+  padding: 0 12px;
+}
+body.axsx-preview .jd-upload-form .jd-field-hint {
+  order: 3;
+  font-size: 10px !important;
+  color: #94a3b8;
+  font-weight: 500;
+}
+body.axsx-preview .jd-upload-form #sx-error {
+  margin: 8px 0 0;
+}
+body.axsx-preview .jd-upload-form .sx-form-actions {
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin-top: clamp(10px, 1.8vh, 16px);
+  padding-top: 12px;
+  border-top: 1px solid #f1f5f9;
+}
+body.axsx-preview .jd-sx-actions-left,
+body.axsx-preview .jd-sx-actions-right {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  flex-wrap: wrap;
+}
+body.axsx-preview .jd-upload-form .jd-sx-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 5px;
+  min-height: 34px;
+  padding: 0 11px;
+  border-radius: 12px;
+  background: transparent;
+  border: 0;
+  color: #64748b;
+  font-size: 11.5px;
+  font-weight: 600;
+  text-decoration: none;
+  cursor: pointer;
+}
+body.axsx-preview .jd-upload-form .jd-sx-btn:hover {
+  background: #f8fafc;
+  color: #334155;
+}
+body.axsx-preview .jd-upload-form .jd-sx-btn i {
+  font-size: 14px;
+}
+body.axsx-preview .jd-upload-form .sx-primary {
+  min-height: 36px;
+  padding: 0 18px;
+  border-radius: 12px;
+  background: #2563eb;
+  font-size: 12px;
+  font-weight: 700;
+}
+body.axsx-preview .jd-upload-form .sx-primary:hover {
+  background: #1d4ed8;
+}
+/* 도구 막대가 머리글로 올라가 위젯 영역 위쪽이 비었으므로 기본 배치의 여백 제거 */
+@media (min-width: 901px) {
+  body.axsx-preview #sx-canvas:not(.sx-free) .sx-upload {
+    margin-top: 0;
+    max-height: 100%;
+  }
+}
+body.axsx-preview .jd-upload-form .jd-field,
+body.axsx-preview .jd-upload-form #sx-form .sx-company.jd-field {
+  align-items: stretch;
+  text-align: left;
+}
+
+/* =====================================================================
+   v5 (2026-09-26 밤): 세계 시간 + 위젯 편집 버튼을 머리글 정중앙에 · 위젯 크기 조절 모서리
+   ===================================================================== */
+/* 좁은 화면(1280px 미만)은 감싼 묶음을 없는 것처럼(display: contents) 두어 기존 흐름 배치를 쓴다 */
+body.axsx-preview .desktop-header .jd-header-center {
+  display: contents;
+}
+@media (min-width: 1280px) {
+  body.axsx-preview .desktop-header .jd-header-center {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 1;
+  }
+  body.axsx-preview .desktop-header .jd-header-center #sx-clocks,
+  body.axsx-preview .desktop-header .jd-header-center #sx-toolbar.jd-in-header {
+    margin-left: 0;
+  }
+}
+/* 크기 조절 모서리 (편집 모드에서만 보임) */
+body.axsx-preview #sx-canvas:not(.sx-free) .sx-card {
+  position: relative;
+}
+body.axsx-preview .jd-resize {
+  position: absolute;
+  right: 4px;
+  bottom: 4px;
+  z-index: 3;
+  width: 22px;
+  height: 22px;
+  display: none;
+  place-items: center;
+  border-radius: 7px;
+  background: #ffffffe6;
+  border: 1px solid #e2e8f0;
+  color: #64748b;
+  font-size: 12px;
+  cursor: nwse-resize;
+  touch-action: none;
+}
+body.axsx-preview .jd-resize i {
+  transform: rotate(90deg);
+}
+body.axsx-preview .sx-editing .jd-resize {
+  display: grid;
+}
+body.axsx-preview .jd-resize:hover,
+body.axsx-preview .jd-resize:focus-visible {
+  color: #2563eb;
+  background: #eff6ff;
+  border-color: #bfdbfe;
+  outline: none;
+}
+body.axsx-preview .sx-card.jd-resizing {
+  user-select: none;
+  box-shadow: 0 0 0 2px #2563eb55, 0 12px 30px #1e3a8a1f;
+}
+@media (max-width: 900px) {
+  body.axsx-preview .jd-resize {
+    display: none !important;
+  }
+}
+/* 편집 모드: 크기 조절 모서리와 카드 아래 글자가 겹치지 않게 */
+body.axsx-preview .sx-editing .sx-card footer,
+body.axsx-preview .sx-editing .jd-upload-form .sx-form-actions {
+  padding-right: 28px;
+}
+
+/* v6: 시계 막대 자체를 화면 정중앙에 두고, 위젯 편집 버튼은 시계 오른쪽에 붙인다 (묶음 폭 = 시계 폭) */
+@media (min-width: 1280px) {
+  body.axsx-preview .desktop-header .jd-header-center #sx-toolbar.jd-in-header {
+    position: absolute;
+    left: calc(100% + 10px);
+    top: 50%;
+    transform: translateY(-50%);
+  }
+}
+@media (min-width: 1280px) and (max-width: 1439px) {
+  body.axsx-preview #sx-clocks > div {
+    width: 100px;
+    min-width: 100px;
+    padding: 6px 9px 7px;
+  }
+  body.axsx-preview #sx-clocks time {
+    font-size: 15px;
+  }
+}
+/* 기본 배치의 '기업 데이터 업로드' 위젯: 화면 가로 정중앙으로 옮기는 값(--jd-upload-shift)은 브리지가 계산 */
+@media (min-width: 901px) {
+  body.axsx-preview #sx-canvas:not(.sx-free) .sx-upload {
+    transform: translateX(var(--jd-upload-shift, 0px));
+  }
+}

@@ -1,0 +1,170 @@
+{
+ "fx": {
+  "rows": [
+   {
+    "pair": "USD/KRW",
+    "value": 1360.0,
+    "change": -1.76
+   },
+   {
+    "pair": "USD/CNY",
+    "value": 6.6903,
+    "change": 0.04
+   },
+   {
+    "pair": "EUR/KRW",
+    "value": 1556.93,
+    "change": -1.9
+   }
+  ],
+  "as_of": "2026-09-23",
+  "previous": "2026-09-22",
+  "source": "한국은행 ECOS 매매기준율",
+  "source_en": "Bank of Korea ECOS (base rate)",
+  "frequency": "daily",
+  "fetched_at": "2026-09-27T10:05:16+00:00"
+ },
+ "weather": {
+  "rows": [
+   {
+    "id": "memory",
+    "hs": [
+     "854232"
+    ],
+    "exports_million_usd": 184618,
+    "yoy": 244.6,
+    "previous_million_usd": 53580
+   },
+   {
+    "id": "processor",
+    "hs": [
+     "854231"
+    ],
+    "exports_million_usd": 27803,
+    "yoy": 14.1,
+    "previous_million_usd": 24374
+   },
+   {
+    "id": "other",
+    "hs": [
+     "854233",
+     "854239",
+     "854290"
+    ],
+    "exports_million_usd": 7532,
+    "yoy": 1.9,
+    "previous_million_usd": 7392
+   },
+   {
+    "id": "device",
+    "hs": [
+     "8541"
+    ],
+    "exports_million_usd": 2645,
+    "yoy": 18.3,
+    "previous_million_usd": 2236
+   }
+  ],
+  "period": "2026.01~2026.08",
+  "compare": "2025.01~2025.08",
+  "as_of": "2026-08",
+  "source": "관세청 품목별 국가별 수출입실적(전체 국가 합계)",
+  "source_en": "Korea Customs Service trade statistics",
+  "fetched_at": "2026-09-27T10:05:24+00:00"
+ },
+ "news": {
+  "ko": {
+   "rows": [
+    {
+     "title": "반도체 ETF '고공행진'…소부장도 상위권 점령",
+     "source": "hankyung.com",
+     "url": "https://news.google.com/rss/articles/CBMiWkFVX3lxTFBpSkd1amJ6YmZEX0xjQnk0bWxUNkxIN2JvMkNnY1FpWWNXUU5TdFFnZFZLUWV4VFBEbHpPLXhZUkhGWS1iNUVKYWxZenFaaVpEcEhzUGU3bndlQQ?oc=5",
+     "published_at": "2026-09-27T08:32+00:00"
+    },
+    {
+     "title": "미중 회담서 빠진 반도체 합의…K메모리 '안도 반 긴장 반'",
+     "source": "edaily.co.kr",
+     "url": "https://news.google.com/rss/articles/CBMigAFBVV95cUxQY2JKRnoyQWxZbzRrRi1IT1E5VnRxZUpKWkxHNnFfR3lHbzliNUFqZ016RkhZSUFuc3lHTm9FV01EQUVLZmNzalJfRVoxSGQybmVObG9WT2xUWFUzanlwZTFrX3RzWXNsUExvek82aDlEaF91OGI2NjE0dTdjLXBPMA?oc=5",
+     "published_at": "2026-09-27T08:11+00:00"
+    },
+    {
+     "title": "겉으론 \"성공적 회담\"…AI·반도체·대만 문제엔 '딴 생각'",
+     "source": "hankyung.com",
+     "url": "https://news.google.com/rss/articles/CBMiWkFVX3lxTE1tOFNzcHJaemV0TFkxM0R2UkxZV1doa2pkX0dnTWYtZTBmVkVEYXlkYlU5X2lDOGNuV1RRUnhBSHpLcDlEVXVaTjMxUjc0YWF4dHV0d0t6MUhSZw?oc=5",
+     "published_at": "2026-09-27T07:59+00:00"
+    }
+   ],
+   "source": "Google 뉴스 RSS"
+  },
+  "en": {
+   "rows": [
+    {
+     "title": "China Highlights Eight Summit Achievements, Trade Truce Extended Two Months",
+     "source": "조선일보",
+     "url": "https://news.google.com/rss/articles/CBMihAFBVV95cUxOMy14QzJSLTVlTTZoSDFXWFpybjQxaElkczcxbHpmOGVObXpoZlNUb2liX3B0WlpqcTBqb28tXzM5dU9ZU3NJRnJyY1E1Vy1ranFFVGVyWmZwQy1WZk1ZcGZ4N1hZTHJoSHdMMTNuNGJsTTA0SDFvLTFZSDBwbkhtNG5JZ0E?oc=5",
+     "published_at": "2026-09-27T02:16+00:00"
+    },
+    {
+     "title": "AI Semiconductor Market to Reach KRW 1,200 Trillion... \"Next 3-5 Years Will Be Critical for Korean Companies' Survival\"",
+     "source": "아시아경제",
+     "url": "https://news.google.com/rss/articles/CBMiZEFVX3lxTFA1T1pQczlqS3VPczF0Yk5pckR2dWh5clBxRl9FdkRtcHZxZ2JKT0l2UTZqOFNGRnY2QXZNck1wVm8tYW5fNWY5bnpETnowNW1Ic1V4SEdXU3QzaVhKaTlzbHJpdVM?oc=5",
+     "published_at": "2026-09-27T00:14+00:00"
+    },
+    {
+     "title": "US export controls on chips were not a key topic at Xi-Trump summit — South China Morning Post",
+     "source": "UA.NEWS",
+     "url": "https://news.google.com/rss/articles/CBMiywFBVV95cUxNbS1KaXBuaGhmOGY3MDNxbGdJTGlFVFhZdENoSEhoSk9TM3JXa0tZWXp3elp4bzZfR2Vqb2N1dXFLODlGcEdKSTJ0OUN3UlNwcFlrbTN4a1BnMVIwX3NsUWtMOEN0eFhIcUY4WFVxLVR6VW1VeTI1REJhNk9sTklDeFhsemhjUVRZaWNHSlEwSEFiWnp0ZjJnSmVDREpHVjVVdGpYUXNsUXhwYTlDRExTTkFLZzhfczVoN2I3SDBmSVF6cDJCWXhlN2ltQQ?oc=5",
+     "published_at": "2026-09-26T19:10+00:00"
+    }
+   ],
+   "source": "Google 뉴스 RSS"
+  },
+  "ja": {
+   "rows": [
+    {
+     "title": "2026年9月の米中首脳会談で何が変わった？ 中国ビジネス界の読み方から見る関税・AI・半導体・レアアース",
+     "source": "note",
+     "url": "https://news.google.com/rss/articles/CBMiVEFVX3lxTE5JR1FLeU94c0JiRXVEcWFtLUpKNE1qTlhPMmppX3ZsWjZZbDRLcTJsb1NmZlFNam5kQVdwS1NJNFl0U2UwN1VsWkpReGlWNFdMRGlrZg?oc=5",
+     "published_at": "2026-09-27T09:10+00:00"
+    },
+    {
+     "title": "データセンター向けAI半導体、2030年に8,600億ドル規模へ…推論市場が勝負どころ",
+     "source": "BigGo ファイナンス",
+     "url": "https://news.google.com/rss/articles/CBMidEFVX3lxTE9wR0NwU3hGQUZCZ2JJMkRBdGw4d1ZSZmpTN2dmdFhWUEZSX3FFMFY2SE9lZmdnRENkUnlWZXV6ekJtTFRIWi0zRnVIQjV3QTNrRzE5LVVPOUY3YTRtakpSdml0d2p1VmlTanJLU1pGZ0dRRGVz?oc=5",
+     "published_at": "2026-09-27T07:35+00:00"
+    },
+    {
+     "title": "【米中首脳会談】ＡＩ管理、議論深まらず 競争優先で対話へ",
+     "source": "沖縄タイムス社",
+     "url": "https://news.google.com/rss/articles/CBMiXkFVX3lxTE9BYmd1bGFOelREZTBhVnZ4WXcxajFwOGc3ZjRQZ2xvMmNXdG1lS19pNHpOUTFKeFJZSmQ0T2dXMTJxc19LbzdKSTM2NHpKRmhHN2RJUjdDb1pfOEdrRWc?oc=5",
+     "published_at": "2026-09-27T01:10+00:00"
+    }
+   ],
+   "source": "Google 뉴스 RSS"
+  },
+  "zh": {
+   "rows": [
+    {
+     "title": "在当地时间24日至25日举行的美国总统唐纳德·特朗普与中国国家主席习近平的美中首脑会谈上,两国元首发布了反对“国际水道通行费”的共同立场,引发了人们对围绕霍尔木兹海峡的中东局势是否会发生变化的关注。",
+     "source": "매일경제",
+     "url": "https://news.google.com/rss/articles/CBMiT0FVX3lxTE1rTnBRWnFZTE9kbXVKZFEya1ZUTEJ2NDZxUUY3Y1dONXh1WWVDWXFfZ2VTTEV4YmV4MGZIaXBCSHpWTmxudDMyVktrSzZVcEU?oc=5",
+     "published_at": "2026-09-27T08:04+00:00"
+    },
+    {
+     "title": "“芯片问题未随这对表亲上主桌，中国内功更强了”",
+     "source": "手机新浪网",
+     "url": "https://news.google.com/rss/articles/CBMifkFVX3lxTFBZWDU3Ykw5TnRHYURKYkFXRzJUZEhLUllwRzhhYjg0M3kwbTFFRnhJNVF5NHIybEFXY2sxUVh6NzNiQ245Rndlbk8wY2NoUzI3X2QzTEQ4NVdSdDhWaHJwMkEtZTVoSmRLNFIxZmc3amtLZTZuX0I3dF80dThTdw?oc=5",
+     "published_at": "2026-09-27T06:13+00:00"
+    },
+    {
+     "title": "4权威专家看衰川习会 川普心中的G2意思是…",
+     "source": "aboluowang.com",
+     "url": "https://news.google.com/rss/articles/CBMiY0FVX3lxTE1VWFNKRHgyYnVFQjVGTWJFa3REVEFKZ3M3VkdZcXYtWmFLRFdQRl9KMjV3Sm51ZXhVaTFtcHJueHdtYlZFUkprcUJzaGlhZVhZdERROGg4ejk2WXd5U0E3MV9Xb9IBY0FVX3lxTE1VWFNKRHgyYnVFQjVGTWJFa3REVEFKZ3M3VkdZcXYtWmFLRFdQRl9KMjV3Sm51ZXhVaTFtcHJueHdtYlZFUkprcUJzaGlhZVhZdERROGg4ejk2WXd5U0E3MV9Xbw?oc=5",
+     "published_at": "2026-09-27T03:05+00:00"
+    }
+   ],
+   "source": "Google 뉴스 RSS"
+  },
+  "fetched_at": "2026-09-27T10:05:28+00:00"
+ }
+}

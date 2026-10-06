@@ -1,0 +1,43 @@
+{#- (junhee) 2026-09-27 로그인한 계정 정보·로그아웃 창. workspace.html 에 include. 기존 .modal·.button 클래스만 사용 -#}
+{#- (2026-10-05) 로그인 없이 쓰는 방문자: 계정 창 없이 세션 방문자 id 와 CSRF 만 넘긴다 -#}
+{% if junhee_user and junhee_user.visitor %}
+<div id="junhee-account" hidden data-user-id="{{ junhee_user.id }}" data-email="" data-csrf="{{ junhee_csrf }}" data-visitor="1"></div>
+{% elif junhee_user %}
+<div id="junhee-account" hidden data-user-id="{{ junhee_user.id }}" data-email="{{ junhee_user.email }}" data-csrf="{{ junhee_csrf }}"></div>
+<dialog id="account-dialog" class="modal small">
+  <div class="modal-title">
+    <div>
+      <span class="eyebrow">ACCOUNT</span>
+      <h2>내 계정</h2>
+    </div>
+    <button class="icon-btn modal-close" aria-label="닫기">
+      <i class="ph ph-x"></i>
+    </button>
+  </div>
+  <p class="modal-description">{{ junhee_user.email }} 로 로그인했습니다.</p>
+  <div class="demo-notice">
+    바탕화면의 파일·폴더 정리와 파일별 분석 조건·분석 결과가 이 계정에 저장되어, 다시 로그인하면 그대로 불러옵니다.
+  </div>
+  {#- (junhee) 2026-09-29 비밀번호 변경: 메일 인증 없이 바로 바뀐다. 서버: POST /api/auth/password -#}
+  <form id="password-form" novalidate>
+    <input type="text" name="username" value="{{ junhee_user.email }}" autocomplete="username" hidden />
+    <label class="field">새 비밀번호<input type="password" name="password" id="new-password" minlength="8" maxlength="128" autocomplete="new-password" required /><small>8자 이상, 대문자·소문자·숫자·기호를 섞으면 안전합니다.</small></label>
+    <label class="field">새 비밀번호 확인<input type="password" name="password_confirm" id="new-password-confirm" minlength="8" maxlength="128" autocomplete="new-password" required /></label>
+    <p class="form-error" id="password-status" role="status" aria-live="polite" hidden></p>
+    <div class="modal-actions">
+      <button type="submit" class="button secondary" id="password-submit">
+        <i class="ph ph-key"></i>비밀번호 변경
+      </button>
+    </div>
+  </form>
+  <form method="post" action="/auth/logout">
+    <input type="hidden" name="csrf_token" value="{{ junhee_csrf }}" />
+    <div class="modal-actions">
+      <a class="button secondary" href="/">홈으로</a
+      ><button type="submit" class="button primary">
+        <i class="ph ph-sign-out"></i>로그아웃
+      </button>
+    </div>
+  </form>
+</dialog>
+{% endif %}

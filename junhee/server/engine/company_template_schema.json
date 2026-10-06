@@ -1,0 +1,22 @@
+{
+  "version": "company-simple-v2",
+  "sheet": "간편입력",
+  "marker": "AXPORT 간편입력 v2",
+  "header_row": 5,
+  "fields": [
+    {"id": "product_name", "label": "제품명", "row": 7, "type": "text", "required": true, "help": "수출할 제품명 또는 모델명", "example": "산업용 메모리 A"},
+    {"id": "product_description", "label": "제품 설명", "row": 8, "type": "text", "required": true, "help": "반도체 종류·용도·핵심사양을 짧게 작성", "example": "메모리 / 산업용 제어장치 / 용량·전압 등"},
+    {"id": "manufacturing_country", "label": "제조국", "row": 9, "type": "text", "help": "실제 제조국. 모르면 빈칸", "example": "대한민국"},
+    {"id": "unit", "label": "판매단위", "row": 10, "type": "unit", "help": "아래의 가격·수량에 공통 적용하는 단위", "example": "개 또는 웨이퍼"},
+    {"id": "unit_cost", "label": "단위원가", "row": 13, "type": "number", "currency": "cost_currency", "help": "판매단위 1단위의 제품원가. 옆 칸에 통화 선택", "example": "1500 / KRW"},
+    {"id": "desired_price", "label": "희망판매단가", "row": 14, "type": "number", "currency": "price_currency", "help": "판매단위 1단위의 희망가격. 옆 칸에 통화 선택", "example": "2.5 / USD"},
+    {"id": "desired_quantity", "label": "희망수출수량", "row": 15, "type": "number", "help": "주문이 없어도 희망하는 수출수량을 입력", "example": "10000"},
+    {"id": "basis_date", "label": "작성기준일", "row": 18, "type": "date", "required": true, "help": "원가·희망가격·공급계획을 작성한 기준일", "example": "2026-09-27"},
+    {"id": "supply_quantity_30d", "label": "30일 공급가능수량", "row": 19, "type": "number", "help": "기준일부터 30일간 출고할 수 있는 총량. 가용재고 포함", "example": "12000"},
+    {"id": "preparation_days", "label": "출고준비기간(일)", "row": 20, "type": "number", "help": "주문 후 생산·검사·포장까지. 해외 운송기간은 제외", "example": "20"},
+    {"id": "trade_terms", "label": "희망거래조건", "row": 23, "type": "text", "optional": true, "help": "알고 있는 경우만 조건과 장소를 작성", "example": "FCA 인천공항"},
+    {"id": "datasheet_reference", "label": "사양서 파일명", "row": 24, "type": "text", "optional": true, "help": "보유 사양서의 파일명. 파일 자체가 첨부되지는 않음", "example": "제품A_사양서.pdf"},
+    {"id": "certification_statement", "label": "보유 인증·시험자료", "row": 25, "type": "text", "optional": true, "help": "실제 보유 자료명만 작성. 인증 적용·유효성 확인과 구분", "example": "보유 인증서 또는 시험성적서 이름"},
+    {"id": "additional_notes", "label": "추가 설명", "row": 26, "type": "text", "optional": true, "help": "원가 포함 범위, 확정·예상 여부 등 보충할 내용", "example": "원가에 포장비 포함 / 생산물량은 예상"}
+  ]
+}

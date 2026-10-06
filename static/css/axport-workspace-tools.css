@@ -1,0 +1,166 @@
+/* (junhee) 2026-09-28 juyeon/static/css/axport-workspace-v08.css 에서 세계 시계 추가·삭제, ⚙️위젯 메뉴, 테마 규칙만 발췌.
+   원본 줄을 그대로 옮겼다. 기존 화면 배치·대시보드 카드·언어 선택 상자·폴더 메뉴·다크 테마 규칙은 가져오지 않았다.
+   언어 선택 상자와 묶인 선택자는 #axp-widget-toggle 만 남겼다. 기존 시계 줄·머리글 간격을 바꾸는 규칙(원본 21·46·184~188·196행)도 뺐다. '라이트' 테마는 data-axp-theme 속성이 없어 기존 화면 그대로다. */
+/* 위젯 메뉴 (원본 3~19행) */
+body.axsx-preview #sx-toolbar #sx-edit,body.axsx-preview #sx-toolbar #sx-reset {display:none!important}
+body.axsx-preview .axp-widget-dropdown {position:relative;display:flex;align-items:center}
+body.axsx-preview .axp-widget-menu, .axp-clock-menu {position:absolute;min-width:172px;padding:6px;background:var(--axp-surface,#fff);border:1px solid var(--axp-line,#dae3ef);border-radius:12px;box-shadow:0 14px 35px #0d264529;z-index:190;color:var(--axp-ink,#334155)}
+body.axsx-preview .axp-widget-menu {top:calc(100% + 8px);right:0}
+body.axsx-preview .axp-widget-menu[hidden],.axp-clock-menu[hidden] {display:none!important}
+body.axsx-preview .axp-widget-menu button,body.axsx-preview .axp-widget-menu select,.axp-clock-menu button {
+  display:block;width:100%;height:auto;min-height:35px;padding:8px 10px;text-align:left;font-size:12px;
+  background:transparent;color:var(--axp-ink,#334155);border:0;border-radius:7px;box-shadow:none;white-space:normal;
+}
+body.axsx-preview .axp-widget-menu button:hover,.axp-clock-menu button:hover {background:var(--axp-wash,#edf5ff)}
+body.axsx-preview .axp-widget-menu label {display:block;padding:9px 10px 4px;font-size:11px;color:var(--axp-muted,#64748b)}
+body.axsx-preview .axp-widget-menu select {border:1px solid var(--axp-line,#dae3ef);background:var(--axp-surface,#fff)}
+/* 세계 시계 + 추가 버튼·지역 선택 (원본 20~26, 46~47행) */
+.axp-clock-menu {position:fixed;z-index:250}
+body.axsx-preview #sx-clocks>.axp-clock {flex:0 0 auto;cursor:context-menu}
+body.axsx-preview #sx-clocks>.axp-clock:focus-visible {outline:2px solid var(--axp-accent,#2563eb);outline-offset:2px}
+body.axsx-preview #sx-clocks>.axp-clock-plus {flex:0 0 auto;width:28px;height:28px;display:grid;place-items:center;border:1px solid var(--axp-line,#dbe5ef);border-radius:9px;background:var(--axp-surface,#fff);font-weight:700;color:var(--axp-ink,#334155);font-size:18px;cursor:pointer}
+body.axsx-preview #sx-clocks>.axp-clock-select {display:none;position:absolute;top:calc(100% + 7px);right:0;z-index:160;width:200px;max-width:80vw;padding:8px;border:1px solid var(--axp-line,#dbe5ef);border-radius:9px;background:var(--axp-surface,#fff);color:var(--axp-ink,#334155);box-shadow:0 12px 24px #122b4730}
+body.axsx-preview #sx-clocks>.axp-clock-select.open {display:block}
+@media (max-width:600px){body.axsx-preview .axp-widget-dropdown .axp-widget-menu{right:0;max-width:80vw}}
+/* 테마 (원본 48~70, 83행 · 라이트·다크 제외) */
+body.axsx-preview[data-axp-theme="blue"]   {--axp-accent:#2563eb;--axp-wash:#ecf4ff;--axp-bg:#edf3fb;--axp-surface:#fff;--axp-line:#d7e4f5;--axp-ink:#243b58;--axp-muted:#62758d}
+body.axsx-preview[data-axp-theme="pink"]   {--axp-accent:#ad347b;--axp-wash:#fff0f8;--axp-bg:#fbf0f7;--axp-surface:#fffafd;--axp-line:#eecddd;--axp-ink:#532544;--axp-muted:#81596f}
+body.axsx-preview[data-axp-theme="green"]  {--axp-accent:#167b62;--axp-wash:#ecfbf4;--axp-bg:#edf9f2;--axp-surface:#fcfffd;--axp-line:#bfe4d0;--axp-ink:#234c40;--axp-muted:#55796c}
+body.axsx-preview[data-axp-theme="yellow"] {--axp-accent:#97701a;--axp-wash:#fffae8;--axp-bg:#fcf7e9;--axp-surface:#fffefa;--axp-line:#eddfaa;--axp-ink:#5a4825;--axp-muted:#82724d}
+body.axsx-preview[data-axp-theme="purple"] {--axp-accent:#7151b6;--axp-wash:#f4f0ff;--axp-bg:#f3f0fb;--axp-surface:#fefcff;--axp-line:#dcd1f0;--axp-ink:#3d325c;--axp-muted:#716889}
+body.axsx-preview[data-axp-theme] #desktop {background:var(--axp-bg)!important}
+body.axsx-preview[data-axp-theme] .desktop-header {background:var(--axp-surface);border-color:var(--axp-line);color:var(--axp-ink)}
+body.axsx-preview[data-axp-theme] #sx-clocks>.axp-clock,body.axsx-preview[data-axp-theme] #sx-clocks>.axp-clock-plus {background:var(--axp-surface);border-color:var(--axp-line)}
+body.axsx-preview[data-axp-theme] #sx-clocks span,body.axsx-preview[data-axp-theme] #sx-clocks time {color:var(--axp-ink)}
+body.axsx-preview[data-axp-theme] #sx-clocks small {color:var(--axp-accent);background:var(--axp-wash)}
+body.axsx-preview[data-axp-theme] #sx-canvas .sx-card {background:var(--axp-surface);color:var(--axp-ink);border-color:var(--axp-line)}
+body.axsx-preview[data-axp-theme] #sx-canvas .sx-handle,body.axsx-preview[data-axp-theme] #sx-canvas .sx-card footer {background:var(--axp-wash);border-color:var(--axp-line)}
+body.axsx-preview[data-axp-theme] #sx-canvas .sx-handle h2,body.axsx-preview[data-axp-theme] #sx-canvas .sx-content,body.axsx-preview[data-axp-theme] #sx-canvas .sx-rate strong,body.axsx-preview[data-axp-theme] #sx-canvas .sx-table td,body.axsx-preview[data-axp-theme] #sx-canvas .sx-table th {color:var(--axp-ink)}
+body.axsx-preview[data-axp-theme] #sx-canvas input,body.axsx-preview[data-axp-theme] #sx-canvas select {border-color:var(--axp-line);background:var(--axp-surface);color:var(--axp-ink)}
+body.axsx-preview[data-axp-theme] #sx-canvas .sx-primary {background:var(--axp-accent);color:var(--axp-theme-button,#fff)}
+body.axsx-preview[data-axp-theme="yellow"] #sx-canvas .sx-primary {--axp-theme-button:#171b24}
+body.axsx-preview[data-axp-theme] .analysis-window {border-color:var(--axp-line);background:var(--axp-surface)}
+body.axsx-preview[data-axp-theme] .analysis-window .window-titlebar,body.axsx-preview[data-axp-theme] .analysis-window .window-sidebar,body.axsx-preview[data-axp-theme] .analysis-window .context-bar {background:var(--axp-wash);border-color:var(--axp-line)}
+body.axsx-preview[data-axp-theme] .analysis-window .window-main {background:var(--axp-surface);color:var(--axp-ink)}
+body.axsx-preview[data-axp-theme] .analysis-window .jd-card,body.axsx-preview[data-axp-theme] .analysis-window .jd-panel {border-color:var(--axp-line)}
+body.axsx-preview[data-axp-theme] #sx-clocks .axp-clock-plus{color:var(--axp-ink)}
+/* 시계 선택 창·머리글 (원본 176~190행) */
+/* v0.8.1 follow-up: body-level timezone selector stays visible outside the clipped clock strip. */
+body.axsx-preview #axp-clock-select.axp-clock-select {
+  display:none;position:fixed;z-index:10000;width:200px;max-width:calc(100vw - 16px);
+  padding:8px;border:1px solid var(--axp-line,#dbe5ef);border-radius:9px;
+  background:var(--axp-surface,#fff);color:var(--axp-ink,#334155);
+  box-shadow:0 12px 24px #122b4730;
+}
+body.axsx-preview #axp-clock-select.axp-clock-select.open {display:block;}
+body.axsx-preview #sx-clocks>.axp-clock:focus-visible {outline-offset:-2px;}
+body.axsx-preview #sx-clocks>.axp-clock-plus[hidden] {display:none!important;}
+/* 머리글 오른쪽: 위젯 버튼 (원본 196~201, 203~211, 220~221, 231~234행) */
+body.axsx-preview .desktop-header .header-right > .axp-widget-dropdown {order:0;flex:0 0 auto;position:relative;z-index:210;}
+body.axsx-preview .desktop-header .header-right > .workspace-language-control {order:1;flex:0 0 auto;}
+body.axsx-preview .desktop-header .header-right > #help-btn {order:2;}
+body.axsx-preview .desktop-header .header-right > #profile-btn {order:3;}
+body.axsx-preview #sx-toolbar.jd-in-header {display:none!important;}
+body.axsx-preview .desktop-header .header-right #axp-widget-toggle {
+ display:inline-flex;align-items:center;justify-content:center;gap:6px;
+ width:auto;min-width:86px;height:38px;max-height:38px;padding:0 12px;
+ border:1px solid var(--axp-line,#dae3ef);border-radius:12px;
+ background:var(--axp-surface,#fff);color:var(--axp-ink,#334155);
+ font-family:inherit;font-size:12px;font-weight:600;line-height:1.25;box-shadow:0 1px 3px #0f172a10;
+ white-space:nowrap;box-sizing:border-box;
+}
+body.axsx-preview .desktop-header .header-right #axp-widget-toggle {max-width:150px;}
+body.axsx-preview .desktop-header .header-right .axp-widget-menu {z-index:250;}
+@media(max-width:1100px) {
+ body.axsx-preview .desktop-header .header-right #axp-widget-toggle {min-width:38px;width:38px;padding:0;gap:0;}
+ body.axsx-preview .desktop-header .header-right #axp-widget-toggle span,
+ body.axsx-preview .desktop-header .header-right #axp-widget-toggle .ph-caret-down {display:none;}
+}
+/* 위젯 버튼 모양 (원본 628~648, 660~663행) */
+body.axsx-preview .desktop-header .header-right #axp-widget-toggle {
+  height:38px!important;min-height:38px!important;max-height:38px!important;
+  border-radius:12px!important;box-sizing:border-box!important;
+  border:1px solid var(--axp-line,#d7e4f5)!important;
+  background:var(--axp-surface,#fff)!important;color:var(--axp-ink,#243b58)!important;
+}
+body.axsx-preview .desktop-header .header-right #axp-widget-toggle {
+  display:inline-flex!important;justify-content:flex-start!important;align-items:center!important;
+  padding:0 0 0 12px!important;gap:7px!important;
+}
+body.axsx-preview .desktop-header .header-right #axp-widget-toggle > i.ph-caret-down {
+  display:grid!important;place-items:center!important;flex:0 0 31px!important;
+  box-sizing:border-box!important;align-self:stretch!important;width:31px!important;max-width:31px!important;height:auto!important;
+  padding:0!important;margin:0 0 0 auto!important;
+  border-left:0!important; /* v0.8.7: no separator between caption and dropdown arrow */
+  border-radius:0 11px 11px 0!important;
+  font-size:14px!important;color:var(--axp-ink,#243b58)!important;
+}
+@media(max-width:600px){
+ body.axsx-preview .desktop-header .header-right #axp-widget-toggle{min-width:48px!important;width:48px!important;padding-left:5px!important;gap:0!important;}
+ body.axsx-preview .desktop-header .header-right #axp-widget-toggle > i.ph-caret-down {width:19px!important;flex-basis:19px!important;}
+}
+/* (junhee) 2026-09-28 시계가 많아 머리글 버튼과 겹칠 때 (axport-workspace-tools.js fitClocks 가 클래스를 붙인다) */
+body.axsx-preview #sx-clocks.axp-clocks-compact > div {width:auto;min-width:0;padding-left:8px;padding-right:8px}
+body.axsx-preview #sx-clocks.axp-clocks-compact > div > small {display:none}
+body.axsx-preview #sx-clocks.axp-clocks-scroll {flex-shrink:1;min-width:0;overflow-x:auto;overflow-y:hidden;scrollbar-width:none;scroll-snap-type:x proximity;-webkit-mask-image:linear-gradient(90deg,#000 calc(100% - 22px),transparent);mask-image:linear-gradient(90deg,#000 calc(100% - 22px),transparent)}
+body.axsx-preview #sx-clocks.axp-clocks-scroll::-webkit-scrollbar {display:none}
+body.axsx-preview #sx-clocks.axp-clocks-scroll > * {flex:0 0 auto;scroll-snap-align:start}
+body.axsx-preview #sx-clocks.axp-clocks-scroll.axp-clocks-end {-webkit-mask-image:none;mask-image:none}
+/* 흐름 배치(1280px 미만)에서 시계가 넘칠 때: 로고·워크스페이스 이름·오른쪽 버튼은 원래 폭 유지, 시계 줄만 줄인다 */
+body.axsx-preview .desktop-header.axp-clock-fit > :not(#sx-clocks):not(.jd-header-center):not(.header-right) {flex-shrink:0}
+body.axsx-preview .desktop-header.axp-clock-fit .header-right, body.axsx-preview .desktop-header.axp-clock-fit .header-right > * {flex-shrink:0;white-space:nowrap}
+body.axsx-preview .desktop-header.axp-clock-fit #sx-clocks {flex-shrink:1;min-width:0}
+/* 시간대 표시(GMT-4 등)가 길어도 도시 이름을 줄바꿈·생략하지 않고 그 시계만 넓힌다(기존 최소 폭은 유지) */
+body.axsx-preview #sx-clocks > .axp-clock {width:auto}
+body.axsx-preview #sx-clocks > .axp-clock > span {white-space:nowrap}
+body.axsx-preview #sx-clocks > .axp-clock > small {white-space:nowrap}
+/* 1100px 이하: 위젯 버튼은 톱니 아이콘만 (원본 628~648행의 !important 화살표가 버튼 밖으로 나오지 않게) */
+@media(max-width:1100px){body.axsx-preview .desktop-header .header-right #axp-widget-toggle{width:38px!important;min-width:38px!important;padding:0!important;justify-content:center!important;gap:0!important}body.axsx-preview .desktop-header .header-right #axp-widget-toggle > i.ph-caret-down,body.axsx-preview .desktop-header .header-right #axp-widget-toggle > span{display:none!important}}
+
+/* (junhee) 2026-09-28 사용자 요청: 분석 창 위 막대에서 회사·HS·국가·자료기간·조건 변경(연필)만 숨긴다. 같은 막대의 가중치·보고서 버튼은 그대로. */
+body.axsx-preview #analysis-window .context-bar > span, body.axsx-preview #analysis-window .context-bar > #edit-context {display:none!important}
+/* (junhee) 2026-09-28 사용자 요청: 종합 탭 = 왼쪽 절반 종합 수출적합도 | 오른쪽 절반 카드(규제 관문 1장 → 시장성·가격 → 물류·안정성). 좁은 창의 1열 배치는 기존 규칙 그대로 */
+@container (min-width: 821px) { body.axsx-preview #analysis-window .jd-layout {grid-template-columns:minmax(0,1fr) minmax(0,1fr)} }
+@container (min-width: 561px) { body.axsx-preview #analysis-window .jd-cards > .jd-card-regulation {grid-column:1 / -1} body.axsx-preview #analysis-window .jd-cards > .jd-card-stability {grid-column:auto} }
+
+/* (junhee) 2026-09-28 사용자 요청: 세계 시계 글꼴을 juyeon 판(v08 130~139행)과 같게 — 칸 크기·배치는 그대로, 글꼴만 */
+body.axsx-preview #sx-clocks > div > span {font-size:clamp(9px,.77vw,11px);font-weight:600}
+body.axsx-preview #sx-clocks > div > small {font:600 9px/1.25 ui-sans-serif,system-ui,sans-serif}
+body.axsx-preview #sx-clocks > div > time {font:700 clamp(12px,1vw,17px)/1.15 ui-monospace,Consolas,monospace;font-variant-numeric:tabular-nums;letter-spacing:-.025em}
+
+/* (junhee) 2026-09-28 사용자 요청: 분석 창 탭 이름은 한 줄 — 번역으로 길어지면 axport-workspace-tools.js fitTabs 가 그 탭만 글자를 줄여 버튼 안에 맞춘다 */
+body.axsx-preview #analysis-window .bookmark-tabs button > span {white-space:nowrap;max-width:100%}
+
+/* (junhee) 2026-09-28 사용자 요청: 스크롤바 색 · 둥근 모양(화살표 없음). 대화상자는 둥근 모서리 안쪽에서만 움직이게 위아래 여백.
+   Chromium 은 scrollbar-width·scrollbar-color 를 지정한 요소에서 아래 ::-webkit-scrollbar 를 쓰지 않으므로 Firefox 용 색은 @supports 안에만 둔다 */
+body.axsx-preview {--jd-sb:#c3cedd;--jd-sb-hover:#8fa2ba}
+body.axsx-preview[data-axp-theme] {--jd-sb:color-mix(in srgb,var(--axp-accent) 34%,#e6ebf2);--jd-sb-hover:color-mix(in srgb,var(--axp-accent) 70%,#e6ebf2)}
+body.axsx-preview ::-webkit-scrollbar {width:10px;height:10px}
+body.axsx-preview ::-webkit-scrollbar-track {background:transparent}
+body.axsx-preview ::-webkit-scrollbar-thumb {background-color:var(--jd-sb);border:3px solid transparent;background-clip:padding-box;border-radius:999px;min-height:36px}
+body.axsx-preview ::-webkit-scrollbar-thumb:hover {background-color:var(--jd-sb-hover)}
+body.axsx-preview ::-webkit-scrollbar-button {display:none;width:0;height:0}
+body.axsx-preview ::-webkit-scrollbar-corner {background:transparent}
+body.axsx-preview dialog::-webkit-scrollbar-track,body.axsx-preview dialog ::-webkit-scrollbar-track {margin:14px 0}
+@supports (-moz-appearance:none) { body.axsx-preview, body.axsx-preview * {scrollbar-color:var(--jd-sb) transparent} }
+
+/* (junhee) 2026-09-28 사용자 요청: 위젯 크기 조절 손잡이를 작고 흐리게(22px → 16px) — 올리면 또렷해진다 */
+body.axsx-preview .jd-resize {width:16px;height:16px;right:3px;bottom:3px;border-radius:5px;background:#ffffffb3;border-color:#e2e8f0b3;color:#94a3b8;opacity:.7;font-size:10px}
+body.axsx-preview .jd-resize i {font-size:10px}
+body.axsx-preview .jd-resize:hover,body.axsx-preview .jd-resize:focus-visible {opacity:1}
+/* 얇게 지정된 위젯 목록·업로드 카드도 같은 둥근 스크롤바로(Chromium: 표준 속성을 풀어야 ::-webkit-scrollbar 가 적용됨). 두께는 기존 thin 과 같은 8px */
+@supports not (-moz-appearance:none) { body.axsx-preview #sx-canvas #sx-news-rows, body.axsx-preview #sx-canvas #sx-fx-rows, body.axsx-preview #sx-canvas .sx-weather .sx-table, body.axsx-preview #sx-canvas .sx-upload-body, body.axsx-preview #sx-board {scrollbar-width:auto!important;scrollbar-color:auto!important} }
+body.axsx-preview #sx-board::-webkit-scrollbar, body.axsx-preview #sx-canvas ::-webkit-scrollbar {width:8px;height:8px}
+body.axsx-preview #sx-board::-webkit-scrollbar-thumb, body.axsx-preview #sx-canvas ::-webkit-scrollbar-thumb {border-width:2px}
+
+/* (junhee) 2026-09-28 사용자 요청: 업로드 창을 연 채 바탕화면 파일 아이콘을 끌어 넣을 수 있게 — 업로드 창은 비모달(workspace.js openDialog).
+   모달 배경(.modal::backdrop, #1b294963 + 흐림)과 같은 막을 바탕화면·머리글에 깔되 클릭은 통과시키고, 파일 아이콘 층(#desktop-icons, z-index 21)은 막 위에 둔다 */
+body.axsx-preview #upload-dialog.jd-nonmodal[open] {position:fixed;inset:0;margin:auto;height:fit-content;z-index:1000}
+body.jd-upload-open #desktop::after, body.jd-upload-open .desktop-header::after {content:"";position:absolute;inset:0;background:#1b294963;backdrop-filter:blur(5px);pointer-events:none}
+body.jd-upload-open #desktop::after {z-index:20}
+body.jd-upload-open .desktop-header::after {z-index:300}
+
+/* (junhee) 2026-09-28 사용자 요청: 종합 탭 카드 — 아래 줄 설명을 한 줄 요약으로 바꿔 큰 점수 밑에(junhee-dashboard.js cardSummary). 아래 줄에는 '더보기'만 */
+body.axsx-preview #analysis-window .jd-card-main > div:first-child {min-width:0} /* 요약이 카드 폭 안에서 줄바꿈되게(기존 내용 폭은 그대로) */
+body.axsx-preview #analysis-window .jd-card-sum {margin-top:4px;max-width:100%;font-size:12px;line-height:1.45;font-weight:500;color:#475569;display:-webkit-box;-webkit-box-orient:vertical;-webkit-line-clamp:2;line-clamp:2;overflow:hidden;overflow-wrap:anywhere;word-break:keep-all}
+body.axsx-preview #analysis-window .jd-card-foot > .jd-more {margin-left:auto}

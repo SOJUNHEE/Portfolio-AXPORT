@@ -1,0 +1,6 @@
+<!-- (junhee) Supabase > Authentication > Emails > Confirm signup 에 붙여 넣는 인증 메일 본문.
+     링크는 반드시 {{ .RedirectTo }}?token_hash={{ .TokenHash }}&type=email 형식이어야 /auth/confirm 이 처리한다. -->
+<h2>AXPORT 이메일 인증</h2>
+<p>아래 링크를 눌러 이메일 인증을 완료해 주세요. 인증을 마치면 이메일과 비밀번호로 로그인할 수 있습니다.</p>
+<p><a href="{{ .RedirectTo }}?token_hash={{ .TokenHash }}&amp;type=email">이메일 인증하기</a></p>
+<p>링크가 만료되었다면 로그인 화면의 '인증 메일 다시 받기'를 눌러 주세요. 직접 가입하지 않았다면 이 메일을 무시해 주세요.</p>

@@ -1,0 +1,21 @@
+AXPORT 위젯 추가 파일 패키지
+
+기존 app.py, templates, static 및 팀원의 원본 파일은 포함하지 않았습니다.
+_axport_semiconductor_widgets 폴더를 팀 프로젝트 최상위에 추가하세요.
+동일 폴더가 이미 있다면 덮어쓰기 전에 변경 내용을 확인하세요.
+
+.env.example은 빈 키 템플릿입니다. 실제 .env와 API 키는 포함하지 않았습니다.
+기존 최상위 .env가 있으면 유지하고 필요한 항목만 설정하세요.
+
+현재 사용자 PC의 app.py에는 이미 연결 코드가 추가되어 있습니다.
+다른 팀원의 app.py에는 아래 코드를 if __name__ == '__main__': 안에서
+기존 app.run(...) 바로 앞에 추가해야 python app.py로 위젯 화면이 열립니다.
+
+    from _axport_semiconductor_widgets.app_connection import connect_dashboard
+    connect_dashboard(app)
+
+기존 파일을 수정하지 않고 확인하려면 프로젝트 최상위에서 실행하세요.
+python -B .\_axport_semiconductor_widgets\run_preview.py
+http://127.0.0.1:5075/app
+
+이 패키지는 별도 신규 사이트가 아니라 기존 팀 프로젝트에 의존하는 추가 기능입니다.

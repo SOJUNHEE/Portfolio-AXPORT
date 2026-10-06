@@ -1,0 +1,34 @@
+<!-- Additive fragment. Original analysis, dialogs, icons and chatbot remain intact. -->
+<div id="sx-toolbar" data-no-translate>
+  <button id="sx-edit" type="button" aria-pressed="false"><i class="ph ph-sliders-horizontal"></i><span data-sx-t="edit">위젯 편집 모드</span></button>
+  <button id="sx-reset" type="button"><i class="ph ph-arrow-counter-clockwise"></i><span data-sx-t="reset">배치 초기화</span></button>
+</div>
+<div id="sx-clocks" data-no-translate aria-label="World clocks">
+  <div data-sx-zone="Asia/Seoul"><span data-sx-t="seoul">서울</span><small>KST</small><time>--:--:--</time></div>
+  <div data-sx-zone="America/New_York"><span data-sx-t="newYork">뉴욕</span><small>EDT</small><time>--:--:--</time></div>
+  <div data-sx-zone="Europe/London"><span data-sx-t="london">런던</span><small>GMT</small><time>--:--:--</time></div>
+  <div data-sx-zone="Asia/Shanghai"><span data-sx-t="shanghai">상하이</span><small>CST</small><time>--:--:--</time></div>
+</div>
+<section id="sx-board" data-no-translate aria-label="Semiconductor export widgets">
+ <div id="sx-canvas">
+  <section class="sx-card sx-upload" data-sx-widget="upload" aria-labelledby="sx-upload-title">
+   <header class="sx-handle"><span class="sx-grip">☰</span><h2 id="sx-upload-title" data-sx-t="uploadTitle">반도체 수출 데이터</h2><span class="sx-pill">SEMICONDUCTOR</span><button class="sx-delete" data-sx-delete="upload" type="button" aria-label="업로드 위젯 숨기기">×</button></header>
+   <div class="sx-upload-body">
+    <p class="sx-intro" data-sx-t="uploadDescription">반도체 품목과 대상 국가를 선택하고 분석할 수출 데이터 파일을 추가하세요.</p>
+    <form id="sx-form">
+     <div class="sx-fields"><label>HS CODE <small>6 · 8 · 10 digits</small><input id="sx-hs" value="8542.32" maxlength="14" inputmode="decimal" required></label><label><span data-sx-t="country">대상 국가</span><select id="sx-country"><option value="US" data-sx-t="us">미국 (US)</option><option value="CN" data-sx-t="cn">중국 (CN)</option><option value="TW" data-sx-t="tw">대만 (TW)</option><option value="VN" data-sx-t="vn">베트남 (VN)</option><option value="JP" data-sx-t="jp">일본 (JP)</option><option value="DE">Germany (DE)</option></select></label></div>
+     <div class="sx-tags"><button type="button" data-sx-hs="8542.32"><span data-sx-t="memoryShort">메모리반도체</span> 8542.32</button><button type="button" data-sx-hs="8542.31"><span data-sx-t="system">시스템반도체</span> 8542.31</button><button type="button" data-sx-hs="8486.20"><span data-sx-t="equipment">반도체제조장비</span> 8486.20</button></div>
+     <label class="sx-company"><span data-sx-extra="company">기업명</span><input id="sx-company" value="AX 반도체" maxlength="60" required></label>
+     <div id="sx-drop"><i class="ph ph-upload-simple"></i><strong data-sx-t="dropTitle">분석할 파일을 이곳에 놓아주세요</strong><button id="sx-file-button" type="button" data-sx-t="chooseFile">파일 선택</button><small>.xlsx · .xls · CSV <span data-sx-extra="fileLimit">최대 20 MB · CSV는 선택 미리보기만 지원</span></small><input id="sx-file" type="file" accept=".xlsx,.xls,.csv" hidden></div>
+     <p id="sx-file-label" class="sx-file-label" aria-live="polite"></p><p id="sx-error" role="alert"></p>
+     <div class="sx-form-actions"><button id="sx-sample" type="button" data-sx-extra="sample">팀 샘플 불러오기</button><button type="submit" class="sx-primary"><span data-sx-t="analyze">분석 워크스페이스 열기</span><i class="ph ph-arrow-right"></i></button></div>
+    </form>
+    <p class="sx-note" data-sx-extra="teamNote">기존 팀 분석기에 연결됩니다. 현재 등록된 기업 샘플만 분석하며, 샘플의 HS·대상국 기준으로 결과가 표시됩니다.</p>
+   </div>
+  </section>
+  <section class="sx-card sx-fx" data-sx-widget="fx" aria-labelledby="sx-fx-title"><header class="sx-handle"><span class="sx-grip">☰</span><div><small>FOREIGN EXCHANGE</small><h2 id="sx-fx-title" data-sx-t="fxTitle">주요 환율</h2></div><span id="sx-fx-badge" class="sx-pill"></span><button type="button" class="sx-delete" data-sx-delete="fx" aria-label="환율 위젯 숨기기">×</button></header><div id="sx-fx-rows" class="sx-content"></div><footer><span id="sx-fx-source"></span><span data-sx-t="daily">일별 기준환율</span></footer></section>
+  <section class="sx-card sx-news" data-sx-widget="news" aria-labelledby="sx-news-title"><header class="sx-handle"><span class="sx-grip">☰</span><div><small>GLOBAL TRADE MONITOR</small><h2 id="sx-news-title" data-sx-t="newsTitle">글로벌 무역 뉴스</h2></div><span id="sx-news-badge" class="sx-pill"></span><button type="button" class="sx-delete" data-sx-delete="news" aria-label="뉴스 위젯 숨기기">×</button></header><div id="sx-news-rows" class="sx-content"></div><footer><span id="sx-news-source"></span></footer></section>
+  <section class="sx-card sx-weather" data-sx-widget="weather" aria-labelledby="sx-weather-title"><header class="sx-handle"><span class="sx-grip">☰</span><div><small>EXPORT WEATHER MAP</small><h2 id="sx-weather-title" data-sx-t="weatherTitle">우리나라의 수출기상도</h2></div><button type="button" class="sx-delete" data-sx-delete="weather" aria-label="수출기상도 위젯 숨기기">×</button></header><div class="sx-weather-meta"><span id="sx-weather-badge" class="sx-pill"></span><span id="sx-weather-period"></span></div><div class="sx-table"><table><thead><tr><th data-sx-t="itemHS">품목 (HS)</th><th data-sx-t="exports">수출액 (백만 $)</th><th data-sx-t="change">증감률</th></tr></thead><tbody id="sx-weather-rows"></tbody></table></div><div class="sx-legend"><span>☀️ ≥30%</span><span>⛅ 0~&lt;30%</span><span>☁️ −10~&lt;0%</span><span>🌧️ −20~&lt;−10%</span><span>⛈️ &lt;−20%</span></div><footer><span id="sx-weather-source"></span><span data-sx-t="weatherNote">전년 동기 대비</span></footer></section>
+ </div>
+</section>
+<dialog id="sx-trash-dialog" data-no-translate><header><h2 data-sx-extra="widgetTrash">숨긴 위젯</h2><button id="sx-trash-close" type="button" aria-label="닫기">×</button></header><div id="sx-trash-list"></div><button id="sx-restore-all" class="sx-primary" type="button" data-sx-t="restoreAll">전체 복원</button><button id="sx-original-trash" type="button" data-sx-extra="teamTrash">기존 파일 휴지통 열기</button></dialog>

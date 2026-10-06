@@ -1,0 +1,362 @@
+{
+  "key": "price",
+  "headline": "적용관세 0.0% · 수입액 합 15.5억 달러",
+  "note": "미국의 대한국 수입 854231 11.1억 / 854232 4.3억 달러(조치일 2026-09-03) · 수출물가(컴퓨터·전자·광학) 222.17, 2026-08p 전월비 -3.1% · 반도체 세부지수 미제공",
+  "state": "ok",
+  "source": "C840_C410.csv",
+  "as_of": "2026-09-03",
+  "data_class": "실제자료",
+  "detail": {
+    "tariff": {
+      "file": "C840_C410.csv",
+      "reporter": "United States of America",
+      "partner": "Korea, Republic of",
+      "hs": [
+        "854231",
+        "854232"
+      ],
+      "per_hs": {
+        "854231": {
+          "name": "프로세서·컨트롤러",
+          "action_date_latest": "2026-09-03",
+          "best_avlbl_pct": 0.0,
+          "imports_usd": 1114855670.0,
+          "tariff_history": [
+            {
+              "date": "2025-01-01",
+              "best_avlbl_pct": 0.0
+            },
+            {
+              "date": "2025-02-04",
+              "best_avlbl_pct": 0.0
+            },
+            {
+              "date": "2025-03-04",
+              "best_avlbl_pct": 0.0
+            },
+            {
+              "date": "2025-03-07",
+              "best_avlbl_pct": 0.0
+            },
+            {
+              "date": "2025-03-12",
+              "best_avlbl_pct": 0.0
+            },
+            {
+              "date": "2025-04-03",
+              "best_avlbl_pct": 0.0
+            },
+            {
+              "date": "2025-04-04",
+              "best_avlbl_pct": 0.0
+            },
+            {
+              "date": "2025-04-05",
+              "best_avlbl_pct": 0.0
+            },
+            {
+              "date": "2025-04-09",
+              "best_avlbl_pct": 0.0
+            },
+            {
+              "date": "2025-05-03",
+              "best_avlbl_pct": 0.0
+            },
+            {
+              "date": "2025-05-14",
+              "best_avlbl_pct": 0.0
+            },
+            {
+              "date": "2025-06-04",
+              "best_avlbl_pct": 0.0
+            },
+            {
+              "date": "2025-06-23",
+              "best_avlbl_pct": 0.0
+            },
+            {
+              "date": "2025-06-30",
+              "best_avlbl_pct": 0.0
+            },
+            {
+              "date": "2025-08-01",
+              "best_avlbl_pct": 0.0
+            },
+            {
+              "date": "2025-08-06",
+              "best_avlbl_pct": 0.0
+            },
+            {
+              "date": "2025-08-07",
+              "best_avlbl_pct": 0.0
+            },
+            {
+              "date": "2025-08-18",
+              "best_avlbl_pct": 0.0
+            },
+            {
+              "date": "2025-08-27",
+              "best_avlbl_pct": 0.0
+            },
+            {
+              "date": "2025-09-01",
+              "best_avlbl_pct": 0.0
+            },
+            {
+              "date": "2025-09-08",
+              "best_avlbl_pct": 0.0
+            },
+            {
+              "date": "2025-09-16",
+              "best_avlbl_pct": 0.0
+            },
+            {
+              "date": "2025-10-01",
+              "best_avlbl_pct": 0.0
+            },
+            {
+              "date": "2025-10-14",
+              "best_avlbl_pct": 0.0
+            },
+            {
+              "date": "2025-11-01",
+              "best_avlbl_pct": 0.0
+            },
+            {
+              "date": "2025-11-10",
+              "best_avlbl_pct": 0.0
+            },
+            {
+              "date": "2025-11-13",
+              "best_avlbl_pct": 0.0
+            },
+            {
+              "date": "2025-11-14",
+              "best_avlbl_pct": 0.0
+            },
+            {
+              "date": "2026-01-01",
+              "best_avlbl_pct": 0.0
+            },
+            {
+              "date": "2026-02-06",
+              "best_avlbl_pct": 0.0
+            },
+            {
+              "date": "2026-02-20",
+              "best_avlbl_pct": 0.0
+            },
+            {
+              "date": "2026-02-24",
+              "best_avlbl_pct": 0.0
+            },
+            {
+              "date": "2026-04-06",
+              "best_avlbl_pct": 0.0
+            },
+            {
+              "date": "2026-06-08",
+              "best_avlbl_pct": 0.0
+            },
+            {
+              "date": "2026-07-22",
+              "best_avlbl_pct": 0.0
+            },
+            {
+              "date": "2026-07-24",
+              "best_avlbl_pct": 0.0
+            },
+            {
+              "date": "2026-08-22",
+              "best_avlbl_pct": 0.0
+            },
+            {
+              "date": "2026-09-03",
+              "best_avlbl_pct": 0.0
+            }
+          ]
+        },
+        "854232": {
+          "name": "메모리",
+          "action_date_latest": "2026-09-03",
+          "best_avlbl_pct": 0.0,
+          "imports_usd": 431989147.0,
+          "tariff_history": [
+            {
+              "date": "2025-01-01",
+              "best_avlbl_pct": 0.0
+            },
+            {
+              "date": "2025-02-04",
+              "best_avlbl_pct": 0.0
+            },
+            {
+              "date": "2025-03-04",
+              "best_avlbl_pct": 0.0
+            },
+            {
+              "date": "2025-03-07",
+              "best_avlbl_pct": 0.0
+            },
+            {
+              "date": "2025-03-12",
+              "best_avlbl_pct": 0.0
+            },
+            {
+              "date": "2025-04-03",
+              "best_avlbl_pct": 0.0
+            },
+            {
+              "date": "2025-04-04",
+              "best_avlbl_pct": 0.0
+            },
+            {
+              "date": "2025-04-05",
+              "best_avlbl_pct": 0.0
+            },
+            {
+              "date": "2025-04-09",
+              "best_avlbl_pct": 0.0
+            },
+            {
+              "date": "2025-05-03",
+              "best_avlbl_pct": 0.0
+            },
+            {
+              "date": "2025-05-14",
+              "best_avlbl_pct": 0.0
+            },
+            {
+              "date": "2025-06-04",
+              "best_avlbl_pct": 0.0
+            },
+            {
+              "date": "2025-06-23",
+              "best_avlbl_pct": 0.0
+            },
+            {
+              "date": "2025-06-30",
+              "best_avlbl_pct": 0.0
+            },
+            {
+              "date": "2025-08-01",
+              "best_avlbl_pct": 0.0
+            },
+            {
+              "date": "2025-08-06",
+              "best_avlbl_pct": 0.0
+            },
+            {
+              "date": "2025-08-07",
+              "best_avlbl_pct": 0.0
+            },
+            {
+              "date": "2025-08-18",
+              "best_avlbl_pct": 0.0
+            },
+            {
+              "date": "2025-08-27",
+              "best_avlbl_pct": 0.0
+            },
+            {
+              "date": "2025-09-01",
+              "best_avlbl_pct": 0.0
+            },
+            {
+              "date": "2025-09-08",
+              "best_avlbl_pct": 0.0
+            },
+            {
+              "date": "2025-09-16",
+              "best_avlbl_pct": 0.0
+            },
+            {
+              "date": "2025-10-01",
+              "best_avlbl_pct": 0.0
+            },
+            {
+              "date": "2025-10-14",
+              "best_avlbl_pct": 0.0
+            },
+            {
+              "date": "2025-11-01",
+              "best_avlbl_pct": 0.0
+            },
+            {
+              "date": "2025-11-10",
+              "best_avlbl_pct": 0.0
+            },
+            {
+              "date": "2025-11-13",
+              "best_avlbl_pct": 0.0
+            },
+            {
+              "date": "2025-11-14",
+              "best_avlbl_pct": 0.0
+            },
+            {
+              "date": "2026-01-01",
+              "best_avlbl_pct": 0.0
+            },
+            {
+              "date": "2026-02-06",
+              "best_avlbl_pct": 0.0
+            },
+            {
+              "date": "2026-02-20",
+              "best_avlbl_pct": 0.0
+            },
+            {
+              "date": "2026-02-24",
+              "best_avlbl_pct": 0.0
+            },
+            {
+              "date": "2026-04-06",
+              "best_avlbl_pct": 0.0
+            },
+            {
+              "date": "2026-06-08",
+              "best_avlbl_pct": 0.0
+            },
+            {
+              "date": "2026-07-22",
+              "best_avlbl_pct": 0.0
+            },
+            {
+              "date": "2026-07-24",
+              "best_avlbl_pct": 0.0
+            },
+            {
+              "date": "2026-08-22",
+              "best_avlbl_pct": 0.0
+            },
+            {
+              "date": "2026-09-03",
+              "best_avlbl_pct": 0.0
+            }
+          ]
+        }
+      },
+      "imports_total_usd": 1546844817.0,
+      "note": "best_avlbl = 조치 시행 후 적용 예상 관세율(%), imports = 최신 가용 수입액(USD)"
+    },
+    "export_price_index": {
+      "file": "(통계)2026년08월수출입물가지수무역지수(잠정).xlsx",
+      "sheet": "1.수출(기본분류)",
+      "row_label": "컴퓨터,전자및광학기기",
+      "base": "2020=100, 원화기준",
+      "periods": [
+        "2026. 7",
+        "2026. 8p"
+      ],
+      "prev": 229.34,
+      "latest_preliminary": 222.17,
+      "mom_pct": -3.1,
+      "ytd_pct": 77.5,
+      "yoy_pct": 113.2,
+      "period": "2026-08",
+      "semiconductor_row_available": false,
+      "note": "파일에 '반도체' 세부 지수가 없어 상위 분류(컴퓨터,전자및광학기기)를 표시"
+    }
+  }
+}

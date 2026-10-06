@@ -1,0 +1,76 @@
+{
+  "key": "market",
+  "headline": "1,425억 달러 · 전년동월비 +129.4%",
+  "note": "세계 반도체 월간 출하액(WSTS Worldwide) 2026-07 · 전월비 -9.5% · 품목(HS) 구분 없는 전체 반도체",
+  "state": "ok",
+  "source": "WSTS-Historical-Billings-Report-Jul_2026.xlsx",
+  "as_of": "2026-07-31",
+  "data_class": "실제자료",
+  "detail": {
+    "region": "Worldwide",
+    "period": "2026-07",
+    "sheet": "Monthly Data",
+    "unit_raw": "1000 US$",
+    "latest_value_thousand_usd": 142480424.0,
+    "latest_value_billion_usd": 142.48,
+    "prev_year_same_month_thousand_usd": 62100790.0,
+    "prev_month_thousand_usd": 157462968.0,
+    "yoy_pct": 129.43,
+    "mom_pct": -9.51,
+    "hs_breakdown_available": false,
+    "monthly": [
+      {
+        "month": "2025-07",
+        "value_thousand_usd": 62100790.0
+      },
+      {
+        "month": "2025-08",
+        "value_thousand_usd": 69173660.0
+      },
+      {
+        "month": "2025-09",
+        "value_thousand_usd": 78520702.0
+      },
+      {
+        "month": "2025-10",
+        "value_thousand_usd": 71647272.0
+      },
+      {
+        "month": "2025-11",
+        "value_thousand_usd": 81883025.0
+      },
+      {
+        "month": "2025-12",
+        "value_thousand_usd": 85348277.0
+      },
+      {
+        "month": "2026-01",
+        "value_thousand_usd": 82925862.0
+      },
+      {
+        "month": "2026-02",
+        "value_thousand_usd": 103671953.0
+      },
+      {
+        "month": "2026-03",
+        "value_thousand_usd": 118321116.0
+      },
+      {
+        "month": "2026-04",
+        "value_thousand_usd": 115800518.0
+      },
+      {
+        "month": "2026-05",
+        "value_thousand_usd": 140466438.0
+      },
+      {
+        "month": "2026-06",
+        "value_thousand_usd": 157462968.0
+      },
+      {
+        "month": "2026-07",
+        "value_thousand_usd": 142480424.0
+      }
+    ]
+  }
+}

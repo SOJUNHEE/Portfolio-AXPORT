@@ -1,0 +1,68 @@
+{
+ "note": "(junhee) 2026-09-27 분석 엔진 샘플 목록. 바탕화면: 가온·누리·미리내(간편입력 v2, 가상) + 한빛·대성(sanghyeob 상세양식 v0.1). 한울·다온은 sanghyeob 간편입력 예시. 모두 가상 기업. 파일 위치: static/samples/",
+ "companies": [
+  {
+   "company_id": "gaon",
+   "company_name": "가온반도체",
+   "file_name": "기업데이터_가상_가온반도체.xlsx",
+   "format": "간편입력 v2 · 대형 종합 메모리 제조사형(가상)",
+   "hs": "854232",
+   "country_iso2": "US",
+   "file_sha256": "5a92227bc0fa96421d3a18e577fd9bae0b4d6a85eff25f98df78b1892520598e"
+  },
+  {
+   "company_id": "nuri",
+   "company_name": "누리하이테크",
+   "file_name": "기업데이터_가상_누리하이테크.xlsx",
+   "format": "간편입력 v2 · HBM 특화 제조사형(가상)",
+   "hs": "854232",
+   "country_iso2": "US",
+   "file_sha256": "f91e14cc6198151c1d7d14991d326ed8bba1284ab3d5ea94ec45050fc5fe5834"
+  },
+  {
+   "company_id": "mirinae",
+   "company_name": "미리내전자",
+   "file_name": "기업데이터_가상_미리내전자_결측.xlsx",
+   "format": "간편입력 v2 · 결측 예시(가상)",
+   "hs": "854232",
+   "country_iso2": "US",
+   "file_sha256": "19ae3b2e8cac249924523aa8990e7c0aa165df42d266adf73ac2e136054518cf"
+  },
+  {
+   "company_id": "hanbit",
+   "company_name": "한빛반도체",
+   "file_name": "한빛반도체_수출데이터_v0.1.xlsx",
+   "format": "상세양식(8시트)",
+   "hs": "854232",
+   "country_iso2": "US",
+   "file_sha256": "80788fd1cfb58160adc084cb859a3ccf785dd01fc2e73dc19276d0de67c53024"
+  },
+  {
+   "company_id": "daesung",
+   "company_name": "대성일렉트로닉스",
+   "file_name": "대성일렉트로닉스_수출데이터_v0.1.xlsx",
+   "format": "상세양식(8시트)",
+   "hs": "854232",
+   "country_iso2": "CN",
+   "file_sha256": "57854c56b671b1bcbb4d73c1514eb13ffc4fc55797148cbe5b5cec9a7bb51323"
+  },
+  {
+   "company_id": "hanul",
+   "company_name": "한울메모리",
+   "file_name": "기업데이터_예시1_한울메모리.xlsx",
+   "format": "간편입력 v2",
+   "hs": "854232",
+   "country_iso2": "US",
+   "file_sha256": "d6d125bf92a5ac0e605a9dec59ac1e49dfad8ccd6578e971e3319e16adddea7e"
+  },
+  {
+   "company_id": "daon",
+   "company_name": "다온메모리웍스",
+   "file_name": "기업데이터_예시2_다온메모리웍스.xlsx",
+   "format": "간편입력 v2",
+   "hs": "854232",
+   "country_iso2": "US",
+   "file_sha256": "4c837a43729dfad85e7c5247b95bad8f2d04d0b62e06b1262bbc770eb877a7c8"
+  }
+ ]
+}

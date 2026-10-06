@@ -1,0 +1,1779 @@
+{
+  "schema_version": "0.2",
+  "generated_at": "2026-09-23T16:39:35",
+  "context": {
+    "hs": [
+      "854231",
+      "854232"
+    ],
+    "hs_names": {
+      "854231": "프로세서·컨트롤러",
+      "854232": "메모리"
+    },
+    "country": "미국",
+    "company": null
+  },
+  "items": [
+    {
+      "key": "regulation",
+      "headline": "HS 854231·854232 수입규제 해당 없음",
+      "note": "미국의 대한국 수입규제 55건(KOTRA) · CSL 26,146건(최신 등재 2026-03-26) · 전략물자 별표1~4 원문 확보, 판정 미적용",
+      "state": "ok",
+      "source": "대한무역투자진흥공사_국별 대세계 수입규제 현황_20260603.csv",
+      "as_of": "2026-06-03",
+      "data_class": "실제자료",
+      "detail": {
+        "target_country": "미국",
+        "hs": [
+          "854231",
+          "854232"
+        ],
+        "kotra": {
+          "file": "대한무역투자진흥공사_국별 대세계 수입규제 현황_20260603.csv",
+          "as_of": "2026-06-03",
+          "rows_total": 5273,
+          "rows_us": 525,
+          "rows_us_targeting_korea": 55,
+          "per_hs": {
+            "854231": {
+              "rows_us_targeting_korea": 0,
+              "rows_any_country": 0
+            },
+            "854232": {
+              "rows_us_targeting_korea": 0,
+              "rows_any_country": 0
+            }
+          },
+          "hs_in_import_regulation_list": {
+            "854231": false,
+            "854232": false
+          }
+        },
+        "csl": {
+          "file": "ITA_consolidated_screening_list.csv",
+          "rows_total": 26146,
+          "latest_start_date": "2026-03-26",
+          "file_obtained": "2026-09-22",
+          "note": "파일에 기준일 컬럼이 없어 최신 등재일과 파일 확보일을 기록"
+        },
+        "hsk_linkage": {
+          "file": "HSK연계표_20260901.xlsx",
+          "as_of": "2026-09-01",
+          "hsk_codes_per_hs": {
+            "854231": 4,
+            "854232": 7
+          },
+          "links": {
+            "854231": [
+              {
+                "hsk": "8542311000",
+                "name": "모노리식(monolithic) 집적회로",
+                "control_numbers": "3A001.a.1.,3A001.a.10.,3A001.a.11.,3A001.a.12.,3A001.a.14.,3A001.a.2.c.,3A001.a.3.,3A001.a.5.a.2.,3A001.a.5.a.3.,3A001.a.5.a.4.,3A001.a.5.a.5.,3A001.a.5.b.1.,3A001.a.5.b.2.b.,3A001.a.7.a.,3A001.a.7.b.,3A001.a.9.,3A001.b.2.,3A001.b.5.,3A002.h.,3A501.a.15.,3A501.a.16.,3A502.i.,5A001.d.1.,5A002.a.1.,5A002.a.2.,5A002.a.3.,5A002.a.4.,5A002.c.,5A002.d.,5A002.e.,5A003.,5A004.,6A002.f.,6A102."
+              },
+              {
+                "hsk": "8542312000",
+                "name": "하이브리드 집적회로",
+                "control_numbers": "3A001.a.10.a.,3A001.a.11.,3A001.a.14.,3A001.a.2.,3A001.a.3.,3A001.a.5.,3A001.a.7.,3A001.a.9.,3A001.b.2.,3A001.b.5.,3A501.a.15.,3A501.a.16.,3A502.i.,5A002.a.1.,5A002.a.3.,5A002.c.,5A002.d.,5A002.e.,5A003.,5A004.,6A002.f.,6A102."
+              },
+              {
+                "hsk": "8542313000",
+                "name": "복합구조칩 집적회로",
+                "control_numbers": "3A001.a.1.,3A001.a.10.,3A001.a.11.,3A001.a.12.,3A001.a.14.,3A001.a.2.c.,3A001.a.3.,3A001.a.5.a.2.,3A001.a.5.a.3.,3A001.a.5.a.4.,3A001.a.5.a.5.,3A001.a.5.b.1.,3A001.a.5.b.2.b.,3A001.a.7.a.,3A001.a.7.b.,3A001.a.9.,3A001.b.2.,3A001.b.5.,3A501.a.15.,3A501.a.16.,3A502.i.,5A001.d.1.,5A002.a.1.,5A002.a.2.,5A002.a.3.,5A002.c.,5A002.d.,5A002.e.,5A003.,5A004.,6A002.f.,6A102."
+              },
+              {
+                "hsk": "8542314000",
+                "name": "복합부품 집적회로(MCOs)",
+                "control_numbers": "3A001.a.1.,3A001.a.10.,3A001.a.11.,3A001.a.12.,3A001.a.14.,3A001.a.2.c.,3A001.a.3.,3A001.a.5.a.2.,3A001.a.5.a.3.,3A001.a.5.a.4.,3A001.a.5.a.5.,3A001.a.5.b.1.,3A001.a.5.b.2.b.,3A001.a.7.a.,3A001.a.7.b.,3A001.a.9.,3A001.b.2.,3A001.b.5.,3A501.a.15.,3A501.a.16.,3A502.i.,5A001.d.1.,5A002.a.1.,5A002.a.2.,5A002.a.3.,5A002.c.,5A002.d.,5A002.e.,5A003.,5A004.,6A002.a.3.f.,6A002.f.,6A102."
+              }
+            ],
+            "854232": [
+              {
+                "hsk": "8542321010",
+                "name": "디램",
+                "control_numbers": "3A001.a.1.,3A001.a.14.,3A001.a.2.,3A001.b.2.,3A501.a.15.,3A501.a.16.,3A502.i.,5A002.a.1.,5A002.c.,5A002.d.,5A002.e.,5A003.,5A004.,6A102."
+              },
+              {
+                "hsk": "8542321020",
+                "name": "에스램",
+                "control_numbers": "3A001.a.1.,3A001.a.14.,3A001.a.2.,3A001.b.2.,3A501.a.15.,3A501.a.16.,3A502.i.,5A002.a.1.,5A002.c.,5A002.d.,5A002.e.,5A003.,5A004.,6A102."
+              },
+              {
+                "hsk": "8542321030",
+                "name": "플래시 메모리",
+                "control_numbers": "3A001.a.1.,3A001.a.14.,3A001.a.2.,3A001.b.2.,3A501.a.15.,3A501.a.16.,3A502.i.,5A002.a.1.,5A002.c.,5A002.d.,5A002.e.,5A003.,5A004.,6A102."
+              },
+              {
+                "hsk": "8542321090",
+                "name": "기타",
+                "control_numbers": "3A001.a.1.,3A001.a.10.,3A001.a.14.,3A001.a.2.,3A001.b.2.,3A501.a.15.,3A501.a.16.,3A502.i.,5A002.a.1.,5A002.c.,5A002.d.,5A002.e.,5A003.,5A004.,6A102."
+              },
+              {
+                "hsk": "8542322000",
+                "name": "하이브리드 집적회로",
+                "control_numbers": "3A001.a.1.,3A001.a.14.,3A001.a.2.,3A001.b.2.,3A501.a.15.,3A501.a.16.,3A502.i.,5A002.a.1.,5A002.c.,5A002.d.,5A002.e.,5A003.,5A004.,6A102."
+              },
+              {
+                "hsk": "8542323000",
+                "name": "복합구조칩 집적회로",
+                "control_numbers": "3A001.a.1.,3A001.a.14.,3A001.a.2.,3A001.b.2.,3A501.a.15.,3A501.a.16.,3A502.i.,5A002.a.1.,5A002.c.,5A002.d.,5A002.e.,5A003.,5A004.,6A102."
+              },
+              {
+                "hsk": "8542324000",
+                "name": "복합부품 집적회로(MCOs)",
+                "control_numbers": "3A001.a.,3A501.a.15.,3A501.a.16.,3A502.i."
+              }
+            ]
+          },
+          "note": "HSK 코드가 전략물자 통제번호와 연계돼 있다는 사실만 표시. 해당 여부는 별표 원문 대조 후 판정"
+        },
+        "strategic_items_annex": {
+          "status": "규제 원문 확보, 판정 미적용",
+          "files": [
+            "[별표 1] 전략물자·기술 색인 일부개정안.hwp",
+            "[별표 1] 전략물자·기술 색인 일부개정안.pdf",
+            "[별표 2] 이중용도품목 일부개정안.hwp",
+            "[별표 2] 이중용도품목 일부개정안.pdf",
+            "[별표 3] 군용물자목록 일부개정안.hwpx",
+            "[별표 3] 군용물자목록 일부개정안.pdf",
+            "[별표 4] 통제번호의 국제수출통제체제별 분류 일부개정안.hwp",
+            "[별표 4] 통제번호의 국제수출통제체제별 분류 일부개정안.pdf"
+          ],
+          "note": "별표1~4(HWP·PDF, 614쪽)는 원문 대조 미완료로 이번에 파싱하지 않음"
+        }
+      }
+    },
+    {
+      "key": "market",
+      "headline": "1,425억 달러 · 전년동월비 +129.4%",
+      "note": "세계 반도체 월간 출하액(WSTS Worldwide) 2026-07 · 전월비 -9.5% · 품목(HS) 구분 없는 전체 반도체",
+      "state": "ok",
+      "source": "WSTS-Historical-Billings-Report-Jul_2026.xlsx",
+      "as_of": "2026-07-31",
+      "data_class": "실제자료",
+      "detail": {
+        "region": "Worldwide",
+        "period": "2026-07",
+        "sheet": "Monthly Data",
+        "unit_raw": "1000 US$",
+        "latest_value_thousand_usd": 142480424.0,
+        "latest_value_billion_usd": 142.48,
+        "prev_year_same_month_thousand_usd": 62100790.0,
+        "prev_month_thousand_usd": 157462968.0,
+        "yoy_pct": 129.43,
+        "mom_pct": -9.51,
+        "hs_breakdown_available": false,
+        "monthly": [
+          {
+            "month": "2025-07",
+            "value_thousand_usd": 62100790.0
+          },
+          {
+            "month": "2025-08",
+            "value_thousand_usd": 69173660.0
+          },
+          {
+            "month": "2025-09",
+            "value_thousand_usd": 78520702.0
+          },
+          {
+            "month": "2025-10",
+            "value_thousand_usd": 71647272.0
+          },
+          {
+            "month": "2025-11",
+            "value_thousand_usd": 81883025.0
+          },
+          {
+            "month": "2025-12",
+            "value_thousand_usd": 85348277.0
+          },
+          {
+            "month": "2026-01",
+            "value_thousand_usd": 82925862.0
+          },
+          {
+            "month": "2026-02",
+            "value_thousand_usd": 103671953.0
+          },
+          {
+            "month": "2026-03",
+            "value_thousand_usd": 118321116.0
+          },
+          {
+            "month": "2026-04",
+            "value_thousand_usd": 115800518.0
+          },
+          {
+            "month": "2026-05",
+            "value_thousand_usd": 140466438.0
+          },
+          {
+            "month": "2026-06",
+            "value_thousand_usd": 157462968.0
+          },
+          {
+            "month": "2026-07",
+            "value_thousand_usd": 142480424.0
+          }
+        ]
+      }
+    },
+    {
+      "key": "price",
+      "headline": "적용관세 0.0% · 수입액 합 15.5억 달러",
+      "note": "미국의 대한국 수입 854231 11.1억 / 854232 4.3억 달러(조치일 2026-09-03) · 수출물가(컴퓨터·전자·광학) 222.17, 2026-08p 전월비 -3.1% · 반도체 세부지수 미제공",
+      "state": "ok",
+      "source": "C840_C410.csv",
+      "as_of": "2026-09-03",
+      "data_class": "실제자료",
+      "detail": {
+        "tariff": {
+          "file": "C840_C410.csv",
+          "reporter": "United States of America",
+          "partner": "Korea, Republic of",
+          "hs": [
+            "854231",
+            "854232"
+          ],
+          "per_hs": {
+            "854231": {
+              "name": "프로세서·컨트롤러",
+              "action_date_latest": "2026-09-03",
+              "best_avlbl_pct": 0.0,
+              "imports_usd": 1114855670.0,
+              "tariff_history": [
+                {
+                  "date": "2025-01-01",
+                  "best_avlbl_pct": 0.0
+                },
+                {
+                  "date": "2025-02-04",
+                  "best_avlbl_pct": 0.0
+                },
+                {
+                  "date": "2025-03-04",
+                  "best_avlbl_pct": 0.0
+                },
+                {
+                  "date": "2025-03-07",
+                  "best_avlbl_pct": 0.0
+                },
+                {
+                  "date": "2025-03-12",
+                  "best_avlbl_pct": 0.0
+                },
+                {
+                  "date": "2025-04-03",
+                  "best_avlbl_pct": 0.0
+                },
+                {
+                  "date": "2025-04-04",
+                  "best_avlbl_pct": 0.0
+                },
+                {
+                  "date": "2025-04-05",
+                  "best_avlbl_pct": 0.0
+                },
+                {
+                  "date": "2025-04-09",
+                  "best_avlbl_pct": 0.0
+                },
+                {
+                  "date": "2025-05-03",
+                  "best_avlbl_pct": 0.0
+                },
+                {
+                  "date": "2025-05-14",
+                  "best_avlbl_pct": 0.0
+                },
+                {
+                  "date": "2025-06-04",
+                  "best_avlbl_pct": 0.0
+                },
+                {
+                  "date": "2025-06-23",
+                  "best_avlbl_pct": 0.0
+                },
+                {
+                  "date": "2025-06-30",
+                  "best_avlbl_pct": 0.0
+                },
+                {
+                  "date": "2025-08-01",
+                  "best_avlbl_pct": 0.0
+                },
+                {
+                  "date": "2025-08-06",
+                  "best_avlbl_pct": 0.0
+                },
+                {
+                  "date": "2025-08-07",
+                  "best_avlbl_pct": 0.0
+                },
+                {
+                  "date": "2025-08-18",
+                  "best_avlbl_pct": 0.0
+                },
+                {
+                  "date": "2025-08-27",
+                  "best_avlbl_pct": 0.0
+                },
+                {
+                  "date": "2025-09-01",
+                  "best_avlbl_pct": 0.0
+                },
+                {
+                  "date": "2025-09-08",
+                  "best_avlbl_pct": 0.0
+                },
+                {
+                  "date": "2025-09-16",
+                  "best_avlbl_pct": 0.0
+                },
+                {
+                  "date": "2025-10-01",
+                  "best_avlbl_pct": 0.0
+                },
+                {
+                  "date": "2025-10-14",
+                  "best_avlbl_pct": 0.0
+                },
+                {
+                  "date": "2025-11-01",
+                  "best_avlbl_pct": 0.0
+                },
+                {
+                  "date": "2025-11-10",
+                  "best_avlbl_pct": 0.0
+                },
+                {
+                  "date": "2025-11-13",
+                  "best_avlbl_pct": 0.0
+                },
+                {
+                  "date": "2025-11-14",
+                  "best_avlbl_pct": 0.0
+                },
+                {
+                  "date": "2026-01-01",
+                  "best_avlbl_pct": 0.0
+                },
+                {
+                  "date": "2026-02-06",
+                  "best_avlbl_pct": 0.0
+                },
+                {
+                  "date": "2026-02-20",
+                  "best_avlbl_pct": 0.0
+                },
+                {
+                  "date": "2026-02-24",
+                  "best_avlbl_pct": 0.0
+                },
+                {
+                  "date": "2026-04-06",
+                  "best_avlbl_pct": 0.0
+                },
+                {
+                  "date": "2026-06-08",
+                  "best_avlbl_pct": 0.0
+                },
+                {
+                  "date": "2026-07-22",
+                  "best_avlbl_pct": 0.0
+                },
+                {
+                  "date": "2026-07-24",
+                  "best_avlbl_pct": 0.0
+                },
+                {
+                  "date": "2026-08-22",
+                  "best_avlbl_pct": 0.0
+                },
+                {
+                  "date": "2026-09-03",
+                  "best_avlbl_pct": 0.0
+                }
+              ]
+            },
+            "854232": {
+              "name": "메모리",
+              "action_date_latest": "2026-09-03",
+              "best_avlbl_pct": 0.0,
+              "imports_usd": 431989147.0,
+              "tariff_history": [
+                {
+                  "date": "2025-01-01",
+                  "best_avlbl_pct": 0.0
+                },
+                {
+                  "date": "2025-02-04",
+                  "best_avlbl_pct": 0.0
+                },
+                {
+                  "date": "2025-03-04",
+                  "best_avlbl_pct": 0.0
+                },
+                {
+                  "date": "2025-03-07",
+                  "best_avlbl_pct": 0.0
+                },
+                {
+                  "date": "2025-03-12",
+                  "best_avlbl_pct": 0.0
+                },
+                {
+                  "date": "2025-04-03",
+                  "best_avlbl_pct": 0.0
+                },
+                {
+                  "date": "2025-04-04",
+                  "best_avlbl_pct": 0.0
+                },
+                {
+                  "date": "2025-04-05",
+                  "best_avlbl_pct": 0.0
+                },
+                {
+                  "date": "2025-04-09",
+                  "best_avlbl_pct": 0.0
+                },
+                {
+                  "date": "2025-05-03",
+                  "best_avlbl_pct": 0.0
+                },
+                {
+                  "date": "2025-05-14",
+                  "best_avlbl_pct": 0.0
+                },
+                {
+                  "date": "2025-06-04",
+                  "best_avlbl_pct": 0.0
+                },
+                {
+                  "date": "2025-06-23",
+                  "best_avlbl_pct": 0.0
+                },
+                {
+                  "date": "2025-06-30",
+                  "best_avlbl_pct": 0.0
+                },
+                {
+                  "date": "2025-08-01",
+                  "best_avlbl_pct": 0.0
+                },
+                {
+                  "date": "2025-08-06",
+                  "best_avlbl_pct": 0.0
+                },
+                {
+                  "date": "2025-08-07",
+                  "best_avlbl_pct": 0.0
+                },
+                {
+                  "date": "2025-08-18",
+                  "best_avlbl_pct": 0.0
+                },
+                {
+                  "date": "2025-08-27",
+                  "best_avlbl_pct": 0.0
+                },
+                {
+                  "date": "2025-09-01",
+                  "best_avlbl_pct": 0.0
+                },
+                {
+                  "date": "2025-09-08",
+                  "best_avlbl_pct": 0.0
+                },
+                {
+                  "date": "2025-09-16",
+                  "best_avlbl_pct": 0.0
+                },
+                {
+                  "date": "2025-10-01",
+                  "best_avlbl_pct": 0.0
+                },
+                {
+                  "date": "2025-10-14",
+                  "best_avlbl_pct": 0.0
+                },
+                {
+                  "date": "2025-11-01",
+                  "best_avlbl_pct": 0.0
+                },
+                {
+                  "date": "2025-11-10",
+                  "best_avlbl_pct": 0.0
+                },
+                {
+                  "date": "2025-11-13",
+                  "best_avlbl_pct": 0.0
+                },
+                {
+                  "date": "2025-11-14",
+                  "best_avlbl_pct": 0.0
+                },
+                {
+                  "date": "2026-01-01",
+                  "best_avlbl_pct": 0.0
+                },
+                {
+                  "date": "2026-02-06",
+                  "best_avlbl_pct": 0.0
+                },
+                {
+                  "date": "2026-02-20",
+                  "best_avlbl_pct": 0.0
+                },
+                {
+                  "date": "2026-02-24",
+                  "best_avlbl_pct": 0.0
+                },
+                {
+                  "date": "2026-04-06",
+                  "best_avlbl_pct": 0.0
+                },
+                {
+                  "date": "2026-06-08",
+                  "best_avlbl_pct": 0.0
+                },
+                {
+                  "date": "2026-07-22",
+                  "best_avlbl_pct": 0.0
+                },
+                {
+                  "date": "2026-07-24",
+                  "best_avlbl_pct": 0.0
+                },
+                {
+                  "date": "2026-08-22",
+                  "best_avlbl_pct": 0.0
+                },
+                {
+                  "date": "2026-09-03",
+                  "best_avlbl_pct": 0.0
+                }
+              ]
+            }
+          },
+          "imports_total_usd": 1546844817.0,
+          "note": "best_avlbl = 조치 시행 후 적용 예상 관세율(%), imports = 최신 가용 수입액(USD)"
+        },
+        "export_price_index": {
+          "file": "(통계)2026년08월수출입물가지수무역지수(잠정).xlsx",
+          "sheet": "1.수출(기본분류)",
+          "row_label": "컴퓨터,전자및광학기기",
+          "base": "2020=100, 원화기준",
+          "periods": [
+            "2026. 7",
+            "2026. 8p"
+          ],
+          "prev": 229.34,
+          "latest_preliminary": 222.17,
+          "mom_pct": -3.1,
+          "ytd_pct": 77.5,
+          "yoy_pct": 113.2,
+          "period": "2026-08",
+          "semiconductor_row_available": false,
+          "note": "파일에 '반도체' 세부 지수가 없어 상위 분류(컴퓨터,전자및광학기기)를 표시"
+        }
+      }
+    },
+    {
+      "key": "logistics",
+      "headline": "8,589천원/2TEU · 전월비 +0.5%",
+      "note": "한국→미국 서부 해상수출 평균 운송비용 2026-08(관세청) · 동부 9,973천원, 전월비 +24.8%",
+      "state": "ok",
+      "source": "260915 2026년 8월 해상 수출입 컨테이너 및 항공수입 운송비용 현황.hwpx",
+      "as_of": "2026-08-31",
+      "data_class": "실제자료",
+      "detail": {
+        "press_release_date": "2026-09-15",
+        "data_period": "2026-08",
+        "direction": "해상수출(한국→해외)",
+        "unit": "천원/2TEU (40피트 컨테이너 1개당 평균 총 운송비용, 할증료·수수료 포함)",
+        "unit_note_raw": "◈ 해상 수출입 운송비용 : 컨테이너 2TEU* 당 운송비용** 평균",
+        "routes": {
+          "미국서부": {
+            "avg_cost_thousand_krw_per_2teu": 8589,
+            "mom_pct": 0.5,
+            "yoy_pct": 59.4
+          },
+          "미국동부": {
+            "avg_cost_thousand_krw_per_2teu": 9973,
+            "mom_pct": 24.8,
+            "yoy_pct": 75.8
+          },
+          "유럽연합": {
+            "avg_cost_thousand_krw_per_2teu": 5014,
+            "mom_pct": -9.4,
+            "yoy_pct": 36.3
+          },
+          "중동": {
+            "avg_cost_thousand_krw_per_2teu": 8838,
+            "mom_pct": 1.7,
+            "yoy_pct": 133.7
+          },
+          "중국": {
+            "avg_cost_thousand_krw_per_2teu": 652,
+            "mom_pct": -22.4,
+            "yoy_pct": 13.8
+          },
+          "일본": {
+            "avg_cost_thousand_krw_per_2teu": 662,
+            "mom_pct": -0.7,
+            "yoy_pct": -7.9
+          },
+          "베트남": {
+            "avg_cost_thousand_krw_per_2teu": 1558,
+            "mom_pct": -9.0,
+            "yoy_pct": 0.05
+          }
+        },
+        "monthly": {
+          "미국서부": [
+            {
+              "month": "2025-08",
+              "value": 5388.0
+            },
+            {
+              "month": "2025-09",
+              "value": 5033.0
+            },
+            {
+              "month": "2025-10",
+              "value": 5145.0
+            },
+            {
+              "month": "2025-11",
+              "value": 5187.0
+            },
+            {
+              "month": "2025-12",
+              "value": 5077.0
+            },
+            {
+              "month": "2026-01",
+              "value": 4933.0
+            },
+            {
+              "month": "2026-02",
+              "value": 4713.0
+            },
+            {
+              "month": "2026-03",
+              "value": 5646.0
+            },
+            {
+              "month": "2026-04",
+              "value": 5062.0
+            },
+            {
+              "month": "2026-05",
+              "value": 5465.0
+            },
+            {
+              "month": "2026-06",
+              "value": 7705.0
+            },
+            {
+              "month": "2026-07",
+              "value": 8547.0
+            },
+            {
+              "month": "2026-08",
+              "value": 8589.0
+            }
+          ],
+          "미국동부": [
+            {
+              "month": "2025-08",
+              "value": 3680.0
+            },
+            {
+              "month": "2025-09",
+              "value": 3426.0
+            },
+            {
+              "month": "2025-10",
+              "value": 3084.0
+            },
+            {
+              "month": "2025-11",
+              "value": 3218.0
+            },
+            {
+              "month": "2025-12",
+              "value": 3557.0
+            },
+            {
+              "month": "2026-01",
+              "value": 3385.0
+            },
+            {
+              "month": "2026-02",
+              "value": 3157.0
+            },
+            {
+              "month": "2026-03",
+              "value": 3336.0
+            },
+            {
+              "month": "2026-04",
+              "value": 3618.0
+            },
+            {
+              "month": "2026-05",
+              "value": 3590.0
+            },
+            {
+              "month": "2026-06",
+              "value": 4162.0
+            },
+            {
+              "month": "2026-07",
+              "value": 5535.0
+            },
+            {
+              "month": "2026-08",
+              "value": 5014.0
+            }
+          ]
+        },
+        "parse_method": "hwpx(Contents/section0.xml) 문단 텍스트 정규식 추출"
+      }
+    },
+    {
+      "key": "stability",
+      "headline": "환율 평균 월간 변동폭 ±1.8% · 과거 10년 대비 불안정",
+      "note": "원/USD 월평균(연준 H.10 일별→월평균) 2025-09~2026-08 · 최고 1,529.46(2026-06) / 최저 1,392.91(2025-09) · 보조 운임(미국서부) 변동폭 ±9.1%(등급 없음, 20개월) · 산식 v1.0 확정",
+      "state": "ok",
+      "source": "fred_DEXKOUS_daily.csv",
+      "as_of": "2026-08-31",
+      "data_class": "실제자료",
+      "method_status": "확정",
+      "method_version": "1.0",
+      "detail": {
+        "indicator": "결제통화 환율 (원/외화 월평균)",
+        "fetched_at": "2026-09-23T12:38:26",
+        "window_months": 12,
+        "history_years": 10,
+        "grading_method": "tercile_vs_history",
+        "primary_country": "미국",
+        "per_country": {
+          "미국": {
+            "ccy": "USD",
+            "state": "ok",
+            "headline": "환율 평균 월간 변동폭 ±1.8% · 과거 10년 대비 불안정",
+            "note": "원/USD 월평균(연준 H.10 일별→월평균) 2025-09~2026-08 · 최고 1,529.46(2026-06) / 최저 1,392.91(2025-09) · 보조 운임(미국서부) 변동폭 ±9.1%(등급 없음, 20개월) · 산식 v1.0 확정",
+            "source": "fred_DEXKOUS_daily.csv",
+            "as_of": "2026-08-31",
+            "extra_note": null
+          },
+          "중국": {
+            "ccy": "CNY",
+            "state": "ok",
+            "headline": "환율 평균 월간 변동폭 ±1.9% · 과거 10년 대비 불안정",
+            "note": "원/CNY 월평균(연준 H.10 일별→월평균) 2025-09~2026-08 · 최고 225.72(2026-06) / 최저 195.54(2025-09) · 산식 v1.0 확정",
+            "source": "fred_DEXKOUS_daily.csv + fred_DEXCHUS_daily.csv",
+            "as_of": "2026-08-31",
+            "extra_note": null
+          },
+          "일본": {
+            "ccy": "JPY",
+            "state": "ok",
+            "headline": "환율 평균 월간 변동폭 ±1.1% · 과거 10년 대비 안정",
+            "note": "원/JPY 월평균(연준 H.10 일별→월평균) 2025-09~2026-08 · 최고 9.51(2026-06) / 최저 8.83(2026-08) · 산식 v1.0 확정",
+            "source": "fred_DEXKOUS_daily.csv + fred_DEXJPUS_daily.csv",
+            "as_of": "2026-08-31",
+            "extra_note": null
+          },
+          "영국": {
+            "ccy": "GBP",
+            "state": "ok",
+            "headline": "환율 평균 월간 변동폭 ±1.4% · 과거 10년 대비 보통",
+            "note": "원/GBP 월평균(연준 H.10 일별→월평균) 2025-09~2026-08 · 최고 2,039.87(2026-06) / 최저 1,881.25(2025-09) · 산식 v1.0 확정",
+            "source": "fred_DEXKOUS_daily.csv + fred_DEXUSUK_daily.csv",
+            "as_of": "2026-08-31",
+            "extra_note": null
+          },
+          "EU": {
+            "ccy": "EUR",
+            "state": "ok",
+            "headline": "환율 평균 월간 변동폭 ±1.4% · 과거 10년 대비 보통",
+            "note": "원/EUR 월평균(연준 H.10 일별→월평균) 2025-09~2026-08 · 최고 1,761.29(2026-06) / 최저 1,626.75(2026-08) · 산식 v1.0 확정",
+            "source": "fred_DEXKOUS_daily.csv + fred_DEXUSEU_daily.csv",
+            "as_of": "2026-08-31",
+            "extra_note": null
+          },
+          "독일": {
+            "ccy": "EUR",
+            "state": "ok",
+            "headline": "환율 평균 월간 변동폭 ±1.4% · 과거 10년 대비 보통",
+            "note": "원/EUR 월평균(연준 H.10 일별→월평균) 2025-09~2026-08 · 최고 1,761.29(2026-06) / 최저 1,626.75(2026-08) · 산식 v1.0 확정",
+            "source": "fred_DEXKOUS_daily.csv + fred_DEXUSEU_daily.csv",
+            "as_of": "2026-08-31",
+            "extra_note": null
+          },
+          "캐나다": {
+            "ccy": "CAD",
+            "state": "ok",
+            "headline": "환율 평균 월간 변동폭 ±1.5% · 과거 10년 대비 보통",
+            "note": "원/CAD 월평균(연준 H.10 일별→월평균) 2025-09~2026-08 · 최고 1,089.90(2026-06) / 최저 1,006.85(2025-09) · 산식 v1.0 확정",
+            "source": "fred_DEXKOUS_daily.csv + fred_DEXCAUS_daily.csv",
+            "as_of": "2026-08-31",
+            "extra_note": null
+          },
+          "멕시코": {
+            "ccy": "MXN",
+            "state": "ok",
+            "headline": "환율 평균 월간 변동폭 ±2.0% · 과거 10년 대비 보통",
+            "note": "원/MXN 월평균(연준 H.10 일별→월평균) 2025-09~2026-08 · 최고 88.01(2026-06) / 최저 75.38(2025-09) · 산식 v1.0 확정",
+            "source": "fred_DEXKOUS_daily.csv + fred_DEXMXUS_daily.csv",
+            "as_of": "2026-08-31",
+            "extra_note": null
+          },
+          "인도": {
+            "ccy": "INR",
+            "state": "ok",
+            "headline": "환율 평균 월간 변동폭 ±2.0% · 과거 10년 대비 불안정",
+            "note": "원/INR 월평균(연준 H.10 일별→월평균) 2025-09~2026-08 · 최고 16.43(2025-11) / 최저 14.70(2026-08) · 산식 v1.0 확정",
+            "source": "fred_DEXKOUS_daily.csv + fred_DEXINUS_daily.csv",
+            "as_of": "2026-08-31",
+            "extra_note": null
+          },
+          "스위스": {
+            "ccy": "CHF",
+            "state": "ok",
+            "headline": "환율 평균 월간 변동폭 ±1.7% · 과거 10년 대비 불안정",
+            "note": "원/CHF 월평균(연준 H.10 일별→월평균) 2025-09~2026-08 · 최고 1,913.52(2026-06) / 최저 1,737.77(2026-08) · 산식 v1.0 확정",
+            "source": "fred_DEXKOUS_daily.csv + fred_DEXSZUS_daily.csv",
+            "as_of": "2026-08-31",
+            "extra_note": null
+          },
+          "에콰도르": {
+            "ccy": "USD",
+            "state": "ok",
+            "headline": "환율 평균 월간 변동폭 ±1.8% · 과거 10년 대비 불안정",
+            "note": "원/USD 월평균(연준 H.10 일별→월평균) 2025-09~2026-08 · 최고 1,529.46(2026-06) / 최저 1,392.91(2025-09) · 산식 v1.0 확정",
+            "source": "fred_DEXKOUS_daily.csv",
+            "as_of": "2026-08-31",
+            "extra_note": "미 달러 법정통화"
+          },
+          "콜롬비아": {
+            "ccy": "COP",
+            "state": "insufficient",
+            "headline": "자료 부족",
+            "note": "COP 환율 계산 불가 — ecos_COP_daily.csv 없음 (fetch_fx_ecos.py 실행 필요, ECOS_API_KEY 환경변수)",
+            "source": "",
+            "as_of": null,
+            "checked_on": "2026-09-23"
+          },
+          "캄보디아": {
+            "ccy": "KHR",
+            "state": "insufficient",
+            "headline": "자료 부족",
+            "note": "KHR 환율 계산 불가 — ecos_KHR_daily.csv 없음 (fetch_fx_ecos.py 실행 필요, ECOS_API_KEY 환경변수)",
+            "source": "",
+            "as_of": null,
+            "checked_on": "2026-09-23"
+          },
+          "짐바브웨": {
+            "ccy": "ZiG",
+            "state": "insufficient",
+            "headline": "자료 부족",
+            "note": "ZiG 환율 계산 불가 — ecos_ZiG_daily.csv 없음 (fetch_fx_ecos.py 실행 필요, ECOS_API_KEY 환경변수)",
+            "source": "",
+            "as_of": null,
+            "checked_on": "2026-09-23"
+          },
+          "베트남": {
+            "ccy": "VND",
+            "state": "insufficient",
+            "headline": "자료 부족",
+            "note": "VND 환율 계산 불가 — ecos_VND_daily.csv 없음 (fetch_fx_ecos.py 실행 필요, ECOS_API_KEY 환경변수)",
+            "source": "",
+            "as_of": null,
+            "checked_on": "2026-09-23"
+          }
+        },
+        "per_currency": {
+          "USD": {
+            "period": "2025-09~2026-08",
+            "last": [
+              2026,
+              8
+            ],
+            "mean_abs_mom_pct": 1.797,
+            "coefficient_of_variation_pct": 2.585,
+            "high": {
+              "value": 1529.4619,
+              "month": "2026-06"
+            },
+            "low": {
+              "value": 1392.9052,
+              "month": "2025-09"
+            },
+            "monthly": [
+              {
+                "month": "2025-08",
+                "value": 1388.999
+              },
+              {
+                "month": "2025-09",
+                "value": 1392.9052
+              },
+              {
+                "month": "2025-10",
+                "value": 1423.0795
+              },
+              {
+                "month": "2025-11",
+                "value": 1459.8789
+              },
+              {
+                "month": "2025-12",
+                "value": 1465.355
+              },
+              {
+                "month": "2026-01",
+                "value": 1455.496
+              },
+              {
+                "month": "2026-02",
+                "value": 1447.2858
+              },
+              {
+                "month": "2026-03",
+                "value": 1490.5177
+              },
+              {
+                "month": "2026-04",
+                "value": 1483.7977
+              },
+              {
+                "month": "2026-05",
+                "value": 1488.396
+              },
+              {
+                "month": "2026-06",
+                "value": 1529.4619
+              },
+              {
+                "month": "2026-07",
+                "value": 1486.0132
+              },
+              {
+                "month": "2026-08",
+                "value": 1403.2186
+              }
+            ],
+            "grading": {
+              "history_windows": 120,
+              "tercile_cuts_pct": [
+                1.154,
+                1.445
+              ],
+              "percentile_rank_pct": 80.8,
+              "grade": "불안정"
+            },
+            "state": "ok",
+            "source": "fred_DEXKOUS_daily.csv",
+            "desc": "KRW/USD",
+            "months_available": 545
+          },
+          "CNY": {
+            "period": "2025-09~2026-08",
+            "last": [
+              2026,
+              8
+            ],
+            "mean_abs_mom_pct": 1.947,
+            "coefficient_of_variation_pct": 3.937,
+            "high": {
+              "value": 225.7218,
+              "month": "2026-06"
+            },
+            "low": {
+              "value": 195.5375,
+              "month": "2025-09"
+            },
+            "monthly": [
+              {
+                "month": "2025-08",
+                "value": 193.6523
+              },
+              {
+                "month": "2025-09",
+                "value": 195.5375
+              },
+              {
+                "month": "2025-10",
+                "value": 199.872
+              },
+              {
+                "month": "2025-11",
+                "value": 205.4209
+              },
+              {
+                "month": "2025-12",
+                "value": 208.0499
+              },
+              {
+                "month": "2026-01",
+                "value": 208.8462
+              },
+              {
+                "month": "2026-02",
+                "value": 209.5576
+              },
+              {
+                "month": "2026-03",
+                "value": 216.2641
+              },
+              {
+                "month": "2026-04",
+                "value": 217.0169
+              },
+              {
+                "month": "2026-05",
+                "value": 218.8975
+              },
+              {
+                "month": "2026-06",
+                "value": 225.7218
+              },
+              {
+                "month": "2026-07",
+                "value": 219.3085
+              },
+              {
+                "month": "2026-08",
+                "value": 208.3098
+              }
+            ],
+            "grading": {
+              "history_windows": 120,
+              "tercile_cuts_pct": [
+                0.971,
+                1.308
+              ],
+              "percentile_rank_pct": 98.3,
+              "grade": "불안정"
+            },
+            "state": "ok",
+            "source": "fred_DEXKOUS_daily.csv + fred_DEXCHUS_daily.csv",
+            "desc": "KRW/USD ÷ CNY/USD",
+            "months_available": 545
+          },
+          "JPY": {
+            "period": "2025-09~2026-08",
+            "last": [
+              2026,
+              8
+            ],
+            "mean_abs_mom_pct": 1.052,
+            "coefficient_of_variation_pct": 1.822,
+            "high": {
+              "value": 9.5133,
+              "month": "2026-06"
+            },
+            "low": {
+              "value": 8.8343,
+              "month": "2026-08"
+            },
+            "monthly": [
+              {
+                "month": "2025-08",
+                "value": 9.4183
+              },
+              {
+                "month": "2025-09",
+                "value": 9.4203
+              },
+              {
+                "month": "2025-10",
+                "value": 9.4031
+              },
+              {
+                "month": "2025-11",
+                "value": 9.4102
+              },
+              {
+                "month": "2025-12",
+                "value": 9.3987
+              },
+              {
+                "month": "2026-01",
+                "value": 9.2918
+              },
+              {
+                "month": "2026-02",
+                "value": 9.3318
+              },
+              {
+                "month": "2026-03",
+                "value": 9.3929
+              },
+              {
+                "month": "2026-04",
+                "value": 9.3252
+              },
+              {
+                "month": "2026-05",
+                "value": 9.4108
+              },
+              {
+                "month": "2026-06",
+                "value": 9.5133
+              },
+              {
+                "month": "2026-07",
+                "value": 9.1547
+              },
+              {
+                "month": "2026-08",
+                "value": 8.8343
+              }
+            ],
+            "grading": {
+              "history_windows": 120,
+              "tercile_cuts_pct": [
+                1.291,
+                1.637
+              ],
+              "percentile_rank_pct": 10.8,
+              "grade": "안정"
+            },
+            "state": "ok",
+            "source": "fred_DEXKOUS_daily.csv + fred_DEXJPUS_daily.csv",
+            "desc": "KRW/USD ÷ JPY/USD",
+            "months_available": 545
+          },
+          "GBP": {
+            "period": "2025-09~2026-08",
+            "last": [
+              2026,
+              8
+            ],
+            "mean_abs_mom_pct": 1.35,
+            "coefficient_of_variation_pct": 2.411,
+            "high": {
+              "value": 2039.8697,
+              "month": "2026-06"
+            },
+            "low": {
+              "value": 1881.2498,
+              "month": "2025-09"
+            },
+            "monthly": [
+              {
+                "month": "2025-08",
+                "value": 1868.9988
+              },
+              {
+                "month": "2025-09",
+                "value": 1881.2498
+              },
+              {
+                "month": "2025-10",
+                "value": 1900.7399
+              },
+              {
+                "month": "2025-11",
+                "value": 1918.1283
+              },
+              {
+                "month": "2025-12",
+                "value": 1961.6416
+              },
+              {
+                "month": "2026-01",
+                "value": 1969.9638
+              },
+              {
+                "month": "2026-02",
+                "value": 1965.3288
+              },
+              {
+                "month": "2026-03",
+                "value": 1988.0665
+              },
+              {
+                "month": "2026-04",
+                "value": 1996.1532
+              },
+              {
+                "month": "2026-05",
+                "value": 2008.9494
+              },
+              {
+                "month": "2026-06",
+                "value": 2039.8697
+              },
+              {
+                "month": "2026-07",
+                "value": 1988.7544
+              },
+              {
+                "month": "2026-08",
+                "value": 1900.8303
+              }
+            ],
+            "grading": {
+              "history_windows": 120,
+              "tercile_cuts_pct": [
+                1.244,
+                1.511
+              ],
+              "percentile_rank_pct": 46.7,
+              "grade": "보통"
+            },
+            "state": "ok",
+            "source": "fred_DEXKOUS_daily.csv + fred_DEXUSUK_daily.csv",
+            "desc": "KRW/USD × USD/GBP",
+            "months_available": 545
+          },
+          "EUR": {
+            "period": "2025-09~2026-08",
+            "last": [
+              2026,
+              8
+            ],
+            "mean_abs_mom_pct": 1.427,
+            "coefficient_of_variation_pct": 2.348,
+            "high": {
+              "value": 1761.2859,
+              "month": "2026-06"
+            },
+            "low": {
+              "value": 1626.746,
+              "month": "2026-08"
+            },
+            "monthly": [
+              {
+                "month": "2025-08",
+                "value": 1617.8252
+              },
+              {
+                "month": "2025-09",
+                "value": 1635.0658
+              },
+              {
+                "month": "2025-10",
+                "value": 1656.5303
+              },
+              {
+                "month": "2025-11",
+                "value": 1687.3614
+              },
+              {
+                "month": "2025-12",
+                "value": 1715.9593
+              },
+              {
+                "month": "2026-01",
+                "value": 1709.2617
+              },
+              {
+                "month": "2026-02",
+                "value": 1711.2921
+              },
+              {
+                "month": "2026-03",
+                "value": 1722.4556
+              },
+              {
+                "month": "2026-04",
+                "value": 1735.5363
+              },
+              {
+                "month": "2026-05",
+                "value": 1738.501
+              },
+              {
+                "month": "2026-06",
+                "value": 1761.2859
+              },
+              {
+                "month": "2026-07",
+                "value": 1697.399
+              },
+              {
+                "month": "2026-08",
+                "value": 1626.746
+              }
+            ],
+            "grading": {
+              "history_windows": 120,
+              "tercile_cuts_pct": [
+                1.123,
+                1.461
+              ],
+              "percentile_rank_pct": 65.0,
+              "grade": "보통"
+            },
+            "state": "ok",
+            "source": "fred_DEXKOUS_daily.csv + fred_DEXUSEU_daily.csv",
+            "desc": "KRW/USD × USD/EUR",
+            "months_available": 332
+          },
+          "CAD": {
+            "period": "2025-09~2026-08",
+            "last": [
+              2026,
+              8
+            ],
+            "mean_abs_mom_pct": 1.497,
+            "coefficient_of_variation_pct": 2.716,
+            "high": {
+              "value": 1089.9019,
+              "month": "2026-06"
+            },
+            "low": {
+              "value": 1006.8454,
+              "month": "2025-09"
+            },
+            "monthly": [
+              {
+                "month": "2025-08",
+                "value": 1006.7294
+              },
+              {
+                "month": "2025-09",
+                "value": 1006.8454
+              },
+              {
+                "month": "2025-10",
+                "value": 1017.3823
+              },
+              {
+                "month": "2025-11",
+                "value": 1038.6173
+              },
+              {
+                "month": "2025-12",
+                "value": 1062.2611
+              },
+              {
+                "month": "2026-01",
+                "value": 1056.9559
+              },
+              {
+                "month": "2026-02",
+                "value": 1060.4331
+              },
+              {
+                "month": "2026-03",
+                "value": 1086.3942
+              },
+              {
+                "month": "2026-04",
+                "value": 1078.7892
+              },
+              {
+                "month": "2026-05",
+                "value": 1085.0417
+              },
+              {
+                "month": "2026-06",
+                "value": 1089.9019
+              },
+              {
+                "month": "2026-07",
+                "value": 1053.5056
+              },
+              {
+                "month": "2026-08",
+                "value": 1009.3218
+              }
+            ],
+            "grading": {
+              "history_windows": 120,
+              "tercile_cuts_pct": [
+                1.157,
+                1.499
+              ],
+              "percentile_rank_pct": 66.7,
+              "grade": "보통"
+            },
+            "state": "ok",
+            "source": "fred_DEXKOUS_daily.csv + fred_DEXCAUS_daily.csv",
+            "desc": "KRW/USD ÷ CAD/USD",
+            "months_available": 545
+          },
+          "MXN": {
+            "period": "2025-09~2026-08",
+            "last": [
+              2026,
+              8
+            ],
+            "mean_abs_mom_pct": 2.011,
+            "coefficient_of_variation_pct": 4.296,
+            "high": {
+              "value": 88.0057,
+              "month": "2026-06"
+            },
+            "low": {
+              "value": 75.3833,
+              "month": "2025-09"
+            },
+            "monthly": [
+              {
+                "month": "2025-08",
+                "value": 74.2543
+              },
+              {
+                "month": "2025-09",
+                "value": 75.3833
+              },
+              {
+                "month": "2025-10",
+                "value": 77.2381
+              },
+              {
+                "month": "2025-11",
+                "value": 79.2631
+              },
+              {
+                "month": "2025-12",
+                "value": 81.0924
+              },
+              {
+                "month": "2026-01",
+                "value": 82.5051
+              },
+              {
+                "month": "2026-02",
+                "value": 84.0079
+              },
+              {
+                "month": "2026-03",
+                "value": 83.877
+              },
+              {
+                "month": "2026-04",
+                "value": 85.0129
+              },
+              {
+                "month": "2026-05",
+                "value": 85.9837
+              },
+              {
+                "month": "2026-06",
+                "value": 88.0057
+              },
+              {
+                "month": "2026-07",
+                "value": 85.1278
+              },
+              {
+                "month": "2026-08",
+                "value": 82.2456
+              }
+            ],
+            "grading": {
+              "history_windows": 120,
+              "tercile_cuts_pct": [
+                1.767,
+                2.508
+              ],
+              "percentile_rank_pct": 40.8,
+              "grade": "보통"
+            },
+            "state": "ok",
+            "source": "fred_DEXKOUS_daily.csv + fred_DEXMXUS_daily.csv",
+            "desc": "KRW/USD ÷ MXN/USD",
+            "months_available": 394
+          },
+          "INR": {
+            "period": "2025-09~2026-08",
+            "last": [
+              2026,
+              8
+            ],
+            "mean_abs_mom_pct": 1.973,
+            "coefficient_of_variation_pct": 2.727,
+            "high": {
+              "value": 16.4319,
+              "month": "2025-11"
+            },
+            "low": {
+              "value": 14.7022,
+              "month": "2026-08"
+            },
+            "monthly": [
+              {
+                "month": "2025-08",
+                "value": 15.8619
+              },
+              {
+                "month": "2025-09",
+                "value": 15.7708
+              },
+              {
+                "month": "2025-10",
+                "value": 16.1044
+              },
+              {
+                "month": "2025-11",
+                "value": 16.4319
+              },
+              {
+                "month": "2025-12",
+                "value": 16.2755
+              },
+              {
+                "month": "2026-01",
+                "value": 16.0132
+              },
+              {
+                "month": "2026-02",
+                "value": 15.9491
+              },
+              {
+                "month": "2026-03",
+                "value": 16.0588
+              },
+              {
+                "month": "2026-04",
+                "value": 15.8739
+              },
+              {
+                "month": "2026-05",
+                "value": 15.5795
+              },
+              {
+                "month": "2026-06",
+                "value": 16.1069
+              },
+              {
+                "month": "2026-07",
+                "value": 15.5034
+              },
+              {
+                "month": "2026-08",
+                "value": 14.7022
+              }
+            ],
+            "grading": {
+              "history_windows": 120,
+              "tercile_cuts_pct": [
+                1.317,
+                1.517
+              ],
+              "percentile_rank_pct": 91.7,
+              "grade": "불안정"
+            },
+            "state": "ok",
+            "source": "fred_DEXKOUS_daily.csv + fred_DEXINUS_daily.csv",
+            "desc": "KRW/USD ÷ INR/USD",
+            "months_available": 545
+          },
+          "CHF": {
+            "period": "2025-09~2026-08",
+            "last": [
+              2026,
+              8
+            ],
+            "mean_abs_mom_pct": 1.742,
+            "coefficient_of_variation_pct": 3.024,
+            "high": {
+              "value": 1913.5238,
+              "month": "2026-06"
+            },
+            "low": {
+              "value": 1737.7716,
+              "month": "2026-08"
+            },
+            "monthly": [
+              {
+                "month": "2025-08",
+                "value": 1723.8707
+              },
+              {
+                "month": "2025-09",
+                "value": 1749.5929
+              },
+              {
+                "month": "2025-10",
+                "value": 1784.5618
+              },
+              {
+                "month": "2025-11",
+                "value": 1816.6065
+              },
+              {
+                "month": "2025-12",
+                "value": 1838.8651
+              },
+              {
+                "month": "2026-01",
+                "value": 1843.9412
+              },
+              {
+                "month": "2026-02",
+                "value": 1872.6666
+              },
+              {
+                "month": "2026-03",
+                "value": 1893.2277
+              },
+              {
+                "month": "2026-04",
+                "value": 1883.9695
+              },
+              {
+                "month": "2026-05",
+                "value": 1899.9286
+              },
+              {
+                "month": "2026-06",
+                "value": 1913.5238
+              },
+              {
+                "month": "2026-07",
+                "value": 1833.8001
+              },
+              {
+                "month": "2026-08",
+                "value": 1737.7716
+              }
+            ],
+            "grading": {
+              "history_windows": 120,
+              "tercile_cuts_pct": [
+                1.317,
+                1.631
+              ],
+              "percentile_rank_pct": 74.2,
+              "grade": "불안정"
+            },
+            "state": "ok",
+            "source": "fred_DEXKOUS_daily.csv + fred_DEXSZUS_daily.csv",
+            "desc": "KRW/USD ÷ CHF/USD",
+            "months_available": 545
+          },
+          "COP": {
+            "state": "insufficient",
+            "reason": "ecos_COP_daily.csv 없음 (fetch_fx_ecos.py 실행 필요, ECOS_API_KEY 환경변수)"
+          },
+          "KHR": {
+            "state": "insufficient",
+            "reason": "ecos_KHR_daily.csv 없음 (fetch_fx_ecos.py 실행 필요, ECOS_API_KEY 환경변수)"
+          },
+          "VND": {
+            "state": "insufficient",
+            "reason": "ecos_VND_daily.csv 없음 (fetch_fx_ecos.py 실행 필요, ECOS_API_KEY 환경변수)"
+          },
+          "ZiG": {
+            "state": "insufficient",
+            "reason": "ecos_ZiG_daily.csv 없음 (fetch_fx_ecos.py 실행 필요, ECOS_API_KEY 환경변수)"
+          }
+        },
+        "secondary": {
+          "name": "한국→목적국 해상수출 컨테이너 운임 (천원/2TEU, 월별)",
+          "source": "260915 2026년 8월 해상 수출입 컨테이너 및 항공수입 운송비용 현황.hwpx",
+          "routes": {
+            "미국서부": {
+              "period": "2025-09~2026-08",
+              "last": [
+                2026,
+                8
+              ],
+              "mean_abs_mom_pct": 9.13,
+              "coefficient_of_variation_pct": 23.515,
+              "high": {
+                "value": 8589.0,
+                "month": "2026-08"
+              },
+              "low": {
+                "value": 4713.0,
+                "month": "2026-02"
+              },
+              "monthly": [
+                {
+                  "month": "2025-08",
+                  "value": 5388.0
+                },
+                {
+                  "month": "2025-09",
+                  "value": 5033.0
+                },
+                {
+                  "month": "2025-10",
+                  "value": 5145.0
+                },
+                {
+                  "month": "2025-11",
+                  "value": 5187.0
+                },
+                {
+                  "month": "2025-12",
+                  "value": 5077.0
+                },
+                {
+                  "month": "2026-01",
+                  "value": 4933.0
+                },
+                {
+                  "month": "2026-02",
+                  "value": 4713.0
+                },
+                {
+                  "month": "2026-03",
+                  "value": 5646.0
+                },
+                {
+                  "month": "2026-04",
+                  "value": 5062.0
+                },
+                {
+                  "month": "2026-05",
+                  "value": 5465.0
+                },
+                {
+                  "month": "2026-06",
+                  "value": 7705.0
+                },
+                {
+                  "month": "2026-07",
+                  "value": 8547.0
+                },
+                {
+                  "month": "2026-08",
+                  "value": 8589.0
+                }
+              ],
+              "grading": {
+                "history_windows": 7,
+                "tercile_cuts_pct": null,
+                "percentile_rank_pct": null,
+                "grade": "등급 없음"
+              },
+              "state": "ok",
+              "months_available": 20,
+              "unit": "천원/2TEU"
+            }
+          }
+        },
+        "method_file": "stability_method.json",
+        "decided": {
+          "by": "팀 (사용자 확인)",
+          "on": "2026-09-23"
+        },
+        "open_items": [
+          "ECOS 에 항목이 없는 통화(있다면) 대체 출처",
+          "ECOS 로 전면 교체 여부(현재 H.10 주, ECOS 보조)"
+        ],
+        "wsts": {
+          "md5_marketability": "2595ba9d08d1a0f2a9f31d94208b4bff",
+          "md5_stability": "2595ba9d08d1a0f2a9f31d94208b4bff",
+          "identical": true,
+          "note": "test1_stablity 폴더의 WSTS 파일은 시장성 파일과 동일하여 사용하지 않음"
+        }
+      }
+    }
+  ]
+}

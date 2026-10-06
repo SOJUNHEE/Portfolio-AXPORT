@@ -1,0 +1,29 @@
+<div class="axchat" data-no-translate data-chat-mode="{{ axport_chat_mode|default('demo') }}" data-page="{{ 'workspace' if request.path == '/app' else 'home' }}">
+  <section id="axchat-panel" class="axchat-panel" role="region" aria-labelledby="axchat-title" hidden>
+    <button class="axchat-resize" type="button" aria-label="대화창 크기 조절: 방향키 사용" title="드래그 또는 방향키로 크기 조절"></button>
+    <header class="axchat-header">
+      <div><strong id="axchat-title">AXPORT AI</strong><small data-chat-text="preview">예시 응답 · AI 미연결</small></div>
+      <button type="button" class="axchat-minimize" aria-label="대화 유지하고 접기"><svg viewBox="0 0 20 20" aria-hidden="true" focusable="false"><path d="M4 10h12" /></svg></button>
+      <button type="button" class="axchat-close" aria-label="대화 종료 및 초기화"><svg viewBox="0 0 20 20" aria-hidden="true" focusable="false"><path d="m5 5 10 10M15 5 5 15" /></svg></button>
+    </header>
+    <div class="axchat-body" tabindex="0" aria-label="대화 내용">
+      <div class="axchat-welcome">
+        <div class="axchat-hero" aria-hidden="true"><img src="/static/assets/Axport_AI.png" alt="" width="116" height="116" /></div>
+        <p><strong data-chat-text="greeting">안녕하세요! AXPORT AI입니다.</strong><br /><span data-chat-text="help">무엇을 도와드릴까요?</span></p>
+        <small data-chat-text="hint">이용 방법과 분석 결과, 궁금한 점을 물어보세요.</small>
+      </div>
+      <div class="axchat-messages"></div>
+      <div class="axchat-suggestions" aria-label="추천 질문"></div>
+    </div>
+    <div class="axchat-latest" hidden><button type="button">새 답변 보기 ↓</button></div>
+    <form class="axchat-form">
+      <textarea rows="2" maxlength="4000" aria-label="질문 입력" placeholder="궁금한 점을 입력하세요" autocomplete="off"></textarea>
+      <button type="submit" aria-label="질문 전송" disabled>전송</button>
+    </form>
+    <span class="axchat-status" role="status" aria-live="polite"></span>
+  </section>
+  <button class="axchat-launcher" type="button" aria-label="AXPORT AI 대화 열기" aria-controls="axchat-panel" aria-expanded="false">
+    <img src="/static/assets/Axport_AI.png" alt="" width="68" height="68" />
+    <span class="axchat-badge" hidden>새 답변</span>
+  </button>
+</div>

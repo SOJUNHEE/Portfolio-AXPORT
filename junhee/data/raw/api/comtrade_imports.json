@@ -1,0 +1,9334 @@
+{
+ "fetched_at": "2026-09-26T20:28:15",
+ "source": "UN Comtrade API (comtradeapi.un.org, C/M·C/A/HS, flow M, partner 0=세계·410=한국, customsCode C00·motCode 0·partner2Code 0 합계 행)",
+ "hs6": [
+  "854231",
+  "854232"
+ ],
+ "countries": {
+  "US": {
+   "name": "미국",
+   "reporter_m49": 842,
+   "monthly": [
+    {
+     "period": "202206",
+     "hs6": "854231",
+     "partner": "WORLD",
+     "value_usd": 2778526229.0,
+     "net_wgt_kg": 0.0
+    },
+    {
+     "period": "202206",
+     "hs6": "854231",
+     "partner": "KR",
+     "value_usd": 57530791.0,
+     "net_wgt_kg": 0.0
+    },
+    {
+     "period": "202206",
+     "hs6": "854232",
+     "partner": "WORLD",
+     "value_usd": 203275728.0,
+     "net_wgt_kg": 94539.067
+    },
+    {
+     "period": "202206",
+     "hs6": "854232",
+     "partner": "KR",
+     "value_usd": 35469029.0,
+     "net_wgt_kg": 16495.865
+    },
+    {
+     "period": "202207",
+     "hs6": "854231",
+     "partner": "WORLD",
+     "value_usd": 1651342242.0,
+     "net_wgt_kg": 0.0
+    },
+    {
+     "period": "202207",
+     "hs6": "854232",
+     "partner": "WORLD",
+     "value_usd": 288197602.0,
+     "net_wgt_kg": 134034.361
+    },
+    {
+     "period": "202207",
+     "hs6": "854231",
+     "partner": "KR",
+     "value_usd": 55413545.0,
+     "net_wgt_kg": 0.0
+    },
+    {
+     "period": "202207",
+     "hs6": "854232",
+     "partner": "KR",
+     "value_usd": 44785564.0,
+     "net_wgt_kg": 20828.78
+    },
+    {
+     "period": "202208",
+     "hs6": "854231",
+     "partner": "WORLD",
+     "value_usd": 1685182397.0,
+     "net_wgt_kg": 0.0
+    },
+    {
+     "period": "202208",
+     "hs6": "854231",
+     "partner": "KR",
+     "value_usd": 61325170.0,
+     "net_wgt_kg": 0.0
+    },
+    {
+     "period": "202208",
+     "hs6": "854232",
+     "partner": "WORLD",
+     "value_usd": 251706835.0,
+     "net_wgt_kg": 117063.309
+    },
+    {
+     "period": "202208",
+     "hs6": "854232",
+     "partner": "KR",
+     "value_usd": 36308119.0,
+     "net_wgt_kg": 16886.107
+    },
+    {
+     "period": "202209",
+     "hs6": "854231",
+     "partner": "WORLD",
+     "value_usd": 2300810271.0,
+     "net_wgt_kg": 0.0
+    },
+    {
+     "period": "202209",
+     "hs6": "854231",
+     "partner": "KR",
+     "value_usd": 80975654.0,
+     "net_wgt_kg": 0.0
+    },
+    {
+     "period": "202209",
+     "hs6": "854232",
+     "partner": "WORLD",
+     "value_usd": 306762354.0,
+     "net_wgt_kg": 142668.419
+    },
+    {
+     "period": "202209",
+     "hs6": "854232",
+     "partner": "KR",
+     "value_usd": 78197450.0,
+     "net_wgt_kg": 36367.913
+    },
+    {
+     "period": "202210",
+     "hs6": "854231",
+     "partner": "WORLD",
+     "value_usd": 2197186735.0,
+     "net_wgt_kg": 0.0
+    },
+    {
+     "period": "202210",
+     "hs6": "854231",
+     "partner": "KR",
+     "value_usd": 59913809.0,
+     "net_wgt_kg": 0.0
+    },
+    {
+     "period": "202210",
+     "hs6": "854232",
+     "partner": "WORLD",
+     "value_usd": 223810188.0,
+     "net_wgt_kg": 104089.192
+    },
+    {
+     "period": "202210",
+     "hs6": "854232",
+     "partner": "KR",
+     "value_usd": 40204415.0,
+     "net_wgt_kg": 18698.189
+    },
+    {
+     "period": "202211",
+     "hs6": "854231",
+     "partner": "WORLD",
+     "value_usd": 1784085249.0,
+     "net_wgt_kg": 0.0
+    },
+    {
+     "period": "202211",
+     "hs6": "854231",
+     "partner": "KR",
+     "value_usd": 66399655.0,
+     "net_wgt_kg": 0.0
+    },
+    {
+     "period": "202211",
+     "hs6": "854232",
+     "partner": "WORLD",
+     "value_usd": 224856733.0,
+     "net_wgt_kg": 104575.917
+    },
+    {
+     "period": "202211",
+     "hs6": "854232",
+     "partner": "KR",
+     "value_usd": 36395569.0,
+     "net_wgt_kg": 16926.778
+    },
+    {
+     "period": "202212",
+     "hs6": "854231",
+     "partner": "WORLD",
+     "value_usd": 1749863660.0,
+     "net_wgt_kg": 0.0
+    },
+    {
+     "period": "202212",
+     "hs6": "854231",
+     "partner": "KR",
+     "value_usd": 56969790.0,
+     "net_wgt_kg": 0.0
+    },
+    {
+     "period": "202212",
+     "hs6": "854232",
+     "partner": "WORLD",
+     "value_usd": 166356248.0,
+     "net_wgt_kg": 77368.629
+    },
+    {
+     "period": "202212",
+     "hs6": "854232",
+     "partner": "KR",
+     "value_usd": 30468794.0,
+     "net_wgt_kg": 14170.365
+    },
+    {
+     "period": "202301",
+     "hs6": "854231",
+     "partner": "WORLD",
+     "value_usd": 1358870363.0,
+     "net_wgt_kg": null
+    },
+    {
+     "period": "202301",
+     "hs6": "854231",
+     "partner": "KR",
+     "value_usd": 64155343.0,
+     "net_wgt_kg": null
+    },
+    {
+     "period": "202301",
+     "hs6": "854232",
+     "partner": "WORLD",
+     "value_usd": 201984775.0,
+     "net_wgt_kg": 93938.673
+    },
+    {
+     "period": "202301",
+     "hs6": "854232",
+     "partner": "KR",
+     "value_usd": 24502073.0,
+     "net_wgt_kg": 11395.375
+    },
+    {
+     "period": "202302",
+     "hs6": "854231",
+     "partner": "WORLD",
+     "value_usd": 1527145903.0,
+     "net_wgt_kg": null
+    },
+    {
+     "period": "202302",
+     "hs6": "854231",
+     "partner": "KR",
+     "value_usd": 55308805.0,
+     "net_wgt_kg": null
+    },
+    {
+     "period": "202302",
+     "hs6": "854232",
+     "partner": "WORLD",
+     "value_usd": 166711291.0,
+     "net_wgt_kg": 77533.752
+    },
+    {
+     "period": "202302",
+     "hs6": "854232",
+     "partner": "KR",
+     "value_usd": 22717388.0,
+     "net_wgt_kg": 10565.357
+    },
+    {
+     "period": "202303",
+     "hs6": "854231",
+     "partner": "WORLD",
+     "value_usd": 1843019285.0,
+     "net_wgt_kg": null
+    },
+    {
+     "period": "202303",
+     "hs6": "854231",
+     "partner": "KR",
+     "value_usd": 56741382.0,
+     "net_wgt_kg": null
+    },
+    {
+     "period": "202303",
+     "hs6": "854232",
+     "partner": "WORLD",
+     "value_usd": 194088178.0,
+     "net_wgt_kg": 90266.14
+    },
+    {
+     "period": "202303",
+     "hs6": "854232",
+     "partner": "KR",
+     "value_usd": 16138146.0,
+     "net_wgt_kg": 7505.497
+    },
+    {
+     "period": "202304",
+     "hs6": "854231",
+     "partner": "WORLD",
+     "value_usd": 1371303479.0,
+     "net_wgt_kg": null
+    },
+    {
+     "period": "202304",
+     "hs6": "854231",
+     "partner": "KR",
+     "value_usd": 52505178.0,
+     "net_wgt_kg": null
+    },
+    {
+     "period": "202304",
+     "hs6": "854232",
+     "partner": "WORLD",
+     "value_usd": 173823155.0,
+     "net_wgt_kg": 80841.324
+    },
+    {
+     "period": "202304",
+     "hs6": "854232",
+     "partner": "KR",
+     "value_usd": 11461947.0,
+     "net_wgt_kg": 5330.699
+    },
+    {
+     "period": "202305",
+     "hs6": "854231",
+     "partner": "WORLD",
+     "value_usd": 1600799916.0,
+     "net_wgt_kg": null
+    },
+    {
+     "period": "202305",
+     "hs6": "854231",
+     "partner": "KR",
+     "value_usd": 59952554.0,
+     "net_wgt_kg": null
+    },
+    {
+     "period": "202305",
+     "hs6": "854232",
+     "partner": "WORLD",
+     "value_usd": 194048062.0,
+     "net_wgt_kg": 90247.483
+    },
+    {
+     "period": "202305",
+     "hs6": "854232",
+     "partner": "KR",
+     "value_usd": 20345308.0,
+     "net_wgt_kg": 9462.155
+    },
+    {
+     "period": "202306",
+     "hs6": "854231",
+     "partner": "WORLD",
+     "value_usd": 1764619583.0,
+     "net_wgt_kg": null
+    },
+    {
+     "period": "202306",
+     "hs6": "854231",
+     "partner": "KR",
+     "value_usd": 76778891.0,
+     "net_wgt_kg": null
+    },
+    {
+     "period": "202306",
+     "hs6": "854232",
+     "partner": "WORLD",
+     "value_usd": 185683767.0,
+     "net_wgt_kg": 86357.433
+    },
+    {
+     "period": "202306",
+     "hs6": "854232",
+     "partner": "KR",
+     "value_usd": 27133964.0,
+     "net_wgt_kg": 12619.409
+    },
+    {
+     "period": "202307",
+     "hs6": "854231",
+     "partner": "WORLD",
+     "value_usd": 1764792106.0,
+     "net_wgt_kg": 985486.717
+    },
+    {
+     "period": "202307",
+     "hs6": "854231",
+     "partner": "KR",
+     "value_usd": 62477517.0,
+     "net_wgt_kg": 34888.394
+    },
+    {
+     "period": "202307",
+     "hs6": "854232",
+     "partner": "WORLD",
+     "value_usd": 184003562.0,
+     "net_wgt_kg": 100177.369
+    },
+    {
+     "period": "202307",
+     "hs6": "854232",
+     "partner": "KR",
+     "value_usd": 31184504.0,
+     "net_wgt_kg": 16977.832
+    },
+    {
+     "period": "202308",
+     "hs6": "854231",
+     "partner": "WORLD",
+     "value_usd": 1611979473.0,
+     "net_wgt_kg": 900153.821
+    },
+    {
+     "period": "202308",
+     "hs6": "854231",
+     "partner": "KR",
+     "value_usd": 79315389.0,
+     "net_wgt_kg": 44290.918
+    },
+    {
+     "period": "202308",
+     "hs6": "854232",
+     "partner": "WORLD",
+     "value_usd": 176549824.0,
+     "net_wgt_kg": 96119.318
+    },
+    {
+     "period": "202308",
+     "hs6": "854232",
+     "partner": "KR",
+     "value_usd": 31888993.0,
+     "net_wgt_kg": 17361.378
+    },
+    {
+     "period": "202309",
+     "hs6": "854231",
+     "partner": "WORLD",
+     "value_usd": 1829942231.0,
+     "net_wgt_kg": 1021867.536
+    },
+    {
+     "period": "202309",
+     "hs6": "854231",
+     "partner": "KR",
+     "value_usd": 63521013.0,
+     "net_wgt_kg": 35471.098
+    },
+    {
+     "period": "202309",
+     "hs6": "854232",
+     "partner": "WORLD",
+     "value_usd": 158374990.0,
+     "net_wgt_kg": 86224.362
+    },
+    {
+     "period": "202309",
+     "hs6": "854232",
+     "partner": "KR",
+     "value_usd": 16928734.0,
+     "net_wgt_kg": 9216.539
+    },
+    {
+     "period": "202310",
+     "hs6": "854231",
+     "partner": "WORLD",
+     "value_usd": 1776538060.0,
+     "net_wgt_kg": 992045.836
+    },
+    {
+     "period": "202310",
+     "hs6": "854231",
+     "partner": "KR",
+     "value_usd": 92675331.0,
+     "net_wgt_kg": 51751.312
+    },
+    {
+     "period": "202310",
+     "hs6": "854232",
+     "partner": "WORLD",
+     "value_usd": 138913464.0,
+     "net_wgt_kg": 75628.891
+    },
+    {
+     "period": "202310",
+     "hs6": "854232",
+     "partner": "KR",
+     "value_usd": 13815584.0,
+     "net_wgt_kg": 7521.642
+    },
+    {
+     "period": "202311",
+     "hs6": "854231",
+     "partner": "WORLD",
+     "value_usd": 1769847566.0,
+     "net_wgt_kg": 988309.762
+    },
+    {
+     "period": "202311",
+     "hs6": "854231",
+     "partner": "KR",
+     "value_usd": 97377127.0,
+     "net_wgt_kg": 54376.867
+    },
+    {
+     "period": "202311",
+     "hs6": "854232",
+     "partner": "WORLD",
+     "value_usd": 124527201.0,
+     "net_wgt_kg": 67796.554
+    },
+    {
+     "period": "202311",
+     "hs6": "854232",
+     "partner": "KR",
+     "value_usd": 8943842.0,
+     "net_wgt_kg": 4869.311
+    },
+    {
+     "period": "202312",
+     "hs6": "854231",
+     "partner": "WORLD",
+     "value_usd": 2064717917.0,
+     "net_wgt_kg": 1137073.357
+    },
+    {
+     "period": "202312",
+     "hs6": "854231",
+     "partner": "KR",
+     "value_usd": 118512125.0,
+     "net_wgt_kg": 65266.533
+    },
+    {
+     "period": "202312",
+     "hs6": "854232",
+     "partner": "WORLD",
+     "value_usd": 133693995.0,
+     "net_wgt_kg": 71446.597
+    },
+    {
+     "period": "202312",
+     "hs6": "854232",
+     "partner": "KR",
+     "value_usd": 11433354.0,
+     "net_wgt_kg": 6110.029
+    },
+    {
+     "period": "202401",
+     "hs6": "854231",
+     "partner": "WORLD",
+     "value_usd": 1715536272.0,
+     "net_wgt_kg": 944773.41
+    },
+    {
+     "period": "202401",
+     "hs6": "854231",
+     "partner": "KR",
+     "value_usd": 76038954.0,
+     "net_wgt_kg": 41875.875
+    },
+    {
+     "period": "202401",
+     "hs6": "854232",
+     "partner": "WORLD",
+     "value_usd": 135580194.0,
+     "net_wgt_kg": 72454.589
+    },
+    {
+     "period": "202401",
+     "hs6": "854232",
+     "partner": "KR",
+     "value_usd": 23152883.0,
+     "net_wgt_kg": 12372.992
+    },
+    {
+     "period": "202402",
+     "hs6": "854231",
+     "partner": "WORLD",
+     "value_usd": 1461328963.0,
+     "net_wgt_kg": 804777.357
+    },
+    {
+     "period": "202402",
+     "hs6": "854231",
+     "partner": "KR",
+     "value_usd": 65727265.0,
+     "net_wgt_kg": 36197.062
+    },
+    {
+     "period": "202402",
+     "hs6": "854232",
+     "partner": "WORLD",
+     "value_usd": 136478096.0,
+     "net_wgt_kg": 72934.431
+    },
+    {
+     "period": "202402",
+     "hs6": "854232",
+     "partner": "KR",
+     "value_usd": 39059133.0,
+     "net_wgt_kg": 20873.354
+    },
+    {
+     "period": "202403",
+     "hs6": "854231",
+     "partner": "WORLD",
+     "value_usd": 2279187188.0,
+     "net_wgt_kg": 1255185.033
+    },
+    {
+     "period": "202403",
+     "hs6": "854231",
+     "partner": "KR",
+     "value_usd": 107104625.0,
+     "net_wgt_kg": 58984.239
+    },
+    {
+     "period": "202403",
+     "hs6": "854232",
+     "partner": "WORLD",
+     "value_usd": 143771603.0,
+     "net_wgt_kg": 76832.11
+    },
+    {
+     "period": "202403",
+     "hs6": "854232",
+     "partner": "KR",
+     "value_usd": 13273501.0,
+     "net_wgt_kg": 7093.411
+    },
+    {
+     "period": "202404",
+     "hs6": "854231",
+     "partner": "WORLD",
+     "value_usd": 2010951989.0,
+     "net_wgt_kg": 1107463.595
+    },
+    {
+     "period": "202404",
+     "hs6": "854231",
+     "partner": "KR",
+     "value_usd": 152204302.0,
+     "net_wgt_kg": 83821.356
+    },
+    {
+     "period": "202404",
+     "hs6": "854232",
+     "partner": "WORLD",
+     "value_usd": 144759829.0,
+     "net_wgt_kg": 77360.222
+    },
+    {
+     "period": "202404",
+     "hs6": "854232",
+     "partner": "KR",
+     "value_usd": 51024228.0,
+     "net_wgt_kg": 27267.548
+    },
+    {
+     "period": "202405",
+     "hs6": "854231",
+     "partner": "WORLD",
+     "value_usd": 2182716144.0,
+     "net_wgt_kg": 1202056.878
+    },
+    {
+     "period": "202405",
+     "hs6": "854231",
+     "partner": "KR",
+     "value_usd": 85090324.0,
+     "net_wgt_kg": 46860.61
+    },
+    {
+     "period": "202405",
+     "hs6": "854232",
+     "partner": "WORLD",
+     "value_usd": 148679407.0,
+     "net_wgt_kg": 79454.86
+    },
+    {
+     "period": "202405",
+     "hs6": "854232",
+     "partner": "KR",
+     "value_usd": 46331977.0,
+     "net_wgt_kg": 24759.991
+    },
+    {
+     "period": "202406",
+     "hs6": "854231",
+     "partner": "WORLD",
+     "value_usd": 2569581061.0,
+     "net_wgt_kg": 1415109.608
+    },
+    {
+     "period": "202406",
+     "hs6": "854231",
+     "partner": "KR",
+     "value_usd": 73847814.0,
+     "net_wgt_kg": 40669.179
+    },
+    {
+     "period": "202406",
+     "hs6": "854232",
+     "partner": "WORLD",
+     "value_usd": 132783472.0,
+     "net_wgt_kg": 70960.009
+    },
+    {
+     "period": "202406",
+     "hs6": "854232",
+     "partner": "KR",
+     "value_usd": 31122066.0,
+     "net_wgt_kg": 16631.754
+    },
+    {
+     "period": "202407",
+     "hs6": "854231",
+     "partner": "WORLD",
+     "value_usd": 2543727688.0,
+     "net_wgt_kg": null
+    },
+    {
+     "period": "202407",
+     "hs6": "854231",
+     "partner": "KR",
+     "value_usd": 103528032.0,
+     "net_wgt_kg": null
+    },
+    {
+     "period": "202407",
+     "hs6": "854232",
+     "partner": "WORLD",
+     "value_usd": 137183771.0,
+     "net_wgt_kg": 73749.429
+    },
+    {
+     "period": "202407",
+     "hs6": "854232",
+     "partner": "KR",
+     "value_usd": 30989960.0,
+     "net_wgt_kg": 16660.075
+    },
+    {
+     "period": "202408",
+     "hs6": "854231",
+     "partner": "WORLD",
+     "value_usd": 2440551578.0,
+     "net_wgt_kg": null
+    },
+    {
+     "period": "202408",
+     "hs6": "854231",
+     "partner": "KR",
+     "value_usd": 72865428.0,
+     "net_wgt_kg": null
+    },
+    {
+     "period": "202408",
+     "hs6": "854232",
+     "partner": "WORLD",
+     "value_usd": 164593526.0,
+     "net_wgt_kg": 88484.8
+    },
+    {
+     "period": "202408",
+     "hs6": "854232",
+     "partner": "KR",
+     "value_usd": 41980348.0,
+     "net_wgt_kg": 22568.462
+    },
+    {
+     "period": "202409",
+     "hs6": "854231",
+     "partner": "WORLD",
+     "value_usd": 3222728658.0,
+     "net_wgt_kg": null
+    },
+    {
+     "period": "202409",
+     "hs6": "854231",
+     "partner": "KR",
+     "value_usd": 137105487.0,
+     "net_wgt_kg": null
+    },
+    {
+     "period": "202409",
+     "hs6": "854232",
+     "partner": "WORLD",
+     "value_usd": 208921503.0,
+     "net_wgt_kg": 112315.337
+    },
+    {
+     "period": "202409",
+     "hs6": "854232",
+     "partner": "KR",
+     "value_usd": 37812331.0,
+     "net_wgt_kg": 20327.753
+    },
+    {
+     "period": "202410",
+     "hs6": "854231",
+     "partner": "WORLD",
+     "value_usd": 2567954790.0,
+     "net_wgt_kg": null
+    },
+    {
+     "period": "202410",
+     "hs6": "854231",
+     "partner": "KR",
+     "value_usd": 110661800.0,
+     "net_wgt_kg": null
+    },
+    {
+     "period": "202410",
+     "hs6": "854232",
+     "partner": "WORLD",
+     "value_usd": 119818762.0,
+     "net_wgt_kg": 64414.072
+    },
+    {
+     "period": "202410",
+     "hs6": "854232",
+     "partner": "KR",
+     "value_usd": 24673930.0,
+     "net_wgt_kg": 13264.603
+    },
+    {
+     "period": "202411",
+     "hs6": "854231",
+     "partner": "WORLD",
+     "value_usd": 2429610262.0,
+     "net_wgt_kg": null
+    },
+    {
+     "period": "202411",
+     "hs6": "854231",
+     "partner": "KR",
+     "value_usd": 106065262.0,
+     "net_wgt_kg": null
+    },
+    {
+     "period": "202411",
+     "hs6": "854232",
+     "partner": "WORLD",
+     "value_usd": 205150536.0,
+     "net_wgt_kg": 110288.081
+    },
+    {
+     "period": "202411",
+     "hs6": "854232",
+     "partner": "KR",
+     "value_usd": 57604754.0,
+     "net_wgt_kg": 30968.078
+    },
+    {
+     "period": "202412",
+     "hs6": "854231",
+     "partner": "WORLD",
+     "value_usd": 2944533347.0,
+     "net_wgt_kg": null
+    },
+    {
+     "period": "202412",
+     "hs6": "854231",
+     "partner": "KR",
+     "value_usd": 57617455.0,
+     "net_wgt_kg": null
+    },
+    {
+     "period": "202412",
+     "hs6": "854232",
+     "partner": "WORLD",
+     "value_usd": 203889298.0,
+     "net_wgt_kg": 109610.045
+    },
+    {
+     "period": "202412",
+     "hs6": "854232",
+     "partner": "KR",
+     "value_usd": 36605706.0,
+     "net_wgt_kg": 19679.076
+    },
+    {
+     "period": "202501",
+     "hs6": "854231",
+     "partner": "WORLD",
+     "value_usd": 2625764668.0,
+     "net_wgt_kg": null
+    },
+    {
+     "period": "202501",
+     "hs6": "854231",
+     "partner": "KR",
+     "value_usd": 52209541.0,
+     "net_wgt_kg": null
+    },
+    {
+     "period": "202501",
+     "hs6": "854232",
+     "partner": "WORLD",
+     "value_usd": 203298979.0,
+     "net_wgt_kg": 109292.692
+    },
+    {
+     "period": "202501",
+     "hs6": "854232",
+     "partner": "KR",
+     "value_usd": 34114204.0,
+     "net_wgt_kg": 18339.655
+    },
+    {
+     "period": "202502",
+     "hs6": "854231",
+     "partner": "WORLD",
+     "value_usd": 2167225951.0,
+     "net_wgt_kg": null
+    },
+    {
+     "period": "202502",
+     "hs6": "854231",
+     "partner": "KR",
+     "value_usd": 31475823.0,
+     "net_wgt_kg": null
+    },
+    {
+     "period": "202502",
+     "hs6": "854232",
+     "partner": "WORLD",
+     "value_usd": 202582068.0,
+     "net_wgt_kg": 108907.283
+    },
+    {
+     "period": "202502",
+     "hs6": "854232",
+     "partner": "KR",
+     "value_usd": 31978870.0,
+     "net_wgt_kg": 17191.708
+    },
+    {
+     "period": "202503",
+     "hs6": "854231",
+     "partner": "WORLD",
+     "value_usd": 3035628524.0,
+     "net_wgt_kg": null
+    },
+    {
+     "period": "202503",
+     "hs6": "854231",
+     "partner": "KR",
+     "value_usd": 42628428.0,
+     "net_wgt_kg": null
+    },
+    {
+     "period": "202503",
+     "hs6": "854232",
+     "partner": "WORLD",
+     "value_usd": 196018093.0,
+     "net_wgt_kg": 105378.517
+    },
+    {
+     "period": "202503",
+     "hs6": "854232",
+     "partner": "KR",
+     "value_usd": 32092409.0,
+     "net_wgt_kg": 17252.747
+    },
+    {
+     "period": "202504",
+     "hs6": "854231",
+     "partner": "WORLD",
+     "value_usd": 2445254513.0,
+     "net_wgt_kg": null
+    },
+    {
+     "period": "202504",
+     "hs6": "854231",
+     "partner": "KR",
+     "value_usd": 50691831.0,
+     "net_wgt_kg": null
+    },
+    {
+     "period": "202504",
+     "hs6": "854232",
+     "partner": "WORLD",
+     "value_usd": 147869012.0,
+     "net_wgt_kg": 79493.77
+    },
+    {
+     "period": "202504",
+     "hs6": "854232",
+     "partner": "KR",
+     "value_usd": 18500830.0,
+     "net_wgt_kg": 9945.97
+    },
+    {
+     "period": "202505",
+     "hs6": "854231",
+     "partner": "WORLD",
+     "value_usd": 2376776002.0,
+     "net_wgt_kg": null
+    },
+    {
+     "period": "202505",
+     "hs6": "854231",
+     "partner": "KR",
+     "value_usd": 45466843.0,
+     "net_wgt_kg": null
+    },
+    {
+     "period": "202505",
+     "hs6": "854232",
+     "partner": "WORLD",
+     "value_usd": 147071463.0,
+     "net_wgt_kg": 79065.011
+    },
+    {
+     "period": "202505",
+     "hs6": "854232",
+     "partner": "KR",
+     "value_usd": 13037673.0,
+     "net_wgt_kg": 7008.999
+    },
+    {
+     "period": "202506",
+     "hs6": "854231",
+     "partner": "WORLD",
+     "value_usd": 2809260226.0,
+     "net_wgt_kg": null
+    },
+    {
+     "period": "202506",
+     "hs6": "854231",
+     "partner": "KR",
+     "value_usd": 84076355.0,
+     "net_wgt_kg": null
+    },
+    {
+     "period": "202506",
+     "hs6": "854232",
+     "partner": "WORLD",
+     "value_usd": 227680035.0,
+     "net_wgt_kg": 122399.847
+    },
+    {
+     "period": "202506",
+     "hs6": "854232",
+     "partner": "KR",
+     "value_usd": 131429124.0,
+     "net_wgt_kg": 70655.754
+    },
+    {
+     "period": "202507",
+     "hs6": "854231",
+     "partner": "WORLD",
+     "value_usd": 2354256095.0,
+     "net_wgt_kg": null
+    },
+    {
+     "period": "202507",
+     "hs6": "854231",
+     "partner": "KR",
+     "value_usd": 69017820.0,
+     "net_wgt_kg": null
+    },
+    {
+     "period": "202507",
+     "hs6": "854232",
+     "partner": "WORLD",
+     "value_usd": 148640517.0,
+     "net_wgt_kg": 79908.528
+    },
+    {
+     "period": "202507",
+     "hs6": "854232",
+     "partner": "KR",
+     "value_usd": 60570704.0,
+     "net_wgt_kg": 32562.56
+    },
+    {
+     "period": "202508",
+     "hs6": "854231",
+     "partner": "WORLD",
+     "value_usd": 2297864513.0,
+     "net_wgt_kg": null
+    },
+    {
+     "period": "202508",
+     "hs6": "854231",
+     "partner": "KR",
+     "value_usd": 63785165.0,
+     "net_wgt_kg": null
+    },
+    {
+     "period": "202508",
+     "hs6": "854232",
+     "partner": "WORLD",
+     "value_usd": 171129625.0,
+     "net_wgt_kg": null
+    },
+    {
+     "period": "202508",
+     "hs6": "854232",
+     "partner": "KR",
+     "value_usd": 23489442.0,
+     "net_wgt_kg": null
+    },
+    {
+     "period": "202509",
+     "hs6": "854231",
+     "partner": "WORLD",
+     "value_usd": 2742472217.0,
+     "net_wgt_kg": null
+    },
+    {
+     "period": "202509",
+     "hs6": "854231",
+     "partner": "KR",
+     "value_usd": 63504254.0,
+     "net_wgt_kg": null
+    },
+    {
+     "period": "202509",
+     "hs6": "854232",
+     "partner": "WORLD",
+     "value_usd": 151206015.0,
+     "net_wgt_kg": null
+    },
+    {
+     "period": "202509",
+     "hs6": "854232",
+     "partner": "KR",
+     "value_usd": 44998254.0,
+     "net_wgt_kg": null
+    },
+    {
+     "period": "202510",
+     "hs6": "854231",
+     "partner": "WORLD",
+     "value_usd": 2579458666.0,
+     "net_wgt_kg": null
+    },
+    {
+     "period": "202510",
+     "hs6": "854231",
+     "partner": "KR",
+     "value_usd": 58703387.0,
+     "net_wgt_kg": null
+    },
+    {
+     "period": "202510",
+     "hs6": "854232",
+     "partner": "WORLD",
+     "value_usd": 190901534.0,
+     "net_wgt_kg": null
+    },
+    {
+     "period": "202510",
+     "hs6": "854232",
+     "partner": "KR",
+     "value_usd": 55038318.0,
+     "net_wgt_kg": null
+    },
+    {
+     "period": "202511",
+     "hs6": "854231",
+     "partner": "WORLD",
+     "value_usd": 3347311620.0,
+     "net_wgt_kg": null
+    },
+    {
+     "period": "202511",
+     "hs6": "854231",
+     "partner": "KR",
+     "value_usd": 87103915.0,
+     "net_wgt_kg": null
+    },
+    {
+     "period": "202511",
+     "hs6": "854232",
+     "partner": "WORLD",
+     "value_usd": 221837020.0,
+     "net_wgt_kg": null
+    },
+    {
+     "period": "202511",
+     "hs6": "854232",
+     "partner": "KR",
+     "value_usd": 49758106.0,
+     "net_wgt_kg": null
+    },
+    {
+     "period": "202512",
+     "hs6": "854231",
+     "partner": "WORLD",
+     "value_usd": 3850513424.0,
+     "net_wgt_kg": null
+    },
+    {
+     "period": "202512",
+     "hs6": "854231",
+     "partner": "KR",
+     "value_usd": 110602626.0,
+     "net_wgt_kg": null
+    },
+    {
+     "period": "202512",
+     "hs6": "854232",
+     "partner": "WORLD",
+     "value_usd": 311375680.0,
+     "net_wgt_kg": null
+    },
+    {
+     "period": "202512",
+     "hs6": "854232",
+     "partner": "KR",
+     "value_usd": 81401095.0,
+     "net_wgt_kg": null
+    },
+    {
+     "period": "202601",
+     "hs6": "854231",
+     "partner": "WORLD",
+     "value_usd": 3107601313.0,
+     "net_wgt_kg": null
+    },
+    {
+     "period": "202601",
+     "hs6": "854231",
+     "partner": "KR",
+     "value_usd": 73804888.0,
+     "net_wgt_kg": null
+    },
+    {
+     "period": "202601",
+     "hs6": "854232",
+     "partner": "WORLD",
+     "value_usd": 277491278.0,
+     "net_wgt_kg": null
+    },
+    {
+     "period": "202601",
+     "hs6": "854232",
+     "partner": "KR",
+     "value_usd": 73904244.0,
+     "net_wgt_kg": null
+    },
+    {
+     "period": "202602",
+     "hs6": "854231",
+     "partner": "WORLD",
+     "value_usd": 3095149411.0,
+     "net_wgt_kg": null
+    },
+    {
+     "period": "202602",
+     "hs6": "854231",
+     "partner": "KR",
+     "value_usd": 61748161.0,
+     "net_wgt_kg": null
+    },
+    {
+     "period": "202602",
+     "hs6": "854232",
+     "partner": "WORLD",
+     "value_usd": 332630899.0,
+     "net_wgt_kg": null
+    },
+    {
+     "period": "202602",
+     "hs6": "854232",
+     "partner": "KR",
+     "value_usd": 114095541.0,
+     "net_wgt_kg": null
+    },
+    {
+     "period": "202603",
+     "hs6": "854231",
+     "partner": "WORLD",
+     "value_usd": 3524743553.0,
+     "net_wgt_kg": null
+    },
+    {
+     "period": "202603",
+     "hs6": "854231",
+     "partner": "KR",
+     "value_usd": 77813265.0,
+     "net_wgt_kg": null
+    },
+    {
+     "period": "202603",
+     "hs6": "854232",
+     "partner": "WORLD",
+     "value_usd": 438515776.0,
+     "net_wgt_kg": null
+    },
+    {
+     "period": "202603",
+     "hs6": "854232",
+     "partner": "KR",
+     "value_usd": 145830885.0,
+     "net_wgt_kg": null
+    },
+    {
+     "period": "202604",
+     "hs6": "854231",
+     "partner": "WORLD",
+     "value_usd": 3054859150.0,
+     "net_wgt_kg": null
+    },
+    {
+     "period": "202604",
+     "hs6": "854231",
+     "partner": "KR",
+     "value_usd": 145846535.0,
+     "net_wgt_kg": null
+    },
+    {
+     "period": "202604",
+     "hs6": "854232",
+     "partner": "WORLD",
+     "value_usd": 623957199.0,
+     "net_wgt_kg": null
+    },
+    {
+     "period": "202604",
+     "hs6": "854232",
+     "partner": "KR",
+     "value_usd": 304143511.0,
+     "net_wgt_kg": null
+    },
+    {
+     "period": "202605",
+     "hs6": "854231",
+     "partner": "WORLD",
+     "value_usd": 3006618161.0,
+     "net_wgt_kg": null
+    },
+    {
+     "period": "202605",
+     "hs6": "854231",
+     "partner": "KR",
+     "value_usd": 132865272.0,
+     "net_wgt_kg": null
+    },
+    {
+     "period": "202605",
+     "hs6": "854232",
+     "partner": "WORLD",
+     "value_usd": 648147477.0,
+     "net_wgt_kg": null
+    },
+    {
+     "period": "202605",
+     "hs6": "854232",
+     "partner": "KR",
+     "value_usd": 169373744.0,
+     "net_wgt_kg": null
+    },
+    {
+     "period": "202606",
+     "hs6": "854231",
+     "partner": "WORLD",
+     "value_usd": 3322605340.0,
+     "net_wgt_kg": null
+    },
+    {
+     "period": "202606",
+     "hs6": "854231",
+     "partner": "KR",
+     "value_usd": 147788084.0,
+     "net_wgt_kg": null
+    },
+    {
+     "period": "202606",
+     "hs6": "854232",
+     "partner": "WORLD",
+     "value_usd": 953473688.0,
+     "net_wgt_kg": null
+    },
+    {
+     "period": "202606",
+     "hs6": "854232",
+     "partner": "KR",
+     "value_usd": 372847640.0,
+     "net_wgt_kg": null
+    },
+    {
+     "period": "202607",
+     "hs6": "854231",
+     "partner": "WORLD",
+     "value_usd": 2844926272.0,
+     "net_wgt_kg": null
+    },
+    {
+     "period": "202607",
+     "hs6": "854231",
+     "partner": "KR",
+     "value_usd": 156103299.0,
+     "net_wgt_kg": null
+    },
+    {
+     "period": "202607",
+     "hs6": "854232",
+     "partner": "WORLD",
+     "value_usd": 749064147.0,
+     "net_wgt_kg": null
+    },
+    {
+     "period": "202607",
+     "hs6": "854232",
+     "partner": "KR",
+     "value_usd": 328065011.0,
+     "net_wgt_kg": null
+    }
+   ],
+   "annual": [
+    {
+     "period": "2021",
+     "hs6": "854231",
+     "partner": "WORLD",
+     "value_usd": 27551319937.0,
+     "net_wgt_kg": 17280114.036
+    },
+    {
+     "period": "2021",
+     "hs6": "854231",
+     "partner": "KR",
+     "value_usd": 639129636.0,
+     "net_wgt_kg": 400860.395
+    },
+    {
+     "period": "2021",
+     "hs6": "854232",
+     "partner": "WORLD",
+     "value_usd": 2228543926.0,
+     "net_wgt_kg": 1445991.085
+    },
+    {
+     "period": "2021",
+     "hs6": "854232",
+     "partner": "KR",
+     "value_usd": 536541769.0,
+     "net_wgt_kg": 348135.213
+    },
+    {
+     "period": "2022",
+     "hs6": "854231",
+     "partner": "WORLD",
+     "value_usd": 24501417815.0,
+     "net_wgt_kg": null
+    },
+    {
+     "period": "2022",
+     "hs6": "854231",
+     "partner": "KR",
+     "value_usd": 734869450.0,
+     "net_wgt_kg": null
+    },
+    {
+     "period": "2022",
+     "hs6": "854232",
+     "partner": "WORLD",
+     "value_usd": 2772404016.0,
+     "net_wgt_kg": 1289384.087
+    },
+    {
+     "period": "2022",
+     "hs6": "854232",
+     "partner": "KR",
+     "value_usd": 548963729.0,
+     "net_wgt_kg": 255310.948
+    },
+    {
+     "period": "2023",
+     "hs6": "854231",
+     "partner": "WORLD",
+     "value_usd": 20283575882.0,
+     "net_wgt_kg": 11170491.388
+    },
+    {
+     "period": "2023",
+     "hs6": "854231",
+     "partner": "KR",
+     "value_usd": 879320655.0,
+     "net_wgt_kg": 484256.024
+    },
+    {
+     "period": "2023",
+     "hs6": "854232",
+     "partner": "WORLD",
+     "value_usd": 2032402264.0,
+     "net_wgt_kg": 1086123.76
+    },
+    {
+     "period": "2023",
+     "hs6": "854232",
+     "partner": "KR",
+     "value_usd": 236493837.0,
+     "net_wgt_kg": 126383.236
+    },
+    {
+     "period": "2024",
+     "hs6": "854231",
+     "partner": "WORLD",
+     "value_usd": 28368407940.0,
+     "net_wgt_kg": null
+    },
+    {
+     "period": "2024",
+     "hs6": "854231",
+     "partner": "KR",
+     "value_usd": 1147856748.0,
+     "net_wgt_kg": null
+    },
+    {
+     "period": "2024",
+     "hs6": "854232",
+     "partner": "WORLD",
+     "value_usd": 1881609997.0,
+     "net_wgt_kg": 1011545.766
+    },
+    {
+     "period": "2024",
+     "hs6": "854232",
+     "partner": "KR",
+     "value_usd": 433630817.0,
+     "net_wgt_kg": 233118.137
+    },
+    {
+     "period": "2025",
+     "hs6": "854231",
+     "partner": "WORLD",
+     "value_usd": 32631786419.0,
+     "net_wgt_kg": null
+    },
+    {
+     "period": "2025",
+     "hs6": "854231",
+     "partner": "KR",
+     "value_usd": 759265988.0,
+     "net_wgt_kg": null
+    },
+    {
+     "period": "2025",
+     "hs6": "854232",
+     "partner": "WORLD",
+     "value_usd": 2319610041.0,
+     "net_wgt_kg": null
+    },
+    {
+     "period": "2025",
+     "hs6": "854232",
+     "partner": "KR",
+     "value_usd": 576409029.0,
+     "net_wgt_kg": null
+    }
+   ]
+  },
+  "CN": {
+   "name": "중국",
+   "reporter_m49": 156,
+   "monthly": [
+    {
+     "period": "202206",
+     "hs6": "854231",
+     "partner": "WORLD",
+     "value_usd": 17347814929.0,
+     "net_wgt_kg": 2150890.287
+    },
+    {
+     "period": "202206",
+     "hs6": "854231",
+     "partner": "KR",
+     "value_usd": 2021834831.0,
+     "net_wgt_kg": 182413.0
+    },
+    {
+     "period": "202206",
+     "hs6": "854232",
+     "partner": "WORLD",
+     "value_usd": 9287098926.0,
+     "net_wgt_kg": 721723.05
+    },
+    {
+     "period": "202206",
+     "hs6": "854232",
+     "partner": "KR",
+     "value_usd": 4388536153.0,
+     "net_wgt_kg": 221671.0
+    },
+    {
+     "period": "202207",
+     "hs6": "854231",
+     "partner": "WORLD",
+     "value_usd": 16731208821.0,
+     "net_wgt_kg": 1893390.091
+    },
+    {
+     "period": "202207",
+     "hs6": "854232",
+     "partner": "WORLD",
+     "value_usd": 8778268861.0,
+     "net_wgt_kg": 720665.852
+    },
+    {
+     "period": "202207",
+     "hs6": "854231",
+     "partner": "KR",
+     "value_usd": 2010012931.0,
+     "net_wgt_kg": 144374.0
+    },
+    {
+     "period": "202207",
+     "hs6": "854232",
+     "partner": "KR",
+     "value_usd": 4601417374.0,
+     "net_wgt_kg": 259403.0
+    },
+    {
+     "period": "202208",
+     "hs6": "854231",
+     "partner": "WORLD",
+     "value_usd": 16039909613.0,
+     "net_wgt_kg": 1986865.092
+    },
+    {
+     "period": "202208",
+     "hs6": "854231",
+     "partner": "KR",
+     "value_usd": 1777718662.0,
+     "net_wgt_kg": 165839.0
+    },
+    {
+     "period": "202208",
+     "hs6": "854232",
+     "partner": "WORLD",
+     "value_usd": 7840883464.0,
+     "net_wgt_kg": 657602.042
+    },
+    {
+     "period": "202208",
+     "hs6": "854232",
+     "partner": "KR",
+     "value_usd": 3871617487.0,
+     "net_wgt_kg": 202501.0
+    },
+    {
+     "period": "202209",
+     "hs6": "854231",
+     "partner": "WORLD",
+     "value_usd": 19150257746.0,
+     "net_wgt_kg": 2267530.857
+    },
+    {
+     "period": "202209",
+     "hs6": "854232",
+     "partner": "WORLD",
+     "value_usd": 9302069428.0,
+     "net_wgt_kg": 749091.84
+    },
+    {
+     "period": "202209",
+     "hs6": "854231",
+     "partner": "KR",
+     "value_usd": 2016562802.0,
+     "net_wgt_kg": 192684.0
+    },
+    {
+     "period": "202209",
+     "hs6": "854232",
+     "partner": "KR",
+     "value_usd": 4302844271.0,
+     "net_wgt_kg": 255661.0
+    },
+    {
+     "period": "202210",
+     "hs6": "854231",
+     "partner": "WORLD",
+     "value_usd": 17849965610.0,
+     "net_wgt_kg": 1875988.367
+    },
+    {
+     "period": "202210",
+     "hs6": "854231",
+     "partner": "KR",
+     "value_usd": 1894283585.0,
+     "net_wgt_kg": 155660.0
+    },
+    {
+     "period": "202210",
+     "hs6": "854232",
+     "partner": "WORLD",
+     "value_usd": 7026947667.0,
+     "net_wgt_kg": 619380.864
+    },
+    {
+     "period": "202210",
+     "hs6": "854232",
+     "partner": "KR",
+     "value_usd": 3237540622.0,
+     "net_wgt_kg": 222462.0
+    },
+    {
+     "period": "202211",
+     "hs6": "854231",
+     "partner": "WORLD",
+     "value_usd": 14789407491.0,
+     "net_wgt_kg": 1948205.5
+    },
+    {
+     "period": "202211",
+     "hs6": "854231",
+     "partner": "KR",
+     "value_usd": 1857493061.0,
+     "net_wgt_kg": 160649.0
+    },
+    {
+     "period": "202211",
+     "hs6": "854232",
+     "partner": "WORLD",
+     "value_usd": 6535432755.0,
+     "net_wgt_kg": 654803.191
+    },
+    {
+     "period": "202211",
+     "hs6": "854232",
+     "partner": "KR",
+     "value_usd": 3005353048.0,
+     "net_wgt_kg": 202329.0
+    },
+    {
+     "period": "202212",
+     "hs6": "854231",
+     "partner": "WORLD",
+     "value_usd": 17348911773.0,
+     "net_wgt_kg": 2018369.7
+    },
+    {
+     "period": "202212",
+     "hs6": "854231",
+     "partner": "KR",
+     "value_usd": 1814061826.0,
+     "net_wgt_kg": 170926.0
+    },
+    {
+     "period": "202212",
+     "hs6": "854232",
+     "partner": "WORLD",
+     "value_usd": 7697326369.0,
+     "net_wgt_kg": 750075.202
+    },
+    {
+     "period": "202212",
+     "hs6": "854232",
+     "partner": "KR",
+     "value_usd": 3344876876.0,
+     "net_wgt_kg": 241124.0
+    },
+    {
+     "period": "202301",
+     "hs6": "854231",
+     "partner": "WORLD",
+     "value_usd": 12357445995.0,
+     "net_wgt_kg": 1441195.07
+    },
+    {
+     "period": "202301",
+     "hs6": "854231",
+     "partner": "KR",
+     "value_usd": 1484213745.0,
+     "net_wgt_kg": 135236.0
+    },
+    {
+     "period": "202301",
+     "hs6": "854232",
+     "partner": "WORLD",
+     "value_usd": 4927483705.0,
+     "net_wgt_kg": 440398.204
+    },
+    {
+     "period": "202301",
+     "hs6": "854232",
+     "partner": "KR",
+     "value_usd": 2007258027.0,
+     "net_wgt_kg": 141131.0
+    },
+    {
+     "period": "202302",
+     "hs6": "854231",
+     "partner": "WORLD",
+     "value_usd": 11993065339.0,
+     "net_wgt_kg": 1661682.642
+    },
+    {
+     "period": "202302",
+     "hs6": "854232",
+     "partner": "WORLD",
+     "value_usd": 5674617536.0,
+     "net_wgt_kg": 564509.357
+    },
+    {
+     "period": "202302",
+     "hs6": "854231",
+     "partner": "KR",
+     "value_usd": 1374147489.0,
+     "net_wgt_kg": 151893.0
+    },
+    {
+     "period": "202302",
+     "hs6": "854232",
+     "partner": "KR",
+     "value_usd": 2572447636.0,
+     "net_wgt_kg": 189518.0
+    },
+    {
+     "period": "202303",
+     "hs6": "854231",
+     "partner": "WORLD",
+     "value_usd": 15883919170.0,
+     "net_wgt_kg": 2031344.556
+    },
+    {
+     "period": "202303",
+     "hs6": "854231",
+     "partner": "KR",
+     "value_usd": 1501553881.0,
+     "net_wgt_kg": 174260.0
+    },
+    {
+     "period": "202303",
+     "hs6": "854232",
+     "partner": "WORLD",
+     "value_usd": 6472478602.0,
+     "net_wgt_kg": 698695.973
+    },
+    {
+     "period": "202303",
+     "hs6": "854232",
+     "partner": "KR",
+     "value_usd": 2945651592.0,
+     "net_wgt_kg": 234593.0
+    },
+    {
+     "period": "202304",
+     "hs6": "854231",
+     "partner": "WORLD",
+     "value_usd": 13248564623.0,
+     "net_wgt_kg": 1758706.467
+    },
+    {
+     "period": "202304",
+     "hs6": "854231",
+     "partner": "KR",
+     "value_usd": 1487726977.0,
+     "net_wgt_kg": 149416.0
+    },
+    {
+     "period": "202304",
+     "hs6": "854232",
+     "partner": "WORLD",
+     "value_usd": 6396412202.0,
+     "net_wgt_kg": 662797.11
+    },
+    {
+     "period": "202304",
+     "hs6": "854232",
+     "partner": "KR",
+     "value_usd": 2772653182.0,
+     "net_wgt_kg": 235104.0
+    },
+    {
+     "period": "202305",
+     "hs6": "854231",
+     "partner": "WORLD",
+     "value_usd": 13042044846.0,
+     "net_wgt_kg": 1738165.069
+    },
+    {
+     "period": "202305",
+     "hs6": "854231",
+     "partner": "KR",
+     "value_usd": 1387800424.0,
+     "net_wgt_kg": 158137.0
+    },
+    {
+     "period": "202305",
+     "hs6": "854232",
+     "partner": "WORLD",
+     "value_usd": 6091323766.0,
+     "net_wgt_kg": 680143.27
+    },
+    {
+     "period": "202305",
+     "hs6": "854232",
+     "partner": "KR",
+     "value_usd": 2387348308.0,
+     "net_wgt_kg": 221992.0
+    },
+    {
+     "period": "202306",
+     "hs6": "854231",
+     "partner": "WORLD",
+     "value_usd": 15394796903.0,
+     "net_wgt_kg": 1946906.947
+    },
+    {
+     "period": "202306",
+     "hs6": "854231",
+     "partner": "KR",
+     "value_usd": 1785961966.0,
+     "net_wgt_kg": 162335.0
+    },
+    {
+     "period": "202306",
+     "hs6": "854232",
+     "partner": "WORLD",
+     "value_usd": 7235026511.0,
+     "net_wgt_kg": 767521.388
+    },
+    {
+     "period": "202306",
+     "hs6": "854232",
+     "partner": "KR",
+     "value_usd": 3115633461.0,
+     "net_wgt_kg": 269246.0
+    },
+    {
+     "period": "202307",
+     "hs6": "854231",
+     "partner": "WORLD",
+     "value_usd": 14188438715.0,
+     "net_wgt_kg": 1843531.486
+    },
+    {
+     "period": "202307",
+     "hs6": "854231",
+     "partner": "KR",
+     "value_usd": 1517369798.0,
+     "net_wgt_kg": 163933.0
+    },
+    {
+     "period": "202307",
+     "hs6": "854232",
+     "partner": "WORLD",
+     "value_usd": 6327381257.0,
+     "net_wgt_kg": 708711.887
+    },
+    {
+     "period": "202307",
+     "hs6": "854232",
+     "partner": "KR",
+     "value_usd": 2724108514.0,
+     "net_wgt_kg": 230980.0
+    },
+    {
+     "period": "202308",
+     "hs6": "854231",
+     "partner": "WORLD",
+     "value_usd": 15242337490.0,
+     "net_wgt_kg": 1883995.751
+    },
+    {
+     "period": "202308",
+     "hs6": "854231",
+     "partner": "KR",
+     "value_usd": 1616633107.0,
+     "net_wgt_kg": 171596.0
+    },
+    {
+     "period": "202308",
+     "hs6": "854232",
+     "partner": "WORLD",
+     "value_usd": 6309833026.0,
+     "net_wgt_kg": 741126.714
+    },
+    {
+     "period": "202308",
+     "hs6": "854232",
+     "partner": "KR",
+     "value_usd": 2856878118.0,
+     "net_wgt_kg": 245051.0
+    },
+    {
+     "period": "202309",
+     "hs6": "854231",
+     "partner": "WORLD",
+     "value_usd": 16189510078.0,
+     "net_wgt_kg": 1911569.64
+    },
+    {
+     "period": "202309",
+     "hs6": "854231",
+     "partner": "KR",
+     "value_usd": 1535874496.0,
+     "net_wgt_kg": 169194.0
+    },
+    {
+     "period": "202309",
+     "hs6": "854232",
+     "partner": "WORLD",
+     "value_usd": 7778235230.0,
+     "net_wgt_kg": 795843.088
+    },
+    {
+     "period": "202309",
+     "hs6": "854232",
+     "partner": "KR",
+     "value_usd": 3520795176.0,
+     "net_wgt_kg": 283181.0
+    },
+    {
+     "period": "202310",
+     "hs6": "854231",
+     "partner": "WORLD",
+     "value_usd": 16285961202.0,
+     "net_wgt_kg": 1804256.3
+    },
+    {
+     "period": "202310",
+     "hs6": "854231",
+     "partner": "KR",
+     "value_usd": 1836198544.0,
+     "net_wgt_kg": 160466.0
+    },
+    {
+     "period": "202310",
+     "hs6": "854232",
+     "partner": "WORLD",
+     "value_usd": 6236691332.0,
+     "net_wgt_kg": 706360.331
+    },
+    {
+     "period": "202310",
+     "hs6": "854232",
+     "partner": "KR",
+     "value_usd": 2774894862.0,
+     "net_wgt_kg": 223865.0
+    },
+    {
+     "period": "202311",
+     "hs6": "854231",
+     "partner": "WORLD",
+     "value_usd": 16551902457.0,
+     "net_wgt_kg": 1846769.892
+    },
+    {
+     "period": "202311",
+     "hs6": "854231",
+     "partner": "KR",
+     "value_usd": 1684455339.0,
+     "net_wgt_kg": 160758.0
+    },
+    {
+     "period": "202311",
+     "hs6": "854232",
+     "partner": "WORLD",
+     "value_usd": 7229032931.0,
+     "net_wgt_kg": 775750.966
+    },
+    {
+     "period": "202311",
+     "hs6": "854232",
+     "partner": "KR",
+     "value_usd": 3280629852.0,
+     "net_wgt_kg": 249563.0
+    },
+    {
+     "period": "202312",
+     "hs6": "854231",
+     "partner": "WORLD",
+     "value_usd": 16263465452.0,
+     "net_wgt_kg": 1994392.73
+    },
+    {
+     "period": "202312",
+     "hs6": "854231",
+     "partner": "KR",
+     "value_usd": 1545301170.0,
+     "net_wgt_kg": 182574.0
+    },
+    {
+     "period": "202312",
+     "hs6": "854232",
+     "partner": "WORLD",
+     "value_usd": 8201585599.0,
+     "net_wgt_kg": 879960.812
+    },
+    {
+     "period": "202312",
+     "hs6": "854232",
+     "partner": "KR",
+     "value_usd": 3501155107.0,
+     "net_wgt_kg": 259512.0
+    },
+    {
+     "period": "202401",
+     "hs6": "854231",
+     "partner": "WORLD",
+     "value_usd": 14715687666.0,
+     "net_wgt_kg": 1706080.657
+    },
+    {
+     "period": "202401",
+     "hs6": "854231",
+     "partner": "KR",
+     "value_usd": 1753320356.0,
+     "net_wgt_kg": 139776.0
+    },
+    {
+     "period": "202401",
+     "hs6": "854232",
+     "partner": "WORLD",
+     "value_usd": 6931242146.0,
+     "net_wgt_kg": 775495.118
+    },
+    {
+     "period": "202401",
+     "hs6": "854232",
+     "partner": "KR",
+     "value_usd": 3316040076.0,
+     "net_wgt_kg": 233122.0
+    },
+    {
+     "period": "202402",
+     "hs6": "854231",
+     "partner": "WORLD",
+     "value_usd": 11412367720.0,
+     "net_wgt_kg": 1399274.729
+    },
+    {
+     "period": "202402",
+     "hs6": "854231",
+     "partner": "KR",
+     "value_usd": 1287248997.0,
+     "net_wgt_kg": 147717.0
+    },
+    {
+     "period": "202402",
+     "hs6": "854232",
+     "partner": "WORLD",
+     "value_usd": 6932601827.0,
+     "net_wgt_kg": 641812.869
+    },
+    {
+     "period": "202402",
+     "hs6": "854232",
+     "partner": "KR",
+     "value_usd": 3383813539.0,
+     "net_wgt_kg": 199590.0
+    },
+    {
+     "period": "202403",
+     "hs6": "854231",
+     "partner": "WORLD",
+     "value_usd": 14966753313.0,
+     "net_wgt_kg": 1838121.451
+    },
+    {
+     "period": "202403",
+     "hs6": "854231",
+     "partner": "KR",
+     "value_usd": 2084909004.0,
+     "net_wgt_kg": 165695.0
+    },
+    {
+     "period": "202403",
+     "hs6": "854232",
+     "partner": "WORLD",
+     "value_usd": 8712012404.0,
+     "net_wgt_kg": 761871.224
+    },
+    {
+     "period": "202403",
+     "hs6": "854232",
+     "partner": "KR",
+     "value_usd": 4191659702.0,
+     "net_wgt_kg": 226461.0
+    },
+    {
+     "period": "202404",
+     "hs6": "854231",
+     "partner": "WORLD",
+     "value_usd": 15034806372.0,
+     "net_wgt_kg": 1812835.918
+    },
+    {
+     "period": "202404",
+     "hs6": "854231",
+     "partner": "KR",
+     "value_usd": 2085616572.0,
+     "net_wgt_kg": 163400.0
+    },
+    {
+     "period": "202404",
+     "hs6": "854232",
+     "partner": "WORLD",
+     "value_usd": 7865267316.0,
+     "net_wgt_kg": 737833.587
+    },
+    {
+     "period": "202404",
+     "hs6": "854232",
+     "partner": "KR",
+     "value_usd": 3687941812.0,
+     "net_wgt_kg": 214284.0
+    },
+    {
+     "period": "202405",
+     "hs6": "854231",
+     "partner": "WORLD",
+     "value_usd": 14790111381.0,
+     "net_wgt_kg": 1768511.628
+    },
+    {
+     "period": "202405",
+     "hs6": "854231",
+     "partner": "KR",
+     "value_usd": 2149452777.0,
+     "net_wgt_kg": 151444.0
+    },
+    {
+     "period": "202405",
+     "hs6": "854232",
+     "partner": "WORLD",
+     "value_usd": 8227800521.0,
+     "net_wgt_kg": 704613.989
+    },
+    {
+     "period": "202405",
+     "hs6": "854232",
+     "partner": "KR",
+     "value_usd": 4157208209.0,
+     "net_wgt_kg": 220025.0
+    },
+    {
+     "period": "202406",
+     "hs6": "854231",
+     "partner": "WORLD",
+     "value_usd": 15187102207.0,
+     "net_wgt_kg": 1736775.459
+    },
+    {
+     "period": "202406",
+     "hs6": "854231",
+     "partner": "KR",
+     "value_usd": 2022488339.0,
+     "net_wgt_kg": 124805.0
+    },
+    {
+     "period": "202406",
+     "hs6": "854232",
+     "partner": "WORLD",
+     "value_usd": 8208467866.0,
+     "net_wgt_kg": 659997.345
+    },
+    {
+     "period": "202406",
+     "hs6": "854232",
+     "partner": "KR",
+     "value_usd": 4238393628.0,
+     "net_wgt_kg": 217568.0
+    },
+    {
+     "period": "202407",
+     "hs6": "854231",
+     "partner": "WORLD",
+     "value_usd": 16076194562.0,
+     "net_wgt_kg": 1788311.623
+    },
+    {
+     "period": "202407",
+     "hs6": "854231",
+     "partner": "KR",
+     "value_usd": 2160506634.0,
+     "net_wgt_kg": 137823.0
+    },
+    {
+     "period": "202407",
+     "hs6": "854232",
+     "partner": "WORLD",
+     "value_usd": 8172756017.0,
+     "net_wgt_kg": 640638.235
+    },
+    {
+     "period": "202407",
+     "hs6": "854232",
+     "partner": "KR",
+     "value_usd": 4074856052.0,
+     "net_wgt_kg": 206370.0
+    },
+    {
+     "period": "202408",
+     "hs6": "854231",
+     "partner": "WORLD",
+     "value_usd": 16811035554.0,
+     "net_wgt_kg": 1805138.728
+    },
+    {
+     "period": "202408",
+     "hs6": "854231",
+     "partner": "KR",
+     "value_usd": 2130750356.0,
+     "net_wgt_kg": 138761.0
+    },
+    {
+     "period": "202408",
+     "hs6": "854232",
+     "partner": "WORLD",
+     "value_usd": 7458391602.0,
+     "net_wgt_kg": 639915.138
+    },
+    {
+     "period": "202408",
+     "hs6": "854232",
+     "partner": "KR",
+     "value_usd": 3301926641.0,
+     "net_wgt_kg": 181127.0
+    },
+    {
+     "period": "202409",
+     "hs6": "854231",
+     "partner": "WORLD",
+     "value_usd": 19191273045.0,
+     "net_wgt_kg": 1956187.17
+    },
+    {
+     "period": "202409",
+     "hs6": "854231",
+     "partner": "KR",
+     "value_usd": 1989610952.0,
+     "net_wgt_kg": 142482.0
+    },
+    {
+     "period": "202409",
+     "hs6": "854232",
+     "partner": "WORLD",
+     "value_usd": 7682638619.0,
+     "net_wgt_kg": 660604.959
+    },
+    {
+     "period": "202409",
+     "hs6": "854232",
+     "partner": "KR",
+     "value_usd": 3617583116.0,
+     "net_wgt_kg": 206866.0
+    },
+    {
+     "period": "202410",
+     "hs6": "854231",
+     "partner": "WORLD",
+     "value_usd": 17839954247.0,
+     "net_wgt_kg": 1663939.96
+    },
+    {
+     "period": "202410",
+     "hs6": "854231",
+     "partner": "KR",
+     "value_usd": 2776643778.0,
+     "net_wgt_kg": 140029.0
+    },
+    {
+     "period": "202410",
+     "hs6": "854232",
+     "partner": "WORLD",
+     "value_usd": 7522292125.0,
+     "net_wgt_kg": 644575.714
+    },
+    {
+     "period": "202410",
+     "hs6": "854232",
+     "partner": "KR",
+     "value_usd": 3494580310.0,
+     "net_wgt_kg": 182881.0
+    },
+    {
+     "period": "202411",
+     "hs6": "854231",
+     "partner": "WORLD",
+     "value_usd": 17563171036.0,
+     "net_wgt_kg": 1723791.575
+    },
+    {
+     "period": "202411",
+     "hs6": "854231",
+     "partner": "KR",
+     "value_usd": 2702573753.0,
+     "net_wgt_kg": 131630.0
+    },
+    {
+     "period": "202411",
+     "hs6": "854232",
+     "partner": "WORLD",
+     "value_usd": 7321159865.0,
+     "net_wgt_kg": 652319.271
+    },
+    {
+     "period": "202411",
+     "hs6": "854232",
+     "partner": "KR",
+     "value_usd": 3566011554.0,
+     "net_wgt_kg": 203964.0
+    },
+    {
+     "period": "202412",
+     "hs6": "854231",
+     "partner": "WORLD",
+     "value_usd": 18964273696.0,
+     "net_wgt_kg": 1959372.346
+    },
+    {
+     "period": "202412",
+     "hs6": "854231",
+     "partner": "KR",
+     "value_usd": 2477851939.0,
+     "net_wgt_kg": 148409.0
+    },
+    {
+     "period": "202412",
+     "hs6": "854232",
+     "partner": "WORLD",
+     "value_usd": 8192854446.0,
+     "net_wgt_kg": 687041.007
+    },
+    {
+     "period": "202412",
+     "hs6": "854232",
+     "partner": "KR",
+     "value_usd": 4140595973.0,
+     "net_wgt_kg": 203055.0
+    }
+   ],
+   "annual": [
+    {
+     "period": "2021",
+     "hs6": "854231",
+     "partner": "WORLD",
+     "value_usd": 202905349548.0,
+     "net_wgt_kg": 27584690.006
+    },
+    {
+     "period": "2021",
+     "hs6": "854231",
+     "partner": "KR",
+     "value_usd": 19230174172.0,
+     "net_wgt_kg": 2821454.0
+    },
+    {
+     "period": "2021",
+     "hs6": "854232",
+     "partner": "WORLD",
+     "value_usd": 121695576055.0,
+     "net_wgt_kg": 9887796.943
+    },
+    {
+     "period": "2021",
+     "hs6": "854232",
+     "partner": "KR",
+     "value_usd": 54999350817.0,
+     "net_wgt_kg": 2978594.0
+    },
+    {
+     "period": "2022",
+     "hs6": "854231",
+     "partner": "WORLD",
+     "value_usd": 205091243739.0,
+     "net_wgt_kg": 24676667.32
+    },
+    {
+     "period": "2022",
+     "hs6": "854231",
+     "partner": "KR",
+     "value_usd": 22433780931.0,
+     "net_wgt_kg": 2231746.0
+    },
+    {
+     "period": "2022",
+     "hs6": "854232",
+     "partner": "WORLD",
+     "value_usd": 101279362928.0,
+     "net_wgt_kg": 8674517.684
+    },
+    {
+     "period": "2022",
+     "hs6": "854232",
+     "partner": "KR",
+     "value_usd": 48298357563.0,
+     "net_wgt_kg": 2711287.0
+    },
+    {
+     "period": "2023",
+     "hs6": "854231",
+     "partner": "WORLD",
+     "value_usd": 176211552393.0,
+     "net_wgt_kg": 21844735.599
+    },
+    {
+     "period": "2023",
+     "hs6": "854231",
+     "partner": "KR",
+     "value_usd": 18492089133.0,
+     "net_wgt_kg": 1934990.0
+    },
+    {
+     "period": "2023",
+     "hs6": "854232",
+     "partner": "WORLD",
+     "value_usd": 78861504507.0,
+     "net_wgt_kg": 8419159.009
+    },
+    {
+     "period": "2023",
+     "hs6": "854232",
+     "partner": "KR",
+     "value_usd": 34451077419.0,
+     "net_wgt_kg": 2782375.0
+    },
+    {
+     "period": "2024",
+     "hs6": "854231",
+     "partner": "WORLD",
+     "value_usd": 192552730799.0,
+     "net_wgt_kg": 21158340.355
+    },
+    {
+     "period": "2024",
+     "hs6": "854231",
+     "partner": "KR",
+     "value_usd": 25620973457.0,
+     "net_wgt_kg": 1731971.0
+    },
+    {
+     "period": "2024",
+     "hs6": "854232",
+     "partner": "WORLD",
+     "value_usd": 93227484754.0,
+     "net_wgt_kg": 8206718.917
+    },
+    {
+     "period": "2024",
+     "hs6": "854232",
+     "partner": "KR",
+     "value_usd": 45170610612.0,
+     "net_wgt_kg": 2495313.0
+    },
+    {
+     "period": "2025",
+     "hs6": "854231",
+     "partner": "WORLD",
+     "value_usd": 205292700149.0,
+     "net_wgt_kg": 21344036.111
+    },
+    {
+     "period": "2025",
+     "hs6": "854231",
+     "partner": "KR",
+     "value_usd": 25556000720.0,
+     "net_wgt_kg": 1591128.0
+    },
+    {
+     "period": "2025",
+     "hs6": "854232",
+     "partner": "WORLD",
+     "value_usd": 113564012282.0,
+     "net_wgt_kg": 9267717.425
+    },
+    {
+     "period": "2025",
+     "hs6": "854232",
+     "partner": "KR",
+     "value_usd": 56885723517.0,
+     "net_wgt_kg": 3113584.0
+    }
+   ]
+  },
+  "IN": {
+   "name": "인도",
+   "reporter_m49": 699,
+   "monthly": [
+    {
+     "period": "202206",
+     "hs6": "854231",
+     "partner": "WORLD",
+     "value_usd": 723209835.376,
+     "net_wgt_kg": 453595.271
+    },
+    {
+     "period": "202206",
+     "hs6": "854231",
+     "partner": "KR",
+     "value_usd": 35897661.449,
+     "net_wgt_kg": 22514.917
+    },
+    {
+     "period": "202206",
+     "hs6": "854232",
+     "partner": "WORLD",
+     "value_usd": 197699649.312,
+     "net_wgt_kg": 128277.449
+    },
+    {
+     "period": "202206",
+     "hs6": "854232",
+     "partner": "KR",
+     "value_usd": 58442360.904,
+     "net_wgt_kg": 37920.335
+    },
+    {
+     "period": "202207",
+     "hs6": "854231",
+     "partner": "WORLD",
+     "value_usd": 831303048.276,
+     "net_wgt_kg": 521391.044
+    },
+    {
+     "period": "202207",
+     "hs6": "854232",
+     "partner": "WORLD",
+     "value_usd": 205730077.037,
+     "net_wgt_kg": 133487.994
+    },
+    {
+     "period": "202207",
+     "hs6": "854231",
+     "partner": "KR",
+     "value_usd": 66570541.408,
+     "net_wgt_kg": 41752.865
+    },
+    {
+     "period": "202207",
+     "hs6": "854232",
+     "partner": "KR",
+     "value_usd": 69158007.217,
+     "net_wgt_kg": 44873.184
+    },
+    {
+     "period": "202208",
+     "hs6": "854231",
+     "partner": "WORLD",
+     "value_usd": 845272960.082,
+     "net_wgt_kg": 530152.936
+    },
+    {
+     "period": "202208",
+     "hs6": "854231",
+     "partner": "KR",
+     "value_usd": 70586501.574,
+     "net_wgt_kg": 44271.665
+    },
+    {
+     "period": "202208",
+     "hs6": "854232",
+     "partner": "WORLD",
+     "value_usd": 281464323.898,
+     "net_wgt_kg": 182628.172
+    },
+    {
+     "period": "202208",
+     "hs6": "854232",
+     "partner": "KR",
+     "value_usd": 95018217.302,
+     "net_wgt_kg": 61652.586
+    },
+    {
+     "period": "202209",
+     "hs6": "854231",
+     "partner": "WORLD",
+     "value_usd": 1053285484.412,
+     "net_wgt_kg": 660617.833
+    },
+    {
+     "period": "202209",
+     "hs6": "854232",
+     "partner": "WORLD",
+     "value_usd": 269884437.443,
+     "net_wgt_kg": 175114.561
+    },
+    {
+     "period": "202209",
+     "hs6": "854231",
+     "partner": "KR",
+     "value_usd": 67040398.88,
+     "net_wgt_kg": 42047.559
+    },
+    {
+     "period": "202209",
+     "hs6": "854232",
+     "partner": "KR",
+     "value_usd": 75297237.09,
+     "net_wgt_kg": 48856.624
+    },
+    {
+     "period": "202210",
+     "hs6": "854231",
+     "partner": "WORLD",
+     "value_usd": 773853657.508,
+     "net_wgt_kg": 485358.94
+    },
+    {
+     "period": "202210",
+     "hs6": "854231",
+     "partner": "KR",
+     "value_usd": 43707063.434,
+     "net_wgt_kg": 27412.953
+    },
+    {
+     "period": "202210",
+     "hs6": "854232",
+     "partner": "WORLD",
+     "value_usd": 233115315.753,
+     "net_wgt_kg": 151256.91
+    },
+    {
+     "period": "202210",
+     "hs6": "854232",
+     "partner": "KR",
+     "value_usd": 99509881.076,
+     "net_wgt_kg": 64567.002
+    },
+    {
+     "period": "202211",
+     "hs6": "854231",
+     "partner": "WORLD",
+     "value_usd": 754776589.935,
+     "net_wgt_kg": 0.0
+    },
+    {
+     "period": "202211",
+     "hs6": "854231",
+     "partner": "KR",
+     "value_usd": 67685912.143,
+     "net_wgt_kg": 0.0
+    },
+    {
+     "period": "202211",
+     "hs6": "854232",
+     "partner": "WORLD",
+     "value_usd": 205123706.783,
+     "net_wgt_kg": 95398.521
+    },
+    {
+     "period": "202211",
+     "hs6": "854232",
+     "partner": "KR",
+     "value_usd": 57501133.718,
+     "net_wgt_kg": 26742.512
+    },
+    {
+     "period": "202212",
+     "hs6": "854231",
+     "partner": "WORLD",
+     "value_usd": 912149005.527,
+     "net_wgt_kg": null
+    },
+    {
+     "period": "202212",
+     "hs6": "854231",
+     "partner": "KR",
+     "value_usd": 107071276.22,
+     "net_wgt_kg": null
+    },
+    {
+     "period": "202212",
+     "hs6": "854232",
+     "partner": "WORLD",
+     "value_usd": 107822874.321,
+     "net_wgt_kg": 50146.046
+    },
+    {
+     "period": "202212",
+     "hs6": "854232",
+     "partner": "KR",
+     "value_usd": 27468235.225,
+     "net_wgt_kg": 12774.872
+    },
+    {
+     "period": "202301",
+     "hs6": "854231",
+     "partner": "WORLD",
+     "value_usd": 888406520.878,
+     "net_wgt_kg": 489259.756
+    },
+    {
+     "period": "202301",
+     "hs6": "854231",
+     "partner": "KR",
+     "value_usd": 88957066.48,
+     "net_wgt_kg": 48990.087
+    },
+    {
+     "period": "202301",
+     "hs6": "854232",
+     "partner": "WORLD",
+     "value_usd": 186321780.104,
+     "net_wgt_kg": 99571.092
+    },
+    {
+     "period": "202301",
+     "hs6": "854232",
+     "partner": "KR",
+     "value_usd": 70032433.224,
+     "net_wgt_kg": 37425.608
+    },
+    {
+     "period": "202302",
+     "hs6": "854231",
+     "partner": "WORLD",
+     "value_usd": 829667732.301,
+     "net_wgt_kg": 456911.361
+    },
+    {
+     "period": "202302",
+     "hs6": "854231",
+     "partner": "KR",
+     "value_usd": 100196769.219,
+     "net_wgt_kg": 55179.972
+    },
+    {
+     "period": "202302",
+     "hs6": "854232",
+     "partner": "WORLD",
+     "value_usd": 198931735.144,
+     "net_wgt_kg": 106309.901
+    },
+    {
+     "period": "202302",
+     "hs6": "854232",
+     "partner": "KR",
+     "value_usd": 51789959.932,
+     "net_wgt_kg": 27676.758
+    },
+    {
+     "period": "202303",
+     "hs6": "854231",
+     "partner": "WORLD",
+     "value_usd": 990689384.935,
+     "net_wgt_kg": 545588.574
+    },
+    {
+     "period": "202303",
+     "hs6": "854231",
+     "partner": "KR",
+     "value_usd": 122553198.0,
+     "net_wgt_kg": 67492.017
+    },
+    {
+     "period": "202303",
+     "hs6": "854232",
+     "partner": "WORLD",
+     "value_usd": 334019077.122,
+     "net_wgt_kg": 178501.108
+    },
+    {
+     "period": "202303",
+     "hs6": "854232",
+     "partner": "KR",
+     "value_usd": 106393215.296,
+     "net_wgt_kg": 56856.953
+    },
+    {
+     "period": "202304",
+     "hs6": "854231",
+     "partner": "WORLD",
+     "value_usd": 945574928.146,
+     "net_wgt_kg": 520743.317
+    },
+    {
+     "period": "202304",
+     "hs6": "854231",
+     "partner": "KR",
+     "value_usd": 101849471.268,
+     "net_wgt_kg": 56090.142
+    },
+    {
+     "period": "202304",
+     "hs6": "854232",
+     "partner": "WORLD",
+     "value_usd": 206920701.972,
+     "net_wgt_kg": 110579.237
+    },
+    {
+     "period": "202304",
+     "hs6": "854232",
+     "partner": "KR",
+     "value_usd": 10451846.623,
+     "net_wgt_kg": 5585.508
+    },
+    {
+     "period": "202305",
+     "hs6": "854231",
+     "partner": "WORLD",
+     "value_usd": 905601361.547,
+     "net_wgt_kg": 498729.231
+    },
+    {
+     "period": "202305",
+     "hs6": "854231",
+     "partner": "KR",
+     "value_usd": 76084951.718,
+     "net_wgt_kg": 41901.206
+    },
+    {
+     "period": "202305",
+     "hs6": "854232",
+     "partner": "WORLD",
+     "value_usd": 245552089.679,
+     "net_wgt_kg": 131224.002
+    },
+    {
+     "period": "202305",
+     "hs6": "854232",
+     "partner": "KR",
+     "value_usd": 30538709.515,
+     "net_wgt_kg": 16320.006
+    },
+    {
+     "period": "202306",
+     "hs6": "854231",
+     "partner": "WORLD",
+     "value_usd": 953737619.381,
+     "net_wgt_kg": 525238.643
+    },
+    {
+     "period": "202306",
+     "hs6": "854231",
+     "partner": "KR",
+     "value_usd": 51333407.06,
+     "net_wgt_kg": 28270.133
+    },
+    {
+     "period": "202306",
+     "hs6": "854232",
+     "partner": "WORLD",
+     "value_usd": 293132684.502,
+     "net_wgt_kg": 156651.259
+    },
+    {
+     "period": "202306",
+     "hs6": "854232",
+     "partner": "KR",
+     "value_usd": 59222698.566,
+     "net_wgt_kg": 31648.843
+    },
+    {
+     "period": "202307",
+     "hs6": "854231",
+     "partner": "WORLD",
+     "value_usd": 1180495370.955,
+     "net_wgt_kg": 650117.783
+    },
+    {
+     "period": "202307",
+     "hs6": "854231",
+     "partner": "KR",
+     "value_usd": 126611704.061,
+     "net_wgt_kg": 69727.101
+    },
+    {
+     "period": "202307",
+     "hs6": "854232",
+     "partner": "WORLD",
+     "value_usd": 302830792.234,
+     "net_wgt_kg": 161833.966
+    },
+    {
+     "period": "202307",
+     "hs6": "854232",
+     "partner": "KR",
+     "value_usd": 32817436.159,
+     "net_wgt_kg": 17537.767
+    },
+    {
+     "period": "202308",
+     "hs6": "854231",
+     "partner": "WORLD",
+     "value_usd": 1147016409.37,
+     "net_wgt_kg": 631680.38
+    },
+    {
+     "period": "202308",
+     "hs6": "854231",
+     "partner": "KR",
+     "value_usd": 145551310.758,
+     "net_wgt_kg": 80157.447
+    },
+    {
+     "period": "202308",
+     "hs6": "854232",
+     "partner": "WORLD",
+     "value_usd": 335361524.012,
+     "net_wgt_kg": 179218.517
+    },
+    {
+     "period": "202308",
+     "hs6": "854232",
+     "partner": "KR",
+     "value_usd": 52447416.015,
+     "net_wgt_kg": 28028.105
+    },
+    {
+     "period": "202309",
+     "hs6": "854231",
+     "partner": "WORLD",
+     "value_usd": 1063240476.759,
+     "net_wgt_kg": 585543.627
+    },
+    {
+     "period": "202309",
+     "hs6": "854231",
+     "partner": "KR",
+     "value_usd": 145721461.544,
+     "net_wgt_kg": 80251.152
+    },
+    {
+     "period": "202309",
+     "hs6": "854232",
+     "partner": "WORLD",
+     "value_usd": 371766051.436,
+     "net_wgt_kg": 198673.239
+    },
+    {
+     "period": "202309",
+     "hs6": "854232",
+     "partner": "KR",
+     "value_usd": 63527189.494,
+     "net_wgt_kg": 33949.18
+    },
+    {
+     "period": "202310",
+     "hs6": "854231",
+     "partner": "WORLD",
+     "value_usd": 942633541.159,
+     "net_wgt_kg": 519123.448
+    },
+    {
+     "period": "202310",
+     "hs6": "854231",
+     "partner": "KR",
+     "value_usd": 98886259.889,
+     "net_wgt_kg": 54458.253
+    },
+    {
+     "period": "202310",
+     "hs6": "854232",
+     "partner": "WORLD",
+     "value_usd": 258789563.202,
+     "net_wgt_kg": 138298.16
+    },
+    {
+     "period": "202310",
+     "hs6": "854232",
+     "partner": "KR",
+     "value_usd": 57911652.787,
+     "net_wgt_kg": 30948.215
+    },
+    {
+     "period": "202311",
+     "hs6": "854231",
+     "partner": "WORLD",
+     "value_usd": 982026425.084,
+     "net_wgt_kg": 540817.743
+    },
+    {
+     "period": "202311",
+     "hs6": "854231",
+     "partner": "KR",
+     "value_usd": 133024790.176,
+     "net_wgt_kg": 73258.891
+    },
+    {
+     "period": "202311",
+     "hs6": "854232",
+     "partner": "WORLD",
+     "value_usd": 218315974.643,
+     "net_wgt_kg": 116668.915
+    },
+    {
+     "period": "202311",
+     "hs6": "854232",
+     "partner": "KR",
+     "value_usd": 39932858.149,
+     "net_wgt_kg": 21340.276
+    },
+    {
+     "period": "202312",
+     "hs6": "854231",
+     "partner": "WORLD",
+     "value_usd": 1032355717.171,
+     "net_wgt_kg": 568534.893
+    },
+    {
+     "period": "202312",
+     "hs6": "854231",
+     "partner": "KR",
+     "value_usd": 133657190.047,
+     "net_wgt_kg": 73607.164
+    },
+    {
+     "period": "202312",
+     "hs6": "854232",
+     "partner": "WORLD",
+     "value_usd": 362676881.121,
+     "net_wgt_kg": 193815.951
+    },
+    {
+     "period": "202312",
+     "hs6": "854232",
+     "partner": "KR",
+     "value_usd": 141360755.572,
+     "net_wgt_kg": 75543.744
+    },
+    {
+     "period": "202401",
+     "hs6": "854231",
+     "partner": "WORLD",
+     "value_usd": 1312330905.555,
+     "net_wgt_kg": 722721.731
+    },
+    {
+     "period": "202401",
+     "hs6": "854231",
+     "partner": "KR",
+     "value_usd": 139065303.238,
+     "net_wgt_kg": 76585.499
+    },
+    {
+     "period": "202401",
+     "hs6": "854232",
+     "partner": "WORLD",
+     "value_usd": 285941667.571,
+     "net_wgt_kg": 152808.351
+    },
+    {
+     "period": "202401",
+     "hs6": "854232",
+     "partner": "KR",
+     "value_usd": 59979462.859,
+     "net_wgt_kg": 32053.261
+    },
+    {
+     "period": "202402",
+     "hs6": "854231",
+     "partner": "WORLD",
+     "value_usd": 1062086736.84,
+     "net_wgt_kg": 584908.244
+    },
+    {
+     "period": "202402",
+     "hs6": "854231",
+     "partner": "KR",
+     "value_usd": 146294542.189,
+     "net_wgt_kg": 80566.757
+    },
+    {
+     "period": "202402",
+     "hs6": "854232",
+     "partner": "WORLD",
+     "value_usd": 316366023.524,
+     "net_wgt_kg": 169067.247
+    },
+    {
+     "period": "202402",
+     "hs6": "854232",
+     "partner": "KR",
+     "value_usd": 113040521.611,
+     "net_wgt_kg": 60409.299
+    },
+    {
+     "period": "202403",
+     "hs6": "854231",
+     "partner": "WORLD",
+     "value_usd": 1174486001.859,
+     "net_wgt_kg": 646808.326
+    },
+    {
+     "period": "202403",
+     "hs6": "854231",
+     "partner": "KR",
+     "value_usd": 147536204.844,
+     "net_wgt_kg": 81250.56
+    },
+    {
+     "period": "202403",
+     "hs6": "854232",
+     "partner": "WORLD",
+     "value_usd": 335822143.857,
+     "net_wgt_kg": 179464.674
+    },
+    {
+     "period": "202403",
+     "hs6": "854232",
+     "partner": "KR",
+     "value_usd": 132377011.587,
+     "net_wgt_kg": 70742.795
+    },
+    {
+     "period": "202404",
+     "hs6": "854231",
+     "partner": "WORLD",
+     "value_usd": 1112236001.051,
+     "net_wgt_kg": 612526.25
+    },
+    {
+     "period": "202404",
+     "hs6": "854231",
+     "partner": "KR",
+     "value_usd": 162163584.345,
+     "net_wgt_kg": 89306.093
+    },
+    {
+     "period": "202404",
+     "hs6": "854232",
+     "partner": "WORLD",
+     "value_usd": 267801642.085,
+     "net_wgt_kg": 143114.25
+    },
+    {
+     "period": "202404",
+     "hs6": "854232",
+     "partner": "KR",
+     "value_usd": 86984027.227,
+     "net_wgt_kg": 46484.606
+    },
+    {
+     "period": "202405",
+     "hs6": "854231",
+     "partner": "WORLD",
+     "value_usd": 1220774903.403,
+     "net_wgt_kg": 672300.369
+    },
+    {
+     "period": "202405",
+     "hs6": "854231",
+     "partner": "KR",
+     "value_usd": 181516696.112,
+     "net_wgt_kg": 99964.163
+    },
+    {
+     "period": "202405",
+     "hs6": "854232",
+     "partner": "WORLD",
+     "value_usd": 305723738.482,
+     "net_wgt_kg": 163379.968
+    },
+    {
+     "period": "202405",
+     "hs6": "854232",
+     "partner": "KR",
+     "value_usd": 94735174.497,
+     "net_wgt_kg": 50626.85
+    },
+    {
+     "period": "202406",
+     "hs6": "854231",
+     "partner": "WORLD",
+     "value_usd": 1149470447.411,
+     "net_wgt_kg": 633031.858
+    },
+    {
+     "period": "202406",
+     "hs6": "854231",
+     "partner": "KR",
+     "value_usd": 128452642.721,
+     "net_wgt_kg": 70740.936
+    },
+    {
+     "period": "202406",
+     "hs6": "854232",
+     "partner": "WORLD",
+     "value_usd": 341752880.331,
+     "net_wgt_kg": 182634.083
+    },
+    {
+     "period": "202406",
+     "hs6": "854232",
+     "partner": "KR",
+     "value_usd": 124690652.541,
+     "net_wgt_kg": 66635.175
+    },
+    {
+     "period": "202407",
+     "hs6": "854231",
+     "partner": "WORLD",
+     "value_usd": 1372440888.158,
+     "net_wgt_kg": null
+    },
+    {
+     "period": "202407",
+     "hs6": "854231",
+     "partner": "KR",
+     "value_usd": 174328642.14,
+     "net_wgt_kg": null
+    },
+    {
+     "period": "202407",
+     "hs6": "854232",
+     "partner": "WORLD",
+     "value_usd": 404361314.731,
+     "net_wgt_kg": 217382.973
+    },
+    {
+     "period": "202407",
+     "hs6": "854232",
+     "partner": "KR",
+     "value_usd": 123192202.278,
+     "net_wgt_kg": 66227.619
+    },
+    {
+     "period": "202408",
+     "hs6": "854231",
+     "partner": "WORLD",
+     "value_usd": 1348098154.56,
+     "net_wgt_kg": null
+    },
+    {
+     "period": "202408",
+     "hs6": "854231",
+     "partner": "KR",
+     "value_usd": 171398336.117,
+     "net_wgt_kg": null
+    },
+    {
+     "period": "202408",
+     "hs6": "854232",
+     "partner": "WORLD",
+     "value_usd": 458136457.108,
+     "net_wgt_kg": 246292.268
+    },
+    {
+     "period": "202408",
+     "hs6": "854232",
+     "partner": "KR",
+     "value_usd": 131807452.849,
+     "net_wgt_kg": 70859.142
+    },
+    {
+     "period": "202409",
+     "hs6": "854231",
+     "partner": "WORLD",
+     "value_usd": 1239176282.884,
+     "net_wgt_kg": null
+    },
+    {
+     "period": "202409",
+     "hs6": "854231",
+     "partner": "KR",
+     "value_usd": 158605330.531,
+     "net_wgt_kg": null
+    },
+    {
+     "period": "202409",
+     "hs6": "854232",
+     "partner": "WORLD",
+     "value_usd": 380316251.794,
+     "net_wgt_kg": 204456.447
+    },
+    {
+     "period": "202409",
+     "hs6": "854232",
+     "partner": "KR",
+     "value_usd": 85773578.778,
+     "net_wgt_kg": 46111.522
+    },
+    {
+     "period": "202410",
+     "hs6": "854231",
+     "partner": "WORLD",
+     "value_usd": 1213890882.737,
+     "net_wgt_kg": null
+    },
+    {
+     "period": "202410",
+     "hs6": "854231",
+     "partner": "KR",
+     "value_usd": 155313899.028,
+     "net_wgt_kg": null
+    },
+    {
+     "period": "202410",
+     "hs6": "854232",
+     "partner": "WORLD",
+     "value_usd": 329827058.021,
+     "net_wgt_kg": 177313.665
+    },
+    {
+     "period": "202410",
+     "hs6": "854232",
+     "partner": "KR",
+     "value_usd": 98994824.131,
+     "net_wgt_kg": 53219.209
+    },
+    {
+     "period": "202411",
+     "hs6": "854231",
+     "partner": "WORLD",
+     "value_usd": 1260122223.658,
+     "net_wgt_kg": null
+    },
+    {
+     "period": "202411",
+     "hs6": "854231",
+     "partner": "KR",
+     "value_usd": 145708953.943,
+     "net_wgt_kg": null
+    },
+    {
+     "period": "202411",
+     "hs6": "854232",
+     "partner": "WORLD",
+     "value_usd": 405168175.729,
+     "net_wgt_kg": 217816.738
+    },
+    {
+     "period": "202411",
+     "hs6": "854232",
+     "partner": "KR",
+     "value_usd": 114159798.565,
+     "net_wgt_kg": 61371.836
+    },
+    {
+     "period": "202412",
+     "hs6": "854231",
+     "partner": "WORLD",
+     "value_usd": 1250116750.077,
+     "net_wgt_kg": null
+    },
+    {
+     "period": "202412",
+     "hs6": "854231",
+     "partner": "KR",
+     "value_usd": 137447761.532,
+     "net_wgt_kg": null
+    },
+    {
+     "period": "202412",
+     "hs6": "854232",
+     "partner": "WORLD",
+     "value_usd": 329492901.879,
+     "net_wgt_kg": 177134.024
+    },
+    {
+     "period": "202412",
+     "hs6": "854232",
+     "partner": "KR",
+     "value_usd": 38089742.533,
+     "net_wgt_kg": 20476.888
+    },
+    {
+     "period": "202501",
+     "hs6": "854231",
+     "partner": "WORLD",
+     "value_usd": 1533774209.561,
+     "net_wgt_kg": null
+    },
+    {
+     "period": "202501",
+     "hs6": "854231",
+     "partner": "KR",
+     "value_usd": 254862274.23,
+     "net_wgt_kg": null
+    },
+    {
+     "period": "202501",
+     "hs6": "854232",
+     "partner": "WORLD",
+     "value_usd": 474752687.982,
+     "net_wgt_kg": 255225.085
+    },
+    {
+     "period": "202501",
+     "hs6": "854232",
+     "partner": "KR",
+     "value_usd": 138540611.166,
+     "net_wgt_kg": 74478.861
+    },
+    {
+     "period": "202502",
+     "hs6": "854231",
+     "partner": "WORLD",
+     "value_usd": 1053091589.896,
+     "net_wgt_kg": null
+    },
+    {
+     "period": "202502",
+     "hs6": "854231",
+     "partner": "KR",
+     "value_usd": 189686940.278,
+     "net_wgt_kg": null
+    },
+    {
+     "period": "202502",
+     "hs6": "854232",
+     "partner": "WORLD",
+     "value_usd": 350954964.668,
+     "net_wgt_kg": 188671.94
+    },
+    {
+     "period": "202502",
+     "hs6": "854232",
+     "partner": "KR",
+     "value_usd": 118009770.702,
+     "net_wgt_kg": 63441.565
+    },
+    {
+     "period": "202503",
+     "hs6": "854231",
+     "partner": "WORLD",
+     "value_usd": 1367491135.339,
+     "net_wgt_kg": null
+    },
+    {
+     "period": "202503",
+     "hs6": "854231",
+     "partner": "KR",
+     "value_usd": 204964462.139,
+     "net_wgt_kg": null
+    },
+    {
+     "period": "202503",
+     "hs6": "854232",
+     "partner": "WORLD",
+     "value_usd": 381975602.223,
+     "net_wgt_kg": 205348.507
+    },
+    {
+     "period": "202503",
+     "hs6": "854232",
+     "partner": "KR",
+     "value_usd": 85347593.252,
+     "net_wgt_kg": 45882.514
+    },
+    {
+     "period": "202504",
+     "hs6": "854231",
+     "partner": "WORLD",
+     "value_usd": 1435116808.988,
+     "net_wgt_kg": null
+    },
+    {
+     "period": "202504",
+     "hs6": "854231",
+     "partner": "KR",
+     "value_usd": 204489628.879,
+     "net_wgt_kg": null
+    },
+    {
+     "period": "202504",
+     "hs6": "854232",
+     "partner": "WORLD",
+     "value_usd": 445133091.115,
+     "net_wgt_kg": 239301.712
+    },
+    {
+     "period": "202504",
+     "hs6": "854232",
+     "partner": "KR",
+     "value_usd": 92104681.259,
+     "net_wgt_kg": 49515.096
+    },
+    {
+     "period": "202505",
+     "hs6": "854231",
+     "partner": "WORLD",
+     "value_usd": 1554082053.039,
+     "net_wgt_kg": null
+    },
+    {
+     "period": "202505",
+     "hs6": "854231",
+     "partner": "KR",
+     "value_usd": 291780211.679,
+     "net_wgt_kg": null
+    },
+    {
+     "period": "202505",
+     "hs6": "854232",
+     "partner": "WORLD",
+     "value_usd": 475658000.059,
+     "net_wgt_kg": 255711.777
+    },
+    {
+     "period": "202505",
+     "hs6": "854232",
+     "partner": "KR",
+     "value_usd": 123071539.375,
+     "net_wgt_kg": 66162.751
+    },
+    {
+     "period": "202506",
+     "hs6": "854231",
+     "partner": "WORLD",
+     "value_usd": 1301301873.757,
+     "net_wgt_kg": null
+    },
+    {
+     "period": "202506",
+     "hs6": "854231",
+     "partner": "KR",
+     "value_usd": 163651895.044,
+     "net_wgt_kg": null
+    },
+    {
+     "period": "202506",
+     "hs6": "854232",
+     "partner": "WORLD",
+     "value_usd": 409813574.664,
+     "net_wgt_kg": 220314.086
+    },
+    {
+     "period": "202506",
+     "hs6": "854232",
+     "partner": "KR",
+     "value_usd": 75431755.932,
+     "net_wgt_kg": 40551.801
+    },
+    {
+     "period": "202507",
+     "hs6": "854231",
+     "partner": "WORLD",
+     "value_usd": 1458955292.478,
+     "net_wgt_kg": null
+    },
+    {
+     "period": "202507",
+     "hs6": "854231",
+     "partner": "KR",
+     "value_usd": 212703534.964,
+     "net_wgt_kg": null
+    },
+    {
+     "period": "202507",
+     "hs6": "854232",
+     "partner": "WORLD",
+     "value_usd": 491991096.823,
+     "net_wgt_kg": null
+    },
+    {
+     "period": "202507",
+     "hs6": "854232",
+     "partner": "KR",
+     "value_usd": 77901916.481,
+     "net_wgt_kg": null
+    },
+    {
+     "period": "202508",
+     "hs6": "854231",
+     "partner": "WORLD",
+     "value_usd": 1428542334.352,
+     "net_wgt_kg": null
+    },
+    {
+     "period": "202508",
+     "hs6": "854231",
+     "partner": "KR",
+     "value_usd": 232245904.067,
+     "net_wgt_kg": null
+    },
+    {
+     "period": "202508",
+     "hs6": "854232",
+     "partner": "WORLD",
+     "value_usd": 631989564.86,
+     "net_wgt_kg": null
+    },
+    {
+     "period": "202508",
+     "hs6": "854232",
+     "partner": "KR",
+     "value_usd": 154463140.6,
+     "net_wgt_kg": null
+    },
+    {
+     "period": "202509",
+     "hs6": "854231",
+     "partner": "WORLD",
+     "value_usd": 1319102347.579,
+     "net_wgt_kg": null
+    },
+    {
+     "period": "202509",
+     "hs6": "854231",
+     "partner": "KR",
+     "value_usd": 195584981.15,
+     "net_wgt_kg": null
+    },
+    {
+     "period": "202509",
+     "hs6": "854232",
+     "partner": "WORLD",
+     "value_usd": 614344018.313,
+     "net_wgt_kg": null
+    },
+    {
+     "period": "202509",
+     "hs6": "854232",
+     "partner": "KR",
+     "value_usd": 134698167.365,
+     "net_wgt_kg": null
+    },
+    {
+     "period": "202510",
+     "hs6": "854231",
+     "partner": "WORLD",
+     "value_usd": 1381687060.473,
+     "net_wgt_kg": null
+    },
+    {
+     "period": "202510",
+     "hs6": "854231",
+     "partner": "KR",
+     "value_usd": 230997121.711,
+     "net_wgt_kg": null
+    },
+    {
+     "period": "202510",
+     "hs6": "854232",
+     "partner": "WORLD",
+     "value_usd": 494689785.468,
+     "net_wgt_kg": null
+    },
+    {
+     "period": "202510",
+     "hs6": "854232",
+     "partner": "KR",
+     "value_usd": 97527425.275,
+     "net_wgt_kg": null
+    },
+    {
+     "period": "202511",
+     "hs6": "854231",
+     "partner": "WORLD",
+     "value_usd": 1200534316.508,
+     "net_wgt_kg": null
+    },
+    {
+     "period": "202511",
+     "hs6": "854231",
+     "partner": "KR",
+     "value_usd": 213926681.238,
+     "net_wgt_kg": null
+    },
+    {
+     "period": "202511",
+     "hs6": "854232",
+     "partner": "WORLD",
+     "value_usd": 610790709.518,
+     "net_wgt_kg": null
+    },
+    {
+     "period": "202511",
+     "hs6": "854232",
+     "partner": "KR",
+     "value_usd": 106844018.277,
+     "net_wgt_kg": null
+    },
+    {
+     "period": "202512",
+     "hs6": "854231",
+     "partner": "WORLD",
+     "value_usd": 1542173264.574,
+     "net_wgt_kg": null
+    },
+    {
+     "period": "202512",
+     "hs6": "854231",
+     "partner": "KR",
+     "value_usd": 241318875.479,
+     "net_wgt_kg": null
+    },
+    {
+     "period": "202512",
+     "hs6": "854232",
+     "partner": "WORLD",
+     "value_usd": 644258659.206,
+     "net_wgt_kg": null
+    },
+    {
+     "period": "202512",
+     "hs6": "854232",
+     "partner": "KR",
+     "value_usd": 136850507.054,
+     "net_wgt_kg": null
+    },
+    {
+     "period": "202601",
+     "hs6": "854231",
+     "partner": "WORLD",
+     "value_usd": 1604808066.783,
+     "net_wgt_kg": null
+    },
+    {
+     "period": "202601",
+     "hs6": "854231",
+     "partner": "KR",
+     "value_usd": 244892394.712,
+     "net_wgt_kg": null
+    },
+    {
+     "period": "202601",
+     "hs6": "854232",
+     "partner": "WORLD",
+     "value_usd": 461870462.282,
+     "net_wgt_kg": null
+    },
+    {
+     "period": "202601",
+     "hs6": "854232",
+     "partner": "KR",
+     "value_usd": 99100185.048,
+     "net_wgt_kg": null
+    },
+    {
+     "period": "202602",
+     "hs6": "854231",
+     "partner": "WORLD",
+     "value_usd": 1603884971.823,
+     "net_wgt_kg": null
+    },
+    {
+     "period": "202602",
+     "hs6": "854231",
+     "partner": "KR",
+     "value_usd": 211563394.724,
+     "net_wgt_kg": null
+    },
+    {
+     "period": "202602",
+     "hs6": "854232",
+     "partner": "WORLD",
+     "value_usd": 736906135.848,
+     "net_wgt_kg": null
+    },
+    {
+     "period": "202602",
+     "hs6": "854232",
+     "partner": "KR",
+     "value_usd": 223479307.528,
+     "net_wgt_kg": null
+    },
+    {
+     "period": "202603",
+     "hs6": "854231",
+     "partner": "WORLD",
+     "value_usd": 1712953418.544,
+     "net_wgt_kg": null
+    },
+    {
+     "period": "202603",
+     "hs6": "854231",
+     "partner": "KR",
+     "value_usd": 244544323.153,
+     "net_wgt_kg": null
+    },
+    {
+     "period": "202603",
+     "hs6": "854232",
+     "partner": "WORLD",
+     "value_usd": 776150646.212,
+     "net_wgt_kg": null
+    },
+    {
+     "period": "202603",
+     "hs6": "854232",
+     "partner": "KR",
+     "value_usd": 215425431.974,
+     "net_wgt_kg": null
+    },
+    {
+     "period": "202604",
+     "hs6": "854231",
+     "partner": "WORLD",
+     "value_usd": 1775054176.622,
+     "net_wgt_kg": null
+    },
+    {
+     "period": "202604",
+     "hs6": "854231",
+     "partner": "KR",
+     "value_usd": 267491523.025,
+     "net_wgt_kg": null
+    },
+    {
+     "period": "202604",
+     "hs6": "854232",
+     "partner": "WORLD",
+     "value_usd": 1106007067.36,
+     "net_wgt_kg": null
+    },
+    {
+     "period": "202604",
+     "hs6": "854232",
+     "partner": "KR",
+     "value_usd": 366721612.246,
+     "net_wgt_kg": null
+    },
+    {
+     "period": "202605",
+     "hs6": "854231",
+     "partner": "WORLD",
+     "value_usd": 1959177289.17,
+     "net_wgt_kg": null
+    },
+    {
+     "period": "202605",
+     "hs6": "854231",
+     "partner": "KR",
+     "value_usd": 254979645.0,
+     "net_wgt_kg": null
+    },
+    {
+     "period": "202605",
+     "hs6": "854232",
+     "partner": "WORLD",
+     "value_usd": 1311850443.678,
+     "net_wgt_kg": null
+    },
+    {
+     "period": "202605",
+     "hs6": "854232",
+     "partner": "KR",
+     "value_usd": 260089237.222,
+     "net_wgt_kg": null
+    },
+    {
+     "period": "202606",
+     "hs6": "854231",
+     "partner": "WORLD",
+     "value_usd": 2122857883.103,
+     "net_wgt_kg": null
+    },
+    {
+     "period": "202606",
+     "hs6": "854231",
+     "partner": "KR",
+     "value_usd": 273355906.107,
+     "net_wgt_kg": null
+    },
+    {
+     "period": "202606",
+     "hs6": "854232",
+     "partner": "WORLD",
+     "value_usd": 1697327518.859,
+     "net_wgt_kg": null
+    },
+    {
+     "period": "202606",
+     "hs6": "854232",
+     "partner": "KR",
+     "value_usd": 239211613.597,
+     "net_wgt_kg": null
+    },
+    {
+     "period": "202607",
+     "hs6": "854231",
+     "partner": "WORLD",
+     "value_usd": 2343977580.143,
+     "net_wgt_kg": null
+    },
+    {
+     "period": "202607",
+     "hs6": "854231",
+     "partner": "KR",
+     "value_usd": 287450189.41,
+     "net_wgt_kg": null
+    },
+    {
+     "period": "202607",
+     "hs6": "854232",
+     "partner": "WORLD",
+     "value_usd": 1845939365.824,
+     "net_wgt_kg": null
+    },
+    {
+     "period": "202607",
+     "hs6": "854232",
+     "partner": "KR",
+     "value_usd": 427009053.672,
+     "net_wgt_kg": null
+    }
+   ],
+   "annual": [
+    {
+     "period": "2021",
+     "hs6": "854231",
+     "partner": "WORLD",
+     "value_usd": 7523575333.184,
+     "net_wgt_kg": 4718766.288
+    },
+    {
+     "period": "2021",
+     "hs6": "854231",
+     "partner": "KR",
+     "value_usd": 163553992.993,
+     "net_wgt_kg": 102580.626
+    },
+    {
+     "period": "2021",
+     "hs6": "854232",
+     "partner": "WORLD",
+     "value_usd": 2180015350.497,
+     "net_wgt_kg": 1414503.311
+    },
+    {
+     "period": "2021",
+     "hs6": "854232",
+     "partner": "KR",
+     "value_usd": 652095788.793,
+     "net_wgt_kg": 423112.457
+    },
+    {
+     "period": "2022",
+     "hs6": "854231",
+     "partner": "WORLD",
+     "value_usd": 9837432366.663,
+     "net_wgt_kg": null
+    },
+    {
+     "period": "2022",
+     "hs6": "854231",
+     "partner": "KR",
+     "value_usd": 614543008.788,
+     "net_wgt_kg": null
+    },
+    {
+     "period": "2022",
+     "hs6": "854232",
+     "partner": "WORLD",
+     "value_usd": 3088847714.946,
+     "net_wgt_kg": 1436555.087
+    },
+    {
+     "period": "2022",
+     "hs6": "854232",
+     "partner": "KR",
+     "value_usd": 1026331562.038,
+     "net_wgt_kg": 477324.22
+    },
+    {
+     "period": "2023",
+     "hs6": "854231",
+     "partner": "WORLD",
+     "value_usd": 11862990842.188,
+     "net_wgt_kg": 6533139.808
+    },
+    {
+     "period": "2023",
+     "hs6": "854231",
+     "partner": "KR",
+     "value_usd": 1325502380.718,
+     "net_wgt_kg": 729975.474
+    },
+    {
+     "period": "2023",
+     "hs6": "854232",
+     "partner": "WORLD",
+     "value_usd": 3316389713.367,
+     "net_wgt_kg": 1772291.701
+    },
+    {
+     "period": "2023",
+     "hs6": "854232",
+     "partner": "KR",
+     "value_usd": 717271446.681,
+     "net_wgt_kg": 383312.681
+    },
+    {
+     "period": "2024",
+     "hs6": "854231",
+     "partner": "WORLD",
+     "value_usd": 14489625975.075,
+     "net_wgt_kg": null
+    },
+    {
+     "period": "2024",
+     "hs6": "854231",
+     "partner": "KR",
+     "value_usd": 1819051084.951,
+     "net_wgt_kg": null
+    },
+    {
+     "period": "2024",
+     "hs6": "854232",
+     "partner": "WORLD",
+     "value_usd": 4097733964.588,
+     "net_wgt_kg": 2202924.861
+    },
+    {
+     "period": "2024",
+     "hs6": "854232",
+     "partner": "KR",
+     "value_usd": 1184236833.327,
+     "net_wgt_kg": 636640.832
+    },
+    {
+     "period": "2025",
+     "hs6": "854231",
+     "partner": "WORLD",
+     "value_usd": 16575852286.543,
+     "net_wgt_kg": null
+    },
+    {
+     "period": "2025",
+     "hs6": "854231",
+     "partner": "KR",
+     "value_usd": 2636212510.856,
+     "net_wgt_kg": null
+    },
+    {
+     "period": "2025",
+     "hs6": "854232",
+     "partner": "WORLD",
+     "value_usd": 6026351754.899,
+     "net_wgt_kg": null
+    },
+    {
+     "period": "2025",
+     "hs6": "854232",
+     "partner": "KR",
+     "value_usd": 1340791126.736,
+     "net_wgt_kg": null
+    }
+   ]
+  },
+  "VN": {
+   "name": "베트남",
+   "reporter_m49": 704,
+   "monthly": [
+    {
+     "period": "202206",
+     "hs6": "854231",
+     "partner": "WORLD",
+     "value_usd": 1630916123.066,
+     "net_wgt_kg": null
+    },
+    {
+     "period": "202206",
+     "hs6": "854231",
+     "partner": "KR",
+     "value_usd": 397534180.541,
+     "net_wgt_kg": null
+    },
+    {
+     "period": "202206",
+     "hs6": "854232",
+     "partner": "WORLD",
+     "value_usd": 388034802.903,
+     "net_wgt_kg": 183001.321
+    },
+    {
+     "period": "202206",
+     "hs6": "854232",
+     "partner": "KR",
+     "value_usd": 237476109.736,
+     "net_wgt_kg": 111996.248
+    },
+    {
+     "period": "202207",
+     "hs6": "854231",
+     "partner": "WORLD",
+     "value_usd": 1516546784.804,
+     "net_wgt_kg": null
+    },
+    {
+     "period": "202207",
+     "hs6": "854232",
+     "partner": "WORLD",
+     "value_usd": 230791160.474,
+     "net_wgt_kg": 108843.555
+    },
+    {
+     "period": "202207",
+     "hs6": "854231",
+     "partner": "KR",
+     "value_usd": 518971352.861,
+     "net_wgt_kg": null
+    },
+    {
+     "period": "202207",
+     "hs6": "854232",
+     "partner": "KR",
+     "value_usd": 152245513.137,
+     "net_wgt_kg": 71800.596
+    },
+    {
+     "period": "202208",
+     "hs6": "854231",
+     "partner": "WORLD",
+     "value_usd": 1777400234.951,
+     "net_wgt_kg": null
+    },
+    {
+     "period": "202208",
+     "hs6": "854231",
+     "partner": "KR",
+     "value_usd": 628564468.029,
+     "net_wgt_kg": null
+    },
+    {
+     "period": "202208",
+     "hs6": "854232",
+     "partner": "WORLD",
+     "value_usd": 288907435.19,
+     "net_wgt_kg": 136251.805
+    },
+    {
+     "period": "202208",
+     "hs6": "854232",
+     "partner": "KR",
+     "value_usd": 159432199.831,
+     "net_wgt_kg": 75189.913
+    },
+    {
+     "period": "202209",
+     "hs6": "854231",
+     "partner": "WORLD",
+     "value_usd": 1463451351.956,
+     "net_wgt_kg": null
+    },
+    {
+     "period": "202209",
+     "hs6": "854231",
+     "partner": "KR",
+     "value_usd": 373028158.191,
+     "net_wgt_kg": null
+    },
+    {
+     "period": "202209",
+     "hs6": "854232",
+     "partner": "WORLD",
+     "value_usd": 364595253.92,
+     "net_wgt_kg": 171946.982
+    },
+    {
+     "period": "202209",
+     "hs6": "854232",
+     "partner": "KR",
+     "value_usd": 189756851.86,
+     "net_wgt_kg": 89491.34
+    },
+    {
+     "period": "202210",
+     "hs6": "854231",
+     "partner": "WORLD",
+     "value_usd": 1354636224.648,
+     "net_wgt_kg": null
+    },
+    {
+     "period": "202210",
+     "hs6": "854231",
+     "partner": "KR",
+     "value_usd": 311323967.997,
+     "net_wgt_kg": null
+    },
+    {
+     "period": "202210",
+     "hs6": "854232",
+     "partner": "WORLD",
+     "value_usd": 315067990.182,
+     "net_wgt_kg": 148589.4
+    },
+    {
+     "period": "202210",
+     "hs6": "854232",
+     "partner": "KR",
+     "value_usd": 198490654.618,
+     "net_wgt_kg": 93610.294
+    },
+    {
+     "period": "202211",
+     "hs6": "854231",
+     "partner": "WORLD",
+     "value_usd": 1027570153.035,
+     "net_wgt_kg": null
+    },
+    {
+     "period": "202211",
+     "hs6": "854231",
+     "partner": "KR",
+     "value_usd": 201364076.56,
+     "net_wgt_kg": null
+    },
+    {
+     "period": "202211",
+     "hs6": "854232",
+     "partner": "WORLD",
+     "value_usd": 203723779.926,
+     "net_wgt_kg": 96078.291
+    },
+    {
+     "period": "202211",
+     "hs6": "854232",
+     "partner": "KR",
+     "value_usd": 108271898.847,
+     "net_wgt_kg": 51062.174
+    },
+    {
+     "period": "202212",
+     "hs6": "854231",
+     "partner": "WORLD",
+     "value_usd": 1167917192.017,
+     "net_wgt_kg": null
+    },
+    {
+     "period": "202212",
+     "hs6": "854231",
+     "partner": "KR",
+     "value_usd": 366125924.916,
+     "net_wgt_kg": null
+    },
+    {
+     "period": "202212",
+     "hs6": "854232",
+     "partner": "WORLD",
+     "value_usd": 145817344.85,
+     "net_wgt_kg": 68769.004
+    },
+    {
+     "period": "202212",
+     "hs6": "854232",
+     "partner": "KR",
+     "value_usd": 68401658.318,
+     "net_wgt_kg": 32258.946
+    },
+    {
+     "period": "202301",
+     "hs6": "854231",
+     "partner": "WORLD",
+     "value_usd": 1285680531.377,
+     "net_wgt_kg": null
+    },
+    {
+     "period": "202301",
+     "hs6": "854231",
+     "partner": "KR",
+     "value_usd": 252083766.166,
+     "net_wgt_kg": null
+    },
+    {
+     "period": "202301",
+     "hs6": "854232",
+     "partner": "WORLD",
+     "value_usd": 316913609.593,
+     "net_wgt_kg": null
+    },
+    {
+     "period": "202301",
+     "hs6": "854232",
+     "partner": "KR",
+     "value_usd": 236643432.986,
+     "net_wgt_kg": null
+    },
+    {
+     "period": "202302",
+     "hs6": "854231",
+     "partner": "WORLD",
+     "value_usd": 1260009549.681,
+     "net_wgt_kg": null
+    },
+    {
+     "period": "202302",
+     "hs6": "854231",
+     "partner": "KR",
+     "value_usd": 250804450.006,
+     "net_wgt_kg": null
+    },
+    {
+     "period": "202302",
+     "hs6": "854232",
+     "partner": "WORLD",
+     "value_usd": 232365771.459,
+     "net_wgt_kg": null
+    },
+    {
+     "period": "202302",
+     "hs6": "854232",
+     "partner": "KR",
+     "value_usd": 150074975.826,
+     "net_wgt_kg": null
+    },
+    {
+     "period": "202303",
+     "hs6": "854231",
+     "partner": "WORLD",
+     "value_usd": 1314705885.373,
+     "net_wgt_kg": null
+    },
+    {
+     "period": "202303",
+     "hs6": "854231",
+     "partner": "KR",
+     "value_usd": 261720063.05,
+     "net_wgt_kg": null
+    },
+    {
+     "period": "202303",
+     "hs6": "854232",
+     "partner": "WORLD",
+     "value_usd": 422574579.507,
+     "net_wgt_kg": null
+    },
+    {
+     "period": "202303",
+     "hs6": "854232",
+     "partner": "KR",
+     "value_usd": 334593737.673,
+     "net_wgt_kg": null
+    },
+    {
+     "period": "202304",
+     "hs6": "854231",
+     "partner": "WORLD",
+     "value_usd": 1265769393.959,
+     "net_wgt_kg": null
+    },
+    {
+     "period": "202304",
+     "hs6": "854231",
+     "partner": "KR",
+     "value_usd": 242951404.592,
+     "net_wgt_kg": null
+    },
+    {
+     "period": "202304",
+     "hs6": "854232",
+     "partner": "WORLD",
+     "value_usd": 131226459.648,
+     "net_wgt_kg": null
+    },
+    {
+     "period": "202304",
+     "hs6": "854232",
+     "partner": "KR",
+     "value_usd": 73816853.275,
+     "net_wgt_kg": null
+    },
+    {
+     "period": "202305",
+     "hs6": "854231",
+     "partner": "WORLD",
+     "value_usd": 1223039783.101,
+     "net_wgt_kg": null
+    },
+    {
+     "period": "202305",
+     "hs6": "854231",
+     "partner": "KR",
+     "value_usd": 192015689.876,
+     "net_wgt_kg": null
+    },
+    {
+     "period": "202305",
+     "hs6": "854232",
+     "partner": "WORLD",
+     "value_usd": 147836045.493,
+     "net_wgt_kg": null
+    },
+    {
+     "period": "202305",
+     "hs6": "854232",
+     "partner": "KR",
+     "value_usd": 74699052.956,
+     "net_wgt_kg": null
+    },
+    {
+     "period": "202306",
+     "hs6": "854231",
+     "partner": "WORLD",
+     "value_usd": 1637310089.604,
+     "net_wgt_kg": null
+    },
+    {
+     "period": "202306",
+     "hs6": "854231",
+     "partner": "KR",
+     "value_usd": 220218664.0,
+     "net_wgt_kg": null
+    },
+    {
+     "period": "202306",
+     "hs6": "854232",
+     "partner": "WORLD",
+     "value_usd": 250555383.069,
+     "net_wgt_kg": null
+    },
+    {
+     "period": "202306",
+     "hs6": "854232",
+     "partner": "KR",
+     "value_usd": 174815933.413,
+     "net_wgt_kg": null
+    },
+    {
+     "period": "202307",
+     "hs6": "854231",
+     "partner": "WORLD",
+     "value_usd": 1509973679.095,
+     "net_wgt_kg": null
+    },
+    {
+     "period": "202307",
+     "hs6": "854231",
+     "partner": "KR",
+     "value_usd": 167386512.558,
+     "net_wgt_kg": null
+    },
+    {
+     "period": "202307",
+     "hs6": "854232",
+     "partner": "WORLD",
+     "value_usd": 171977867.077,
+     "net_wgt_kg": null
+    },
+    {
+     "period": "202307",
+     "hs6": "854232",
+     "partner": "KR",
+     "value_usd": 80608275.098,
+     "net_wgt_kg": null
+    },
+    {
+     "period": "202308",
+     "hs6": "854231",
+     "partner": "WORLD",
+     "value_usd": 1416211374.624,
+     "net_wgt_kg": null
+    },
+    {
+     "period": "202308",
+     "hs6": "854231",
+     "partner": "KR",
+     "value_usd": 261496306.103,
+     "net_wgt_kg": null
+    },
+    {
+     "period": "202308",
+     "hs6": "854232",
+     "partner": "WORLD",
+     "value_usd": 185804625.782,
+     "net_wgt_kg": null
+    },
+    {
+     "period": "202308",
+     "hs6": "854232",
+     "partner": "KR",
+     "value_usd": 90430176.187,
+     "net_wgt_kg": null
+    },
+    {
+     "period": "202309",
+     "hs6": "854231",
+     "partner": "WORLD",
+     "value_usd": 1776887708.058,
+     "net_wgt_kg": null
+    },
+    {
+     "period": "202309",
+     "hs6": "854231",
+     "partner": "KR",
+     "value_usd": 237253061.757,
+     "net_wgt_kg": null
+    },
+    {
+     "period": "202309",
+     "hs6": "854232",
+     "partner": "WORLD",
+     "value_usd": 250715057.553,
+     "net_wgt_kg": null
+    },
+    {
+     "period": "202309",
+     "hs6": "854232",
+     "partner": "KR",
+     "value_usd": 164199215.008,
+     "net_wgt_kg": null
+    },
+    {
+     "period": "202310",
+     "hs6": "854231",
+     "partner": "WORLD",
+     "value_usd": 1459891106.921,
+     "net_wgt_kg": null
+    },
+    {
+     "period": "202310",
+     "hs6": "854231",
+     "partner": "KR",
+     "value_usd": 257978956.892,
+     "net_wgt_kg": null
+    },
+    {
+     "period": "202310",
+     "hs6": "854232",
+     "partner": "WORLD",
+     "value_usd": 202623410.488,
+     "net_wgt_kg": null
+    },
+    {
+     "period": "202310",
+     "hs6": "854232",
+     "partner": "KR",
+     "value_usd": 106700344.759,
+     "net_wgt_kg": null
+    },
+    {
+     "period": "202311",
+     "hs6": "854231",
+     "partner": "WORLD",
+     "value_usd": 1734690930.319,
+     "net_wgt_kg": null
+    },
+    {
+     "period": "202311",
+     "hs6": "854231",
+     "partner": "KR",
+     "value_usd": 349772776.907,
+     "net_wgt_kg": null
+    },
+    {
+     "period": "202311",
+     "hs6": "854232",
+     "partner": "WORLD",
+     "value_usd": 292837818.516,
+     "net_wgt_kg": null
+    },
+    {
+     "period": "202311",
+     "hs6": "854232",
+     "partner": "KR",
+     "value_usd": 213252320.616,
+     "net_wgt_kg": null
+    },
+    {
+     "period": "202312",
+     "hs6": "854231",
+     "partner": "WORLD",
+     "value_usd": 1913503441.445,
+     "net_wgt_kg": null
+    },
+    {
+     "period": "202312",
+     "hs6": "854231",
+     "partner": "KR",
+     "value_usd": 493913291.384,
+     "net_wgt_kg": null
+    },
+    {
+     "period": "202312",
+     "hs6": "854232",
+     "partner": "WORLD",
+     "value_usd": 563702585.045,
+     "net_wgt_kg": null
+    },
+    {
+     "period": "202312",
+     "hs6": "854232",
+     "partner": "KR",
+     "value_usd": 470558170.66,
+     "net_wgt_kg": null
+    }
+   ],
+   "annual": [
+    {
+     "period": "2021",
+     "hs6": "854231",
+     "partner": "WORLD",
+     "value_usd": 17883524963.933,
+     "net_wgt_kg": 11054395.781
+    },
+    {
+     "period": "2021",
+     "hs6": "854231",
+     "partner": "KR",
+     "value_usd": 2846441910.832,
+     "net_wgt_kg": 1759479.494
+    },
+    {
+     "period": "2021",
+     "hs6": "854232",
+     "partner": "WORLD",
+     "value_usd": 5153943930.614,
+     "net_wgt_kg": 2965842.726
+    },
+    {
+     "period": "2021",
+     "hs6": "854232",
+     "partner": "KR",
+     "value_usd": 3932061016.27,
+     "net_wgt_kg": 2262708.854
+    },
+    {
+     "period": "2022",
+     "hs6": "854231",
+     "partner": "WORLD",
+     "value_usd": 19198456061.529,
+     "net_wgt_kg": null
+    },
+    {
+     "period": "2022",
+     "hs6": "854231",
+     "partner": "KR",
+     "value_usd": 4915619082.705,
+     "net_wgt_kg": null
+    },
+    {
+     "period": "2022",
+     "hs6": "854232",
+     "partner": "WORLD",
+     "value_usd": 4462306390.808,
+     "net_wgt_kg": 2104470.937
+    },
+    {
+     "period": "2022",
+     "hs6": "854232",
+     "partner": "KR",
+     "value_usd": 3106972308.528,
+     "net_wgt_kg": 1465281.035
+    },
+    {
+     "period": "2023",
+     "hs6": "854231",
+     "partner": "WORLD",
+     "value_usd": 17797673473.557,
+     "net_wgt_kg": null
+    },
+    {
+     "period": "2023",
+     "hs6": "854231",
+     "partner": "KR",
+     "value_usd": 3187594943.291,
+     "net_wgt_kg": null
+    },
+    {
+     "period": "2023",
+     "hs6": "854232",
+     "partner": "WORLD",
+     "value_usd": 3169133213.23,
+     "net_wgt_kg": null
+    },
+    {
+     "period": "2023",
+     "hs6": "854232",
+     "partner": "KR",
+     "value_usd": 2170392488.457,
+     "net_wgt_kg": null
+    }
+   ]
+  },
+  "DE": {
+   "name": "독일",
+   "reporter_m49": 276,
+   "monthly": [
+    {
+     "period": "202206",
+     "hs6": "854231",
+     "partner": "WORLD",
+     "value_usd": 954333711.925,
+     "net_wgt_kg": 561133.539
+    },
+    {
+     "period": "202206",
+     "hs6": "854231",
+     "partner": "KR",
+     "value_usd": 42035888.598,
+     "net_wgt_kg": 12319.492
+    },
+    {
+     "period": "202206",
+     "hs6": "854232",
+     "partner": "WORLD",
+     "value_usd": 115969640.765,
+     "net_wgt_kg": 106937.589
+    },
+    {
+     "period": "202206",
+     "hs6": "854232",
+     "partner": "KR",
+     "value_usd": 17913951.54,
+     "net_wgt_kg": 2536.575
+    },
+    {
+     "period": "202207",
+     "hs6": "854231",
+     "partner": "WORLD",
+     "value_usd": 862957094.874,
+     "net_wgt_kg": 560969.163
+    },
+    {
+     "period": "202207",
+     "hs6": "854232",
+     "partner": "WORLD",
+     "value_usd": 109052791.771,
+     "net_wgt_kg": 103944.523
+    },
+    {
+     "period": "202207",
+     "hs6": "854231",
+     "partner": "KR",
+     "value_usd": 42665668.933,
+     "net_wgt_kg": 10396.943
+    },
+    {
+     "period": "202207",
+     "hs6": "854232",
+     "partner": "KR",
+     "value_usd": 13485820.134,
+     "net_wgt_kg": 3624.564
+    },
+    {
+     "period": "202208",
+     "hs6": "854231",
+     "partner": "WORLD",
+     "value_usd": 917075550.651,
+     "net_wgt_kg": 651601.864
+    },
+    {
+     "period": "202208",
+     "hs6": "854231",
+     "partner": "KR",
+     "value_usd": 47884948.21,
+     "net_wgt_kg": 13572.756
+    },
+    {
+     "period": "202208",
+     "hs6": "854232",
+     "partner": "WORLD",
+     "value_usd": 118158382.006,
+     "net_wgt_kg": 132160.708
+    },
+    {
+     "period": "202208",
+     "hs6": "854232",
+     "partner": "KR",
+     "value_usd": 16949258.891,
+     "net_wgt_kg": 3698.01
+    },
+    {
+     "period": "202209",
+     "hs6": "854231",
+     "partner": "WORLD",
+     "value_usd": 956022420.503,
+     "net_wgt_kg": 633436.699
+    },
+    {
+     "period": "202209",
+     "hs6": "854231",
+     "partner": "KR",
+     "value_usd": 51950593.263,
+     "net_wgt_kg": 18541.939
+    },
+    {
+     "period": "202209",
+     "hs6": "854232",
+     "partner": "WORLD",
+     "value_usd": 112687937.462,
+     "net_wgt_kg": 126218.482
+    },
+    {
+     "period": "202209",
+     "hs6": "854232",
+     "partner": "KR",
+     "value_usd": 14676472.071,
+     "net_wgt_kg": 2742.449
+    },
+    {
+     "period": "202210",
+     "hs6": "854231",
+     "partner": "WORLD",
+     "value_usd": 1046587319.606,
+     "net_wgt_kg": 823967.785
+    },
+    {
+     "period": "202210",
+     "hs6": "854231",
+     "partner": "KR",
+     "value_usd": 58107863.303,
+     "net_wgt_kg": 17515.891
+    },
+    {
+     "period": "202210",
+     "hs6": "854232",
+     "partner": "WORLD",
+     "value_usd": 108096213.319,
+     "net_wgt_kg": 114636.385
+    },
+    {
+     "period": "202210",
+     "hs6": "854232",
+     "partner": "KR",
+     "value_usd": 13226344.549,
+     "net_wgt_kg": 1676.343
+    },
+    {
+     "period": "202211",
+     "hs6": "854231",
+     "partner": "WORLD",
+     "value_usd": 1080566988.055,
+     "net_wgt_kg": 736935.891
+    },
+    {
+     "period": "202211",
+     "hs6": "854231",
+     "partner": "KR",
+     "value_usd": 59044027.871,
+     "net_wgt_kg": 15879.09
+    },
+    {
+     "period": "202211",
+     "hs6": "854232",
+     "partner": "WORLD",
+     "value_usd": 113477223.298,
+     "net_wgt_kg": 100577.03
+    },
+    {
+     "period": "202211",
+     "hs6": "854232",
+     "partner": "KR",
+     "value_usd": 20680585.168,
+     "net_wgt_kg": 2628.086
+    },
+    {
+     "period": "202212",
+     "hs6": "854231",
+     "partner": "WORLD",
+     "value_usd": 1006864951.296,
+     "net_wgt_kg": 591339.453
+    },
+    {
+     "period": "202212",
+     "hs6": "854231",
+     "partner": "KR",
+     "value_usd": 59504317.954,
+     "net_wgt_kg": 14375.001
+    },
+    {
+     "period": "202212",
+     "hs6": "854232",
+     "partner": "WORLD",
+     "value_usd": 106839751.547,
+     "net_wgt_kg": 116796.116
+    },
+    {
+     "period": "202212",
+     "hs6": "854232",
+     "partner": "KR",
+     "value_usd": 17547172.6,
+     "net_wgt_kg": 5344.286
+    },
+    {
+     "period": "202301",
+     "hs6": "854231",
+     "partner": "WORLD",
+     "value_usd": 1141802707.198,
+     "net_wgt_kg": 685011.533
+    },
+    {
+     "period": "202301",
+     "hs6": "854231",
+     "partner": "KR",
+     "value_usd": 101458255.386,
+     "net_wgt_kg": 21500.919
+    },
+    {
+     "period": "202301",
+     "hs6": "854232",
+     "partner": "WORLD",
+     "value_usd": 102603405.001,
+     "net_wgt_kg": 61639.313
+    },
+    {
+     "period": "202301",
+     "hs6": "854232",
+     "partner": "KR",
+     "value_usd": 6282560.294,
+     "net_wgt_kg": 1230.588
+    },
+    {
+     "period": "202302",
+     "hs6": "854231",
+     "partner": "WORLD",
+     "value_usd": 918919344.706,
+     "net_wgt_kg": 537568.026
+    },
+    {
+     "period": "202302",
+     "hs6": "854231",
+     "partner": "KR",
+     "value_usd": 61304381.993,
+     "net_wgt_kg": 15322.469
+    },
+    {
+     "period": "202302",
+     "hs6": "854232",
+     "partner": "WORLD",
+     "value_usd": 95454985.099,
+     "net_wgt_kg": 68480.99
+    },
+    {
+     "period": "202302",
+     "hs6": "854232",
+     "partner": "KR",
+     "value_usd": 10024486.089,
+     "net_wgt_kg": 1650.182
+    },
+    {
+     "period": "202303",
+     "hs6": "854231",
+     "partner": "WORLD",
+     "value_usd": 1168916533.582,
+     "net_wgt_kg": 695988.49
+    },
+    {
+     "period": "202303",
+     "hs6": "854231",
+     "partner": "KR",
+     "value_usd": 95626569.362,
+     "net_wgt_kg": 19338.079
+    },
+    {
+     "period": "202303",
+     "hs6": "854232",
+     "partner": "WORLD",
+     "value_usd": 105201245.622,
+     "net_wgt_kg": 66286.279
+    },
+    {
+     "period": "202303",
+     "hs6": "854232",
+     "partner": "KR",
+     "value_usd": 10126059.487,
+     "net_wgt_kg": 2639.891
+    },
+    {
+     "period": "202304",
+     "hs6": "854231",
+     "partner": "WORLD",
+     "value_usd": 1086563982.95,
+     "net_wgt_kg": 614979.896
+    },
+    {
+     "period": "202304",
+     "hs6": "854231",
+     "partner": "KR",
+     "value_usd": 81286485.603,
+     "net_wgt_kg": 18386.871
+    },
+    {
+     "period": "202304",
+     "hs6": "854232",
+     "partner": "WORLD",
+     "value_usd": 90951631.76,
+     "net_wgt_kg": 62118.11
+    },
+    {
+     "period": "202304",
+     "hs6": "854232",
+     "partner": "KR",
+     "value_usd": 8815390.073,
+     "net_wgt_kg": 2474.413
+    },
+    {
+     "period": "202305",
+     "hs6": "854231",
+     "partner": "WORLD",
+     "value_usd": 1146575601.628,
+     "net_wgt_kg": 652871.447
+    },
+    {
+     "period": "202305",
+     "hs6": "854231",
+     "partner": "KR",
+     "value_usd": 92840891.661,
+     "net_wgt_kg": 23190.051
+    },
+    {
+     "period": "202305",
+     "hs6": "854232",
+     "partner": "WORLD",
+     "value_usd": 90899573.625,
+     "net_wgt_kg": 67785.696
+    },
+    {
+     "period": "202305",
+     "hs6": "854232",
+     "partner": "KR",
+     "value_usd": 6832998.223,
+     "net_wgt_kg": 2871.161
+    },
+    {
+     "period": "202306",
+     "hs6": "854231",
+     "partner": "WORLD",
+     "value_usd": 1152863472.271,
+     "net_wgt_kg": 715386.355
+    },
+    {
+     "period": "202306",
+     "hs6": "854231",
+     "partner": "KR",
+     "value_usd": 82275531.64,
+     "net_wgt_kg": 16235.527
+    },
+    {
+     "period": "202306",
+     "hs6": "854232",
+     "partner": "WORLD",
+     "value_usd": 105416877.864,
+     "net_wgt_kg": 77854.553
+    },
+    {
+     "period": "202306",
+     "hs6": "854232",
+     "partner": "KR",
+     "value_usd": 10805568.44,
+     "net_wgt_kg": 3274.132
+    },
+    {
+     "period": "202307",
+     "hs6": "854231",
+     "partner": "WORLD",
+     "value_usd": 1109815852.537,
+     "net_wgt_kg": 561397.165
+    },
+    {
+     "period": "202307",
+     "hs6": "854231",
+     "partner": "KR",
+     "value_usd": 93229658.23,
+     "net_wgt_kg": 20416.032
+    },
+    {
+     "period": "202307",
+     "hs6": "854232",
+     "partner": "WORLD",
+     "value_usd": 99655849.11,
+     "net_wgt_kg": 57394.629
+    },
+    {
+     "period": "202307",
+     "hs6": "854232",
+     "partner": "KR",
+     "value_usd": 13442101.457,
+     "net_wgt_kg": 2506.459
+    },
+    {
+     "period": "202308",
+     "hs6": "854231",
+     "partner": "WORLD",
+     "value_usd": 1120146125.24,
+     "net_wgt_kg": 689685.391
+    },
+    {
+     "period": "202308",
+     "hs6": "854231",
+     "partner": "KR",
+     "value_usd": 97790239.225,
+     "net_wgt_kg": 21316.086
+    },
+    {
+     "period": "202308",
+     "hs6": "854232",
+     "partner": "WORLD",
+     "value_usd": 97482160.751,
+     "net_wgt_kg": 59834.962
+    },
+    {
+     "period": "202308",
+     "hs6": "854232",
+     "partner": "KR",
+     "value_usd": 12244960.564,
+     "net_wgt_kg": 2291.042
+    },
+    {
+     "period": "202309",
+     "hs6": "854231",
+     "partner": "WORLD",
+     "value_usd": 1073843836.072,
+     "net_wgt_kg": 640533.652
+    },
+    {
+     "period": "202309",
+     "hs6": "854231",
+     "partner": "KR",
+     "value_usd": 86875892.678,
+     "net_wgt_kg": 22060.217
+    },
+    {
+     "period": "202309",
+     "hs6": "854232",
+     "partner": "WORLD",
+     "value_usd": 102633700.789,
+     "net_wgt_kg": 57138.813
+    },
+    {
+     "period": "202309",
+     "hs6": "854232",
+     "partner": "KR",
+     "value_usd": 23694605.06,
+     "net_wgt_kg": 4657.943
+    },
+    {
+     "period": "202310",
+     "hs6": "854231",
+     "partner": "WORLD",
+     "value_usd": 1033351542.546,
+     "net_wgt_kg": 512013.367
+    },
+    {
+     "period": "202310",
+     "hs6": "854231",
+     "partner": "KR",
+     "value_usd": 87552803.62,
+     "net_wgt_kg": 20305.891
+    },
+    {
+     "period": "202310",
+     "hs6": "854232",
+     "partner": "WORLD",
+     "value_usd": 133969419.278,
+     "net_wgt_kg": 89353.801
+    },
+    {
+     "period": "202310",
+     "hs6": "854232",
+     "partner": "KR",
+     "value_usd": 19437578.409,
+     "net_wgt_kg": 7479.946
+    },
+    {
+     "period": "202311",
+     "hs6": "854231",
+     "partner": "WORLD",
+     "value_usd": 907641379.085,
+     "net_wgt_kg": 475954.869
+    },
+    {
+     "period": "202311",
+     "hs6": "854231",
+     "partner": "KR",
+     "value_usd": 79807982.069,
+     "net_wgt_kg": 18980.469
+    },
+    {
+     "period": "202311",
+     "hs6": "854232",
+     "partner": "WORLD",
+     "value_usd": 118544404.634,
+     "net_wgt_kg": 72001.698
+    },
+    {
+     "period": "202311",
+     "hs6": "854232",
+     "partner": "KR",
+     "value_usd": 14899474.089,
+     "net_wgt_kg": 2796.423
+    },
+    {
+     "period": "202312",
+     "hs6": "854231",
+     "partner": "WORLD",
+     "value_usd": 763301882.244,
+     "net_wgt_kg": 634679.404
+    },
+    {
+     "period": "202312",
+     "hs6": "854231",
+     "partner": "KR",
+     "value_usd": 67431624.229,
+     "net_wgt_kg": 83789.047
+    },
+    {
+     "period": "202312",
+     "hs6": "854232",
+     "partner": "WORLD",
+     "value_usd": 110554178.537,
+     "net_wgt_kg": 63636.635
+    },
+    {
+     "period": "202312",
+     "hs6": "854232",
+     "partner": "KR",
+     "value_usd": 18084912.973,
+     "net_wgt_kg": 4713.377
+    },
+    {
+     "period": "202401",
+     "hs6": "854231",
+     "partner": "WORLD",
+     "value_usd": 1011667197.929,
+     "net_wgt_kg": 483466.304
+    },
+    {
+     "period": "202401",
+     "hs6": "854231",
+     "partner": "KR",
+     "value_usd": 75897273.182,
+     "net_wgt_kg": 18308.787
+    },
+    {
+     "period": "202401",
+     "hs6": "854232",
+     "partner": "WORLD",
+     "value_usd": 136428503.755,
+     "net_wgt_kg": 88734.681
+    },
+    {
+     "period": "202401",
+     "hs6": "854232",
+     "partner": "KR",
+     "value_usd": 17126574.356,
+     "net_wgt_kg": 4368.794
+    },
+    {
+     "period": "202402",
+     "hs6": "854231",
+     "partner": "WORLD",
+     "value_usd": 759121148.142,
+     "net_wgt_kg": 415195.77
+    },
+    {
+     "period": "202402",
+     "hs6": "854231",
+     "partner": "KR",
+     "value_usd": 68724231.669,
+     "net_wgt_kg": 14882.258
+    },
+    {
+     "period": "202402",
+     "hs6": "854232",
+     "partner": "WORLD",
+     "value_usd": 92213306.318,
+     "net_wgt_kg": 67434.011
+    },
+    {
+     "period": "202402",
+     "hs6": "854232",
+     "partner": "KR",
+     "value_usd": 8965773.329,
+     "net_wgt_kg": 1826.492
+    },
+    {
+     "period": "202403",
+     "hs6": "854231",
+     "partner": "WORLD",
+     "value_usd": 808992385.927,
+     "net_wgt_kg": 396804.656
+    },
+    {
+     "period": "202403",
+     "hs6": "854231",
+     "partner": "KR",
+     "value_usd": 80281246.763,
+     "net_wgt_kg": 16033.916
+    },
+    {
+     "period": "202403",
+     "hs6": "854232",
+     "partner": "WORLD",
+     "value_usd": 103896556.683,
+     "net_wgt_kg": 56096.605
+    },
+    {
+     "period": "202403",
+     "hs6": "854232",
+     "partner": "KR",
+     "value_usd": 16478218.352,
+     "net_wgt_kg": 2775.332
+    },
+    {
+     "period": "202404",
+     "hs6": "854231",
+     "partner": "WORLD",
+     "value_usd": 783288217.414,
+     "net_wgt_kg": 409569.042
+    },
+    {
+     "period": "202404",
+     "hs6": "854231",
+     "partner": "KR",
+     "value_usd": 63505875.553,
+     "net_wgt_kg": 14199.567
+    },
+    {
+     "period": "202404",
+     "hs6": "854232",
+     "partner": "WORLD",
+     "value_usd": 114810424.905,
+     "net_wgt_kg": 80851.895
+    },
+    {
+     "period": "202404",
+     "hs6": "854232",
+     "partner": "KR",
+     "value_usd": 14099815.007,
+     "net_wgt_kg": 1811.627
+    },
+    {
+     "period": "202405",
+     "hs6": "854231",
+     "partner": "WORLD",
+     "value_usd": 731844895.695,
+     "net_wgt_kg": 378516.816
+    },
+    {
+     "period": "202405",
+     "hs6": "854231",
+     "partner": "KR",
+     "value_usd": 62956632.11,
+     "net_wgt_kg": 17113.304
+    },
+    {
+     "period": "202405",
+     "hs6": "854232",
+     "partner": "WORLD",
+     "value_usd": 97518847.288,
+     "net_wgt_kg": 60030.827
+    },
+    {
+     "period": "202405",
+     "hs6": "854232",
+     "partner": "KR",
+     "value_usd": 13467977.262,
+     "net_wgt_kg": 2090.455
+    },
+    {
+     "period": "202406",
+     "hs6": "854231",
+     "partner": "WORLD",
+     "value_usd": 732475031.033,
+     "net_wgt_kg": 342142.275
+    },
+    {
+     "period": "202406",
+     "hs6": "854231",
+     "partner": "KR",
+     "value_usd": 78365245.456,
+     "net_wgt_kg": 20438.589
+    },
+    {
+     "period": "202406",
+     "hs6": "854232",
+     "partner": "WORLD",
+     "value_usd": 111203035.737,
+     "net_wgt_kg": 106988.981
+    },
+    {
+     "period": "202406",
+     "hs6": "854232",
+     "partner": "KR",
+     "value_usd": 18103231.115,
+     "net_wgt_kg": 3287.935
+    },
+    {
+     "period": "202407",
+     "hs6": "854231",
+     "partner": "WORLD",
+     "value_usd": 754683049.721,
+     "net_wgt_kg": 385213.271
+    },
+    {
+     "period": "202407",
+     "hs6": "854231",
+     "partner": "KR",
+     "value_usd": 69674543.357,
+     "net_wgt_kg": 15429.595
+    },
+    {
+     "period": "202407",
+     "hs6": "854232",
+     "partner": "WORLD",
+     "value_usd": 109018861.001,
+     "net_wgt_kg": 57543.582
+    },
+    {
+     "period": "202407",
+     "hs6": "854232",
+     "partner": "KR",
+     "value_usd": 23882986.625,
+     "net_wgt_kg": 2402.619
+    },
+    {
+     "period": "202408",
+     "hs6": "854231",
+     "partner": "WORLD",
+     "value_usd": 671784342.534,
+     "net_wgt_kg": 330828.586
+    },
+    {
+     "period": "202408",
+     "hs6": "854231",
+     "partner": "KR",
+     "value_usd": 63937877.203,
+     "net_wgt_kg": 15093.961
+    },
+    {
+     "period": "202408",
+     "hs6": "854232",
+     "partner": "WORLD",
+     "value_usd": 103416101.861,
+     "net_wgt_kg": 42974.451
+    },
+    {
+     "period": "202408",
+     "hs6": "854232",
+     "partner": "KR",
+     "value_usd": 17359073.704,
+     "net_wgt_kg": 2509.684
+    },
+    {
+     "period": "202409",
+     "hs6": "854231",
+     "partner": "WORLD",
+     "value_usd": 789953027.71,
+     "net_wgt_kg": 374441.294
+    },
+    {
+     "period": "202409",
+     "hs6": "854231",
+     "partner": "KR",
+     "value_usd": 78667010.966,
+     "net_wgt_kg": 17330.174
+    },
+    {
+     "period": "202409",
+     "hs6": "854232",
+     "partner": "WORLD",
+     "value_usd": 102417960.501,
+     "net_wgt_kg": 47603.553
+    },
+    {
+     "period": "202409",
+     "hs6": "854232",
+     "partner": "KR",
+     "value_usd": 21547824.55,
+     "net_wgt_kg": 3075.012
+    },
+    {
+     "period": "202410",
+     "hs6": "854231",
+     "partner": "WORLD",
+     "value_usd": 815494171.686,
+     "net_wgt_kg": 449460.302
+    },
+    {
+     "period": "202410",
+     "hs6": "854231",
+     "partner": "KR",
+     "value_usd": 62907827.996,
+     "net_wgt_kg": 14370.106
+    },
+    {
+     "period": "202410",
+     "hs6": "854232",
+     "partner": "WORLD",
+     "value_usd": 97379328.331,
+     "net_wgt_kg": 59683.061
+    },
+    {
+     "period": "202410",
+     "hs6": "854232",
+     "partner": "KR",
+     "value_usd": 20651183.815,
+     "net_wgt_kg": 2855.57
+    },
+    {
+     "period": "202411",
+     "hs6": "854231",
+     "partner": "WORLD",
+     "value_usd": 673917587.704,
+     "net_wgt_kg": 515354.47
+    },
+    {
+     "period": "202411",
+     "hs6": "854231",
+     "partner": "KR",
+     "value_usd": 64214916.358,
+     "net_wgt_kg": 46493.814
+    },
+    {
+     "period": "202411",
+     "hs6": "854232",
+     "partner": "WORLD",
+     "value_usd": 85297681.762,
+     "net_wgt_kg": 48088.972
+    },
+    {
+     "period": "202411",
+     "hs6": "854232",
+     "partner": "KR",
+     "value_usd": 11890339.851,
+     "net_wgt_kg": 2569.384
+    },
+    {
+     "period": "202412",
+     "hs6": "854231",
+     "partner": "WORLD",
+     "value_usd": 750127919.315,
+     "net_wgt_kg": 630787.521
+    },
+    {
+     "period": "202412",
+     "hs6": "854231",
+     "partner": "KR",
+     "value_usd": 80510481.846,
+     "net_wgt_kg": 90312.63
+    },
+    {
+     "period": "202412",
+     "hs6": "854232",
+     "partner": "WORLD",
+     "value_usd": 92742734.344,
+     "net_wgt_kg": 37600.753
+    },
+    {
+     "period": "202412",
+     "hs6": "854232",
+     "partner": "KR",
+     "value_usd": 32599647.979,
+     "net_wgt_kg": 5281.178
+    },
+    {
+     "period": "202501",
+     "hs6": "854231",
+     "partner": "WORLD",
+     "value_usd": 708606337.547,
+     "net_wgt_kg": 556149.905
+    },
+    {
+     "period": "202501",
+     "hs6": "854231",
+     "partner": "KR",
+     "value_usd": 31223262.987,
+     "net_wgt_kg": 10245.135
+    },
+    {
+     "period": "202501",
+     "hs6": "854232",
+     "partner": "WORLD",
+     "value_usd": 87438824.819,
+     "net_wgt_kg": 48910.068
+    },
+    {
+     "period": "202501",
+     "hs6": "854232",
+     "partner": "KR",
+     "value_usd": 10105415.831,
+     "net_wgt_kg": 1500.578
+    },
+    {
+     "period": "202502",
+     "hs6": "854231",
+     "partner": "WORLD",
+     "value_usd": 599862703.694,
+     "net_wgt_kg": 419425.82
+    },
+    {
+     "period": "202502",
+     "hs6": "854231",
+     "partner": "KR",
+     "value_usd": 48491369.649,
+     "net_wgt_kg": 14413.182
+    },
+    {
+     "period": "202502",
+     "hs6": "854232",
+     "partner": "WORLD",
+     "value_usd": 94137735.046,
+     "net_wgt_kg": 48597.904
+    },
+    {
+     "period": "202502",
+     "hs6": "854232",
+     "partner": "KR",
+     "value_usd": 17286096.336,
+     "net_wgt_kg": 3020.236
+    },
+    {
+     "period": "202503",
+     "hs6": "854231",
+     "partner": "WORLD",
+     "value_usd": 820600909.494,
+     "net_wgt_kg": 494793.853
+    },
+    {
+     "period": "202503",
+     "hs6": "854231",
+     "partner": "KR",
+     "value_usd": 64251246.119,
+     "net_wgt_kg": 18032.067
+    },
+    {
+     "period": "202503",
+     "hs6": "854232",
+     "partner": "WORLD",
+     "value_usd": 97081440.738,
+     "net_wgt_kg": 44580.107
+    },
+    {
+     "period": "202503",
+     "hs6": "854232",
+     "partner": "KR",
+     "value_usd": 22474345.714,
+     "net_wgt_kg": 3271.04
+    },
+    {
+     "period": "202504",
+     "hs6": "854231",
+     "partner": "WORLD",
+     "value_usd": 752142435.674,
+     "net_wgt_kg": 528894.521
+    },
+    {
+     "period": "202504",
+     "hs6": "854231",
+     "partner": "KR",
+     "value_usd": 50736110.546,
+     "net_wgt_kg": 14559.098
+    },
+    {
+     "period": "202504",
+     "hs6": "854232",
+     "partner": "WORLD",
+     "value_usd": 103662151.895,
+     "net_wgt_kg": 51101.667
+    },
+    {
+     "period": "202504",
+     "hs6": "854232",
+     "partner": "KR",
+     "value_usd": 24720365.556,
+     "net_wgt_kg": 3041.609
+    },
+    {
+     "period": "202505",
+     "hs6": "854231",
+     "partner": "WORLD",
+     "value_usd": 645344391.752,
+     "net_wgt_kg": 517763.624
+    },
+    {
+     "period": "202505",
+     "hs6": "854231",
+     "partner": "KR",
+     "value_usd": 53057738.466,
+     "net_wgt_kg": 83119.799
+    },
+    {
+     "period": "202505",
+     "hs6": "854232",
+     "partner": "WORLD",
+     "value_usd": 108870126.524,
+     "net_wgt_kg": 52910.424
+    },
+    {
+     "period": "202505",
+     "hs6": "854232",
+     "partner": "KR",
+     "value_usd": 23288536.723,
+     "net_wgt_kg": 3773.833
+    },
+    {
+     "period": "202506",
+     "hs6": "854231",
+     "partner": "WORLD",
+     "value_usd": 741675874.453,
+     "net_wgt_kg": 469451.639
+    },
+    {
+     "period": "202506",
+     "hs6": "854231",
+     "partner": "KR",
+     "value_usd": 58164677.749,
+     "net_wgt_kg": 16971.026
+    },
+    {
+     "period": "202506",
+     "hs6": "854232",
+     "partner": "WORLD",
+     "value_usd": 106465609.44,
+     "net_wgt_kg": 53679.107
+    },
+    {
+     "period": "202506",
+     "hs6": "854232",
+     "partner": "KR",
+     "value_usd": 22837275.805,
+     "net_wgt_kg": 3452.457
+    },
+    {
+     "period": "202507",
+     "hs6": "854231",
+     "partner": "WORLD",
+     "value_usd": 816827484.142,
+     "net_wgt_kg": 449688.888
+    },
+    {
+     "period": "202507",
+     "hs6": "854231",
+     "partner": "KR",
+     "value_usd": 58002753.243,
+     "net_wgt_kg": 15081.944
+    },
+    {
+     "period": "202507",
+     "hs6": "854232",
+     "partner": "WORLD",
+     "value_usd": 120584261.573,
+     "net_wgt_kg": 65837.189
+    },
+    {
+     "period": "202507",
+     "hs6": "854232",
+     "partner": "KR",
+     "value_usd": 30687311.648,
+     "net_wgt_kg": 3271.747
+    },
+    {
+     "period": "202508",
+     "hs6": "854231",
+     "partner": "WORLD",
+     "value_usd": 684766655.526,
+     "net_wgt_kg": 359218.08
+    },
+    {
+     "period": "202508",
+     "hs6": "854231",
+     "partner": "KR",
+     "value_usd": 49658933.542,
+     "net_wgt_kg": 13363.523
+    },
+    {
+     "period": "202508",
+     "hs6": "854232",
+     "partner": "WORLD",
+     "value_usd": 130748957.557,
+     "net_wgt_kg": 60153.972
+    },
+    {
+     "period": "202508",
+     "hs6": "854232",
+     "partner": "KR",
+     "value_usd": 29039307.037,
+     "net_wgt_kg": 4151.458
+    },
+    {
+     "period": "202509",
+     "hs6": "854231",
+     "partner": "WORLD",
+     "value_usd": 845593030.79,
+     "net_wgt_kg": 458051.895
+    },
+    {
+     "period": "202509",
+     "hs6": "854231",
+     "partner": "KR",
+     "value_usd": 66319909.278,
+     "net_wgt_kg": 16020.091
+    },
+    {
+     "period": "202509",
+     "hs6": "854232",
+     "partner": "WORLD",
+     "value_usd": 136095161.262,
+     "net_wgt_kg": 654436.013
+    },
+    {
+     "period": "202509",
+     "hs6": "854232",
+     "partner": "KR",
+     "value_usd": 27565367.599,
+     "net_wgt_kg": 3815.899
+    },
+    {
+     "period": "202510",
+     "hs6": "854231",
+     "partner": "WORLD",
+     "value_usd": 909642840.865,
+     "net_wgt_kg": 512149.432
+    },
+    {
+     "period": "202510",
+     "hs6": "854231",
+     "partner": "KR",
+     "value_usd": 68857530.402,
+     "net_wgt_kg": 18179.081
+    },
+    {
+     "period": "202510",
+     "hs6": "854232",
+     "partner": "WORLD",
+     "value_usd": 125296161.719,
+     "net_wgt_kg": 59287.587
+    },
+    {
+     "period": "202510",
+     "hs6": "854232",
+     "partner": "KR",
+     "value_usd": 37814934.862,
+     "net_wgt_kg": 4699.135
+    },
+    {
+     "period": "202511",
+     "hs6": "854231",
+     "partner": "WORLD",
+     "value_usd": 686477452.635,
+     "net_wgt_kg": 358001.621
+    },
+    {
+     "period": "202511",
+     "hs6": "854231",
+     "partner": "KR",
+     "value_usd": 52352037.305,
+     "net_wgt_kg": 12129.185
+    },
+    {
+     "period": "202511",
+     "hs6": "854232",
+     "partner": "WORLD",
+     "value_usd": 148613257.411,
+     "net_wgt_kg": 57759.088
+    },
+    {
+     "period": "202511",
+     "hs6": "854232",
+     "partner": "KR",
+     "value_usd": 28331484.992,
+     "net_wgt_kg": 4000.822
+    },
+    {
+     "period": "202512",
+     "hs6": "854231",
+     "partner": "WORLD",
+     "value_usd": 646694464.0,
+     "net_wgt_kg": 511215.348
+    },
+    {
+     "period": "202512",
+     "hs6": "854231",
+     "partner": "KR",
+     "value_usd": 47894554.0,
+     "net_wgt_kg": 30401.95
+    },
+    {
+     "period": "202512",
+     "hs6": "854232",
+     "partner": "WORLD",
+     "value_usd": 124760623.0,
+     "net_wgt_kg": 53168.487
+    },
+    {
+     "period": "202512",
+     "hs6": "854232",
+     "partner": "KR",
+     "value_usd": 12082851.0,
+     "net_wgt_kg": 2435.928
+    },
+    {
+     "period": "202601",
+     "hs6": "854231",
+     "partner": "WORLD",
+     "value_usd": 984955384.071,
+     "net_wgt_kg": 423684.728
+    },
+    {
+     "period": "202601",
+     "hs6": "854231",
+     "partner": "KR",
+     "value_usd": 70849784.297,
+     "net_wgt_kg": 16095.53
+    },
+    {
+     "period": "202601",
+     "hs6": "854232",
+     "partner": "WORLD",
+     "value_usd": 222857125.865,
+     "net_wgt_kg": 69867.433
+    },
+    {
+     "period": "202601",
+     "hs6": "854232",
+     "partner": "KR",
+     "value_usd": 31497285.897,
+     "net_wgt_kg": 2525.393
+    },
+    {
+     "period": "202602",
+     "hs6": "854231",
+     "partner": "WORLD",
+     "value_usd": 715889768.184,
+     "net_wgt_kg": 387658.455
+    },
+    {
+     "period": "202602",
+     "hs6": "854231",
+     "partner": "KR",
+     "value_usd": 58198640.647,
+     "net_wgt_kg": 13798.043
+    },
+    {
+     "period": "202602",
+     "hs6": "854232",
+     "partner": "WORLD",
+     "value_usd": 233042383.121,
+     "net_wgt_kg": 71615.455
+    },
+    {
+     "period": "202602",
+     "hs6": "854232",
+     "partner": "KR",
+     "value_usd": 45482735.608,
+     "net_wgt_kg": 3103.858
+    },
+    {
+     "period": "202603",
+     "hs6": "854231",
+     "partner": "WORLD",
+     "value_usd": 851884623.735,
+     "net_wgt_kg": 468201.855
+    },
+    {
+     "period": "202603",
+     "hs6": "854231",
+     "partner": "KR",
+     "value_usd": 76284326.167,
+     "net_wgt_kg": 14456.14
+    },
+    {
+     "period": "202603",
+     "hs6": "854232",
+     "partner": "WORLD",
+     "value_usd": 263450474.734,
+     "net_wgt_kg": 85071.721
+    },
+    {
+     "period": "202603",
+     "hs6": "854232",
+     "partner": "KR",
+     "value_usd": 50308827.829,
+     "net_wgt_kg": 5464.849
+    },
+    {
+     "period": "202604",
+     "hs6": "854231",
+     "partner": "WORLD",
+     "value_usd": 899748737.966,
+     "net_wgt_kg": 463380.409
+    },
+    {
+     "period": "202604",
+     "hs6": "854231",
+     "partner": "KR",
+     "value_usd": 83704912.26,
+     "net_wgt_kg": 16248.107
+    },
+    {
+     "period": "202604",
+     "hs6": "854232",
+     "partner": "WORLD",
+     "value_usd": 285683898.699,
+     "net_wgt_kg": 85951.033
+    },
+    {
+     "period": "202604",
+     "hs6": "854232",
+     "partner": "KR",
+     "value_usd": 42373436.0,
+     "net_wgt_kg": 2305.528
+    },
+    {
+     "period": "202606",
+     "hs6": "854231",
+     "partner": "WORLD",
+     "value_usd": 870693931.099,
+     "net_wgt_kg": 464541.889
+    },
+    {
+     "period": "202606",
+     "hs6": "854231",
+     "partner": "KR",
+     "value_usd": 74415041.743,
+     "net_wgt_kg": 13780.254
+    },
+    {
+     "period": "202606",
+     "hs6": "854232",
+     "partner": "WORLD",
+     "value_usd": 367646020.555,
+     "net_wgt_kg": 69636.403
+    },
+    {
+     "period": "202606",
+     "hs6": "854232",
+     "partner": "KR",
+     "value_usd": 112442442.073,
+     "net_wgt_kg": 9328.67
+    }
+   ],
+   "annual": [
+    {
+     "period": "2021",
+     "hs6": "854231",
+     "partner": "WORLD",
+     "value_usd": 8321994570.925,
+     "net_wgt_kg": 6612089.459
+    },
+    {
+     "period": "2021",
+     "hs6": "854231",
+     "partner": "KR",
+     "value_usd": 444352440.831,
+     "net_wgt_kg": 207707.243
+    },
+    {
+     "period": "2021",
+     "hs6": "854232",
+     "partner": "WORLD",
+     "value_usd": 1033491032.614,
+     "net_wgt_kg": 1024612.733
+    },
+    {
+     "period": "2021",
+     "hs6": "854232",
+     "partner": "KR",
+     "value_usd": 177822762.364,
+     "net_wgt_kg": 52268.569
+    },
+    {
+     "period": "2022",
+     "hs6": "854231",
+     "partner": "WORLD",
+     "value_usd": 11105731791.228,
+     "net_wgt_kg": 7589837.915
+    },
+    {
+     "period": "2022",
+     "hs6": "854231",
+     "partner": "KR",
+     "value_usd": 550117905.111,
+     "net_wgt_kg": 162226.165
+    },
+    {
+     "period": "2022",
+     "hs6": "854232",
+     "partner": "WORLD",
+     "value_usd": 1388345004.05,
+     "net_wgt_kg": 1343030.651
+    },
+    {
+     "period": "2022",
+     "hs6": "854232",
+     "partner": "KR",
+     "value_usd": 215825378.284,
+     "net_wgt_kg": 42346.881
+    },
+    {
+     "period": "2023",
+     "hs6": "854231",
+     "partner": "WORLD",
+     "value_usd": 12623742260.056,
+     "net_wgt_kg": 7415951.888
+    },
+    {
+     "period": "2023",
+     "hs6": "854231",
+     "partner": "KR",
+     "value_usd": 1027480315.698,
+     "net_wgt_kg": 300840.393
+    },
+    {
+     "period": "2023",
+     "hs6": "854232",
+     "partner": "WORLD",
+     "value_usd": 1253367432.07,
+     "net_wgt_kg": 803120.991
+    },
+    {
+     "period": "2023",
+     "hs6": "854232",
+     "partner": "KR",
+     "value_usd": 154690695.157,
+     "net_wgt_kg": 38561.672
+    },
+    {
+     "period": "2024",
+     "hs6": "854231",
+     "partner": "WORLD",
+     "value_usd": 8988455526.233,
+     "net_wgt_kg": 5111860.257
+    },
+    {
+     "period": "2024",
+     "hs6": "854231",
+     "partner": "KR",
+     "value_usd": 823044347.296,
+     "net_wgt_kg": 300007.811
+    },
+    {
+     "period": "2024",
+     "hs6": "854232",
+     "partner": "WORLD",
+     "value_usd": 1206498480.182,
+     "net_wgt_kg": 753372.076
+    },
+    {
+     "period": "2024",
+     "hs6": "854232",
+     "partner": "KR",
+     "value_usd": 209592186.198,
+     "net_wgt_kg": 34829.097
+    },
+    {
+     "period": "2025",
+     "hs6": "854231",
+     "partner": "WORLD",
+     "value_usd": 8944628588.096,
+     "net_wgt_kg": 5528427.555
+    },
+    {
+     "period": "2025",
+     "hs6": "854231",
+     "partner": "KR",
+     "value_usd": 657189379.411,
+     "net_wgt_kg": 262482.514
+    },
+    {
+     "period": "2025",
+     "hs6": "854232",
+     "partner": "WORLD",
+     "value_usd": 1404364243.905,
+     "net_wgt_kg": 1249821.167
+    },
+    {
+     "period": "2025",
+     "hs6": "854232",
+     "partner": "KR",
+     "value_usd": 288235323.523,
+     "net_wgt_kg": 40371.074
+    }
+   ]
+  },
+  "MX": {
+   "name": "멕시코",
+   "reporter_m49": 484,
+   "monthly": [
+    {
+     "period": "202206",
+     "hs6": "854231",
+     "partner": "WORLD",
+     "value_usd": 1350945898.0,
+     "net_wgt_kg": null
+    },
+    {
+     "period": "202206",
+     "hs6": "854231",
+     "partner": "KR",
+     "value_usd": 59210445.0,
+     "net_wgt_kg": null
+    },
+    {
+     "period": "202206",
+     "hs6": "854232",
+     "partner": "WORLD",
+     "value_usd": 113190561.0,
+     "net_wgt_kg": 0.0
+    },
+    {
+     "period": "202206",
+     "hs6": "854232",
+     "partner": "KR",
+     "value_usd": 14137748.0,
+     "net_wgt_kg": 0.0
+    },
+    {
+     "period": "202207",
+     "hs6": "854231",
+     "partner": "WORLD",
+     "value_usd": 1542821610.0,
+     "net_wgt_kg": null
+    },
+    {
+     "period": "202207",
+     "hs6": "854232",
+     "partner": "WORLD",
+     "value_usd": 115740527.0,
+     "net_wgt_kg": 0.0
+    },
+    {
+     "period": "202207",
+     "hs6": "854231",
+     "partner": "KR",
+     "value_usd": 71261298.0,
+     "net_wgt_kg": null
+    },
+    {
+     "period": "202207",
+     "hs6": "854232",
+     "partner": "KR",
+     "value_usd": 17290027.0,
+     "net_wgt_kg": 0.0
+    },
+    {
+     "period": "202208",
+     "hs6": "854231",
+     "partner": "WORLD",
+     "value_usd": 1602287273.0,
+     "net_wgt_kg": null
+    },
+    {
+     "period": "202208",
+     "hs6": "854231",
+     "partner": "KR",
+     "value_usd": 53489440.0,
+     "net_wgt_kg": null
+    },
+    {
+     "period": "202208",
+     "hs6": "854232",
+     "partner": "WORLD",
+     "value_usd": 126325888.0,
+     "net_wgt_kg": 0.0
+    },
+    {
+     "period": "202208",
+     "hs6": "854232",
+     "partner": "KR",
+     "value_usd": 20814664.0,
+     "net_wgt_kg": 0.0
+    },
+    {
+     "period": "202209",
+     "hs6": "854231",
+     "partner": "WORLD",
+     "value_usd": 1612703713.0,
+     "net_wgt_kg": null
+    },
+    {
+     "period": "202209",
+     "hs6": "854231",
+     "partner": "KR",
+     "value_usd": 85380695.0,
+     "net_wgt_kg": null
+    },
+    {
+     "period": "202209",
+     "hs6": "854232",
+     "partner": "WORLD",
+     "value_usd": 117013165.0,
+     "net_wgt_kg": 0.0
+    },
+    {
+     "period": "202209",
+     "hs6": "854232",
+     "partner": "KR",
+     "value_usd": 14734119.0,
+     "net_wgt_kg": 0.0
+    },
+    {
+     "period": "202210",
+     "hs6": "854231",
+     "partner": "WORLD",
+     "value_usd": 1796549122.0,
+     "net_wgt_kg": null
+    },
+    {
+     "period": "202210",
+     "hs6": "854231",
+     "partner": "KR",
+     "value_usd": 67830447.0,
+     "net_wgt_kg": null
+    },
+    {
+     "period": "202210",
+     "hs6": "854232",
+     "partner": "WORLD",
+     "value_usd": 125409609.0,
+     "net_wgt_kg": 0.0
+    },
+    {
+     "period": "202210",
+     "hs6": "854232",
+     "partner": "KR",
+     "value_usd": 14079591.0,
+     "net_wgt_kg": 0.0
+    },
+    {
+     "period": "202211",
+     "hs6": "854231",
+     "partner": "WORLD",
+     "value_usd": 1558499151.0,
+     "net_wgt_kg": null
+    },
+    {
+     "period": "202211",
+     "hs6": "854231",
+     "partner": "KR",
+     "value_usd": 58896853.0,
+     "net_wgt_kg": null
+    },
+    {
+     "period": "202211",
+     "hs6": "854232",
+     "partner": "WORLD",
+     "value_usd": 109631550.0,
+     "net_wgt_kg": 0.0
+    },
+    {
+     "period": "202211",
+     "hs6": "854232",
+     "partner": "KR",
+     "value_usd": 15261037.0,
+     "net_wgt_kg": 0.0
+    },
+    {
+     "period": "202212",
+     "hs6": "854231",
+     "partner": "WORLD",
+     "value_usd": 1216208529.0,
+     "net_wgt_kg": null
+    },
+    {
+     "period": "202212",
+     "hs6": "854231",
+     "partner": "KR",
+     "value_usd": 91884221.0,
+     "net_wgt_kg": null
+    },
+    {
+     "period": "202212",
+     "hs6": "854232",
+     "partner": "WORLD",
+     "value_usd": 114498685.0,
+     "net_wgt_kg": 0.0
+    },
+    {
+     "period": "202212",
+     "hs6": "854232",
+     "partner": "KR",
+     "value_usd": 15298295.0,
+     "net_wgt_kg": 0.0
+    },
+    {
+     "period": "202301",
+     "hs6": "854231",
+     "partner": "WORLD",
+     "value_usd": 1221123211.0,
+     "net_wgt_kg": null
+    },
+    {
+     "period": "202301",
+     "hs6": "854232",
+     "partner": "WORLD",
+     "value_usd": 97343860.0,
+     "net_wgt_kg": null
+    },
+    {
+     "period": "202301",
+     "hs6": "854231",
+     "partner": "KR",
+     "value_usd": 81614057.0,
+     "net_wgt_kg": null
+    },
+    {
+     "period": "202301",
+     "hs6": "854232",
+     "partner": "KR",
+     "value_usd": 16210354.0,
+     "net_wgt_kg": null
+    },
+    {
+     "period": "202302",
+     "hs6": "854231",
+     "partner": "WORLD",
+     "value_usd": 1273533973.0,
+     "net_wgt_kg": null
+    },
+    {
+     "period": "202302",
+     "hs6": "854232",
+     "partner": "WORLD",
+     "value_usd": 96313948.0,
+     "net_wgt_kg": null
+    },
+    {
+     "period": "202302",
+     "hs6": "854231",
+     "partner": "KR",
+     "value_usd": 86741856.0,
+     "net_wgt_kg": null
+    },
+    {
+     "period": "202302",
+     "hs6": "854232",
+     "partner": "KR",
+     "value_usd": 12614370.0,
+     "net_wgt_kg": null
+    },
+    {
+     "period": "202303",
+     "hs6": "854231",
+     "partner": "WORLD",
+     "value_usd": 1277395129.0,
+     "net_wgt_kg": null
+    },
+    {
+     "period": "202303",
+     "hs6": "854232",
+     "partner": "WORLD",
+     "value_usd": 101455247.0,
+     "net_wgt_kg": null
+    },
+    {
+     "period": "202303",
+     "hs6": "854231",
+     "partner": "KR",
+     "value_usd": 73780305.0,
+     "net_wgt_kg": null
+    },
+    {
+     "period": "202303",
+     "hs6": "854232",
+     "partner": "KR",
+     "value_usd": 14311380.0,
+     "net_wgt_kg": null
+    },
+    {
+     "period": "202304",
+     "hs6": "854231",
+     "partner": "WORLD",
+     "value_usd": 1972437947.0,
+     "net_wgt_kg": null
+    },
+    {
+     "period": "202304",
+     "hs6": "854231",
+     "partner": "KR",
+     "value_usd": 73199006.0,
+     "net_wgt_kg": null
+    },
+    {
+     "period": "202304",
+     "hs6": "854232",
+     "partner": "WORLD",
+     "value_usd": 90223455.0,
+     "net_wgt_kg": null
+    },
+    {
+     "period": "202304",
+     "hs6": "854232",
+     "partner": "KR",
+     "value_usd": 10263509.0,
+     "net_wgt_kg": null
+    },
+    {
+     "period": "202305",
+     "hs6": "854231",
+     "partner": "WORLD",
+     "value_usd": 1277360618.0,
+     "net_wgt_kg": null
+    },
+    {
+     "period": "202305",
+     "hs6": "854231",
+     "partner": "KR",
+     "value_usd": 73436100.0,
+     "net_wgt_kg": null
+    },
+    {
+     "period": "202305",
+     "hs6": "854232",
+     "partner": "WORLD",
+     "value_usd": 94528799.0,
+     "net_wgt_kg": null
+    },
+    {
+     "period": "202305",
+     "hs6": "854232",
+     "partner": "KR",
+     "value_usd": 13811031.0,
+     "net_wgt_kg": null
+    },
+    {
+     "period": "202306",
+     "hs6": "854231",
+     "partner": "WORLD",
+     "value_usd": 1510739216.0,
+     "net_wgt_kg": null
+    },
+    {
+     "period": "202306",
+     "hs6": "854231",
+     "partner": "KR",
+     "value_usd": 89995671.0,
+     "net_wgt_kg": null
+    },
+    {
+     "period": "202306",
+     "hs6": "854232",
+     "partner": "WORLD",
+     "value_usd": 96156228.0,
+     "net_wgt_kg": null
+    },
+    {
+     "period": "202306",
+     "hs6": "854232",
+     "partner": "KR",
+     "value_usd": 14240644.0,
+     "net_wgt_kg": null
+    },
+    {
+     "period": "202307",
+     "hs6": "854231",
+     "partner": "WORLD",
+     "value_usd": 1304866957.0,
+     "net_wgt_kg": null
+    },
+    {
+     "period": "202307",
+     "hs6": "854231",
+     "partner": "KR",
+     "value_usd": 83493063.0,
+     "net_wgt_kg": null
+    },
+    {
+     "period": "202307",
+     "hs6": "854232",
+     "partner": "WORLD",
+     "value_usd": 83351583.0,
+     "net_wgt_kg": null
+    },
+    {
+     "period": "202307",
+     "hs6": "854232",
+     "partner": "KR",
+     "value_usd": 10740191.0,
+     "net_wgt_kg": null
+    },
+    {
+     "period": "202308",
+     "hs6": "854231",
+     "partner": "WORLD",
+     "value_usd": 1266533305.0,
+     "net_wgt_kg": null
+    },
+    {
+     "period": "202308",
+     "hs6": "854231",
+     "partner": "KR",
+     "value_usd": 68523702.0,
+     "net_wgt_kg": null
+    },
+    {
+     "period": "202308",
+     "hs6": "854232",
+     "partner": "WORLD",
+     "value_usd": 104460143.0,
+     "net_wgt_kg": null
+    },
+    {
+     "period": "202308",
+     "hs6": "854232",
+     "partner": "KR",
+     "value_usd": 16609973.0,
+     "net_wgt_kg": null
+    },
+    {
+     "period": "202309",
+     "hs6": "854231",
+     "partner": "WORLD",
+     "value_usd": 1090074523.0,
+     "net_wgt_kg": null
+    },
+    {
+     "period": "202309",
+     "hs6": "854231",
+     "partner": "KR",
+     "value_usd": 61645841.0,
+     "net_wgt_kg": null
+    },
+    {
+     "period": "202309",
+     "hs6": "854232",
+     "partner": "WORLD",
+     "value_usd": 91286014.0,
+     "net_wgt_kg": null
+    },
+    {
+     "period": "202309",
+     "hs6": "854232",
+     "partner": "KR",
+     "value_usd": 14339989.0,
+     "net_wgt_kg": null
+    },
+    {
+     "period": "202310",
+     "hs6": "854231",
+     "partner": "WORLD",
+     "value_usd": 1330961346.0,
+     "net_wgt_kg": null
+    },
+    {
+     "period": "202310",
+     "hs6": "854231",
+     "partner": "KR",
+     "value_usd": 78279032.0,
+     "net_wgt_kg": null
+    },
+    {
+     "period": "202310",
+     "hs6": "854232",
+     "partner": "WORLD",
+     "value_usd": 93738693.0,
+     "net_wgt_kg": null
+    },
+    {
+     "period": "202310",
+     "hs6": "854232",
+     "partner": "KR",
+     "value_usd": 13175429.0,
+     "net_wgt_kg": null
+    },
+    {
+     "period": "202311",
+     "hs6": "854231",
+     "partner": "WORLD",
+     "value_usd": 1410245119.0,
+     "net_wgt_kg": null
+    },
+    {
+     "period": "202311",
+     "hs6": "854231",
+     "partner": "KR",
+     "value_usd": 59621403.0,
+     "net_wgt_kg": null
+    },
+    {
+     "period": "202311",
+     "hs6": "854232",
+     "partner": "WORLD",
+     "value_usd": 108723944.0,
+     "net_wgt_kg": null
+    },
+    {
+     "period": "202311",
+     "hs6": "854232",
+     "partner": "KR",
+     "value_usd": 13506344.0,
+     "net_wgt_kg": null
+    },
+    {
+     "period": "202312",
+     "hs6": "854231",
+     "partner": "WORLD",
+     "value_usd": 1138215976.0,
+     "net_wgt_kg": null
+    },
+    {
+     "period": "202312",
+     "hs6": "854231",
+     "partner": "KR",
+     "value_usd": 73857527.0,
+     "net_wgt_kg": null
+    },
+    {
+     "period": "202312",
+     "hs6": "854232",
+     "partner": "WORLD",
+     "value_usd": 94847985.0,
+     "net_wgt_kg": null
+    },
+    {
+     "period": "202312",
+     "hs6": "854232",
+     "partner": "KR",
+     "value_usd": 28416995.0,
+     "net_wgt_kg": null
+    },
+    {
+     "period": "202401",
+     "hs6": "854231",
+     "partner": "WORLD",
+     "value_usd": 1203210918.0,
+     "net_wgt_kg": null
+    },
+    {
+     "period": "202401",
+     "hs6": "854231",
+     "partner": "KR",
+     "value_usd": 56104066.0,
+     "net_wgt_kg": null
+    },
+    {
+     "period": "202401",
+     "hs6": "854232",
+     "partner": "WORLD",
+     "value_usd": 83720300.0,
+     "net_wgt_kg": null
+    },
+    {
+     "period": "202401",
+     "hs6": "854232",
+     "partner": "KR",
+     "value_usd": 13174522.0,
+     "net_wgt_kg": null
+    },
+    {
+     "period": "202402",
+     "hs6": "854231",
+     "partner": "WORLD",
+     "value_usd": 1374173370.0,
+     "net_wgt_kg": null
+    },
+    {
+     "period": "202402",
+     "hs6": "854231",
+     "partner": "KR",
+     "value_usd": 83162360.0,
+     "net_wgt_kg": null
+    },
+    {
+     "period": "202402",
+     "hs6": "854232",
+     "partner": "WORLD",
+     "value_usd": 103733255.0,
+     "net_wgt_kg": null
+    },
+    {
+     "period": "202402",
+     "hs6": "854232",
+     "partner": "KR",
+     "value_usd": 15373716.0,
+     "net_wgt_kg": null
+    },
+    {
+     "period": "202403",
+     "hs6": "854231",
+     "partner": "WORLD",
+     "value_usd": 1008387397.0,
+     "net_wgt_kg": null
+    },
+    {
+     "period": "202403",
+     "hs6": "854231",
+     "partner": "KR",
+     "value_usd": 75453462.0,
+     "net_wgt_kg": null
+    },
+    {
+     "period": "202403",
+     "hs6": "854232",
+     "partner": "WORLD",
+     "value_usd": 102884039.0,
+     "net_wgt_kg": null
+    },
+    {
+     "period": "202403",
+     "hs6": "854232",
+     "partner": "KR",
+     "value_usd": 21151980.0,
+     "net_wgt_kg": null
+    },
+    {
+     "period": "202404",
+     "hs6": "854231",
+     "partner": "WORLD",
+     "value_usd": 1430203496.0,
+     "net_wgt_kg": null
+    },
+    {
+     "period": "202404",
+     "hs6": "854231",
+     "partner": "KR",
+     "value_usd": 70363704.0,
+     "net_wgt_kg": null
+    },
+    {
+     "period": "202404",
+     "hs6": "854232",
+     "partner": "WORLD",
+     "value_usd": 87138249.0,
+     "net_wgt_kg": null
+    },
+    {
+     "period": "202404",
+     "hs6": "854232",
+     "partner": "KR",
+     "value_usd": 13975416.0,
+     "net_wgt_kg": null
+    },
+    {
+     "period": "202405",
+     "hs6": "854231",
+     "partner": "WORLD",
+     "value_usd": 1426473963.0,
+     "net_wgt_kg": null
+    },
+    {
+     "period": "202405",
+     "hs6": "854231",
+     "partner": "KR",
+     "value_usd": 104249361.0,
+     "net_wgt_kg": null
+    },
+    {
+     "period": "202405",
+     "hs6": "854232",
+     "partner": "WORLD",
+     "value_usd": 105884370.0,
+     "net_wgt_kg": null
+    },
+    {
+     "period": "202405",
+     "hs6": "854232",
+     "partner": "KR",
+     "value_usd": 25789412.0,
+     "net_wgt_kg": null
+    },
+    {
+     "period": "202406",
+     "hs6": "854231",
+     "partner": "WORLD",
+     "value_usd": 1765218518.0,
+     "net_wgt_kg": null
+    },
+    {
+     "period": "202406",
+     "hs6": "854231",
+     "partner": "KR",
+     "value_usd": 107036961.0,
+     "net_wgt_kg": null
+    },
+    {
+     "period": "202406",
+     "hs6": "854232",
+     "partner": "WORLD",
+     "value_usd": 87616645.0,
+     "net_wgt_kg": null
+    },
+    {
+     "period": "202406",
+     "hs6": "854232",
+     "partner": "KR",
+     "value_usd": 16087416.0,
+     "net_wgt_kg": null
+    },
+    {
+     "period": "202407",
+     "hs6": "854231",
+     "partner": "WORLD",
+     "value_usd": 1717892367.0,
+     "net_wgt_kg": null
+    },
+    {
+     "period": "202407",
+     "hs6": "854231",
+     "partner": "KR",
+     "value_usd": 116558727.0,
+     "net_wgt_kg": null
+    },
+    {
+     "period": "202407",
+     "hs6": "854232",
+     "partner": "WORLD",
+     "value_usd": 96399816.0,
+     "net_wgt_kg": null
+    },
+    {
+     "period": "202407",
+     "hs6": "854232",
+     "partner": "KR",
+     "value_usd": 16019608.0,
+     "net_wgt_kg": null
+    },
+    {
+     "period": "202408",
+     "hs6": "854231",
+     "partner": "WORLD",
+     "value_usd": 1625837685.0,
+     "net_wgt_kg": null
+    },
+    {
+     "period": "202408",
+     "hs6": "854231",
+     "partner": "KR",
+     "value_usd": 148613134.0,
+     "net_wgt_kg": null
+    },
+    {
+     "period": "202408",
+     "hs6": "854232",
+     "partner": "WORLD",
+     "value_usd": 111027025.0,
+     "net_wgt_kg": null
+    },
+    {
+     "period": "202408",
+     "hs6": "854232",
+     "partner": "KR",
+     "value_usd": 29559370.0,
+     "net_wgt_kg": null
+    },
+    {
+     "period": "202409",
+     "hs6": "854231",
+     "partner": "WORLD",
+     "value_usd": 1799837936.0,
+     "net_wgt_kg": null
+    },
+    {
+     "period": "202409",
+     "hs6": "854231",
+     "partner": "KR",
+     "value_usd": 177656574.0,
+     "net_wgt_kg": null
+    },
+    {
+     "period": "202409",
+     "hs6": "854232",
+     "partner": "WORLD",
+     "value_usd": 100458834.0,
+     "net_wgt_kg": null
+    },
+    {
+     "period": "202409",
+     "hs6": "854232",
+     "partner": "KR",
+     "value_usd": 19978393.0,
+     "net_wgt_kg": null
+    },
+    {
+     "period": "202410",
+     "hs6": "854231",
+     "partner": "WORLD",
+     "value_usd": 1922724881.0,
+     "net_wgt_kg": null
+    },
+    {
+     "period": "202410",
+     "hs6": "854231",
+     "partner": "KR",
+     "value_usd": 130550705.0,
+     "net_wgt_kg": null
+    },
+    {
+     "period": "202410",
+     "hs6": "854232",
+     "partner": "WORLD",
+     "value_usd": 105697188.0,
+     "net_wgt_kg": null
+    },
+    {
+     "period": "202410",
+     "hs6": "854232",
+     "partner": "KR",
+     "value_usd": 29538988.0,
+     "net_wgt_kg": null
+    },
+    {
+     "period": "202411",
+     "hs6": "854231",
+     "partner": "WORLD",
+     "value_usd": 1703134049.0,
+     "net_wgt_kg": null
+    },
+    {
+     "period": "202411",
+     "hs6": "854231",
+     "partner": "KR",
+     "value_usd": 189294183.0,
+     "net_wgt_kg": null
+    },
+    {
+     "period": "202411",
+     "hs6": "854232",
+     "partner": "WORLD",
+     "value_usd": 100123718.0,
+     "net_wgt_kg": null
+    },
+    {
+     "period": "202411",
+     "hs6": "854232",
+     "partner": "KR",
+     "value_usd": 25382036.0,
+     "net_wgt_kg": null
+    },
+    {
+     "period": "202412",
+     "hs6": "854231",
+     "partner": "WORLD",
+     "value_usd": 1737668792.0,
+     "net_wgt_kg": null
+    },
+    {
+     "period": "202412",
+     "hs6": "854231",
+     "partner": "KR",
+     "value_usd": 359235153.0,
+     "net_wgt_kg": null
+    },
+    {
+     "period": "202412",
+     "hs6": "854232",
+     "partner": "WORLD",
+     "value_usd": 86841586.0,
+     "net_wgt_kg": null
+    },
+    {
+     "period": "202412",
+     "hs6": "854232",
+     "partner": "KR",
+     "value_usd": 17574429.0,
+     "net_wgt_kg": null
+    },
+    {
+     "period": "202501",
+     "hs6": "854231",
+     "partner": "WORLD",
+     "value_usd": 1658772122.0,
+     "net_wgt_kg": null
+    },
+    {
+     "period": "202501",
+     "hs6": "854231",
+     "partner": "KR",
+     "value_usd": 144436244.0,
+     "net_wgt_kg": null
+    },
+    {
+     "period": "202501",
+     "hs6": "854232",
+     "partner": "WORLD",
+     "value_usd": 111458791.0,
+     "net_wgt_kg": null
+    },
+    {
+     "period": "202501",
+     "hs6": "854232",
+     "partner": "KR",
+     "value_usd": 32036411.0,
+     "net_wgt_kg": null
+    },
+    {
+     "period": "202502",
+     "hs6": "854231",
+     "partner": "WORLD",
+     "value_usd": 1476497434.0,
+     "net_wgt_kg": null
+    },
+    {
+     "period": "202502",
+     "hs6": "854231",
+     "partner": "KR",
+     "value_usd": 73837356.0,
+     "net_wgt_kg": null
+    },
+    {
+     "period": "202502",
+     "hs6": "854232",
+     "partner": "WORLD",
+     "value_usd": 108610031.0,
+     "net_wgt_kg": null
+    },
+    {
+     "period": "202502",
+     "hs6": "854232",
+     "partner": "KR",
+     "value_usd": 25755296.0,
+     "net_wgt_kg": null
+    },
+    {
+     "period": "202503",
+     "hs6": "854231",
+     "partner": "WORLD",
+     "value_usd": 1599520957.0,
+     "net_wgt_kg": null
+    },
+    {
+     "period": "202503",
+     "hs6": "854231",
+     "partner": "KR",
+     "value_usd": 97145330.0,
+     "net_wgt_kg": null
+    },
+    {
+     "period": "202503",
+     "hs6": "854232",
+     "partner": "WORLD",
+     "value_usd": 114166191.0,
+     "net_wgt_kg": null
+    },
+    {
+     "period": "202503",
+     "hs6": "854232",
+     "partner": "KR",
+     "value_usd": 25962693.0,
+     "net_wgt_kg": null
+    },
+    {
+     "period": "202504",
+     "hs6": "854231",
+     "partner": "WORLD",
+     "value_usd": 1999381533.0,
+     "net_wgt_kg": null
+    },
+    {
+     "period": "202504",
+     "hs6": "854231",
+     "partner": "KR",
+     "value_usd": 172089842.0,
+     "net_wgt_kg": null
+    },
+    {
+     "period": "202504",
+     "hs6": "854232",
+     "partner": "WORLD",
+     "value_usd": 116724821.0,
+     "net_wgt_kg": null
+    },
+    {
+     "period": "202504",
+     "hs6": "854232",
+     "partner": "KR",
+     "value_usd": 23971300.0,
+     "net_wgt_kg": null
+    },
+    {
+     "period": "202505",
+     "hs6": "854231",
+     "partner": "WORLD",
+     "value_usd": 1882575726.0,
+     "net_wgt_kg": null
+    },
+    {
+     "period": "202505",
+     "hs6": "854232",
+     "partner": "WORLD",
+     "value_usd": 125789785.0,
+     "net_wgt_kg": null
+    },
+    {
+     "period": "202505",
+     "hs6": "854231",
+     "partner": "KR",
+     "value_usd": 156685092.0,
+     "net_wgt_kg": null
+    },
+    {
+     "period": "202505",
+     "hs6": "854232",
+     "partner": "KR",
+     "value_usd": 37609865.0,
+     "net_wgt_kg": null
+    },
+    {
+     "period": "202506",
+     "hs6": "854231",
+     "partner": "WORLD",
+     "value_usd": 1421410317.0,
+     "net_wgt_kg": null
+    },
+    {
+     "period": "202506",
+     "hs6": "854231",
+     "partner": "KR",
+     "value_usd": 55131058.0,
+     "net_wgt_kg": null
+    },
+    {
+     "period": "202506",
+     "hs6": "854232",
+     "partner": "WORLD",
+     "value_usd": 127464131.0,
+     "net_wgt_kg": null
+    },
+    {
+     "period": "202506",
+     "hs6": "854232",
+     "partner": "KR",
+     "value_usd": 29869596.0,
+     "net_wgt_kg": null
+    },
+    {
+     "period": "202507",
+     "hs6": "854231",
+     "partner": "WORLD",
+     "value_usd": 1460201990.0,
+     "net_wgt_kg": null
+    },
+    {
+     "period": "202507",
+     "hs6": "854231",
+     "partner": "KR",
+     "value_usd": 136413638.0,
+     "net_wgt_kg": null
+    },
+    {
+     "period": "202507",
+     "hs6": "854232",
+     "partner": "WORLD",
+     "value_usd": 152209582.0,
+     "net_wgt_kg": null
+    },
+    {
+     "period": "202507",
+     "hs6": "854232",
+     "partner": "KR",
+     "value_usd": 32201049.0,
+     "net_wgt_kg": null
+    },
+    {
+     "period": "202508",
+     "hs6": "854231",
+     "partner": "WORLD",
+     "value_usd": 1541274659.0,
+     "net_wgt_kg": null
+    },
+    {
+     "period": "202508",
+     "hs6": "854231",
+     "partner": "KR",
+     "value_usd": 106003013.0,
+     "net_wgt_kg": null
+    },
+    {
+     "period": "202508",
+     "hs6": "854232",
+     "partner": "WORLD",
+     "value_usd": 133624598.0,
+     "net_wgt_kg": null
+    },
+    {
+     "period": "202508",
+     "hs6": "854232",
+     "partner": "KR",
+     "value_usd": 29147735.0,
+     "net_wgt_kg": null
+    },
+    {
+     "period": "202509",
+     "hs6": "854231",
+     "partner": "WORLD",
+     "value_usd": 1504025817.0,
+     "net_wgt_kg": null
+    },
+    {
+     "period": "202509",
+     "hs6": "854231",
+     "partner": "KR",
+     "value_usd": 113401633.0,
+     "net_wgt_kg": null
+    },
+    {
+     "period": "202509",
+     "hs6": "854232",
+     "partner": "WORLD",
+     "value_usd": 129290394.0,
+     "net_wgt_kg": null
+    },
+    {
+     "period": "202509",
+     "hs6": "854232",
+     "partner": "KR",
+     "value_usd": 28810743.0,
+     "net_wgt_kg": null
+    },
+    {
+     "period": "202510",
+     "hs6": "854231",
+     "partner": "WORLD",
+     "value_usd": 2267839589.0,
+     "net_wgt_kg": null
+    },
+    {
+     "period": "202510",
+     "hs6": "854231",
+     "partner": "KR",
+     "value_usd": 99892390.0,
+     "net_wgt_kg": null
+    },
+    {
+     "period": "202510",
+     "hs6": "854232",
+     "partner": "WORLD",
+     "value_usd": 157109761.0,
+     "net_wgt_kg": null
+    },
+    {
+     "period": "202510",
+     "hs6": "854232",
+     "partner": "KR",
+     "value_usd": 41685257.0,
+     "net_wgt_kg": null
+    },
+    {
+     "period": "202511",
+     "hs6": "854231",
+     "partner": "WORLD",
+     "value_usd": 1805471446.0,
+     "net_wgt_kg": null
+    },
+    {
+     "period": "202511",
+     "hs6": "854231",
+     "partner": "KR",
+     "value_usd": 110645535.0,
+     "net_wgt_kg": null
+    },
+    {
+     "period": "202511",
+     "hs6": "854232",
+     "partner": "WORLD",
+     "value_usd": 152931395.0,
+     "net_wgt_kg": null
+    },
+    {
+     "period": "202511",
+     "hs6": "854232",
+     "partner": "KR",
+     "value_usd": 35938668.0,
+     "net_wgt_kg": null
+    },
+    {
+     "period": "202512",
+     "hs6": "854231",
+     "partner": "WORLD",
+     "value_usd": 2015898721.0,
+     "net_wgt_kg": null
+    },
+    {
+     "period": "202512",
+     "hs6": "854231",
+     "partner": "KR",
+     "value_usd": 180070323.0,
+     "net_wgt_kg": null
+    },
+    {
+     "period": "202512",
+     "hs6": "854232",
+     "partner": "WORLD",
+     "value_usd": 148679258.0,
+     "net_wgt_kg": null
+    },
+    {
+     "period": "202512",
+     "hs6": "854232",
+     "partner": "KR",
+     "value_usd": 36542928.0,
+     "net_wgt_kg": null
+    },
+    {
+     "period": "202601",
+     "hs6": "854231",
+     "partner": "WORLD",
+     "value_usd": 2002689954.0,
+     "net_wgt_kg": null
+    },
+    {
+     "period": "202601",
+     "hs6": "854231",
+     "partner": "KR",
+     "value_usd": 133792095.0,
+     "net_wgt_kg": null
+    },
+    {
+     "period": "202601",
+     "hs6": "854232",
+     "partner": "WORLD",
+     "value_usd": 161776991.0,
+     "net_wgt_kg": null
+    },
+    {
+     "period": "202601",
+     "hs6": "854232",
+     "partner": "KR",
+     "value_usd": 45127786.0,
+     "net_wgt_kg": null
+    },
+    {
+     "period": "202602",
+     "hs6": "854231",
+     "partner": "WORLD",
+     "value_usd": 1955299214.0,
+     "net_wgt_kg": null
+    },
+    {
+     "period": "202602",
+     "hs6": "854231",
+     "partner": "KR",
+     "value_usd": 107967637.0,
+     "net_wgt_kg": null
+    },
+    {
+     "period": "202602",
+     "hs6": "854232",
+     "partner": "WORLD",
+     "value_usd": 196079954.0,
+     "net_wgt_kg": null
+    },
+    {
+     "period": "202602",
+     "hs6": "854232",
+     "partner": "KR",
+     "value_usd": 49349920.0,
+     "net_wgt_kg": null
+    },
+    {
+     "period": "202603",
+     "hs6": "854231",
+     "partner": "WORLD",
+     "value_usd": 2259806580.0,
+     "net_wgt_kg": null
+    },
+    {
+     "period": "202603",
+     "hs6": "854231",
+     "partner": "KR",
+     "value_usd": 164435161.0,
+     "net_wgt_kg": null
+    },
+    {
+     "period": "202603",
+     "hs6": "854232",
+     "partner": "WORLD",
+     "value_usd": 283988041.0,
+     "net_wgt_kg": null
+    },
+    {
+     "period": "202603",
+     "hs6": "854232",
+     "partner": "KR",
+     "value_usd": 65983185.0,
+     "net_wgt_kg": null
+    },
+    {
+     "period": "202604",
+     "hs6": "854231",
+     "partner": "WORLD",
+     "value_usd": 2277703260.0,
+     "net_wgt_kg": null
+    },
+    {
+     "period": "202604",
+     "hs6": "854231",
+     "partner": "KR",
+     "value_usd": 152208265.0,
+     "net_wgt_kg": null
+    },
+    {
+     "period": "202604",
+     "hs6": "854232",
+     "partner": "WORLD",
+     "value_usd": 252571579.0,
+     "net_wgt_kg": null
+    },
+    {
+     "period": "202604",
+     "hs6": "854232",
+     "partner": "KR",
+     "value_usd": 49222324.0,
+     "net_wgt_kg": null
+    },
+    {
+     "period": "202605",
+     "hs6": "854231",
+     "partner": "WORLD",
+     "value_usd": 2239380942.0,
+     "net_wgt_kg": null
+    },
+    {
+     "period": "202605",
+     "hs6": "854231",
+     "partner": "KR",
+     "value_usd": 80668010.0,
+     "net_wgt_kg": null
+    },
+    {
+     "period": "202605",
+     "hs6": "854232",
+     "partner": "WORLD",
+     "value_usd": 282257311.0,
+     "net_wgt_kg": null
+    },
+    {
+     "period": "202605",
+     "hs6": "854232",
+     "partner": "KR",
+     "value_usd": 74828656.0,
+     "net_wgt_kg": null
+    },
+    {
+     "period": "202606",
+     "hs6": "854231",
+     "partner": "WORLD",
+     "value_usd": 1985554156.0,
+     "net_wgt_kg": null
+    },
+    {
+     "period": "202606",
+     "hs6": "854231",
+     "partner": "KR",
+     "value_usd": 90317932.0,
+     "net_wgt_kg": null
+    },
+    {
+     "period": "202606",
+     "hs6": "854232",
+     "partner": "WORLD",
+     "value_usd": 330461050.0,
+     "net_wgt_kg": null
+    },
+    {
+     "period": "202606",
+     "hs6": "854232",
+     "partner": "KR",
+     "value_usd": 83055609.0,
+     "net_wgt_kg": null
+    },
+    {
+     "period": "202607",
+     "hs6": "854231",
+     "partner": "WORLD",
+     "value_usd": 2580684957.0,
+     "net_wgt_kg": null
+    },
+    {
+     "period": "202607",
+     "hs6": "854231",
+     "partner": "KR",
+     "value_usd": 183893545.0,
+     "net_wgt_kg": null
+    },
+    {
+     "period": "202607",
+     "hs6": "854232",
+     "partner": "WORLD",
+     "value_usd": 425814393.0,
+     "net_wgt_kg": null
+    },
+    {
+     "period": "202607",
+     "hs6": "854232",
+     "partner": "KR",
+     "value_usd": 125962361.0,
+     "net_wgt_kg": null
+    }
+   ],
+   "annual": [
+    {
+     "period": "2021",
+     "hs6": "854231",
+     "partner": "WORLD",
+     "value_usd": 14766680221.0,
+     "net_wgt_kg": 9127771.391
+    },
+    {
+     "period": "2021",
+     "hs6": "854231",
+     "partner": "KR",
+     "value_usd": 483334583.0,
+     "net_wgt_kg": 298765.025
+    },
+    {
+     "period": "2021",
+     "hs6": "854232",
+     "partner": "WORLD",
+     "value_usd": 1272211984.0,
+     "net_wgt_kg": 732095.791
+    },
+    {
+     "period": "2021",
+     "hs6": "854232",
+     "partner": "KR",
+     "value_usd": 206221977.0,
+     "net_wgt_kg": 118670.664
+    },
+    {
+     "period": "2022",
+     "hs6": "854231",
+     "partner": "WORLD",
+     "value_usd": 17618210782.0,
+     "net_wgt_kg": null
+    },
+    {
+     "period": "2022",
+     "hs6": "854231",
+     "partner": "KR",
+     "value_usd": 717468262.0,
+     "net_wgt_kg": null
+    },
+    {
+     "period": "2022",
+     "hs6": "854232",
+     "partner": "WORLD",
+     "value_usd": 1332139394.0,
+     "net_wgt_kg": 0.0
+    },
+    {
+     "period": "2022",
+     "hs6": "854232",
+     "partner": "KR",
+     "value_usd": 181984059.0,
+     "net_wgt_kg": 0.0
+    },
+    {
+     "period": "2023",
+     "hs6": "854231",
+     "partner": "WORLD",
+     "value_usd": 16073487320.0,
+     "net_wgt_kg": null
+    },
+    {
+     "period": "2023",
+     "hs6": "854231",
+     "partner": "KR",
+     "value_usd": 904187563.0,
+     "net_wgt_kg": null
+    },
+    {
+     "period": "2023",
+     "hs6": "854232",
+     "partner": "WORLD",
+     "value_usd": 1152429899.0,
+     "net_wgt_kg": null
+    },
+    {
+     "period": "2023",
+     "hs6": "854232",
+     "partner": "KR",
+     "value_usd": 178240209.0,
+     "net_wgt_kg": null
+    },
+    {
+     "period": "2024",
+     "hs6": "854231",
+     "partner": "WORLD",
+     "value_usd": 18714763372.0,
+     "net_wgt_kg": null
+    },
+    {
+     "period": "2024",
+     "hs6": "854231",
+     "partner": "KR",
+     "value_usd": 1618278390.0,
+     "net_wgt_kg": null
+    },
+    {
+     "period": "2024",
+     "hs6": "854232",
+     "partner": "WORLD",
+     "value_usd": 1171525025.0,
+     "net_wgt_kg": null
+    },
+    {
+     "period": "2024",
+     "hs6": "854232",
+     "partner": "KR",
+     "value_usd": 243605286.0,
+     "net_wgt_kg": null
+    },
+    {
+     "period": "2025",
+     "hs6": "854231",
+     "partner": "WORLD",
+     "value_usd": 20632870311.0,
+     "net_wgt_kg": null
+    },
+    {
+     "period": "2025",
+     "hs6": "854231",
+     "partner": "KR",
+     "value_usd": 1445751454.0,
+     "net_wgt_kg": null
+    },
+    {
+     "period": "2025",
+     "hs6": "854232",
+     "partner": "WORLD",
+     "value_usd": 1578058738.0,
+     "net_wgt_kg": null
+    },
+    {
+     "period": "2025",
+     "hs6": "854232",
+     "partner": "KR",
+     "value_usd": 379531541.0,
+     "net_wgt_kg": null
+    }
+   ]
+  },
+  "CA": {
+   "name": "캐나다",
+   "reporter_m49": 124,
+   "monthly": [
+    {
+     "period": "202206",
+     "hs6": "854231",
+     "partner": "WORLD",
+     "value_usd": 107375997.623,
+     "net_wgt_kg": null
+    },
+    {
+     "period": "202206",
+     "hs6": "854231",
+     "partner": "KR",
+     "value_usd": 7301585.512,
+     "net_wgt_kg": null
+    },
+    {
+     "period": "202206",
+     "hs6": "854232",
+     "partner": "WORLD",
+     "value_usd": 20109437.536,
+     "net_wgt_kg": 9483.824
+    },
+    {
+     "period": "202206",
+     "hs6": "854232",
+     "partner": "KR",
+     "value_usd": 2314216.53,
+     "net_wgt_kg": 1091.409
+    },
+    {
+     "period": "202207",
+     "hs6": "854231",
+     "partner": "WORLD",
+     "value_usd": 105058905.223,
+     "net_wgt_kg": null
+    },
+    {
+     "period": "202207",
+     "hs6": "854232",
+     "partner": "WORLD",
+     "value_usd": 15155248.693,
+     "net_wgt_kg": 7147.376
+    },
+    {
+     "period": "202207",
+     "hs6": "854231",
+     "partner": "KR",
+     "value_usd": 16762262.717,
+     "net_wgt_kg": null
+    },
+    {
+     "period": "202207",
+     "hs6": "854232",
+     "partner": "KR",
+     "value_usd": 2081801.151,
+     "net_wgt_kg": 981.799
+    },
+    {
+     "period": "202208",
+     "hs6": "854231",
+     "partner": "WORLD",
+     "value_usd": 107614576.279,
+     "net_wgt_kg": null
+    },
+    {
+     "period": "202208",
+     "hs6": "854231",
+     "partner": "KR",
+     "value_usd": 11572052.334,
+     "net_wgt_kg": null
+    },
+    {
+     "period": "202208",
+     "hs6": "854232",
+     "partner": "WORLD",
+     "value_usd": 14957001.763,
+     "net_wgt_kg": 7053.88
+    },
+    {
+     "period": "202208",
+     "hs6": "854232",
+     "partner": "KR",
+     "value_usd": 1242238.436,
+     "net_wgt_kg": 585.853
+    },
+    {
+     "period": "202209",
+     "hs6": "854231",
+     "partner": "WORLD",
+     "value_usd": 91579001.979,
+     "net_wgt_kg": null
+    },
+    {
+     "period": "202209",
+     "hs6": "854231",
+     "partner": "KR",
+     "value_usd": 6256259.314,
+     "net_wgt_kg": null
+    },
+    {
+     "period": "202209",
+     "hs6": "854232",
+     "partner": "WORLD",
+     "value_usd": 13914051.463,
+     "net_wgt_kg": 6562.014
+    },
+    {
+     "period": "202209",
+     "hs6": "854232",
+     "partner": "KR",
+     "value_usd": 492687.267,
+     "net_wgt_kg": 232.357
+    },
+    {
+     "period": "202210",
+     "hs6": "854231",
+     "partner": "WORLD",
+     "value_usd": 94050237.59,
+     "net_wgt_kg": null
+    },
+    {
+     "period": "202210",
+     "hs6": "854231",
+     "partner": "KR",
+     "value_usd": 1266367.472,
+     "net_wgt_kg": null
+    },
+    {
+     "period": "202210",
+     "hs6": "854232",
+     "partner": "WORLD",
+     "value_usd": 15000433.282,
+     "net_wgt_kg": 7074.363
+    },
+    {
+     "period": "202210",
+     "hs6": "854232",
+     "partner": "KR",
+     "value_usd": 872015.048,
+     "net_wgt_kg": 411.252
+    },
+    {
+     "period": "202211",
+     "hs6": "854231",
+     "partner": "WORLD",
+     "value_usd": 97342430.298,
+     "net_wgt_kg": null
+    },
+    {
+     "period": "202211",
+     "hs6": "854231",
+     "partner": "KR",
+     "value_usd": 1202737.409,
+     "net_wgt_kg": null
+    },
+    {
+     "period": "202211",
+     "hs6": "854232",
+     "partner": "WORLD",
+     "value_usd": 14258892.713,
+     "net_wgt_kg": 6724.645
+    },
+    {
+     "period": "202211",
+     "hs6": "854232",
+     "partner": "KR",
+     "value_usd": 1121527.187,
+     "net_wgt_kg": 528.924
+    },
+    {
+     "period": "202212",
+     "hs6": "854231",
+     "partner": "WORLD",
+     "value_usd": 95872156.109,
+     "net_wgt_kg": null
+    },
+    {
+     "period": "202212",
+     "hs6": "854231",
+     "partner": "KR",
+     "value_usd": 2202282.865,
+     "net_wgt_kg": null
+    },
+    {
+     "period": "202212",
+     "hs6": "854232",
+     "partner": "WORLD",
+     "value_usd": 13431518.422,
+     "net_wgt_kg": 6334.446
+    },
+    {
+     "period": "202212",
+     "hs6": "854232",
+     "partner": "KR",
+     "value_usd": 1213694.033,
+     "net_wgt_kg": 572.391
+    },
+    {
+     "period": "202301",
+     "hs6": "854231",
+     "partner": "WORLD",
+     "value_usd": 87516828.377,
+     "net_wgt_kg": null
+    },
+    {
+     "period": "202301",
+     "hs6": "854231",
+     "partner": "KR",
+     "value_usd": 922804.309,
+     "net_wgt_kg": null
+    },
+    {
+     "period": "202301",
+     "hs6": "854232",
+     "partner": "WORLD",
+     "value_usd": 9353322.273,
+     "net_wgt_kg": null
+    },
+    {
+     "period": "202301",
+     "hs6": "854232",
+     "partner": "KR",
+     "value_usd": 1842531.786,
+     "net_wgt_kg": null
+    },
+    {
+     "period": "202302",
+     "hs6": "854231",
+     "partner": "WORLD",
+     "value_usd": 78176439.195,
+     "net_wgt_kg": null
+    },
+    {
+     "period": "202302",
+     "hs6": "854231",
+     "partner": "KR",
+     "value_usd": 1674458.672,
+     "net_wgt_kg": null
+    },
+    {
+     "period": "202302",
+     "hs6": "854232",
+     "partner": "WORLD",
+     "value_usd": 7499679.958,
+     "net_wgt_kg": null
+    },
+    {
+     "period": "202302",
+     "hs6": "854232",
+     "partner": "KR",
+     "value_usd": 729011.008,
+     "net_wgt_kg": null
+    },
+    {
+     "period": "202303",
+     "hs6": "854231",
+     "partner": "WORLD",
+     "value_usd": 88363949.909,
+     "net_wgt_kg": null
+    },
+    {
+     "period": "202303",
+     "hs6": "854231",
+     "partner": "KR",
+     "value_usd": 5661304.937,
+     "net_wgt_kg": null
+    },
+    {
+     "period": "202303",
+     "hs6": "854232",
+     "partner": "WORLD",
+     "value_usd": 15453266.657,
+     "net_wgt_kg": null
+    },
+    {
+     "period": "202303",
+     "hs6": "854232",
+     "partner": "KR",
+     "value_usd": 1528807.765,
+     "net_wgt_kg": null
+    },
+    {
+     "period": "202304",
+     "hs6": "854231",
+     "partner": "WORLD",
+     "value_usd": 76507981.514,
+     "net_wgt_kg": null
+    },
+    {
+     "period": "202304",
+     "hs6": "854231",
+     "partner": "KR",
+     "value_usd": 1590974.206,
+     "net_wgt_kg": null
+    },
+    {
+     "period": "202304",
+     "hs6": "854232",
+     "partner": "WORLD",
+     "value_usd": 7844926.934,
+     "net_wgt_kg": null
+    },
+    {
+     "period": "202304",
+     "hs6": "854232",
+     "partner": "KR",
+     "value_usd": 697891.789,
+     "net_wgt_kg": null
+    },
+    {
+     "period": "202305",
+     "hs6": "854231",
+     "partner": "WORLD",
+     "value_usd": 66039542.711,
+     "net_wgt_kg": null
+    },
+    {
+     "period": "202305",
+     "hs6": "854231",
+     "partner": "KR",
+     "value_usd": 3434059.663,
+     "net_wgt_kg": null
+    },
+    {
+     "period": "202305",
+     "hs6": "854232",
+     "partner": "WORLD",
+     "value_usd": 7216661.617,
+     "net_wgt_kg": null
+    },
+    {
+     "period": "202305",
+     "hs6": "854232",
+     "partner": "KR",
+     "value_usd": 518913.438,
+     "net_wgt_kg": null
+    },
+    {
+     "period": "202306",
+     "hs6": "854231",
+     "partner": "WORLD",
+     "value_usd": 66685059.448,
+     "net_wgt_kg": null
+    },
+    {
+     "period": "202306",
+     "hs6": "854231",
+     "partner": "KR",
+     "value_usd": 1526488.697,
+     "net_wgt_kg": null
+    },
+    {
+     "period": "202306",
+     "hs6": "854232",
+     "partner": "WORLD",
+     "value_usd": 7034196.031,
+     "net_wgt_kg": null
+    },
+    {
+     "period": "202306",
+     "hs6": "854232",
+     "partner": "KR",
+     "value_usd": 424989.369,
+     "net_wgt_kg": null
+    },
+    {
+     "period": "202307",
+     "hs6": "854231",
+     "partner": "WORLD",
+     "value_usd": 89930114.828,
+     "net_wgt_kg": null
+    },
+    {
+     "period": "202307",
+     "hs6": "854231",
+     "partner": "KR",
+     "value_usd": 1332134.04,
+     "net_wgt_kg": null
+    },
+    {
+     "period": "202307",
+     "hs6": "854232",
+     "partner": "WORLD",
+     "value_usd": 7607421.464,
+     "net_wgt_kg": null
+    },
+    {
+     "period": "202307",
+     "hs6": "854232",
+     "partner": "KR",
+     "value_usd": 418794.892,
+     "net_wgt_kg": null
+    },
+    {
+     "period": "202308",
+     "hs6": "854231",
+     "partner": "WORLD",
+     "value_usd": 78631125.67,
+     "net_wgt_kg": null
+    },
+    {
+     "period": "202308",
+     "hs6": "854231",
+     "partner": "KR",
+     "value_usd": 1472191.659,
+     "net_wgt_kg": null
+    },
+    {
+     "period": "202308",
+     "hs6": "854232",
+     "partner": "WORLD",
+     "value_usd": 7590499.008,
+     "net_wgt_kg": null
+    },
+    {
+     "period": "202308",
+     "hs6": "854232",
+     "partner": "KR",
+     "value_usd": 728213.951,
+     "net_wgt_kg": null
+    },
+    {
+     "period": "202309",
+     "hs6": "854231",
+     "partner": "WORLD",
+     "value_usd": 91044558.61,
+     "net_wgt_kg": null
+    },
+    {
+     "period": "202309",
+     "hs6": "854231",
+     "partner": "KR",
+     "value_usd": 910939.773,
+     "net_wgt_kg": null
+    },
+    {
+     "period": "202309",
+     "hs6": "854232",
+     "partner": "WORLD",
+     "value_usd": 8634272.924,
+     "net_wgt_kg": null
+    },
+    {
+     "period": "202309",
+     "hs6": "854232",
+     "partner": "KR",
+     "value_usd": 1023590.351,
+     "net_wgt_kg": null
+    },
+    {
+     "period": "202310",
+     "hs6": "854231",
+     "partner": "WORLD",
+     "value_usd": 81608278.026,
+     "net_wgt_kg": null
+    },
+    {
+     "period": "202310",
+     "hs6": "854231",
+     "partner": "KR",
+     "value_usd": 1318748.96,
+     "net_wgt_kg": null
+    },
+    {
+     "period": "202310",
+     "hs6": "854232",
+     "partner": "WORLD",
+     "value_usd": 8304437.184,
+     "net_wgt_kg": null
+    },
+    {
+     "period": "202310",
+     "hs6": "854232",
+     "partner": "KR",
+     "value_usd": 740757.095,
+     "net_wgt_kg": null
+    },
+    {
+     "period": "202311",
+     "hs6": "854231",
+     "partner": "WORLD",
+     "value_usd": 69952984.3,
+     "net_wgt_kg": null
+    },
+    {
+     "period": "202311",
+     "hs6": "854231",
+     "partner": "KR",
+     "value_usd": 1218867.821,
+     "net_wgt_kg": null
+    },
+    {
+     "period": "202311",
+     "hs6": "854232",
+     "partner": "WORLD",
+     "value_usd": 6694292.693,
+     "net_wgt_kg": null
+    },
+    {
+     "period": "202311",
+     "hs6": "854232",
+     "partner": "KR",
+     "value_usd": 813332.978,
+     "net_wgt_kg": null
+    },
+    {
+     "period": "202312",
+     "hs6": "854231",
+     "partner": "WORLD",
+     "value_usd": 66037342.83,
+     "net_wgt_kg": null
+    },
+    {
+     "period": "202312",
+     "hs6": "854231",
+     "partner": "KR",
+     "value_usd": 1983159.249,
+     "net_wgt_kg": null
+    },
+    {
+     "period": "202312",
+     "hs6": "854232",
+     "partner": "WORLD",
+     "value_usd": 6755477.072,
+     "net_wgt_kg": null
+    },
+    {
+     "period": "202312",
+     "hs6": "854232",
+     "partner": "KR",
+     "value_usd": 1055812.634,
+     "net_wgt_kg": null
+    },
+    {
+     "period": "202401",
+     "hs6": "854231",
+     "partner": "WORLD",
+     "value_usd": 70975684.535,
+     "net_wgt_kg": null
+    },
+    {
+     "period": "202401",
+     "hs6": "854231",
+     "partner": "KR",
+     "value_usd": 3716026.251,
+     "net_wgt_kg": null
+    },
+    {
+     "period": "202401",
+     "hs6": "854232",
+     "partner": "WORLD",
+     "value_usd": 8414390.601,
+     "net_wgt_kg": null
+    },
+    {
+     "period": "202401",
+     "hs6": "854232",
+     "partner": "KR",
+     "value_usd": 797794.091,
+     "net_wgt_kg": null
+    },
+    {
+     "period": "202402",
+     "hs6": "854231",
+     "partner": "WORLD",
+     "value_usd": 60497608.41,
+     "net_wgt_kg": null
+    },
+    {
+     "period": "202402",
+     "hs6": "854231",
+     "partner": "KR",
+     "value_usd": 1984379.424,
+     "net_wgt_kg": null
+    },
+    {
+     "period": "202402",
+     "hs6": "854232",
+     "partner": "WORLD",
+     "value_usd": 16104835.845,
+     "net_wgt_kg": null
+    },
+    {
+     "period": "202402",
+     "hs6": "854232",
+     "partner": "KR",
+     "value_usd": 1520659.501,
+     "net_wgt_kg": null
+    },
+    {
+     "period": "202403",
+     "hs6": "854231",
+     "partner": "WORLD",
+     "value_usd": 90884208.435,
+     "net_wgt_kg": null
+    },
+    {
+     "period": "202403",
+     "hs6": "854231",
+     "partner": "KR",
+     "value_usd": 3403564.693,
+     "net_wgt_kg": null
+    },
+    {
+     "period": "202403",
+     "hs6": "854232",
+     "partner": "WORLD",
+     "value_usd": 8235086.848,
+     "net_wgt_kg": null
+    },
+    {
+     "period": "202403",
+     "hs6": "854232",
+     "partner": "KR",
+     "value_usd": 770081.677,
+     "net_wgt_kg": null
+    },
+    {
+     "period": "202404",
+     "hs6": "854231",
+     "partner": "WORLD",
+     "value_usd": 73879424.153,
+     "net_wgt_kg": null
+    },
+    {
+     "period": "202404",
+     "hs6": "854231",
+     "partner": "KR",
+     "value_usd": 1703456.111,
+     "net_wgt_kg": null
+    },
+    {
+     "period": "202404",
+     "hs6": "854232",
+     "partner": "WORLD",
+     "value_usd": 13338498.737,
+     "net_wgt_kg": null
+    },
+    {
+     "period": "202404",
+     "hs6": "854232",
+     "partner": "KR",
+     "value_usd": 3689833.764,
+     "net_wgt_kg": null
+    },
+    {
+     "period": "202405",
+     "hs6": "854231",
+     "partner": "WORLD",
+     "value_usd": 57463478.52,
+     "net_wgt_kg": null
+    },
+    {
+     "period": "202405",
+     "hs6": "854231",
+     "partner": "KR",
+     "value_usd": 1208983.69,
+     "net_wgt_kg": null
+    },
+    {
+     "period": "202405",
+     "hs6": "854232",
+     "partner": "WORLD",
+     "value_usd": 9575804.528,
+     "net_wgt_kg": null
+    },
+    {
+     "period": "202405",
+     "hs6": "854232",
+     "partner": "KR",
+     "value_usd": 1484298.139,
+     "net_wgt_kg": null
+    },
+    {
+     "period": "202406",
+     "hs6": "854231",
+     "partner": "WORLD",
+     "value_usd": 76430334.76,
+     "net_wgt_kg": null
+    },
+    {
+     "period": "202406",
+     "hs6": "854231",
+     "partner": "KR",
+     "value_usd": 4582761.012,
+     "net_wgt_kg": null
+    },
+    {
+     "period": "202406",
+     "hs6": "854232",
+     "partner": "WORLD",
+     "value_usd": 12456483.477,
+     "net_wgt_kg": null
+    },
+    {
+     "period": "202406",
+     "hs6": "854232",
+     "partner": "KR",
+     "value_usd": 6466668.385,
+     "net_wgt_kg": null
+    },
+    {
+     "period": "202407",
+     "hs6": "854231",
+     "partner": "WORLD",
+     "value_usd": 55501086.74,
+     "net_wgt_kg": null
+    },
+    {
+     "period": "202407",
+     "hs6": "854231",
+     "partner": "KR",
+     "value_usd": 2266734.177,
+     "net_wgt_kg": null
+    },
+    {
+     "period": "202407",
+     "hs6": "854232",
+     "partner": "WORLD",
+     "value_usd": 13241350.501,
+     "net_wgt_kg": null
+    },
+    {
+     "period": "202407",
+     "hs6": "854232",
+     "partner": "KR",
+     "value_usd": 6024641.527,
+     "net_wgt_kg": null
+    },
+    {
+     "period": "202408",
+     "hs6": "854231",
+     "partner": "WORLD",
+     "value_usd": 43688462.988,
+     "net_wgt_kg": null
+    },
+    {
+     "period": "202408",
+     "hs6": "854231",
+     "partner": "KR",
+     "value_usd": 3665536.614,
+     "net_wgt_kg": null
+    },
+    {
+     "period": "202408",
+     "hs6": "854232",
+     "partner": "WORLD",
+     "value_usd": 13759911.355,
+     "net_wgt_kg": null
+    },
+    {
+     "period": "202408",
+     "hs6": "854232",
+     "partner": "KR",
+     "value_usd": 7153225.459,
+     "net_wgt_kg": null
+    },
+    {
+     "period": "202409",
+     "hs6": "854231",
+     "partner": "WORLD",
+     "value_usd": 69072553.829,
+     "net_wgt_kg": null
+    },
+    {
+     "period": "202409",
+     "hs6": "854231",
+     "partner": "KR",
+     "value_usd": 10676164.309,
+     "net_wgt_kg": null
+    },
+    {
+     "period": "202409",
+     "hs6": "854232",
+     "partner": "WORLD",
+     "value_usd": 7680389.975,
+     "net_wgt_kg": null
+    },
+    {
+     "period": "202409",
+     "hs6": "854232",
+     "partner": "KR",
+     "value_usd": 1253416.953,
+     "net_wgt_kg": null
+    },
+    {
+     "period": "202410",
+     "hs6": "854231",
+     "partner": "WORLD",
+     "value_usd": 72100975.323,
+     "net_wgt_kg": null
+    },
+    {
+     "period": "202410",
+     "hs6": "854231",
+     "partner": "KR",
+     "value_usd": 9679207.971,
+     "net_wgt_kg": null
+    },
+    {
+     "period": "202410",
+     "hs6": "854232",
+     "partner": "WORLD",
+     "value_usd": 12957522.038,
+     "net_wgt_kg": null
+    },
+    {
+     "period": "202410",
+     "hs6": "854232",
+     "partner": "KR",
+     "value_usd": 2311620.387,
+     "net_wgt_kg": null
+    },
+    {
+     "period": "202411",
+     "hs6": "854231",
+     "partner": "WORLD",
+     "value_usd": 57676644.226,
+     "net_wgt_kg": null
+    },
+    {
+     "period": "202411",
+     "hs6": "854231",
+     "partner": "KR",
+     "value_usd": 2232031.812,
+     "net_wgt_kg": null
+    },
+    {
+     "period": "202411",
+     "hs6": "854232",
+     "partner": "WORLD",
+     "value_usd": 11478559.123,
+     "net_wgt_kg": null
+    },
+    {
+     "period": "202411",
+     "hs6": "854232",
+     "partner": "KR",
+     "value_usd": 1259943.89,
+     "net_wgt_kg": null
+    },
+    {
+     "period": "202412",
+     "hs6": "854231",
+     "partner": "WORLD",
+     "value_usd": 79492907.752,
+     "net_wgt_kg": null
+    },
+    {
+     "period": "202412",
+     "hs6": "854231",
+     "partner": "KR",
+     "value_usd": 14391470.019,
+     "net_wgt_kg": null
+    },
+    {
+     "period": "202412",
+     "hs6": "854232",
+     "partner": "WORLD",
+     "value_usd": 12960644.199,
+     "net_wgt_kg": null
+    },
+    {
+     "period": "202412",
+     "hs6": "854232",
+     "partner": "KR",
+     "value_usd": 703448.521,
+     "net_wgt_kg": null
+    },
+    {
+     "period": "202501",
+     "hs6": "854231",
+     "partner": "WORLD",
+     "value_usd": 89627744.856,
+     "net_wgt_kg": null
+    },
+    {
+     "period": "202501",
+     "hs6": "854231",
+     "partner": "KR",
+     "value_usd": 11563538.58,
+     "net_wgt_kg": null
+    },
+    {
+     "period": "202501",
+     "hs6": "854232",
+     "partner": "WORLD",
+     "value_usd": 19383244.784,
+     "net_wgt_kg": null
+    },
+    {
+     "period": "202501",
+     "hs6": "854232",
+     "partner": "KR",
+     "value_usd": 10778677.763,
+     "net_wgt_kg": null
+    },
+    {
+     "period": "202502",
+     "hs6": "854231",
+     "partner": "WORLD",
+     "value_usd": 80044195.383,
+     "net_wgt_kg": null
+    },
+    {
+     "period": "202502",
+     "hs6": "854231",
+     "partner": "KR",
+     "value_usd": 7410845.35,
+     "net_wgt_kg": null
+    },
+    {
+     "period": "202502",
+     "hs6": "854232",
+     "partner": "WORLD",
+     "value_usd": 12160634.851,
+     "net_wgt_kg": null
+    },
+    {
+     "period": "202502",
+     "hs6": "854232",
+     "partner": "KR",
+     "value_usd": 3316679.996,
+     "net_wgt_kg": null
+    },
+    {
+     "period": "202503",
+     "hs6": "854231",
+     "partner": "WORLD",
+     "value_usd": 71426238.382,
+     "net_wgt_kg": null
+    },
+    {
+     "period": "202503",
+     "hs6": "854231",
+     "partner": "KR",
+     "value_usd": 2822726.444,
+     "net_wgt_kg": null
+    },
+    {
+     "period": "202503",
+     "hs6": "854232",
+     "partner": "WORLD",
+     "value_usd": 7166284.069,
+     "net_wgt_kg": null
+    },
+    {
+     "period": "202503",
+     "hs6": "854232",
+     "partner": "KR",
+     "value_usd": 589927.308,
+     "net_wgt_kg": null
+    },
+    {
+     "period": "202504",
+     "hs6": "854231",
+     "partner": "WORLD",
+     "value_usd": 81983610.27,
+     "net_wgt_kg": null
+    },
+    {
+     "period": "202504",
+     "hs6": "854231",
+     "partner": "KR",
+     "value_usd": 6194938.795,
+     "net_wgt_kg": null
+    },
+    {
+     "period": "202504",
+     "hs6": "854232",
+     "partner": "WORLD",
+     "value_usd": 8680733.3,
+     "net_wgt_kg": null
+    },
+    {
+     "period": "202504",
+     "hs6": "854232",
+     "partner": "KR",
+     "value_usd": 2242244.239,
+     "net_wgt_kg": null
+    },
+    {
+     "period": "202505",
+     "hs6": "854231",
+     "partner": "WORLD",
+     "value_usd": 73203787.887,
+     "net_wgt_kg": null
+    },
+    {
+     "period": "202505",
+     "hs6": "854231",
+     "partner": "KR",
+     "value_usd": 4421263.378,
+     "net_wgt_kg": null
+    },
+    {
+     "period": "202505",
+     "hs6": "854232",
+     "partner": "WORLD",
+     "value_usd": 8034072.602,
+     "net_wgt_kg": null
+    },
+    {
+     "period": "202505",
+     "hs6": "854232",
+     "partner": "KR",
+     "value_usd": 664976.505,
+     "net_wgt_kg": null
+    },
+    {
+     "period": "202506",
+     "hs6": "854231",
+     "partner": "WORLD",
+     "value_usd": 75341493.294,
+     "net_wgt_kg": null
+    },
+    {
+     "period": "202506",
+     "hs6": "854231",
+     "partner": "KR",
+     "value_usd": 13549640.029,
+     "net_wgt_kg": null
+    },
+    {
+     "period": "202506",
+     "hs6": "854232",
+     "partner": "WORLD",
+     "value_usd": 5966778.297,
+     "net_wgt_kg": null
+    },
+    {
+     "period": "202506",
+     "hs6": "854232",
+     "partner": "KR",
+     "value_usd": 456084.32,
+     "net_wgt_kg": null
+    },
+    {
+     "period": "202507",
+     "hs6": "854231",
+     "partner": "WORLD",
+     "value_usd": 82659091.248,
+     "net_wgt_kg": null
+    },
+    {
+     "period": "202507",
+     "hs6": "854231",
+     "partner": "KR",
+     "value_usd": 14275131.033,
+     "net_wgt_kg": null
+    },
+    {
+     "period": "202507",
+     "hs6": "854232",
+     "partner": "WORLD",
+     "value_usd": 12718952.314,
+     "net_wgt_kg": null
+    },
+    {
+     "period": "202507",
+     "hs6": "854232",
+     "partner": "KR",
+     "value_usd": 1233396.4,
+     "net_wgt_kg": null
+    },
+    {
+     "period": "202508",
+     "hs6": "854231",
+     "partner": "WORLD",
+     "value_usd": 51087404.252,
+     "net_wgt_kg": null
+    },
+    {
+     "period": "202508",
+     "hs6": "854231",
+     "partner": "KR",
+     "value_usd": 7802945.264,
+     "net_wgt_kg": null
+    },
+    {
+     "period": "202508",
+     "hs6": "854232",
+     "partner": "WORLD",
+     "value_usd": 10945319.573,
+     "net_wgt_kg": null
+    },
+    {
+     "period": "202508",
+     "hs6": "854232",
+     "partner": "KR",
+     "value_usd": 4050717.307,
+     "net_wgt_kg": null
+    },
+    {
+     "period": "202509",
+     "hs6": "854231",
+     "partner": "WORLD",
+     "value_usd": 59737846.663,
+     "net_wgt_kg": null
+    },
+    {
+     "period": "202509",
+     "hs6": "854231",
+     "partner": "KR",
+     "value_usd": 7050501.905,
+     "net_wgt_kg": null
+    },
+    {
+     "period": "202509",
+     "hs6": "854232",
+     "partner": "WORLD",
+     "value_usd": 15855618.637,
+     "net_wgt_kg": null
+    },
+    {
+     "period": "202509",
+     "hs6": "854232",
+     "partner": "KR",
+     "value_usd": 4754974.123,
+     "net_wgt_kg": null
+    },
+    {
+     "period": "202510",
+     "hs6": "854231",
+     "partner": "WORLD",
+     "value_usd": 70981035.5,
+     "net_wgt_kg": null
+    },
+    {
+     "period": "202510",
+     "hs6": "854231",
+     "partner": "KR",
+     "value_usd": 6059525.435,
+     "net_wgt_kg": null
+    },
+    {
+     "period": "202510",
+     "hs6": "854232",
+     "partner": "WORLD",
+     "value_usd": 10902087.607,
+     "net_wgt_kg": null
+    },
+    {
+     "period": "202510",
+     "hs6": "854232",
+     "partner": "KR",
+     "value_usd": 1665453.829,
+     "net_wgt_kg": null
+    },
+    {
+     "period": "202511",
+     "hs6": "854231",
+     "partner": "WORLD",
+     "value_usd": 49539827.819,
+     "net_wgt_kg": null
+    },
+    {
+     "period": "202511",
+     "hs6": "854231",
+     "partner": "KR",
+     "value_usd": 4429139.457,
+     "net_wgt_kg": null
+    },
+    {
+     "period": "202511",
+     "hs6": "854232",
+     "partner": "WORLD",
+     "value_usd": 21256875.013,
+     "net_wgt_kg": null
+    },
+    {
+     "period": "202511",
+     "hs6": "854232",
+     "partner": "KR",
+     "value_usd": 10879383.385,
+     "net_wgt_kg": null
+    },
+    {
+     "period": "202512",
+     "hs6": "854231",
+     "partner": "WORLD",
+     "value_usd": 70851620.883,
+     "net_wgt_kg": null
+    },
+    {
+     "period": "202512",
+     "hs6": "854231",
+     "partner": "KR",
+     "value_usd": 17423892.406,
+     "net_wgt_kg": null
+    },
+    {
+     "period": "202512",
+     "hs6": "854232",
+     "partner": "WORLD",
+     "value_usd": 21050945.213,
+     "net_wgt_kg": null
+    },
+    {
+     "period": "202512",
+     "hs6": "854232",
+     "partner": "KR",
+     "value_usd": 6153046.66,
+     "net_wgt_kg": null
+    },
+    {
+     "period": "202601",
+     "hs6": "854231",
+     "partner": "WORLD",
+     "value_usd": 82218128.741,
+     "net_wgt_kg": null
+    },
+    {
+     "period": "202601",
+     "hs6": "854231",
+     "partner": "KR",
+     "value_usd": 21127116.456,
+     "net_wgt_kg": null
+    },
+    {
+     "period": "202601",
+     "hs6": "854232",
+     "partner": "WORLD",
+     "value_usd": 21051752.156,
+     "net_wgt_kg": null
+    },
+    {
+     "period": "202601",
+     "hs6": "854232",
+     "partner": "KR",
+     "value_usd": 3613852.711,
+     "net_wgt_kg": null
+    },
+    {
+     "period": "202602",
+     "hs6": "854231",
+     "partner": "WORLD",
+     "value_usd": 49338248.775,
+     "net_wgt_kg": null
+    },
+    {
+     "period": "202602",
+     "hs6": "854231",
+     "partner": "KR",
+     "value_usd": 5747968.481,
+     "net_wgt_kg": null
+    },
+    {
+     "period": "202602",
+     "hs6": "854232",
+     "partner": "WORLD",
+     "value_usd": 39731592.424,
+     "net_wgt_kg": null
+    },
+    {
+     "period": "202602",
+     "hs6": "854232",
+     "partner": "KR",
+     "value_usd": 27146034.124,
+     "net_wgt_kg": null
+    },
+    {
+     "period": "202603",
+     "hs6": "854231",
+     "partner": "WORLD",
+     "value_usd": 49402608.448,
+     "net_wgt_kg": null
+    },
+    {
+     "period": "202603",
+     "hs6": "854231",
+     "partner": "KR",
+     "value_usd": 2514331.193,
+     "net_wgt_kg": null
+    },
+    {
+     "period": "202603",
+     "hs6": "854232",
+     "partner": "WORLD",
+     "value_usd": 25912327.02,
+     "net_wgt_kg": null
+    },
+    {
+     "period": "202603",
+     "hs6": "854232",
+     "partner": "KR",
+     "value_usd": 11714306.553,
+     "net_wgt_kg": null
+    },
+    {
+     "period": "202604",
+     "hs6": "854231",
+     "partner": "WORLD",
+     "value_usd": 68530864.125,
+     "net_wgt_kg": null
+    },
+    {
+     "period": "202604",
+     "hs6": "854231",
+     "partner": "KR",
+     "value_usd": 9080545.187,
+     "net_wgt_kg": null
+    },
+    {
+     "period": "202604",
+     "hs6": "854232",
+     "partner": "WORLD",
+     "value_usd": 33632624.479,
+     "net_wgt_kg": null
+    },
+    {
+     "period": "202604",
+     "hs6": "854232",
+     "partner": "KR",
+     "value_usd": 15363669.291,
+     "net_wgt_kg": null
+    },
+    {
+     "period": "202605",
+     "hs6": "854231",
+     "partner": "WORLD",
+     "value_usd": 53432668.839,
+     "net_wgt_kg": null
+    },
+    {
+     "period": "202605",
+     "hs6": "854231",
+     "partner": "KR",
+     "value_usd": 10584694.575,
+     "net_wgt_kg": null
+    },
+    {
+     "period": "202605",
+     "hs6": "854232",
+     "partner": "WORLD",
+     "value_usd": 64811676.931,
+     "net_wgt_kg": null
+    },
+    {
+     "period": "202605",
+     "hs6": "854232",
+     "partner": "KR",
+     "value_usd": 46965360.476,
+     "net_wgt_kg": null
+    },
+    {
+     "period": "202606",
+     "hs6": "854231",
+     "partner": "WORLD",
+     "value_usd": 77870614.678,
+     "net_wgt_kg": null
+    },
+    {
+     "period": "202606",
+     "hs6": "854231",
+     "partner": "KR",
+     "value_usd": 3706284.195,
+     "net_wgt_kg": null
+    },
+    {
+     "period": "202606",
+     "hs6": "854232",
+     "partner": "WORLD",
+     "value_usd": 39235834.636,
+     "net_wgt_kg": null
+    },
+    {
+     "period": "202606",
+     "hs6": "854232",
+     "partner": "KR",
+     "value_usd": 14050977.025,
+     "net_wgt_kg": null
+    },
+    {
+     "period": "202607",
+     "hs6": "854231",
+     "partner": "WORLD",
+     "value_usd": 60004591.4,
+     "net_wgt_kg": null
+    },
+    {
+     "period": "202607",
+     "hs6": "854231",
+     "partner": "KR",
+     "value_usd": 8256173.282,
+     "net_wgt_kg": null
+    },
+    {
+     "period": "202607",
+     "hs6": "854232",
+     "partner": "WORLD",
+     "value_usd": 61900020.617,
+     "net_wgt_kg": null
+    },
+    {
+     "period": "202607",
+     "hs6": "854232",
+     "partner": "KR",
+     "value_usd": 31367857.712,
+     "net_wgt_kg": null
+    }
+   ],
+   "annual": [
+    {
+     "period": "2021",
+     "hs6": "854231",
+     "partner": "WORLD",
+     "value_usd": 966892239.791,
+     "net_wgt_kg": 597667.938
+    },
+    {
+     "period": "2021",
+     "hs6": "854231",
+     "partner": "KR",
+     "value_usd": 58894938.146,
+     "net_wgt_kg": 36404.901
+    },
+    {
+     "period": "2021",
+     "hs6": "854232",
+     "partner": "WORLD",
+     "value_usd": 184140781.552,
+     "net_wgt_kg": 105964.016
+    },
+    {
+     "period": "2021",
+     "hs6": "854232",
+     "partner": "KR",
+     "value_usd": 14672628.443,
+     "net_wgt_kg": 8443.38
+    },
+    {
+     "period": "2022",
+     "hs6": "854231",
+     "partner": "WORLD",
+     "value_usd": 1159628519.759,
+     "net_wgt_kg": null
+    },
+    {
+     "period": "2022",
+     "hs6": "854231",
+     "partner": "KR",
+     "value_usd": 70476107.041,
+     "net_wgt_kg": null
+    },
+    {
+     "period": "2022",
+     "hs6": "854232",
+     "partner": "WORLD",
+     "value_usd": 220395772.342,
+     "net_wgt_kg": 103940.98
+    },
+    {
+     "period": "2022",
+     "hs6": "854232",
+     "partner": "KR",
+     "value_usd": 19193332.761,
+     "net_wgt_kg": 9051.779
+    },
+    {
+     "period": "2023",
+     "hs6": "854231",
+     "partner": "WORLD",
+     "value_usd": 940477240.539,
+     "net_wgt_kg": null
+    },
+    {
+     "period": "2023",
+     "hs6": "854231",
+     "partner": "KR",
+     "value_usd": 23098720.866,
+     "net_wgt_kg": null
+    },
+    {
+     "period": "2023",
+     "hs6": "854232",
+     "partner": "WORLD",
+     "value_usd": 100091534.668,
+     "net_wgt_kg": null
+    },
+    {
+     "period": "2023",
+     "hs6": "854232",
+     "partner": "KR",
+     "value_usd": 10539699.147,
+     "net_wgt_kg": null
+    },
+    {
+     "period": "2024",
+     "hs6": "854231",
+     "partner": "WORLD",
+     "value_usd": 807663369.67,
+     "net_wgt_kg": null
+    },
+    {
+     "period": "2024",
+     "hs6": "854231",
+     "partner": "KR",
+     "value_usd": 59510316.083,
+     "net_wgt_kg": null
+    },
+    {
+     "period": "2024",
+     "hs6": "854232",
+     "partner": "WORLD",
+     "value_usd": 140203477.226,
+     "net_wgt_kg": null
+    },
+    {
+     "period": "2024",
+     "hs6": "854232",
+     "partner": "KR",
+     "value_usd": 33435632.294,
+     "net_wgt_kg": null
+    },
+    {
+     "period": "2025",
+     "hs6": "854231",
+     "partner": "WORLD",
+     "value_usd": 856483896.437,
+     "net_wgt_kg": null
+    },
+    {
+     "period": "2025",
+     "hs6": "854231",
+     "partner": "KR",
+     "value_usd": 103004088.075,
+     "net_wgt_kg": null
+    },
+    {
+     "period": "2025",
+     "hs6": "854232",
+     "partner": "WORLD",
+     "value_usd": 154121546.26,
+     "net_wgt_kg": null
+    },
+    {
+     "period": "2025",
+     "hs6": "854232",
+     "partner": "KR",
+     "value_usd": 46785561.835,
+     "net_wgt_kg": null
+    }
+   ]
+  }
+ }
+}

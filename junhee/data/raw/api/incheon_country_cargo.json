@@ -1,0 +1,6797 @@
+{
+ "fetched_at": "2026-09-26T20:29:46",
+ "source": "인천국제공항공사_국가별 항공 통계 서비스 B551177/AviationStatsByCountry/getTotalNumberOfFlight (pax_cargo=N 화물기, 월별)",
+ "months": {
+  "202408": [
+   {
+    "country": "인도",
+    "region": "기타",
+    "arr": "0",
+    "dep": "0",
+    "total": "0"
+   },
+   {
+    "country": "하와이",
+    "region": "대양주",
+    "arr": "0",
+    "dep": "0",
+    "total": "0"
+   },
+   {
+    "country": "호주",
+    "region": "대양주",
+    "arr": "0",
+    "dep": "0",
+    "total": "0"
+   },
+   {
+    "country": "말레이시아",
+    "region": "동남아",
+    "arr": "14",
+    "dep": "15",
+    "total": "29"
+   },
+   {
+    "country": "베트남",
+    "region": "동남아",
+    "arr": "147",
+    "dep": "147",
+    "total": "294"
+   },
+   {
+    "country": "싱가포르",
+    "region": "동남아",
+    "arr": "49",
+    "dep": "24",
+    "total": "73"
+   },
+   {
+    "country": "인도네시아",
+    "region": "동남아",
+    "arr": "2",
+    "dep": "0",
+    "total": "2"
+   },
+   {
+    "country": "캄보디아",
+    "region": "동남아",
+    "arr": "0",
+    "dep": "0",
+    "total": "0"
+   },
+   {
+    "country": "태국",
+    "region": "동남아",
+    "arr": "4",
+    "dep": "4",
+    "total": "8"
+   },
+   {
+    "country": "필리핀",
+    "region": "동남아",
+    "arr": "0",
+    "dep": "0",
+    "total": "0"
+   },
+   {
+    "country": "대만",
+    "region": "동북아",
+    "arr": "2",
+    "dep": "2",
+    "total": "4"
+   },
+   {
+    "country": "몽골",
+    "region": "동북아",
+    "arr": "2",
+    "dep": "2",
+    "total": "4"
+   },
+   {
+    "country": "홍콩",
+    "region": "동북아",
+    "arr": "146",
+    "dep": "168",
+    "total": "314"
+   },
+   {
+    "country": "멕시코",
+    "region": "미주",
+    "arr": "15",
+    "dep": "14",
+    "total": "29"
+   },
+   {
+    "country": "미국",
+    "region": "미주",
+    "arr": "826",
+    "dep": "866",
+    "total": "1,692"
+   },
+   {
+    "country": "브라질",
+    "region": "미주",
+    "arr": "9",
+    "dep": "9",
+    "total": "18"
+   },
+   {
+    "country": "칠레",
+    "region": "미주",
+    "arr": "0",
+    "dep": "0",
+    "total": "0"
+   },
+   {
+    "country": "캐나다",
+    "region": "미주",
+    "arr": "8",
+    "dep": "9",
+    "total": "17"
+   },
+   {
+    "country": "페루",
+    "region": "미주",
+    "arr": "0",
+    "dep": "0",
+    "total": "0"
+   },
+   {
+    "country": "네덜란드",
+    "region": "유럽",
+    "arr": "9",
+    "dep": "8",
+    "total": "17"
+   },
+   {
+    "country": "노르웨이",
+    "region": "유럽",
+    "arr": "26",
+    "dep": "13",
+    "total": "39"
+   },
+   {
+    "country": "독일",
+    "region": "유럽",
+    "arr": "103",
+    "dep": "104",
+    "total": "207"
+   },
+   {
+    "country": "룩셈부르크",
+    "region": "유럽",
+    "arr": "14",
+    "dep": "14",
+    "total": "28"
+   },
+   {
+    "country": "벨기에",
+    "region": "유럽",
+    "arr": "13",
+    "dep": "13",
+    "total": "26"
+   },
+   {
+    "country": "스웨덴",
+    "region": "유럽",
+    "arr": "5",
+    "dep": "5",
+    "total": "10"
+   },
+   {
+    "country": "스위스",
+    "region": "유럽",
+    "arr": "4",
+    "dep": "4",
+    "total": "8"
+   },
+   {
+    "country": "스페인",
+    "region": "유럽",
+    "arr": "10",
+    "dep": "9",
+    "total": "19"
+   },
+   {
+    "country": "아제르바이잔",
+    "region": "유럽",
+    "arr": "8",
+    "dep": "8",
+    "total": "16"
+   },
+   {
+    "country": "영국",
+    "region": "유럽",
+    "arr": "9",
+    "dep": "10",
+    "total": "19"
+   },
+   {
+    "country": "오스트리아",
+    "region": "유럽",
+    "arr": "0",
+    "dep": "0",
+    "total": "0"
+   },
+   {
+    "country": "우즈베키스탄",
+    "region": "유럽",
+    "arr": "1",
+    "dep": "1",
+    "total": "2"
+   },
+   {
+    "country": "이탈리아",
+    "region": "유럽",
+    "arr": "34",
+    "dep": "33",
+    "total": "67"
+   },
+   {
+    "country": "카자흐스탄",
+    "region": "유럽",
+    "arr": "0",
+    "dep": "0",
+    "total": "0"
+   },
+   {
+    "country": "터키",
+    "region": "유럽",
+    "arr": "8",
+    "dep": "8",
+    "total": "16"
+   },
+   {
+    "country": "투르크메니스탄",
+    "region": "유럽",
+    "arr": "4",
+    "dep": "4",
+    "total": "8"
+   },
+   {
+    "country": "프랑스",
+    "region": "유럽",
+    "arr": "0",
+    "dep": "0",
+    "total": "0"
+   },
+   {
+    "country": "일본",
+    "region": "일본",
+    "arr": "138",
+    "dep": "139",
+    "total": "277"
+   },
+   {
+    "country": "중국",
+    "region": "중국",
+    "arr": "488",
+    "dep": "487",
+    "total": "975"
+   },
+   {
+    "country": "카타르",
+    "region": "중동",
+    "arr": "17",
+    "dep": "17",
+    "total": "34"
+   }
+  ],
+  "202409": [
+   {
+    "country": "인도",
+    "region": "기타",
+    "arr": "0",
+    "dep": "0",
+    "total": "0"
+   },
+   {
+    "country": "하와이",
+    "region": "대양주",
+    "arr": "1",
+    "dep": "0",
+    "total": "1"
+   },
+   {
+    "country": "호주",
+    "region": "대양주",
+    "arr": "0",
+    "dep": "0",
+    "total": "0"
+   },
+   {
+    "country": "말레이시아",
+    "region": "동남아",
+    "arr": "15",
+    "dep": "14",
+    "total": "29"
+   },
+   {
+    "country": "베트남",
+    "region": "동남아",
+    "arr": "132",
+    "dep": "132",
+    "total": "264"
+   },
+   {
+    "country": "싱가포르",
+    "region": "동남아",
+    "arr": "49",
+    "dep": "24",
+    "total": "73"
+   },
+   {
+    "country": "인도네시아",
+    "region": "동남아",
+    "arr": "0",
+    "dep": "0",
+    "total": "0"
+   },
+   {
+    "country": "태국",
+    "region": "동남아",
+    "arr": "6",
+    "dep": "5",
+    "total": "11"
+   },
+   {
+    "country": "필리핀",
+    "region": "동남아",
+    "arr": "0",
+    "dep": "0",
+    "total": "0"
+   },
+   {
+    "country": "대만",
+    "region": "동북아",
+    "arr": "2",
+    "dep": "3",
+    "total": "5"
+   },
+   {
+    "country": "몽골",
+    "region": "동북아",
+    "arr": "1",
+    "dep": "1",
+    "total": "2"
+   },
+   {
+    "country": "홍콩",
+    "region": "동북아",
+    "arr": "134",
+    "dep": "150",
+    "total": "284"
+   },
+   {
+    "country": "멕시코",
+    "region": "미주",
+    "arr": "13",
+    "dep": "12",
+    "total": "25"
+   },
+   {
+    "country": "미국",
+    "region": "미주",
+    "arr": "800",
+    "dep": "861",
+    "total": "1,661"
+   },
+   {
+    "country": "브라질",
+    "region": "미주",
+    "arr": "8",
+    "dep": "9",
+    "total": "17"
+   },
+   {
+    "country": "칠레",
+    "region": "미주",
+    "arr": "0",
+    "dep": "0",
+    "total": "0"
+   },
+   {
+    "country": "캐나다",
+    "region": "미주",
+    "arr": "10",
+    "dep": "10",
+    "total": "20"
+   },
+   {
+    "country": "페루",
+    "region": "미주",
+    "arr": "0",
+    "dep": "0",
+    "total": "0"
+   },
+   {
+    "country": "네덜란드",
+    "region": "유럽",
+    "arr": "14",
+    "dep": "14",
+    "total": "28"
+   },
+   {
+    "country": "노르웨이",
+    "region": "유럽",
+    "arr": "22",
+    "dep": "10",
+    "total": "32"
+   },
+   {
+    "country": "독일",
+    "region": "유럽",
+    "arr": "108",
+    "dep": "107",
+    "total": "215"
+   },
+   {
+    "country": "룩셈부르크",
+    "region": "유럽",
+    "arr": "13",
+    "dep": "13",
+    "total": "26"
+   },
+   {
+    "country": "벨기에",
+    "region": "유럽",
+    "arr": "12",
+    "dep": "12",
+    "total": "24"
+   },
+   {
+    "country": "스웨덴",
+    "region": "유럽",
+    "arr": "2",
+    "dep": "2",
+    "total": "4"
+   },
+   {
+    "country": "스위스",
+    "region": "유럽",
+    "arr": "5",
+    "dep": "5",
+    "total": "10"
+   },
+   {
+    "country": "스페인",
+    "region": "유럽",
+    "arr": "8",
+    "dep": "8",
+    "total": "16"
+   },
+   {
+    "country": "아제르바이잔",
+    "region": "유럽",
+    "arr": "9",
+    "dep": "9",
+    "total": "18"
+   },
+   {
+    "country": "영국",
+    "region": "유럽",
+    "arr": "9",
+    "dep": "8",
+    "total": "17"
+   },
+   {
+    "country": "오스트리아",
+    "region": "유럽",
+    "arr": "0",
+    "dep": "0",
+    "total": "0"
+   },
+   {
+    "country": "우즈베키스탄",
+    "region": "유럽",
+    "arr": "1",
+    "dep": "1",
+    "total": "2"
+   },
+   {
+    "country": "이탈리아",
+    "region": "유럽",
+    "arr": "34",
+    "dep": "36",
+    "total": "70"
+   },
+   {
+    "country": "카자흐스탄",
+    "region": "유럽",
+    "arr": "0",
+    "dep": "0",
+    "total": "0"
+   },
+   {
+    "country": "타지키스탄",
+    "region": "유럽",
+    "arr": "0",
+    "dep": "1",
+    "total": "1"
+   },
+   {
+    "country": "터키",
+    "region": "유럽",
+    "arr": "9",
+    "dep": "9",
+    "total": "18"
+   },
+   {
+    "country": "투르크메니스탄",
+    "region": "유럽",
+    "arr": "4",
+    "dep": "4",
+    "total": "8"
+   },
+   {
+    "country": "프랑스",
+    "region": "유럽",
+    "arr": "0",
+    "dep": "0",
+    "total": "0"
+   },
+   {
+    "country": "일본",
+    "region": "일본",
+    "arr": "131",
+    "dep": "129",
+    "total": "260"
+   },
+   {
+    "country": "중국",
+    "region": "중국",
+    "arr": "477",
+    "dep": "478",
+    "total": "955"
+   },
+   {
+    "country": "아랍에미리트",
+    "region": "중동",
+    "arr": "1",
+    "dep": "0",
+    "total": "1"
+   },
+   {
+    "country": "카타르",
+    "region": "중동",
+    "arr": "15",
+    "dep": "15",
+    "total": "30"
+   }
+  ],
+  "202410": [
+   {
+    "country": "인도",
+    "region": "기타",
+    "arr": "0",
+    "dep": "0",
+    "total": "0"
+   },
+   {
+    "country": "하와이",
+    "region": "대양주",
+    "arr": "0",
+    "dep": "0",
+    "total": "0"
+   },
+   {
+    "country": "호주",
+    "region": "대양주",
+    "arr": "0",
+    "dep": "0",
+    "total": "0"
+   },
+   {
+    "country": "말레이시아",
+    "region": "동남아",
+    "arr": "11",
+    "dep": "11",
+    "total": "22"
+   },
+   {
+    "country": "베트남",
+    "region": "동남아",
+    "arr": "158",
+    "dep": "158",
+    "total": "316"
+   },
+   {
+    "country": "싱가포르",
+    "region": "동남아",
+    "arr": "56",
+    "dep": "29",
+    "total": "85"
+   },
+   {
+    "country": "인도네시아",
+    "region": "동남아",
+    "arr": "0",
+    "dep": "0",
+    "total": "0"
+   },
+   {
+    "country": "태국",
+    "region": "동남아",
+    "arr": "4",
+    "dep": "5",
+    "total": "9"
+   },
+   {
+    "country": "필리핀",
+    "region": "동남아",
+    "arr": "0",
+    "dep": "0",
+    "total": "0"
+   },
+   {
+    "country": "대만",
+    "region": "동북아",
+    "arr": "4",
+    "dep": "4",
+    "total": "8"
+   },
+   {
+    "country": "몽골",
+    "region": "동북아",
+    "arr": "3",
+    "dep": "3",
+    "total": "6"
+   },
+   {
+    "country": "홍콩",
+    "region": "동북아",
+    "arr": "139",
+    "dep": "158",
+    "total": "297"
+   },
+   {
+    "country": "멕시코",
+    "region": "미주",
+    "arr": "13",
+    "dep": "14",
+    "total": "27"
+   },
+   {
+    "country": "미국",
+    "region": "미주",
+    "arr": "830",
+    "dep": "871",
+    "total": "1,701"
+   },
+   {
+    "country": "브라질",
+    "region": "미주",
+    "arr": "9",
+    "dep": "9",
+    "total": "18"
+   },
+   {
+    "country": "칠레",
+    "region": "미주",
+    "arr": "0",
+    "dep": "0",
+    "total": "0"
+   },
+   {
+    "country": "캐나다",
+    "region": "미주",
+    "arr": "9",
+    "dep": "8",
+    "total": "17"
+   },
+   {
+    "country": "페루",
+    "region": "미주",
+    "arr": "0",
+    "dep": "0",
+    "total": "0"
+   },
+   {
+    "country": "네덜란드",
+    "region": "유럽",
+    "arr": "13",
+    "dep": "13",
+    "total": "26"
+   },
+   {
+    "country": "노르웨이",
+    "region": "유럽",
+    "arr": "28",
+    "dep": "14",
+    "total": "42"
+   },
+   {
+    "country": "독일",
+    "region": "유럽",
+    "arr": "101",
+    "dep": "108",
+    "total": "209"
+   },
+   {
+    "country": "룩셈부르크",
+    "region": "유럽",
+    "arr": "13",
+    "dep": "13",
+    "total": "26"
+   },
+   {
+    "country": "벨기에",
+    "region": "유럽",
+    "arr": "14",
+    "dep": "13",
+    "total": "27"
+   },
+   {
+    "country": "스웨덴",
+    "region": "유럽",
+    "arr": "5",
+    "dep": "5",
+    "total": "10"
+   },
+   {
+    "country": "스위스",
+    "region": "유럽",
+    "arr": "4",
+    "dep": "4",
+    "total": "8"
+   },
+   {
+    "country": "스페인",
+    "region": "유럽",
+    "arr": "9",
+    "dep": "9",
+    "total": "18"
+   },
+   {
+    "country": "아제르바이잔",
+    "region": "유럽",
+    "arr": "9",
+    "dep": "9",
+    "total": "18"
+   },
+   {
+    "country": "영국",
+    "region": "유럽",
+    "arr": "8",
+    "dep": "9",
+    "total": "17"
+   },
+   {
+    "country": "오스트리아",
+    "region": "유럽",
+    "arr": "0",
+    "dep": "0",
+    "total": "0"
+   },
+   {
+    "country": "우즈베키스탄",
+    "region": "유럽",
+    "arr": "2",
+    "dep": "3",
+    "total": "5"
+   },
+   {
+    "country": "이탈리아",
+    "region": "유럽",
+    "arr": "35",
+    "dep": "36",
+    "total": "71"
+   },
+   {
+    "country": "카자흐스탄",
+    "region": "유럽",
+    "arr": "0",
+    "dep": "0",
+    "total": "0"
+   },
+   {
+    "country": "타지키스탄",
+    "region": "유럽",
+    "arr": "0",
+    "dep": "1",
+    "total": "1"
+   },
+   {
+    "country": "터키",
+    "region": "유럽",
+    "arr": "8",
+    "dep": "8",
+    "total": "16"
+   },
+   {
+    "country": "투르크메니스탄",
+    "region": "유럽",
+    "arr": "4",
+    "dep": "4",
+    "total": "8"
+   },
+   {
+    "country": "프랑스",
+    "region": "유럽",
+    "arr": "0",
+    "dep": "0",
+    "total": "0"
+   },
+   {
+    "country": "일본",
+    "region": "일본",
+    "arr": "135",
+    "dep": "130",
+    "total": "265"
+   },
+   {
+    "country": "중국",
+    "region": "중국",
+    "arr": "494",
+    "dep": "496",
+    "total": "990"
+   },
+   {
+    "country": "아랍에미리트",
+    "region": "중동",
+    "arr": "0",
+    "dep": "0",
+    "total": "0"
+   },
+   {
+    "country": "카타르",
+    "region": "중동",
+    "arr": "18",
+    "dep": "17",
+    "total": "35"
+   }
+  ],
+  "202411": [
+   {
+    "country": "인도",
+    "region": "기타",
+    "arr": "0",
+    "dep": "0",
+    "total": "0"
+   },
+   {
+    "country": "하와이",
+    "region": "대양주",
+    "arr": "0",
+    "dep": "0",
+    "total": "0"
+   },
+   {
+    "country": "호주",
+    "region": "대양주",
+    "arr": "0",
+    "dep": "0",
+    "total": "0"
+   },
+   {
+    "country": "말레이시아",
+    "region": "동남아",
+    "arr": "12",
+    "dep": "13",
+    "total": "25"
+   },
+   {
+    "country": "베트남",
+    "region": "동남아",
+    "arr": "165",
+    "dep": "166",
+    "total": "331"
+   },
+   {
+    "country": "싱가포르",
+    "region": "동남아",
+    "arr": "50",
+    "dep": "25",
+    "total": "75"
+   },
+   {
+    "country": "인도네시아",
+    "region": "동남아",
+    "arr": "0",
+    "dep": "0",
+    "total": "0"
+   },
+   {
+    "country": "태국",
+    "region": "동남아",
+    "arr": "5",
+    "dep": "4",
+    "total": "9"
+   },
+   {
+    "country": "필리핀",
+    "region": "동남아",
+    "arr": "0",
+    "dep": "0",
+    "total": "0"
+   },
+   {
+    "country": "대만",
+    "region": "동북아",
+    "arr": "0",
+    "dep": "0",
+    "total": "0"
+   },
+   {
+    "country": "몽골",
+    "region": "동북아",
+    "arr": "4",
+    "dep": "4",
+    "total": "8"
+   },
+   {
+    "country": "홍콩",
+    "region": "동북아",
+    "arr": "138",
+    "dep": "140",
+    "total": "278"
+   },
+   {
+    "country": "멕시코",
+    "region": "미주",
+    "arr": "13",
+    "dep": "13",
+    "total": "26"
+   },
+   {
+    "country": "미국",
+    "region": "미주",
+    "arr": "882",
+    "dep": "915",
+    "total": "1,797"
+   },
+   {
+    "country": "브라질",
+    "region": "미주",
+    "arr": "8",
+    "dep": "8",
+    "total": "16"
+   },
+   {
+    "country": "칠레",
+    "region": "미주",
+    "arr": "0",
+    "dep": "0",
+    "total": "0"
+   },
+   {
+    "country": "캐나다",
+    "region": "미주",
+    "arr": "12",
+    "dep": "14",
+    "total": "26"
+   },
+   {
+    "country": "페루",
+    "region": "미주",
+    "arr": "0",
+    "dep": "0",
+    "total": "0"
+   },
+   {
+    "country": "네덜란드",
+    "region": "유럽",
+    "arr": "12",
+    "dep": "12",
+    "total": "24"
+   },
+   {
+    "country": "노르웨이",
+    "region": "유럽",
+    "arr": "24",
+    "dep": "13",
+    "total": "37"
+   },
+   {
+    "country": "독일",
+    "region": "유럽",
+    "arr": "80",
+    "dep": "109",
+    "total": "189"
+   },
+   {
+    "country": "룩셈부르크",
+    "region": "유럽",
+    "arr": "13",
+    "dep": "13",
+    "total": "26"
+   },
+   {
+    "country": "벨기에",
+    "region": "유럽",
+    "arr": "12",
+    "dep": "13",
+    "total": "25"
+   },
+   {
+    "country": "스위스",
+    "region": "유럽",
+    "arr": "4",
+    "dep": "4",
+    "total": "8"
+   },
+   {
+    "country": "스페인",
+    "region": "유럽",
+    "arr": "8",
+    "dep": "9",
+    "total": "17"
+   },
+   {
+    "country": "아제르바이잔",
+    "region": "유럽",
+    "arr": "10",
+    "dep": "10",
+    "total": "20"
+   },
+   {
+    "country": "영국",
+    "region": "유럽",
+    "arr": "13",
+    "dep": "13",
+    "total": "26"
+   },
+   {
+    "country": "오스트리아",
+    "region": "유럽",
+    "arr": "0",
+    "dep": "0",
+    "total": "0"
+   },
+   {
+    "country": "우즈베키스탄",
+    "region": "유럽",
+    "arr": "6",
+    "dep": "8",
+    "total": "14"
+   },
+   {
+    "country": "이탈리아",
+    "region": "유럽",
+    "arr": "33",
+    "dep": "32",
+    "total": "65"
+   },
+   {
+    "country": "카자흐스탄",
+    "region": "유럽",
+    "arr": "0",
+    "dep": "0",
+    "total": "0"
+   },
+   {
+    "country": "터키",
+    "region": "유럽",
+    "arr": "8",
+    "dep": "8",
+    "total": "16"
+   },
+   {
+    "country": "투르크메니스탄",
+    "region": "유럽",
+    "arr": "5",
+    "dep": "5",
+    "total": "10"
+   },
+   {
+    "country": "프랑스",
+    "region": "유럽",
+    "arr": "0",
+    "dep": "0",
+    "total": "0"
+   },
+   {
+    "country": "일본",
+    "region": "일본",
+    "arr": "164",
+    "dep": "135",
+    "total": "299"
+   },
+   {
+    "country": "중국",
+    "region": "중국",
+    "arr": "557",
+    "dep": "558",
+    "total": "1,115"
+   },
+   {
+    "country": "아랍에미리트",
+    "region": "중동",
+    "arr": "0",
+    "dep": "0",
+    "total": "0"
+   },
+   {
+    "country": "이스라엘",
+    "region": "중동",
+    "arr": "1",
+    "dep": "0",
+    "total": "1"
+   },
+   {
+    "country": "카타르",
+    "region": "중동",
+    "arr": "18",
+    "dep": "18",
+    "total": "36"
+   }
+  ],
+  "202412": [
+   {
+    "country": "인도",
+    "region": "기타",
+    "arr": "0",
+    "dep": "0",
+    "total": "0"
+   },
+   {
+    "country": "하와이",
+    "region": "대양주",
+    "arr": "0",
+    "dep": "0",
+    "total": "0"
+   },
+   {
+    "country": "호주",
+    "region": "대양주",
+    "arr": "0",
+    "dep": "0",
+    "total": "0"
+   },
+   {
+    "country": "말레이시아",
+    "region": "동남아",
+    "arr": "15",
+    "dep": "14",
+    "total": "29"
+   },
+   {
+    "country": "베트남",
+    "region": "동남아",
+    "arr": "163",
+    "dep": "162",
+    "total": "325"
+   },
+   {
+    "country": "싱가포르",
+    "region": "동남아",
+    "arr": "52",
+    "dep": "28",
+    "total": "80"
+   },
+   {
+    "country": "인도네시아",
+    "region": "동남아",
+    "arr": "1",
+    "dep": "0",
+    "total": "1"
+   },
+   {
+    "country": "태국",
+    "region": "동남아",
+    "arr": "5",
+    "dep": "5",
+    "total": "10"
+   },
+   {
+    "country": "필리핀",
+    "region": "동남아",
+    "arr": "0",
+    "dep": "0",
+    "total": "0"
+   },
+   {
+    "country": "대만",
+    "region": "동북아",
+    "arr": "0",
+    "dep": "0",
+    "total": "0"
+   },
+   {
+    "country": "몽골",
+    "region": "동북아",
+    "arr": "6",
+    "dep": "6",
+    "total": "12"
+   },
+   {
+    "country": "홍콩",
+    "region": "동북아",
+    "arr": "136",
+    "dep": "156",
+    "total": "292"
+   },
+   {
+    "country": "멕시코",
+    "region": "미주",
+    "arr": "13",
+    "dep": "12",
+    "total": "25"
+   },
+   {
+    "country": "미국",
+    "region": "미주",
+    "arr": "900",
+    "dep": "932",
+    "total": "1,832"
+   },
+   {
+    "country": "브라질",
+    "region": "미주",
+    "arr": "10",
+    "dep": "9",
+    "total": "19"
+   },
+   {
+    "country": "칠레",
+    "region": "미주",
+    "arr": "0",
+    "dep": "0",
+    "total": "0"
+   },
+   {
+    "country": "캐나다",
+    "region": "미주",
+    "arr": "12",
+    "dep": "10",
+    "total": "22"
+   },
+   {
+    "country": "페루",
+    "region": "미주",
+    "arr": "0",
+    "dep": "0",
+    "total": "0"
+   },
+   {
+    "country": "네덜란드",
+    "region": "유럽",
+    "arr": "13",
+    "dep": "13",
+    "total": "26"
+   },
+   {
+    "country": "노르웨이",
+    "region": "유럽",
+    "arr": "22",
+    "dep": "9",
+    "total": "31"
+   },
+   {
+    "country": "독일",
+    "region": "유럽",
+    "arr": "81",
+    "dep": "107",
+    "total": "188"
+   },
+   {
+    "country": "룩셈부르크",
+    "region": "유럽",
+    "arr": "13",
+    "dep": "13",
+    "total": "26"
+   },
+   {
+    "country": "벨기에",
+    "region": "유럽",
+    "arr": "14",
+    "dep": "14",
+    "total": "28"
+   },
+   {
+    "country": "스위스",
+    "region": "유럽",
+    "arr": "4",
+    "dep": "4",
+    "total": "8"
+   },
+   {
+    "country": "스페인",
+    "region": "유럽",
+    "arr": "9",
+    "dep": "9",
+    "total": "18"
+   },
+   {
+    "country": "아제르바이잔",
+    "region": "유럽",
+    "arr": "11",
+    "dep": "11",
+    "total": "22"
+   },
+   {
+    "country": "영국",
+    "region": "유럽",
+    "arr": "11",
+    "dep": "10",
+    "total": "21"
+   },
+   {
+    "country": "오스트리아",
+    "region": "유럽",
+    "arr": "0",
+    "dep": "0",
+    "total": "0"
+   },
+   {
+    "country": "우즈베키스탄",
+    "region": "유럽",
+    "arr": "4",
+    "dep": "4",
+    "total": "8"
+   },
+   {
+    "country": "이탈리아",
+    "region": "유럽",
+    "arr": "36",
+    "dep": "35",
+    "total": "71"
+   },
+   {
+    "country": "카자흐스탄",
+    "region": "유럽",
+    "arr": "0",
+    "dep": "0",
+    "total": "0"
+   },
+   {
+    "country": "타지키스탄",
+    "region": "유럽",
+    "arr": "0",
+    "dep": "1",
+    "total": "1"
+   },
+   {
+    "country": "터키",
+    "region": "유럽",
+    "arr": "9",
+    "dep": "9",
+    "total": "18"
+   },
+   {
+    "country": "투르크메니스탄",
+    "region": "유럽",
+    "arr": "4",
+    "dep": "4",
+    "total": "8"
+   },
+   {
+    "country": "프랑스",
+    "region": "유럽",
+    "arr": "0",
+    "dep": "0",
+    "total": "0"
+   },
+   {
+    "country": "일본",
+    "region": "일본",
+    "arr": "157",
+    "dep": "131",
+    "total": "288"
+   },
+   {
+    "country": "중국",
+    "region": "중국",
+    "arr": "578",
+    "dep": "575",
+    "total": "1,153"
+   },
+   {
+    "country": "아랍에미리트",
+    "region": "중동",
+    "arr": "0",
+    "dep": "0",
+    "total": "0"
+   },
+   {
+    "country": "카타르",
+    "region": "중동",
+    "arr": "16",
+    "dep": "17",
+    "total": "33"
+   }
+  ],
+  "202501": [
+   {
+    "country": "인도",
+    "region": "기타",
+    "arr": "0",
+    "dep": "0",
+    "total": "0"
+   },
+   {
+    "country": "하와이",
+    "region": "대양주",
+    "arr": "0",
+    "dep": "0",
+    "total": "0"
+   },
+   {
+    "country": "호주",
+    "region": "대양주",
+    "arr": "0",
+    "dep": "0",
+    "total": "0"
+   },
+   {
+    "country": "말레이시아",
+    "region": "동남아",
+    "arr": "12",
+    "dep": "12",
+    "total": "24"
+   },
+   {
+    "country": "베트남",
+    "region": "동남아",
+    "arr": "139",
+    "dep": "137",
+    "total": "276"
+   },
+   {
+    "country": "싱가포르",
+    "region": "동남아",
+    "arr": "45",
+    "dep": "18",
+    "total": "63"
+   },
+   {
+    "country": "인도네시아",
+    "region": "동남아",
+    "arr": "0",
+    "dep": "0",
+    "total": "0"
+   },
+   {
+    "country": "태국",
+    "region": "동남아",
+    "arr": "4",
+    "dep": "4",
+    "total": "8"
+   },
+   {
+    "country": "필리핀",
+    "region": "동남아",
+    "arr": "0",
+    "dep": "0",
+    "total": "0"
+   },
+   {
+    "country": "대만",
+    "region": "동북아",
+    "arr": "2",
+    "dep": "3",
+    "total": "5"
+   },
+   {
+    "country": "몽골",
+    "region": "동북아",
+    "arr": "4",
+    "dep": "4",
+    "total": "8"
+   },
+   {
+    "country": "홍콩",
+    "region": "동북아",
+    "arr": "135",
+    "dep": "147",
+    "total": "282"
+   },
+   {
+    "country": "멕시코",
+    "region": "미주",
+    "arr": "14",
+    "dep": "14",
+    "total": "28"
+   },
+   {
+    "country": "미국",
+    "region": "미주",
+    "arr": "818",
+    "dep": "850",
+    "total": "1,668"
+   },
+   {
+    "country": "브라질",
+    "region": "미주",
+    "arr": "8",
+    "dep": "9",
+    "total": "17"
+   },
+   {
+    "country": "칠레",
+    "region": "미주",
+    "arr": "0",
+    "dep": "0",
+    "total": "0"
+   },
+   {
+    "country": "캐나다",
+    "region": "미주",
+    "arr": "8",
+    "dep": "8",
+    "total": "16"
+   },
+   {
+    "country": "페루",
+    "region": "미주",
+    "arr": "0",
+    "dep": "0",
+    "total": "0"
+   },
+   {
+    "country": "네덜란드",
+    "region": "유럽",
+    "arr": "12",
+    "dep": "13",
+    "total": "25"
+   },
+   {
+    "country": "노르웨이",
+    "region": "유럽",
+    "arr": "23",
+    "dep": "10",
+    "total": "33"
+   },
+   {
+    "country": "독일",
+    "region": "유럽",
+    "arr": "76",
+    "dep": "87",
+    "total": "163"
+   },
+   {
+    "country": "룩셈부르크",
+    "region": "유럽",
+    "arr": "12",
+    "dep": "12",
+    "total": "24"
+   },
+   {
+    "country": "벨기에",
+    "region": "유럽",
+    "arr": "13",
+    "dep": "13",
+    "total": "26"
+   },
+   {
+    "country": "스위스",
+    "region": "유럽",
+    "arr": "3",
+    "dep": "3",
+    "total": "6"
+   },
+   {
+    "country": "스페인",
+    "region": "유럽",
+    "arr": "9",
+    "dep": "9",
+    "total": "18"
+   },
+   {
+    "country": "아제르바이잔",
+    "region": "유럽",
+    "arr": "7",
+    "dep": "7",
+    "total": "14"
+   },
+   {
+    "country": "영국",
+    "region": "유럽",
+    "arr": "13",
+    "dep": "13",
+    "total": "26"
+   },
+   {
+    "country": "오스트리아",
+    "region": "유럽",
+    "arr": "0",
+    "dep": "0",
+    "total": "0"
+   },
+   {
+    "country": "우즈베키스탄",
+    "region": "유럽",
+    "arr": "0",
+    "dep": "0",
+    "total": "0"
+   },
+   {
+    "country": "이탈리아",
+    "region": "유럽",
+    "arr": "34",
+    "dep": "36",
+    "total": "70"
+   },
+   {
+    "country": "카자흐스탄",
+    "region": "유럽",
+    "arr": "0",
+    "dep": "0",
+    "total": "0"
+   },
+   {
+    "country": "터키",
+    "region": "유럽",
+    "arr": "8",
+    "dep": "8",
+    "total": "16"
+   },
+   {
+    "country": "투르크메니스탄",
+    "region": "유럽",
+    "arr": "4",
+    "dep": "4",
+    "total": "8"
+   },
+   {
+    "country": "폴란드",
+    "region": "유럽",
+    "arr": "0",
+    "dep": "0",
+    "total": "0"
+   },
+   {
+    "country": "프랑스",
+    "region": "유럽",
+    "arr": "0",
+    "dep": "0",
+    "total": "0"
+   },
+   {
+    "country": "일본",
+    "region": "일본",
+    "arr": "126",
+    "dep": "114",
+    "total": "240"
+   },
+   {
+    "country": "중국",
+    "region": "중국",
+    "arr": "490",
+    "dep": "493",
+    "total": "983"
+   },
+   {
+    "country": "아랍에미리트",
+    "region": "중동",
+    "arr": "0",
+    "dep": "0",
+    "total": "0"
+   },
+   {
+    "country": "카타르",
+    "region": "중동",
+    "arr": "15",
+    "dep": "15",
+    "total": "30"
+   }
+  ],
+  "202502": [
+   {
+    "country": "인도",
+    "region": "기타",
+    "arr": "0",
+    "dep": "0",
+    "total": "0"
+   },
+   {
+    "country": "호주",
+    "region": "대양주",
+    "arr": "0",
+    "dep": "0",
+    "total": "0"
+   },
+   {
+    "country": "말레이시아",
+    "region": "동남아",
+    "arr": "14",
+    "dep": "14",
+    "total": "28"
+   },
+   {
+    "country": "베트남",
+    "region": "동남아",
+    "arr": "121",
+    "dep": "122",
+    "total": "243"
+   },
+   {
+    "country": "싱가포르",
+    "region": "동남아",
+    "arr": "40",
+    "dep": "15",
+    "total": "55"
+   },
+   {
+    "country": "인도네시아",
+    "region": "동남아",
+    "arr": "0",
+    "dep": "0",
+    "total": "0"
+   },
+   {
+    "country": "태국",
+    "region": "동남아",
+    "arr": "4",
+    "dep": "4",
+    "total": "8"
+   },
+   {
+    "country": "필리핀",
+    "region": "동남아",
+    "arr": "0",
+    "dep": "0",
+    "total": "0"
+   },
+   {
+    "country": "대만",
+    "region": "동북아",
+    "arr": "2",
+    "dep": "2",
+    "total": "4"
+   },
+   {
+    "country": "몽골",
+    "region": "동북아",
+    "arr": "4",
+    "dep": "4",
+    "total": "8"
+   },
+   {
+    "country": "홍콩",
+    "region": "동북아",
+    "arr": "124",
+    "dep": "140",
+    "total": "264"
+   },
+   {
+    "country": "멕시코",
+    "region": "미주",
+    "arr": "11",
+    "dep": "11",
+    "total": "22"
+   },
+   {
+    "country": "미국",
+    "region": "미주",
+    "arr": "640",
+    "dep": "666",
+    "total": "1,306"
+   },
+   {
+    "country": "브라질",
+    "region": "미주",
+    "arr": "8",
+    "dep": "8",
+    "total": "16"
+   },
+   {
+    "country": "칠레",
+    "region": "미주",
+    "arr": "0",
+    "dep": "0",
+    "total": "0"
+   },
+   {
+    "country": "캐나다",
+    "region": "미주",
+    "arr": "8",
+    "dep": "8",
+    "total": "16"
+   },
+   {
+    "country": "페루",
+    "region": "미주",
+    "arr": "0",
+    "dep": "0",
+    "total": "0"
+   },
+   {
+    "country": "네덜란드",
+    "region": "유럽",
+    "arr": "12",
+    "dep": "12",
+    "total": "24"
+   },
+   {
+    "country": "노르웨이",
+    "region": "유럽",
+    "arr": "19",
+    "dep": "8",
+    "total": "27"
+   },
+   {
+    "country": "독일",
+    "region": "유럽",
+    "arr": "70",
+    "dep": "92",
+    "total": "162"
+   },
+   {
+    "country": "룩셈부르크",
+    "region": "유럽",
+    "arr": "10",
+    "dep": "10",
+    "total": "20"
+   },
+   {
+    "country": "벨기에",
+    "region": "유럽",
+    "arr": "11",
+    "dep": "11",
+    "total": "22"
+   },
+   {
+    "country": "스위스",
+    "region": "유럽",
+    "arr": "4",
+    "dep": "4",
+    "total": "8"
+   },
+   {
+    "country": "스페인",
+    "region": "유럽",
+    "arr": "8",
+    "dep": "8",
+    "total": "16"
+   },
+   {
+    "country": "아제르바이잔",
+    "region": "유럽",
+    "arr": "7",
+    "dep": "7",
+    "total": "14"
+   },
+   {
+    "country": "영국",
+    "region": "유럽",
+    "arr": "12",
+    "dep": "12",
+    "total": "24"
+   },
+   {
+    "country": "오스트리아",
+    "region": "유럽",
+    "arr": "0",
+    "dep": "0",
+    "total": "0"
+   },
+   {
+    "country": "이탈리아",
+    "region": "유럽",
+    "arr": "28",
+    "dep": "28",
+    "total": "56"
+   },
+   {
+    "country": "카자흐스탄",
+    "region": "유럽",
+    "arr": "0",
+    "dep": "0",
+    "total": "0"
+   },
+   {
+    "country": "타지키스탄",
+    "region": "유럽",
+    "arr": "0",
+    "dep": "1",
+    "total": "1"
+   },
+   {
+    "country": "터키",
+    "region": "유럽",
+    "arr": "7",
+    "dep": "7",
+    "total": "14"
+   },
+   {
+    "country": "투르크메니스탄",
+    "region": "유럽",
+    "arr": "2",
+    "dep": "2",
+    "total": "4"
+   },
+   {
+    "country": "프랑스",
+    "region": "유럽",
+    "arr": "0",
+    "dep": "0",
+    "total": "0"
+   },
+   {
+    "country": "일본",
+    "region": "일본",
+    "arr": "149",
+    "dep": "129",
+    "total": "278"
+   },
+   {
+    "country": "중국",
+    "region": "중국",
+    "arr": "428",
+    "dep": "429",
+    "total": "857"
+   },
+   {
+    "country": "아랍에미리트",
+    "region": "중동",
+    "arr": "0",
+    "dep": "0",
+    "total": "0"
+   },
+   {
+    "country": "카타르",
+    "region": "중동",
+    "arr": "16",
+    "dep": "15",
+    "total": "31"
+   }
+  ],
+  "202503": [
+   {
+    "country": "인도",
+    "region": "기타",
+    "arr": "0",
+    "dep": "0",
+    "total": "0"
+   },
+   {
+    "country": "하와이",
+    "region": "대양주",
+    "arr": "1",
+    "dep": "0",
+    "total": "1"
+   },
+   {
+    "country": "호주",
+    "region": "대양주",
+    "arr": "0",
+    "dep": "0",
+    "total": "0"
+   },
+   {
+    "country": "말레이시아",
+    "region": "동남아",
+    "arr": "14",
+    "dep": "14",
+    "total": "28"
+   },
+   {
+    "country": "베트남",
+    "region": "동남아",
+    "arr": "134",
+    "dep": "135",
+    "total": "269"
+   },
+   {
+    "country": "싱가포르",
+    "region": "동남아",
+    "arr": "49",
+    "dep": "23",
+    "total": "72"
+   },
+   {
+    "country": "인도네시아",
+    "region": "동남아",
+    "arr": "0",
+    "dep": "0",
+    "total": "0"
+   },
+   {
+    "country": "태국",
+    "region": "동남아",
+    "arr": "8",
+    "dep": "8",
+    "total": "16"
+   },
+   {
+    "country": "필리핀",
+    "region": "동남아",
+    "arr": "0",
+    "dep": "0",
+    "total": "0"
+   },
+   {
+    "country": "대만",
+    "region": "동북아",
+    "arr": "1",
+    "dep": "3",
+    "total": "4"
+   },
+   {
+    "country": "몽골",
+    "region": "동북아",
+    "arr": "4",
+    "dep": "4",
+    "total": "8"
+   },
+   {
+    "country": "홍콩",
+    "region": "동북아",
+    "arr": "134",
+    "dep": "165",
+    "total": "299"
+   },
+   {
+    "country": "멕시코",
+    "region": "미주",
+    "arr": "13",
+    "dep": "13",
+    "total": "26"
+   },
+   {
+    "country": "미국",
+    "region": "미주",
+    "arr": "856",
+    "dep": "877",
+    "total": "1,733"
+   },
+   {
+    "country": "브라질",
+    "region": "미주",
+    "arr": "9",
+    "dep": "9",
+    "total": "18"
+   },
+   {
+    "country": "칠레",
+    "region": "미주",
+    "arr": "0",
+    "dep": "0",
+    "total": "0"
+   },
+   {
+    "country": "캐나다",
+    "region": "미주",
+    "arr": "9",
+    "dep": "10",
+    "total": "19"
+   },
+   {
+    "country": "페루",
+    "region": "미주",
+    "arr": "0",
+    "dep": "0",
+    "total": "0"
+   },
+   {
+    "country": "네덜란드",
+    "region": "유럽",
+    "arr": "14",
+    "dep": "13",
+    "total": "27"
+   },
+   {
+    "country": "노르웨이",
+    "region": "유럽",
+    "arr": "21",
+    "dep": "8",
+    "total": "29"
+   },
+   {
+    "country": "독일",
+    "region": "유럽",
+    "arr": "78",
+    "dep": "105",
+    "total": "183"
+   },
+   {
+    "country": "룩셈부르크",
+    "region": "유럽",
+    "arr": "14",
+    "dep": "14",
+    "total": "28"
+   },
+   {
+    "country": "벨기에",
+    "region": "유럽",
+    "arr": "13",
+    "dep": "13",
+    "total": "26"
+   },
+   {
+    "country": "스위스",
+    "region": "유럽",
+    "arr": "5",
+    "dep": "5",
+    "total": "10"
+   },
+   {
+    "country": "스페인",
+    "region": "유럽",
+    "arr": "9",
+    "dep": "8",
+    "total": "17"
+   },
+   {
+    "country": "아제르바이잔",
+    "region": "유럽",
+    "arr": "10",
+    "dep": "10",
+    "total": "20"
+   },
+   {
+    "country": "영국",
+    "region": "유럽",
+    "arr": "14",
+    "dep": "14",
+    "total": "28"
+   },
+   {
+    "country": "오스트리아",
+    "region": "유럽",
+    "arr": "0",
+    "dep": "0",
+    "total": "0"
+   },
+   {
+    "country": "이탈리아",
+    "region": "유럽",
+    "arr": "37",
+    "dep": "36",
+    "total": "73"
+   },
+   {
+    "country": "카자흐스탄",
+    "region": "유럽",
+    "arr": "0",
+    "dep": "0",
+    "total": "0"
+   },
+   {
+    "country": "타지키스탄",
+    "region": "유럽",
+    "arr": "0",
+    "dep": "1",
+    "total": "1"
+   },
+   {
+    "country": "터키",
+    "region": "유럽",
+    "arr": "9",
+    "dep": "9",
+    "total": "18"
+   },
+   {
+    "country": "투르크메니스탄",
+    "region": "유럽",
+    "arr": "5",
+    "dep": "5",
+    "total": "10"
+   },
+   {
+    "country": "프랑스",
+    "region": "유럽",
+    "arr": "0",
+    "dep": "0",
+    "total": "0"
+   },
+   {
+    "country": "일본",
+    "region": "일본",
+    "arr": "165",
+    "dep": "137",
+    "total": "302"
+   },
+   {
+    "country": "중국",
+    "region": "중국",
+    "arr": "589",
+    "dep": "601",
+    "total": "1,190"
+   },
+   {
+    "country": "아랍에미리트",
+    "region": "중동",
+    "arr": "0",
+    "dep": "0",
+    "total": "0"
+   },
+   {
+    "country": "카타르",
+    "region": "중동",
+    "arr": "17",
+    "dep": "18",
+    "total": "35"
+   }
+  ],
+  "202504": [
+   {
+    "country": "인도",
+    "region": "기타",
+    "arr": "0",
+    "dep": "0",
+    "total": "0"
+   },
+   {
+    "country": "하와이",
+    "region": "대양주",
+    "arr": "0",
+    "dep": "0",
+    "total": "0"
+   },
+   {
+    "country": "호주",
+    "region": "대양주",
+    "arr": "0",
+    "dep": "0",
+    "total": "0"
+   },
+   {
+    "country": "말레이시아",
+    "region": "동남아",
+    "arr": "10",
+    "dep": "10",
+    "total": "20"
+   },
+   {
+    "country": "베트남",
+    "region": "동남아",
+    "arr": "135",
+    "dep": "134",
+    "total": "269"
+   },
+   {
+    "country": "싱가포르",
+    "region": "동남아",
+    "arr": "56",
+    "dep": "31",
+    "total": "87"
+   },
+   {
+    "country": "인도네시아",
+    "region": "동남아",
+    "arr": "0",
+    "dep": "0",
+    "total": "0"
+   },
+   {
+    "country": "태국",
+    "region": "동남아",
+    "arr": "5",
+    "dep": "5",
+    "total": "10"
+   },
+   {
+    "country": "필리핀",
+    "region": "동남아",
+    "arr": "0",
+    "dep": "0",
+    "total": "0"
+   },
+   {
+    "country": "대만",
+    "region": "동북아",
+    "arr": "2",
+    "dep": "2",
+    "total": "4"
+   },
+   {
+    "country": "몽골",
+    "region": "동북아",
+    "arr": "6",
+    "dep": "6",
+    "total": "12"
+   },
+   {
+    "country": "홍콩",
+    "region": "동북아",
+    "arr": "133",
+    "dep": "145",
+    "total": "278"
+   },
+   {
+    "country": "멕시코",
+    "region": "미주",
+    "arr": "12",
+    "dep": "13",
+    "total": "25"
+   },
+   {
+    "country": "미국",
+    "region": "미주",
+    "arr": "824",
+    "dep": "856",
+    "total": "1,680"
+   },
+   {
+    "country": "브라질",
+    "region": "미주",
+    "arr": "9",
+    "dep": "9",
+    "total": "18"
+   },
+   {
+    "country": "칠레",
+    "region": "미주",
+    "arr": "0",
+    "dep": "0",
+    "total": "0"
+   },
+   {
+    "country": "캐나다",
+    "region": "미주",
+    "arr": "13",
+    "dep": "12",
+    "total": "25"
+   },
+   {
+    "country": "페루",
+    "region": "미주",
+    "arr": "0",
+    "dep": "0",
+    "total": "0"
+   },
+   {
+    "country": "네덜란드",
+    "region": "유럽",
+    "arr": "9",
+    "dep": "10",
+    "total": "19"
+   },
+   {
+    "country": "노르웨이",
+    "region": "유럽",
+    "arr": "19",
+    "dep": "9",
+    "total": "28"
+   },
+   {
+    "country": "독일",
+    "region": "유럽",
+    "arr": "73",
+    "dep": "100",
+    "total": "173"
+   },
+   {
+    "country": "룩셈부르크",
+    "region": "유럽",
+    "arr": "12",
+    "dep": "12",
+    "total": "24"
+   },
+   {
+    "country": "벨기에",
+    "region": "유럽",
+    "arr": "13",
+    "dep": "13",
+    "total": "26"
+   },
+   {
+    "country": "스위스",
+    "region": "유럽",
+    "arr": "4",
+    "dep": "4",
+    "total": "8"
+   },
+   {
+    "country": "스페인",
+    "region": "유럽",
+    "arr": "8",
+    "dep": "9",
+    "total": "17"
+   },
+   {
+    "country": "아제르바이잔",
+    "region": "유럽",
+    "arr": "10",
+    "dep": "10",
+    "total": "20"
+   },
+   {
+    "country": "영국",
+    "region": "유럽",
+    "arr": "9",
+    "dep": "9",
+    "total": "18"
+   },
+   {
+    "country": "오스트리아",
+    "region": "유럽",
+    "arr": "0",
+    "dep": "0",
+    "total": "0"
+   },
+   {
+    "country": "이탈리아",
+    "region": "유럽",
+    "arr": "32",
+    "dep": "33",
+    "total": "65"
+   },
+   {
+    "country": "카자흐스탄",
+    "region": "유럽",
+    "arr": "0",
+    "dep": "0",
+    "total": "0"
+   },
+   {
+    "country": "터키",
+    "region": "유럽",
+    "arr": "8",
+    "dep": "8",
+    "total": "16"
+   },
+   {
+    "country": "투르크메니스탄",
+    "region": "유럽",
+    "arr": "3",
+    "dep": "3",
+    "total": "6"
+   },
+   {
+    "country": "프랑스",
+    "region": "유럽",
+    "arr": "0",
+    "dep": "0",
+    "total": "0"
+   },
+   {
+    "country": "일본",
+    "region": "일본",
+    "arr": "157",
+    "dep": "131",
+    "total": "288"
+   },
+   {
+    "country": "중국",
+    "region": "중국",
+    "arr": "555",
+    "dep": "569",
+    "total": "1,124"
+   },
+   {
+    "country": "아랍에미리트",
+    "region": "중동",
+    "arr": "0",
+    "dep": "0",
+    "total": "0"
+   },
+   {
+    "country": "카타르",
+    "region": "중동",
+    "arr": "17",
+    "dep": "17",
+    "total": "34"
+   }
+  ],
+  "202505": [
+   {
+    "country": "모로코",
+    "region": "기타",
+    "arr": "0",
+    "dep": "0",
+    "total": "0"
+   },
+   {
+    "country": "에티오피아",
+    "region": "기타",
+    "arr": "0",
+    "dep": "1",
+    "total": "1"
+   },
+   {
+    "country": "인도",
+    "region": "기타",
+    "arr": "0",
+    "dep": "0",
+    "total": "0"
+   },
+   {
+    "country": "하와이",
+    "region": "대양주",
+    "arr": "0",
+    "dep": "0",
+    "total": "0"
+   },
+   {
+    "country": "호주",
+    "region": "대양주",
+    "arr": "0",
+    "dep": "0",
+    "total": "0"
+   },
+   {
+    "country": "말레이시아",
+    "region": "동남아",
+    "arr": "19",
+    "dep": "20",
+    "total": "39"
+   },
+   {
+    "country": "베트남",
+    "region": "동남아",
+    "arr": "132",
+    "dep": "134",
+    "total": "266"
+   },
+   {
+    "country": "싱가포르",
+    "region": "동남아",
+    "arr": "58",
+    "dep": "30",
+    "total": "88"
+   },
+   {
+    "country": "인도네시아",
+    "region": "동남아",
+    "arr": "0",
+    "dep": "0",
+    "total": "0"
+   },
+   {
+    "country": "태국",
+    "region": "동남아",
+    "arr": "4",
+    "dep": "4",
+    "total": "8"
+   },
+   {
+    "country": "필리핀",
+    "region": "동남아",
+    "arr": "0",
+    "dep": "0",
+    "total": "0"
+   },
+   {
+    "country": "대만",
+    "region": "동북아",
+    "arr": "2",
+    "dep": "3",
+    "total": "5"
+   },
+   {
+    "country": "몽골",
+    "region": "동북아",
+    "arr": "4",
+    "dep": "4",
+    "total": "8"
+   },
+   {
+    "country": "홍콩",
+    "region": "동북아",
+    "arr": "133",
+    "dep": "141",
+    "total": "274"
+   },
+   {
+    "country": "멕시코",
+    "region": "미주",
+    "arr": "14",
+    "dep": "14",
+    "total": "28"
+   },
+   {
+    "country": "미국",
+    "region": "미주",
+    "arr": "730",
+    "dep": "783",
+    "total": "1,513"
+   },
+   {
+    "country": "브라질",
+    "region": "미주",
+    "arr": "9",
+    "dep": "9",
+    "total": "18"
+   },
+   {
+    "country": "칠레",
+    "region": "미주",
+    "arr": "0",
+    "dep": "0",
+    "total": "0"
+   },
+   {
+    "country": "캐나다",
+    "region": "미주",
+    "arr": "15",
+    "dep": "16",
+    "total": "31"
+   },
+   {
+    "country": "페루",
+    "region": "미주",
+    "arr": "0",
+    "dep": "0",
+    "total": "0"
+   },
+   {
+    "country": "네덜란드",
+    "region": "유럽",
+    "arr": "9",
+    "dep": "8",
+    "total": "17"
+   },
+   {
+    "country": "노르웨이",
+    "region": "유럽",
+    "arr": "22",
+    "dep": "8",
+    "total": "30"
+   },
+   {
+    "country": "독일",
+    "region": "유럽",
+    "arr": "79",
+    "dep": "97",
+    "total": "176"
+   },
+   {
+    "country": "룩셈부르크",
+    "region": "유럽",
+    "arr": "13",
+    "dep": "13",
+    "total": "26"
+   },
+   {
+    "country": "벨기에",
+    "region": "유럽",
+    "arr": "12",
+    "dep": "13",
+    "total": "25"
+   },
+   {
+    "country": "스위스",
+    "region": "유럽",
+    "arr": "4",
+    "dep": "4",
+    "total": "8"
+   },
+   {
+    "country": "스페인",
+    "region": "유럽",
+    "arr": "10",
+    "dep": "9",
+    "total": "19"
+   },
+   {
+    "country": "아제르바이잔",
+    "region": "유럽",
+    "arr": "9",
+    "dep": "9",
+    "total": "18"
+   },
+   {
+    "country": "영국",
+    "region": "유럽",
+    "arr": "9",
+    "dep": "10",
+    "total": "19"
+   },
+   {
+    "country": "오스트리아",
+    "region": "유럽",
+    "arr": "0",
+    "dep": "0",
+    "total": "0"
+   },
+   {
+    "country": "이탈리아",
+    "region": "유럽",
+    "arr": "33",
+    "dep": "32",
+    "total": "65"
+   },
+   {
+    "country": "카자흐스탄",
+    "region": "유럽",
+    "arr": "1",
+    "dep": "0",
+    "total": "1"
+   },
+   {
+    "country": "터키",
+    "region": "유럽",
+    "arr": "9",
+    "dep": "8",
+    "total": "17"
+   },
+   {
+    "country": "투르크메니스탄",
+    "region": "유럽",
+    "arr": "3",
+    "dep": "3",
+    "total": "6"
+   },
+   {
+    "country": "프랑스",
+    "region": "유럽",
+    "arr": "0",
+    "dep": "0",
+    "total": "0"
+   },
+   {
+    "country": "헝가리",
+    "region": "유럽",
+    "arr": "0",
+    "dep": "0",
+    "total": "0"
+   },
+   {
+    "country": "일본",
+    "region": "일본",
+    "arr": "153",
+    "dep": "132",
+    "total": "285"
+   },
+   {
+    "country": "중국",
+    "region": "중국",
+    "arr": "473",
+    "dep": "478",
+    "total": "951"
+   },
+   {
+    "country": "아랍에미리트",
+    "region": "중동",
+    "arr": "0",
+    "dep": "0",
+    "total": "0"
+   },
+   {
+    "country": "카타르",
+    "region": "중동",
+    "arr": "16",
+    "dep": "16",
+    "total": "32"
+   }
+  ],
+  "202506": [
+   {
+    "country": "인도",
+    "region": "기타",
+    "arr": "0",
+    "dep": "0",
+    "total": "0"
+   },
+   {
+    "country": "괌",
+    "region": "대양주",
+    "arr": "1",
+    "dep": "1",
+    "total": "2"
+   },
+   {
+    "country": "하와이",
+    "region": "대양주",
+    "arr": "0",
+    "dep": "0",
+    "total": "0"
+   },
+   {
+    "country": "호주",
+    "region": "대양주",
+    "arr": "0",
+    "dep": "0",
+    "total": "0"
+   },
+   {
+    "country": "말레이시아",
+    "region": "동남아",
+    "arr": "24",
+    "dep": "23",
+    "total": "47"
+   },
+   {
+    "country": "베트남",
+    "region": "동남아",
+    "arr": "128",
+    "dep": "125",
+    "total": "253"
+   },
+   {
+    "country": "싱가포르",
+    "region": "동남아",
+    "arr": "49",
+    "dep": "24",
+    "total": "73"
+   },
+   {
+    "country": "인도네시아",
+    "region": "동남아",
+    "arr": "1",
+    "dep": "0",
+    "total": "1"
+   },
+   {
+    "country": "캄보디아",
+    "region": "동남아",
+    "arr": "0",
+    "dep": "0",
+    "total": "0"
+   },
+   {
+    "country": "태국",
+    "region": "동남아",
+    "arr": "6",
+    "dep": "6",
+    "total": "12"
+   },
+   {
+    "country": "필리핀",
+    "region": "동남아",
+    "arr": "0",
+    "dep": "0",
+    "total": "0"
+   },
+   {
+    "country": "대만",
+    "region": "동북아",
+    "arr": "5",
+    "dep": "8",
+    "total": "13"
+   },
+   {
+    "country": "몽골",
+    "region": "동북아",
+    "arr": "1",
+    "dep": "1",
+    "total": "2"
+   },
+   {
+    "country": "홍콩",
+    "region": "동북아",
+    "arr": "131",
+    "dep": "152",
+    "total": "283"
+   },
+   {
+    "country": "멕시코",
+    "region": "미주",
+    "arr": "32",
+    "dep": "33",
+    "total": "65"
+   },
+   {
+    "country": "미국",
+    "region": "미주",
+    "arr": "803",
+    "dep": "838",
+    "total": "1,641"
+   },
+   {
+    "country": "브라질",
+    "region": "미주",
+    "arr": "8",
+    "dep": "9",
+    "total": "17"
+   },
+   {
+    "country": "칠레",
+    "region": "미주",
+    "arr": "0",
+    "dep": "0",
+    "total": "0"
+   },
+   {
+    "country": "캐나다",
+    "region": "미주",
+    "arr": "13",
+    "dep": "13",
+    "total": "26"
+   },
+   {
+    "country": "페루",
+    "region": "미주",
+    "arr": "0",
+    "dep": "0",
+    "total": "0"
+   },
+   {
+    "country": "네덜란드",
+    "region": "유럽",
+    "arr": "12",
+    "dep": "12",
+    "total": "24"
+   },
+   {
+    "country": "노르웨이",
+    "region": "유럽",
+    "arr": "20",
+    "dep": "8",
+    "total": "28"
+   },
+   {
+    "country": "독일",
+    "region": "유럽",
+    "arr": "76",
+    "dep": "96",
+    "total": "172"
+   },
+   {
+    "country": "룩셈부르크",
+    "region": "유럽",
+    "arr": "13",
+    "dep": "13",
+    "total": "26"
+   },
+   {
+    "country": "벨기에",
+    "region": "유럽",
+    "arr": "13",
+    "dep": "13",
+    "total": "26"
+   },
+   {
+    "country": "스위스",
+    "region": "유럽",
+    "arr": "5",
+    "dep": "5",
+    "total": "10"
+   },
+   {
+    "country": "스페인",
+    "region": "유럽",
+    "arr": "8",
+    "dep": "8",
+    "total": "16"
+   },
+   {
+    "country": "아제르바이잔",
+    "region": "유럽",
+    "arr": "9",
+    "dep": "9",
+    "total": "18"
+   },
+   {
+    "country": "영국",
+    "region": "유럽",
+    "arr": "9",
+    "dep": "8",
+    "total": "17"
+   },
+   {
+    "country": "오스트리아",
+    "region": "유럽",
+    "arr": "0",
+    "dep": "0",
+    "total": "0"
+   },
+   {
+    "country": "이탈리아",
+    "region": "유럽",
+    "arr": "35",
+    "dep": "36",
+    "total": "71"
+   },
+   {
+    "country": "카자흐스탄",
+    "region": "유럽",
+    "arr": "0",
+    "dep": "0",
+    "total": "0"
+   },
+   {
+    "country": "터키",
+    "region": "유럽",
+    "arr": "9",
+    "dep": "9",
+    "total": "18"
+   },
+   {
+    "country": "투르크메니스탄",
+    "region": "유럽",
+    "arr": "4",
+    "dep": "4",
+    "total": "8"
+   },
+   {
+    "country": "프랑스",
+    "region": "유럽",
+    "arr": "0",
+    "dep": "0",
+    "total": "0"
+   },
+   {
+    "country": "헝가리",
+    "region": "유럽",
+    "arr": "0",
+    "dep": "0",
+    "total": "0"
+   },
+   {
+    "country": "일본",
+    "region": "일본",
+    "arr": "164",
+    "dep": "136",
+    "total": "300"
+   },
+   {
+    "country": "중국",
+    "region": "중국",
+    "arr": "464",
+    "dep": "469",
+    "total": "933"
+   },
+   {
+    "country": "아랍에미리트",
+    "region": "중동",
+    "arr": "0",
+    "dep": "0",
+    "total": "0"
+   },
+   {
+    "country": "카타르",
+    "region": "중동",
+    "arr": "16",
+    "dep": "16",
+    "total": "32"
+   },
+   {
+    "country": "한국",
+    "region": "한국",
+    "arr": "1",
+    "dep": "0",
+    "total": "1"
+   }
+  ],
+  "202507": [
+   {
+    "country": "인도",
+    "region": "기타",
+    "arr": "0",
+    "dep": "0",
+    "total": "0"
+   },
+   {
+    "country": "호주",
+    "region": "대양주",
+    "arr": "0",
+    "dep": "0",
+    "total": "0"
+   },
+   {
+    "country": "말레이시아",
+    "region": "동남아",
+    "arr": "22",
+    "dep": "22",
+    "total": "44"
+   },
+   {
+    "country": "베트남",
+    "region": "동남아",
+    "arr": "155",
+    "dep": "157",
+    "total": "312"
+   },
+   {
+    "country": "싱가포르",
+    "region": "동남아",
+    "arr": "45",
+    "dep": "20",
+    "total": "65"
+   },
+   {
+    "country": "인도네시아",
+    "region": "동남아",
+    "arr": "0",
+    "dep": "0",
+    "total": "0"
+   },
+   {
+    "country": "태국",
+    "region": "동남아",
+    "arr": "9",
+    "dep": "8",
+    "total": "17"
+   },
+   {
+    "country": "필리핀",
+    "region": "동남아",
+    "arr": "0",
+    "dep": "0",
+    "total": "0"
+   },
+   {
+    "country": "대만",
+    "region": "동북아",
+    "arr": "3",
+    "dep": "6",
+    "total": "9"
+   },
+   {
+    "country": "몽골",
+    "region": "동북아",
+    "arr": "1",
+    "dep": "1",
+    "total": "2"
+   },
+   {
+    "country": "홍콩",
+    "region": "동북아",
+    "arr": "136",
+    "dep": "160",
+    "total": "296"
+   },
+   {
+    "country": "멕시코",
+    "region": "미주",
+    "arr": "34",
+    "dep": "36",
+    "total": "70"
+   },
+   {
+    "country": "미국",
+    "region": "미주",
+    "arr": "844",
+    "dep": "885",
+    "total": "1,729"
+   },
+   {
+    "country": "브라질",
+    "region": "미주",
+    "arr": "9",
+    "dep": "9",
+    "total": "18"
+   },
+   {
+    "country": "칠레",
+    "region": "미주",
+    "arr": "0",
+    "dep": "0",
+    "total": "0"
+   },
+   {
+    "country": "캐나다",
+    "region": "미주",
+    "arr": "18",
+    "dep": "13",
+    "total": "31"
+   },
+   {
+    "country": "페루",
+    "region": "미주",
+    "arr": "0",
+    "dep": "0",
+    "total": "0"
+   },
+   {
+    "country": "네덜란드",
+    "region": "유럽",
+    "arr": "13",
+    "dep": "13",
+    "total": "26"
+   },
+   {
+    "country": "노르웨이",
+    "region": "유럽",
+    "arr": "24",
+    "dep": "10",
+    "total": "34"
+   },
+   {
+    "country": "독일",
+    "region": "유럽",
+    "arr": "79",
+    "dep": "105",
+    "total": "184"
+   },
+   {
+    "country": "룩셈부르크",
+    "region": "유럽",
+    "arr": "12",
+    "dep": "13",
+    "total": "25"
+   },
+   {
+    "country": "벨기에",
+    "region": "유럽",
+    "arr": "13",
+    "dep": "12",
+    "total": "25"
+   },
+   {
+    "country": "스위스",
+    "region": "유럽",
+    "arr": "4",
+    "dep": "4",
+    "total": "8"
+   },
+   {
+    "country": "스페인",
+    "region": "유럽",
+    "arr": "9",
+    "dep": "9",
+    "total": "18"
+   },
+   {
+    "country": "아제르바이잔",
+    "region": "유럽",
+    "arr": "8",
+    "dep": "8",
+    "total": "16"
+   },
+   {
+    "country": "영국",
+    "region": "유럽",
+    "arr": "8",
+    "dep": "9",
+    "total": "17"
+   },
+   {
+    "country": "오스트리아",
+    "region": "유럽",
+    "arr": "0",
+    "dep": "0",
+    "total": "0"
+   },
+   {
+    "country": "이탈리아",
+    "region": "유럽",
+    "arr": "35",
+    "dep": "35",
+    "total": "70"
+   },
+   {
+    "country": "카자흐스탄",
+    "region": "유럽",
+    "arr": "0",
+    "dep": "0",
+    "total": "0"
+   },
+   {
+    "country": "타지키스탄",
+    "region": "유럽",
+    "arr": "0",
+    "dep": "1",
+    "total": "1"
+   },
+   {
+    "country": "터키",
+    "region": "유럽",
+    "arr": "8",
+    "dep": "8",
+    "total": "16"
+   },
+   {
+    "country": "투르크메니스탄",
+    "region": "유럽",
+    "arr": "2",
+    "dep": "2",
+    "total": "4"
+   },
+   {
+    "country": "프랑스",
+    "region": "유럽",
+    "arr": "0",
+    "dep": "0",
+    "total": "0"
+   },
+   {
+    "country": "헝가리",
+    "region": "유럽",
+    "arr": "0",
+    "dep": "0",
+    "total": "0"
+   },
+   {
+    "country": "일본",
+    "region": "일본",
+    "arr": "171",
+    "dep": "140",
+    "total": "311"
+   },
+   {
+    "country": "중국",
+    "region": "중국",
+    "arr": "515",
+    "dep": "518",
+    "total": "1,033"
+   },
+   {
+    "country": "아랍에미리트",
+    "region": "중동",
+    "arr": "0",
+    "dep": "0",
+    "total": "0"
+   },
+   {
+    "country": "카타르",
+    "region": "중동",
+    "arr": "17",
+    "dep": "17",
+    "total": "34"
+   }
+  ],
+  "202508": [
+   {
+    "country": "인도",
+    "region": "기타",
+    "arr": "0",
+    "dep": "0",
+    "total": "0"
+   },
+   {
+    "country": "하와이",
+    "region": "대양주",
+    "arr": "0",
+    "dep": "0",
+    "total": "0"
+   },
+   {
+    "country": "호주",
+    "region": "대양주",
+    "arr": "0",
+    "dep": "0",
+    "total": "0"
+   },
+   {
+    "country": "말레이시아",
+    "region": "동남아",
+    "arr": "25",
+    "dep": "24",
+    "total": "49"
+   },
+   {
+    "country": "베트남",
+    "region": "동남아",
+    "arr": "135",
+    "dep": "131",
+    "total": "266"
+   },
+   {
+    "country": "싱가포르",
+    "region": "동남아",
+    "arr": "49",
+    "dep": "24",
+    "total": "73"
+   },
+   {
+    "country": "인도네시아",
+    "region": "동남아",
+    "arr": "0",
+    "dep": "0",
+    "total": "0"
+   },
+   {
+    "country": "태국",
+    "region": "동남아",
+    "arr": "5",
+    "dep": "5",
+    "total": "10"
+   },
+   {
+    "country": "필리핀",
+    "region": "동남아",
+    "arr": "0",
+    "dep": "0",
+    "total": "0"
+   },
+   {
+    "country": "대만",
+    "region": "동북아",
+    "arr": "2",
+    "dep": "2",
+    "total": "4"
+   },
+   {
+    "country": "홍콩",
+    "region": "동북아",
+    "arr": "166",
+    "dep": "182",
+    "total": "348"
+   },
+   {
+    "country": "멕시코",
+    "region": "미주",
+    "arr": "36",
+    "dep": "35",
+    "total": "71"
+   },
+   {
+    "country": "미국",
+    "region": "미주",
+    "arr": "856",
+    "dep": "938",
+    "total": "1,794"
+   },
+   {
+    "country": "브라질",
+    "region": "미주",
+    "arr": "9",
+    "dep": "9",
+    "total": "18"
+   },
+   {
+    "country": "칠레",
+    "region": "미주",
+    "arr": "0",
+    "dep": "0",
+    "total": "0"
+   },
+   {
+    "country": "캐나다",
+    "region": "미주",
+    "arr": "14",
+    "dep": "13",
+    "total": "27"
+   },
+   {
+    "country": "페루",
+    "region": "미주",
+    "arr": "0",
+    "dep": "0",
+    "total": "0"
+   },
+   {
+    "country": "네덜란드",
+    "region": "유럽",
+    "arr": "13",
+    "dep": "13",
+    "total": "26"
+   },
+   {
+    "country": "노르웨이",
+    "region": "유럽",
+    "arr": "20",
+    "dep": "8",
+    "total": "28"
+   },
+   {
+    "country": "독일",
+    "region": "유럽",
+    "arr": "78",
+    "dep": "98",
+    "total": "176"
+   },
+   {
+    "country": "룩셈부르크",
+    "region": "유럽",
+    "arr": "14",
+    "dep": "14",
+    "total": "28"
+   },
+   {
+    "country": "벨기에",
+    "region": "유럽",
+    "arr": "13",
+    "dep": "14",
+    "total": "27"
+   },
+   {
+    "country": "스위스",
+    "region": "유럽",
+    "arr": "4",
+    "dep": "5",
+    "total": "9"
+   },
+   {
+    "country": "스페인",
+    "region": "유럽",
+    "arr": "9",
+    "dep": "9",
+    "total": "18"
+   },
+   {
+    "country": "아제르바이잔",
+    "region": "유럽",
+    "arr": "13",
+    "dep": "13",
+    "total": "26"
+   },
+   {
+    "country": "영국",
+    "region": "유럽",
+    "arr": "10",
+    "dep": "9",
+    "total": "19"
+   },
+   {
+    "country": "오스트리아",
+    "region": "유럽",
+    "arr": "0",
+    "dep": "0",
+    "total": "0"
+   },
+   {
+    "country": "이탈리아",
+    "region": "유럽",
+    "arr": "35",
+    "dep": "36",
+    "total": "71"
+   },
+   {
+    "country": "카자흐스탄",
+    "region": "유럽",
+    "arr": "0",
+    "dep": "0",
+    "total": "0"
+   },
+   {
+    "country": "터키",
+    "region": "유럽",
+    "arr": "9",
+    "dep": "9",
+    "total": "18"
+   },
+   {
+    "country": "프랑스",
+    "region": "유럽",
+    "arr": "0",
+    "dep": "0",
+    "total": "0"
+   },
+   {
+    "country": "헝가리",
+    "region": "유럽",
+    "arr": "0",
+    "dep": "0",
+    "total": "0"
+   },
+   {
+    "country": "일본",
+    "region": "일본",
+    "arr": "180",
+    "dep": "158",
+    "total": "338"
+   },
+   {
+    "country": "중국",
+    "region": "중국",
+    "arr": "543",
+    "dep": "512",
+    "total": "1,055"
+   },
+   {
+    "country": "아랍에미리트",
+    "region": "중동",
+    "arr": "0",
+    "dep": "0",
+    "total": "0"
+   },
+   {
+    "country": "카타르",
+    "region": "중동",
+    "arr": "17",
+    "dep": "17",
+    "total": "34"
+   }
+  ],
+  "202509": [
+   {
+    "country": "에티오피아",
+    "region": "기타",
+    "arr": "1",
+    "dep": "1",
+    "total": "2"
+   },
+   {
+    "country": "인도",
+    "region": "기타",
+    "arr": "0",
+    "dep": "0",
+    "total": "0"
+   },
+   {
+    "country": "케냐",
+    "region": "기타",
+    "arr": "0",
+    "dep": "1",
+    "total": "1"
+   },
+   {
+    "country": "하와이",
+    "region": "대양주",
+    "arr": "0",
+    "dep": "0",
+    "total": "0"
+   },
+   {
+    "country": "호주",
+    "region": "대양주",
+    "arr": "0",
+    "dep": "0",
+    "total": "0"
+   },
+   {
+    "country": "말레이시아",
+    "region": "동남아",
+    "arr": "22",
+    "dep": "24",
+    "total": "46"
+   },
+   {
+    "country": "베트남",
+    "region": "동남아",
+    "arr": "134",
+    "dep": "133",
+    "total": "267"
+   },
+   {
+    "country": "싱가포르",
+    "region": "동남아",
+    "arr": "44",
+    "dep": "20",
+    "total": "64"
+   },
+   {
+    "country": "인도네시아",
+    "region": "동남아",
+    "arr": "0",
+    "dep": "0",
+    "total": "0"
+   },
+   {
+    "country": "태국",
+    "region": "동남아",
+    "arr": "5",
+    "dep": "5",
+    "total": "10"
+   },
+   {
+    "country": "필리핀",
+    "region": "동남아",
+    "arr": "0",
+    "dep": "0",
+    "total": "0"
+   },
+   {
+    "country": "대만",
+    "region": "동북아",
+    "arr": "3",
+    "dep": "3",
+    "total": "6"
+   },
+   {
+    "country": "홍콩",
+    "region": "동북아",
+    "arr": "158",
+    "dep": "173",
+    "total": "331"
+   },
+   {
+    "country": "멕시코",
+    "region": "미주",
+    "arr": "32",
+    "dep": "32",
+    "total": "64"
+   },
+   {
+    "country": "미국",
+    "region": "미주",
+    "arr": "828",
+    "dep": "909",
+    "total": "1,737"
+   },
+   {
+    "country": "브라질",
+    "region": "미주",
+    "arr": "9",
+    "dep": "8",
+    "total": "17"
+   },
+   {
+    "country": "칠레",
+    "region": "미주",
+    "arr": "0",
+    "dep": "0",
+    "total": "0"
+   },
+   {
+    "country": "캐나다",
+    "region": "미주",
+    "arr": "13",
+    "dep": "14",
+    "total": "27"
+   },
+   {
+    "country": "페루",
+    "region": "미주",
+    "arr": "0",
+    "dep": "0",
+    "total": "0"
+   },
+   {
+    "country": "네덜란드",
+    "region": "유럽",
+    "arr": "13",
+    "dep": "13",
+    "total": "26"
+   },
+   {
+    "country": "노르웨이",
+    "region": "유럽",
+    "arr": "20",
+    "dep": "9",
+    "total": "29"
+   },
+   {
+    "country": "독일",
+    "region": "유럽",
+    "arr": "78",
+    "dep": "99",
+    "total": "177"
+   },
+   {
+    "country": "룩셈부르크",
+    "region": "유럽",
+    "arr": "12",
+    "dep": "12",
+    "total": "24"
+   },
+   {
+    "country": "벨기에",
+    "region": "유럽",
+    "arr": "13",
+    "dep": "13",
+    "total": "26"
+   },
+   {
+    "country": "스위스",
+    "region": "유럽",
+    "arr": "5",
+    "dep": "4",
+    "total": "9"
+   },
+   {
+    "country": "스페인",
+    "region": "유럽",
+    "arr": "8",
+    "dep": "9",
+    "total": "17"
+   },
+   {
+    "country": "아제르바이잔",
+    "region": "유럽",
+    "arr": "9",
+    "dep": "9",
+    "total": "18"
+   },
+   {
+    "country": "영국",
+    "region": "유럽",
+    "arr": "8",
+    "dep": "8",
+    "total": "16"
+   },
+   {
+    "country": "오스트리아",
+    "region": "유럽",
+    "arr": "1",
+    "dep": "1",
+    "total": "2"
+   },
+   {
+    "country": "이탈리아",
+    "region": "유럽",
+    "arr": "34",
+    "dep": "33",
+    "total": "67"
+   },
+   {
+    "country": "카자흐스탄",
+    "region": "유럽",
+    "arr": "0",
+    "dep": "0",
+    "total": "0"
+   },
+   {
+    "country": "타지키스탄",
+    "region": "유럽",
+    "arr": "0",
+    "dep": "0",
+    "total": "0"
+   },
+   {
+    "country": "터키",
+    "region": "유럽",
+    "arr": "8",
+    "dep": "8",
+    "total": "16"
+   },
+   {
+    "country": "투르크메니스탄",
+    "region": "유럽",
+    "arr": "2",
+    "dep": "2",
+    "total": "4"
+   },
+   {
+    "country": "프랑스",
+    "region": "유럽",
+    "arr": "0",
+    "dep": "0",
+    "total": "0"
+   },
+   {
+    "country": "헝가리",
+    "region": "유럽",
+    "arr": "0",
+    "dep": "0",
+    "total": "0"
+   },
+   {
+    "country": "일본",
+    "region": "일본",
+    "arr": "189",
+    "dep": "161",
+    "total": "350"
+   },
+   {
+    "country": "중국",
+    "region": "중국",
+    "arr": "549",
+    "dep": "529",
+    "total": "1,078"
+   },
+   {
+    "country": "아랍에미리트",
+    "region": "중동",
+    "arr": "0",
+    "dep": "0",
+    "total": "0"
+   },
+   {
+    "country": "카타르",
+    "region": "중동",
+    "arr": "16",
+    "dep": "16",
+    "total": "32"
+   }
+  ],
+  "202510": [
+   {
+    "country": "에티오피아",
+    "region": "기타",
+    "arr": "3",
+    "dep": "3",
+    "total": "6"
+   },
+   {
+    "country": "인도",
+    "region": "기타",
+    "arr": "0",
+    "dep": "0",
+    "total": "0"
+   },
+   {
+    "country": "하와이",
+    "region": "대양주",
+    "arr": "0",
+    "dep": "0",
+    "total": "0"
+   },
+   {
+    "country": "호주",
+    "region": "대양주",
+    "arr": "0",
+    "dep": "0",
+    "total": "0"
+   },
+   {
+    "country": "말레이시아",
+    "region": "동남아",
+    "arr": "28",
+    "dep": "27",
+    "total": "55"
+   },
+   {
+    "country": "베트남",
+    "region": "동남아",
+    "arr": "138",
+    "dep": "136",
+    "total": "274"
+   },
+   {
+    "country": "싱가포르",
+    "region": "동남아",
+    "arr": "45",
+    "dep": "18",
+    "total": "63"
+   },
+   {
+    "country": "인도네시아",
+    "region": "동남아",
+    "arr": "0",
+    "dep": "0",
+    "total": "0"
+   },
+   {
+    "country": "태국",
+    "region": "동남아",
+    "arr": "5",
+    "dep": "5",
+    "total": "10"
+   },
+   {
+    "country": "필리핀",
+    "region": "동남아",
+    "arr": "0",
+    "dep": "0",
+    "total": "0"
+   },
+   {
+    "country": "대만",
+    "region": "동북아",
+    "arr": "2",
+    "dep": "2",
+    "total": "4"
+   },
+   {
+    "country": "마카오",
+    "region": "동북아",
+    "arr": "0",
+    "dep": "1",
+    "total": "1"
+   },
+   {
+    "country": "몽골",
+    "region": "동북아",
+    "arr": "3",
+    "dep": "3",
+    "total": "6"
+   },
+   {
+    "country": "홍콩",
+    "region": "동북아",
+    "arr": "157",
+    "dep": "172",
+    "total": "329"
+   },
+   {
+    "country": "멕시코",
+    "region": "미주",
+    "arr": "37",
+    "dep": "37",
+    "total": "74"
+   },
+   {
+    "country": "미국",
+    "region": "미주",
+    "arr": "856",
+    "dep": "912",
+    "total": "1,768"
+   },
+   {
+    "country": "브라질",
+    "region": "미주",
+    "arr": "8",
+    "dep": "9",
+    "total": "17"
+   },
+   {
+    "country": "칠레",
+    "region": "미주",
+    "arr": "0",
+    "dep": "0",
+    "total": "0"
+   },
+   {
+    "country": "캐나다",
+    "region": "미주",
+    "arr": "13",
+    "dep": "13",
+    "total": "26"
+   },
+   {
+    "country": "페루",
+    "region": "미주",
+    "arr": "0",
+    "dep": "0",
+    "total": "0"
+   },
+   {
+    "country": "네덜란드",
+    "region": "유럽",
+    "arr": "14",
+    "dep": "13",
+    "total": "27"
+   },
+   {
+    "country": "노르웨이",
+    "region": "유럽",
+    "arr": "19",
+    "dep": "8",
+    "total": "27"
+   },
+   {
+    "country": "독일",
+    "region": "유럽",
+    "arr": "84",
+    "dep": "105",
+    "total": "189"
+   },
+   {
+    "country": "룩셈부르크",
+    "region": "유럽",
+    "arr": "12",
+    "dep": "12",
+    "total": "24"
+   },
+   {
+    "country": "벨기에",
+    "region": "유럽",
+    "arr": "13",
+    "dep": "13",
+    "total": "26"
+   },
+   {
+    "country": "스위스",
+    "region": "유럽",
+    "arr": "4",
+    "dep": "4",
+    "total": "8"
+   },
+   {
+    "country": "스페인",
+    "region": "유럽",
+    "arr": "9",
+    "dep": "9",
+    "total": "18"
+   },
+   {
+    "country": "아제르바이잔",
+    "region": "유럽",
+    "arr": "9",
+    "dep": "9",
+    "total": "18"
+   },
+   {
+    "country": "영국",
+    "region": "유럽",
+    "arr": "9",
+    "dep": "9",
+    "total": "18"
+   },
+   {
+    "country": "오스트리아",
+    "region": "유럽",
+    "arr": "0",
+    "dep": "0",
+    "total": "0"
+   },
+   {
+    "country": "이탈리아",
+    "region": "유럽",
+    "arr": "34",
+    "dep": "35",
+    "total": "69"
+   },
+   {
+    "country": "카자흐스탄",
+    "region": "유럽",
+    "arr": "1",
+    "dep": "0",
+    "total": "1"
+   },
+   {
+    "country": "터키",
+    "region": "유럽",
+    "arr": "8",
+    "dep": "8",
+    "total": "16"
+   },
+   {
+    "country": "투르크메니스탄",
+    "region": "유럽",
+    "arr": "4",
+    "dep": "3",
+    "total": "7"
+   },
+   {
+    "country": "프랑스",
+    "region": "유럽",
+    "arr": "0",
+    "dep": "0",
+    "total": "0"
+   },
+   {
+    "country": "헝가리",
+    "region": "유럽",
+    "arr": "0",
+    "dep": "0",
+    "total": "0"
+   },
+   {
+    "country": "일본",
+    "region": "일본",
+    "arr": "184",
+    "dep": "164",
+    "total": "348"
+   },
+   {
+    "country": "중국",
+    "region": "중국",
+    "arr": "499",
+    "dep": "492",
+    "total": "991"
+   },
+   {
+    "country": "아랍에미리트",
+    "region": "중동",
+    "arr": "0",
+    "dep": "0",
+    "total": "0"
+   },
+   {
+    "country": "카타르",
+    "region": "중동",
+    "arr": "15",
+    "dep": "15",
+    "total": "30"
+   }
+  ],
+  "202511": [
+   {
+    "country": "에티오피아",
+    "region": "기타",
+    "arr": "12",
+    "dep": "12",
+    "total": "24"
+   },
+   {
+    "country": "인도",
+    "region": "기타",
+    "arr": "0",
+    "dep": "0",
+    "total": "0"
+   },
+   {
+    "country": "하와이",
+    "region": "대양주",
+    "arr": "0",
+    "dep": "0",
+    "total": "0"
+   },
+   {
+    "country": "호주",
+    "region": "대양주",
+    "arr": "0",
+    "dep": "0",
+    "total": "0"
+   },
+   {
+    "country": "말레이시아",
+    "region": "동남아",
+    "arr": "26",
+    "dep": "26",
+    "total": "52"
+   },
+   {
+    "country": "베트남",
+    "region": "동남아",
+    "arr": "133",
+    "dep": "133",
+    "total": "266"
+   },
+   {
+    "country": "싱가포르",
+    "region": "동남아",
+    "arr": "42",
+    "dep": "18",
+    "total": "60"
+   },
+   {
+    "country": "인도네시아",
+    "region": "동남아",
+    "arr": "0",
+    "dep": "0",
+    "total": "0"
+   },
+   {
+    "country": "태국",
+    "region": "동남아",
+    "arr": "9",
+    "dep": "9",
+    "total": "18"
+   },
+   {
+    "country": "필리핀",
+    "region": "동남아",
+    "arr": "0",
+    "dep": "0",
+    "total": "0"
+   },
+   {
+    "country": "대만",
+    "region": "동북아",
+    "arr": "1",
+    "dep": "0",
+    "total": "1"
+   },
+   {
+    "country": "몽골",
+    "region": "동북아",
+    "arr": "4",
+    "dep": "4",
+    "total": "8"
+   },
+   {
+    "country": "홍콩",
+    "region": "동북아",
+    "arr": "172",
+    "dep": "160",
+    "total": "332"
+   },
+   {
+    "country": "멕시코",
+    "region": "미주",
+    "arr": "33",
+    "dep": "33",
+    "total": "66"
+   },
+   {
+    "country": "미국",
+    "region": "미주",
+    "arr": "932",
+    "dep": "964",
+    "total": "1,896"
+   },
+   {
+    "country": "브라질",
+    "region": "미주",
+    "arr": "9",
+    "dep": "9",
+    "total": "18"
+   },
+   {
+    "country": "칠레",
+    "region": "미주",
+    "arr": "0",
+    "dep": "0",
+    "total": "0"
+   },
+   {
+    "country": "캐나다",
+    "region": "미주",
+    "arr": "13",
+    "dep": "12",
+    "total": "25"
+   },
+   {
+    "country": "페루",
+    "region": "미주",
+    "arr": "0",
+    "dep": "0",
+    "total": "0"
+   },
+   {
+    "country": "네덜란드",
+    "region": "유럽",
+    "arr": "13",
+    "dep": "13",
+    "total": "26"
+   },
+   {
+    "country": "노르웨이",
+    "region": "유럽",
+    "arr": "8",
+    "dep": "8",
+    "total": "16"
+   },
+   {
+    "country": "독일",
+    "region": "유럽",
+    "arr": "102",
+    "dep": "102",
+    "total": "204"
+   },
+   {
+    "country": "룩셈부르크",
+    "region": "유럽",
+    "arr": "14",
+    "dep": "14",
+    "total": "28"
+   },
+   {
+    "country": "벨기에",
+    "region": "유럽",
+    "arr": "13",
+    "dep": "13",
+    "total": "26"
+   },
+   {
+    "country": "스위스",
+    "region": "유럽",
+    "arr": "4",
+    "dep": "5",
+    "total": "9"
+   },
+   {
+    "country": "스페인",
+    "region": "유럽",
+    "arr": "9",
+    "dep": "8",
+    "total": "17"
+   },
+   {
+    "country": "아제르바이잔",
+    "region": "유럽",
+    "arr": "8",
+    "dep": "8",
+    "total": "16"
+   },
+   {
+    "country": "영국",
+    "region": "유럽",
+    "arr": "13",
+    "dep": "13",
+    "total": "26"
+   },
+   {
+    "country": "오스트리아",
+    "region": "유럽",
+    "arr": "0",
+    "dep": "0",
+    "total": "0"
+   },
+   {
+    "country": "이탈리아",
+    "region": "유럽",
+    "arr": "38",
+    "dep": "37",
+    "total": "75"
+   },
+   {
+    "country": "카자흐스탄",
+    "region": "유럽",
+    "arr": "0",
+    "dep": "0",
+    "total": "0"
+   },
+   {
+    "country": "터키",
+    "region": "유럽",
+    "arr": "8",
+    "dep": "8",
+    "total": "16"
+   },
+   {
+    "country": "투르크메니스탄",
+    "region": "유럽",
+    "arr": "4",
+    "dep": "5",
+    "total": "9"
+   },
+   {
+    "country": "프랑스",
+    "region": "유럽",
+    "arr": "0",
+    "dep": "0",
+    "total": "0"
+   },
+   {
+    "country": "헝가리",
+    "region": "유럽",
+    "arr": "0",
+    "dep": "0",
+    "total": "0"
+   },
+   {
+    "country": "일본",
+    "region": "일본",
+    "arr": "174",
+    "dep": "174",
+    "total": "348"
+   },
+   {
+    "country": "중국",
+    "region": "중국",
+    "arr": "531",
+    "dep": "550",
+    "total": "1,081"
+   },
+   {
+    "country": "아랍에미리트",
+    "region": "중동",
+    "arr": "0",
+    "dep": "0",
+    "total": "0"
+   },
+   {
+    "country": "카타르",
+    "region": "중동",
+    "arr": "18",
+    "dep": "18",
+    "total": "36"
+   }
+  ],
+  "202512": [
+   {
+    "country": "에티오피아",
+    "region": "기타",
+    "arr": "14",
+    "dep": "14",
+    "total": "28"
+   },
+   {
+    "country": "인도",
+    "region": "기타",
+    "arr": "0",
+    "dep": "0",
+    "total": "0"
+   },
+   {
+    "country": "하와이",
+    "region": "대양주",
+    "arr": "0",
+    "dep": "0",
+    "total": "0"
+   },
+   {
+    "country": "호주",
+    "region": "대양주",
+    "arr": "0",
+    "dep": "0",
+    "total": "0"
+   },
+   {
+    "country": "말레이시아",
+    "region": "동남아",
+    "arr": "20",
+    "dep": "20",
+    "total": "40"
+   },
+   {
+    "country": "베트남",
+    "region": "동남아",
+    "arr": "138",
+    "dep": "135",
+    "total": "273"
+   },
+   {
+    "country": "싱가포르",
+    "region": "동남아",
+    "arr": "48",
+    "dep": "20",
+    "total": "68"
+   },
+   {
+    "country": "인도네시아",
+    "region": "동남아",
+    "arr": "0",
+    "dep": "0",
+    "total": "0"
+   },
+   {
+    "country": "태국",
+    "region": "동남아",
+    "arr": "6",
+    "dep": "4",
+    "total": "10"
+   },
+   {
+    "country": "필리핀",
+    "region": "동남아",
+    "arr": "0",
+    "dep": "0",
+    "total": "0"
+   },
+   {
+    "country": "대만",
+    "region": "동북아",
+    "arr": "1",
+    "dep": "0",
+    "total": "1"
+   },
+   {
+    "country": "몽골",
+    "region": "동북아",
+    "arr": "7",
+    "dep": "7",
+    "total": "14"
+   },
+   {
+    "country": "홍콩",
+    "region": "동북아",
+    "arr": "164",
+    "dep": "156",
+    "total": "320"
+   },
+   {
+    "country": "멕시코",
+    "region": "미주",
+    "arr": "32",
+    "dep": "33",
+    "total": "65"
+   },
+   {
+    "country": "미국",
+    "region": "미주",
+    "arr": "883",
+    "dep": "936",
+    "total": "1,819"
+   },
+   {
+    "country": "브라질",
+    "region": "미주",
+    "arr": "9",
+    "dep": "8",
+    "total": "17"
+   },
+   {
+    "country": "칠레",
+    "region": "미주",
+    "arr": "0",
+    "dep": "0",
+    "total": "0"
+   },
+   {
+    "country": "캐나다",
+    "region": "미주",
+    "arr": "13",
+    "dep": "13",
+    "total": "26"
+   },
+   {
+    "country": "페루",
+    "region": "미주",
+    "arr": "0",
+    "dep": "0",
+    "total": "0"
+   },
+   {
+    "country": "네덜란드",
+    "region": "유럽",
+    "arr": "13",
+    "dep": "13",
+    "total": "26"
+   },
+   {
+    "country": "노르웨이",
+    "region": "유럽",
+    "arr": "9",
+    "dep": "9",
+    "total": "18"
+   },
+   {
+    "country": "독일",
+    "region": "유럽",
+    "arr": "102",
+    "dep": "99",
+    "total": "201"
+   },
+   {
+    "country": "룩셈부르크",
+    "region": "유럽",
+    "arr": "12",
+    "dep": "12",
+    "total": "24"
+   },
+   {
+    "country": "벨기에",
+    "region": "유럽",
+    "arr": "13",
+    "dep": "13",
+    "total": "26"
+   },
+   {
+    "country": "스위스",
+    "region": "유럽",
+    "arr": "4",
+    "dep": "3",
+    "total": "7"
+   },
+   {
+    "country": "스페인",
+    "region": "유럽",
+    "arr": "9",
+    "dep": "9",
+    "total": "18"
+   },
+   {
+    "country": "아제르바이잔",
+    "region": "유럽",
+    "arr": "9",
+    "dep": "9",
+    "total": "18"
+   },
+   {
+    "country": "영국",
+    "region": "유럽",
+    "arr": "12",
+    "dep": "12",
+    "total": "24"
+   },
+   {
+    "country": "오스트리아",
+    "region": "유럽",
+    "arr": "0",
+    "dep": "0",
+    "total": "0"
+   },
+   {
+    "country": "우즈베키스탄",
+    "region": "유럽",
+    "arr": "1",
+    "dep": "1",
+    "total": "2"
+   },
+   {
+    "country": "이탈리아",
+    "region": "유럽",
+    "arr": "39",
+    "dep": "38",
+    "total": "77"
+   },
+   {
+    "country": "카자흐스탄",
+    "region": "유럽",
+    "arr": "0",
+    "dep": "0",
+    "total": "0"
+   },
+   {
+    "country": "터키",
+    "region": "유럽",
+    "arr": "8",
+    "dep": "8",
+    "total": "16"
+   },
+   {
+    "country": "투르크메니스탄",
+    "region": "유럽",
+    "arr": "4",
+    "dep": "4",
+    "total": "8"
+   },
+   {
+    "country": "프랑스",
+    "region": "유럽",
+    "arr": "0",
+    "dep": "0",
+    "total": "0"
+   },
+   {
+    "country": "헝가리",
+    "region": "유럽",
+    "arr": "0",
+    "dep": "0",
+    "total": "0"
+   },
+   {
+    "country": "일본",
+    "region": "일본",
+    "arr": "168",
+    "dep": "168",
+    "total": "336"
+   },
+   {
+    "country": "중국",
+    "region": "중국",
+    "arr": "567",
+    "dep": "580",
+    "total": "1,147"
+   },
+   {
+    "country": "아랍에미리트",
+    "region": "중동",
+    "arr": "0",
+    "dep": "0",
+    "total": "0"
+   },
+   {
+    "country": "카타르",
+    "region": "중동",
+    "arr": "17",
+    "dep": "17",
+    "total": "34"
+   }
+  ],
+  "202601": [
+   {
+    "country": "에티오피아",
+    "region": "기타",
+    "arr": "13",
+    "dep": "13",
+    "total": "26"
+   },
+   {
+    "country": "인도",
+    "region": "기타",
+    "arr": "0",
+    "dep": "0",
+    "total": "0"
+   },
+   {
+    "country": "하와이",
+    "region": "대양주",
+    "arr": "0",
+    "dep": "0",
+    "total": "0"
+   },
+   {
+    "country": "호주",
+    "region": "대양주",
+    "arr": "0",
+    "dep": "0",
+    "total": "0"
+   },
+   {
+    "country": "말레이시아",
+    "region": "동남아",
+    "arr": "26",
+    "dep": "26",
+    "total": "52"
+   },
+   {
+    "country": "베트남",
+    "region": "동남아",
+    "arr": "134",
+    "dep": "137",
+    "total": "271"
+   },
+   {
+    "country": "싱가포르",
+    "region": "동남아",
+    "arr": "39",
+    "dep": "15",
+    "total": "54"
+   },
+   {
+    "country": "인도네시아",
+    "region": "동남아",
+    "arr": "1",
+    "dep": "0",
+    "total": "1"
+   },
+   {
+    "country": "태국",
+    "region": "동남아",
+    "arr": "8",
+    "dep": "8",
+    "total": "16"
+   },
+   {
+    "country": "필리핀",
+    "region": "동남아",
+    "arr": "0",
+    "dep": "0",
+    "total": "0"
+   },
+   {
+    "country": "대만",
+    "region": "동북아",
+    "arr": "1",
+    "dep": "1",
+    "total": "2"
+   },
+   {
+    "country": "몽골",
+    "region": "동북아",
+    "arr": "4",
+    "dep": "4",
+    "total": "8"
+   },
+   {
+    "country": "홍콩",
+    "region": "동북아",
+    "arr": "164",
+    "dep": "159",
+    "total": "323"
+   },
+   {
+    "country": "멕시코",
+    "region": "미주",
+    "arr": "33",
+    "dep": "33",
+    "total": "66"
+   },
+   {
+    "country": "미국",
+    "region": "미주",
+    "arr": "802",
+    "dep": "845",
+    "total": "1,647"
+   },
+   {
+    "country": "브라질",
+    "region": "미주",
+    "arr": "8",
+    "dep": "9",
+    "total": "17"
+   },
+   {
+    "country": "칠레",
+    "region": "미주",
+    "arr": "0",
+    "dep": "0",
+    "total": "0"
+   },
+   {
+    "country": "캐나다",
+    "region": "미주",
+    "arr": "12",
+    "dep": "13",
+    "total": "25"
+   },
+   {
+    "country": "페루",
+    "region": "미주",
+    "arr": "0",
+    "dep": "0",
+    "total": "0"
+   },
+   {
+    "country": "네덜란드",
+    "region": "유럽",
+    "arr": "14",
+    "dep": "13",
+    "total": "27"
+   },
+   {
+    "country": "노르웨이",
+    "region": "유럽",
+    "arr": "7",
+    "dep": "7",
+    "total": "14"
+   },
+   {
+    "country": "독일",
+    "region": "유럽",
+    "arr": "100",
+    "dep": "97",
+    "total": "197"
+   },
+   {
+    "country": "룩셈부르크",
+    "region": "유럽",
+    "arr": "14",
+    "dep": "14",
+    "total": "28"
+   },
+   {
+    "country": "벨기에",
+    "region": "유럽",
+    "arr": "13",
+    "dep": "13",
+    "total": "26"
+   },
+   {
+    "country": "스위스",
+    "region": "유럽",
+    "arr": "3",
+    "dep": "3",
+    "total": "6"
+   },
+   {
+    "country": "스페인",
+    "region": "유럽",
+    "arr": "9",
+    "dep": "9",
+    "total": "18"
+   },
+   {
+    "country": "아제르바이잔",
+    "region": "유럽",
+    "arr": "8",
+    "dep": "8",
+    "total": "16"
+   },
+   {
+    "country": "영국",
+    "region": "유럽",
+    "arr": "12",
+    "dep": "13",
+    "total": "25"
+   },
+   {
+    "country": "오스트리아",
+    "region": "유럽",
+    "arr": "0",
+    "dep": "0",
+    "total": "0"
+   },
+   {
+    "country": "이탈리아",
+    "region": "유럽",
+    "arr": "39",
+    "dep": "39",
+    "total": "78"
+   },
+   {
+    "country": "카자흐스탄",
+    "region": "유럽",
+    "arr": "0",
+    "dep": "0",
+    "total": "0"
+   },
+   {
+    "country": "터키",
+    "region": "유럽",
+    "arr": "9",
+    "dep": "9",
+    "total": "18"
+   },
+   {
+    "country": "투르크메니스탄",
+    "region": "유럽",
+    "arr": "3",
+    "dep": "3",
+    "total": "6"
+   },
+   {
+    "country": "프랑스",
+    "region": "유럽",
+    "arr": "0",
+    "dep": "0",
+    "total": "0"
+   },
+   {
+    "country": "일본",
+    "region": "일본",
+    "arr": "148",
+    "dep": "149",
+    "total": "297"
+   },
+   {
+    "country": "중국",
+    "region": "중국",
+    "arr": "515",
+    "dep": "538",
+    "total": "1,053"
+   },
+   {
+    "country": "아랍에미리트",
+    "region": "중동",
+    "arr": "0",
+    "dep": "0",
+    "total": "0"
+   },
+   {
+    "country": "카타르",
+    "region": "중동",
+    "arr": "17",
+    "dep": "17",
+    "total": "34"
+   }
+  ],
+  "202602": [
+   {
+    "country": "에티오피아",
+    "region": "기타",
+    "arr": "11",
+    "dep": "11",
+    "total": "22"
+   },
+   {
+    "country": "인도",
+    "region": "기타",
+    "arr": "0",
+    "dep": "0",
+    "total": "0"
+   },
+   {
+    "country": "하와이",
+    "region": "대양주",
+    "arr": "0",
+    "dep": "0",
+    "total": "0"
+   },
+   {
+    "country": "호주",
+    "region": "대양주",
+    "arr": "0",
+    "dep": "0",
+    "total": "0"
+   },
+   {
+    "country": "말레이시아",
+    "region": "동남아",
+    "arr": "23",
+    "dep": "23",
+    "total": "46"
+   },
+   {
+    "country": "베트남",
+    "region": "동남아",
+    "arr": "100",
+    "dep": "100",
+    "total": "200"
+   },
+   {
+    "country": "싱가포르",
+    "region": "동남아",
+    "arr": "34",
+    "dep": "12",
+    "total": "46"
+   },
+   {
+    "country": "인도네시아",
+    "region": "동남아",
+    "arr": "0",
+    "dep": "1",
+    "total": "1"
+   },
+   {
+    "country": "태국",
+    "region": "동남아",
+    "arr": "9",
+    "dep": "9",
+    "total": "18"
+   },
+   {
+    "country": "필리핀",
+    "region": "동남아",
+    "arr": "0",
+    "dep": "0",
+    "total": "0"
+   },
+   {
+    "country": "대만",
+    "region": "동북아",
+    "arr": "1",
+    "dep": "1",
+    "total": "2"
+   },
+   {
+    "country": "홍콩",
+    "region": "동북아",
+    "arr": "132",
+    "dep": "128",
+    "total": "260"
+   },
+   {
+    "country": "멕시코",
+    "region": "미주",
+    "arr": "21",
+    "dep": "21",
+    "total": "42"
+   },
+   {
+    "country": "미국",
+    "region": "미주",
+    "arr": "650",
+    "dep": "682",
+    "total": "1,332"
+   },
+   {
+    "country": "브라질",
+    "region": "미주",
+    "arr": "9",
+    "dep": "8",
+    "total": "17"
+   },
+   {
+    "country": "칠레",
+    "region": "미주",
+    "arr": "0",
+    "dep": "0",
+    "total": "0"
+   },
+   {
+    "country": "캐나다",
+    "region": "미주",
+    "arr": "13",
+    "dep": "11",
+    "total": "24"
+   },
+   {
+    "country": "페루",
+    "region": "미주",
+    "arr": "0",
+    "dep": "0",
+    "total": "0"
+   },
+   {
+    "country": "네덜란드",
+    "region": "유럽",
+    "arr": "13",
+    "dep": "13",
+    "total": "26"
+   },
+   {
+    "country": "노르웨이",
+    "region": "유럽",
+    "arr": "7",
+    "dep": "7",
+    "total": "14"
+   },
+   {
+    "country": "독일",
+    "region": "유럽",
+    "arr": "87",
+    "dep": "83",
+    "total": "170"
+   },
+   {
+    "country": "룩셈부르크",
+    "region": "유럽",
+    "arr": "10",
+    "dep": "10",
+    "total": "20"
+   },
+   {
+    "country": "벨기에",
+    "region": "유럽",
+    "arr": "11",
+    "dep": "11",
+    "total": "22"
+   },
+   {
+    "country": "스위스",
+    "region": "유럽",
+    "arr": "4",
+    "dep": "4",
+    "total": "8"
+   },
+   {
+    "country": "스페인",
+    "region": "유럽",
+    "arr": "8",
+    "dep": "8",
+    "total": "16"
+   },
+   {
+    "country": "아제르바이잔",
+    "region": "유럽",
+    "arr": "8",
+    "dep": "7",
+    "total": "15"
+   },
+   {
+    "country": "영국",
+    "region": "유럽",
+    "arr": "10",
+    "dep": "10",
+    "total": "20"
+   },
+   {
+    "country": "오스트리아",
+    "region": "유럽",
+    "arr": "0",
+    "dep": "0",
+    "total": "0"
+   },
+   {
+    "country": "이탈리아",
+    "region": "유럽",
+    "arr": "29",
+    "dep": "29",
+    "total": "58"
+   },
+   {
+    "country": "카자흐스탄",
+    "region": "유럽",
+    "arr": "0",
+    "dep": "0",
+    "total": "0"
+   },
+   {
+    "country": "투르크메니스탄",
+    "region": "유럽",
+    "arr": "2",
+    "dep": "2",
+    "total": "4"
+   },
+   {
+    "country": "튀르키예",
+    "region": "유럽",
+    "arr": "8",
+    "dep": "8",
+    "total": "16"
+   },
+   {
+    "country": "프랑스",
+    "region": "유럽",
+    "arr": "0",
+    "dep": "0",
+    "total": "0"
+   },
+   {
+    "country": "일본",
+    "region": "일본",
+    "arr": "139",
+    "dep": "138",
+    "total": "277"
+   },
+   {
+    "country": "중국",
+    "region": "중국",
+    "arr": "377",
+    "dep": "389",
+    "total": "766"
+   },
+   {
+    "country": "아랍에미리트",
+    "region": "중동",
+    "arr": "0",
+    "dep": "0",
+    "total": "0"
+   },
+   {
+    "country": "카타르",
+    "region": "중동",
+    "arr": "14",
+    "dep": "14",
+    "total": "28"
+   }
+  ],
+  "202603": [
+   {
+    "country": "에티오피아",
+    "region": "기타",
+    "arr": "13",
+    "dep": "13",
+    "total": "26"
+   },
+   {
+    "country": "인도",
+    "region": "기타",
+    "arr": "0",
+    "dep": "0",
+    "total": "0"
+   },
+   {
+    "country": "하와이",
+    "region": "대양주",
+    "arr": "1",
+    "dep": "0",
+    "total": "1"
+   },
+   {
+    "country": "호주",
+    "region": "대양주",
+    "arr": "0",
+    "dep": "0",
+    "total": "0"
+   },
+   {
+    "country": "말레이시아",
+    "region": "동남아",
+    "arr": "24",
+    "dep": "24",
+    "total": "48"
+   },
+   {
+    "country": "베트남",
+    "region": "동남아",
+    "arr": "131",
+    "dep": "146",
+    "total": "277"
+   },
+   {
+    "country": "싱가포르",
+    "region": "동남아",
+    "arr": "42",
+    "dep": "18",
+    "total": "60"
+   },
+   {
+    "country": "인도네시아",
+    "region": "동남아",
+    "arr": "0",
+    "dep": "0",
+    "total": "0"
+   },
+   {
+    "country": "태국",
+    "region": "동남아",
+    "arr": "10",
+    "dep": "10",
+    "total": "20"
+   },
+   {
+    "country": "필리핀",
+    "region": "동남아",
+    "arr": "0",
+    "dep": "1",
+    "total": "1"
+   },
+   {
+    "country": "대만",
+    "region": "동북아",
+    "arr": "2",
+    "dep": "3",
+    "total": "5"
+   },
+   {
+    "country": "몽골",
+    "region": "동북아",
+    "arr": "1",
+    "dep": "1",
+    "total": "2"
+   },
+   {
+    "country": "홍콩",
+    "region": "동북아",
+    "arr": "150",
+    "dep": "146",
+    "total": "296"
+   },
+   {
+    "country": "멕시코",
+    "region": "미주",
+    "arr": "28",
+    "dep": "27",
+    "total": "55"
+   },
+   {
+    "country": "미국",
+    "region": "미주",
+    "arr": "810",
+    "dep": "873",
+    "total": "1,683"
+   },
+   {
+    "country": "브라질",
+    "region": "미주",
+    "arr": "9",
+    "dep": "9",
+    "total": "18"
+   },
+   {
+    "country": "칠레",
+    "region": "미주",
+    "arr": "0",
+    "dep": "0",
+    "total": "0"
+   },
+   {
+    "country": "캐나다",
+    "region": "미주",
+    "arr": "13",
+    "dep": "12",
+    "total": "25"
+   },
+   {
+    "country": "페루",
+    "region": "미주",
+    "arr": "0",
+    "dep": "0",
+    "total": "0"
+   },
+   {
+    "country": "네덜란드",
+    "region": "유럽",
+    "arr": "14",
+    "dep": "14",
+    "total": "28"
+   },
+   {
+    "country": "노르웨이",
+    "region": "유럽",
+    "arr": "8",
+    "dep": "9",
+    "total": "17"
+   },
+   {
+    "country": "독일",
+    "region": "유럽",
+    "arr": "111",
+    "dep": "104",
+    "total": "215"
+   },
+   {
+    "country": "룩셈부르크",
+    "region": "유럽",
+    "arr": "13",
+    "dep": "13",
+    "total": "26"
+   },
+   {
+    "country": "벨기에",
+    "region": "유럽",
+    "arr": "14",
+    "dep": "13",
+    "total": "27"
+   },
+   {
+    "country": "스위스",
+    "region": "유럽",
+    "arr": "5",
+    "dep": "5",
+    "total": "10"
+   },
+   {
+    "country": "스페인",
+    "region": "유럽",
+    "arr": "8",
+    "dep": "9",
+    "total": "17"
+   },
+   {
+    "country": "아제르바이잔",
+    "region": "유럽",
+    "arr": "13",
+    "dep": "11",
+    "total": "24"
+   },
+   {
+    "country": "영국",
+    "region": "유럽",
+    "arr": "14",
+    "dep": "13",
+    "total": "27"
+   },
+   {
+    "country": "오스트리아",
+    "region": "유럽",
+    "arr": "0",
+    "dep": "0",
+    "total": "0"
+   },
+   {
+    "country": "이탈리아",
+    "region": "유럽",
+    "arr": "38",
+    "dep": "39",
+    "total": "77"
+   },
+   {
+    "country": "카자흐스탄",
+    "region": "유럽",
+    "arr": "0",
+    "dep": "0",
+    "total": "0"
+   },
+   {
+    "country": "투르크메니스탄",
+    "region": "유럽",
+    "arr": "10",
+    "dep": "10",
+    "total": "20"
+   },
+   {
+    "country": "튀르키예",
+    "region": "유럽",
+    "arr": "9",
+    "dep": "9",
+    "total": "18"
+   },
+   {
+    "country": "폴란드",
+    "region": "유럽",
+    "arr": "1",
+    "dep": "0",
+    "total": "1"
+   },
+   {
+    "country": "프랑스",
+    "region": "유럽",
+    "arr": "0",
+    "dep": "0",
+    "total": "0"
+   },
+   {
+    "country": "일본",
+    "region": "일본",
+    "arr": "159",
+    "dep": "159",
+    "total": "318"
+   },
+   {
+    "country": "중국",
+    "region": "중국",
+    "arr": "460",
+    "dep": "472",
+    "total": "932"
+   },
+   {
+    "country": "카타르",
+    "region": "중동",
+    "arr": "5",
+    "dep": "5",
+    "total": "10"
+   }
+  ],
+  "202604": [
+   {
+    "country": "에티오피아",
+    "region": "기타",
+    "arr": "12",
+    "dep": "12",
+    "total": "24"
+   },
+   {
+    "country": "인도",
+    "region": "기타",
+    "arr": "0",
+    "dep": "0",
+    "total": "0"
+   },
+   {
+    "country": "하와이",
+    "region": "대양주",
+    "arr": "0",
+    "dep": "3",
+    "total": "3"
+   },
+   {
+    "country": "호주",
+    "region": "대양주",
+    "arr": "0",
+    "dep": "0",
+    "total": "0"
+   },
+   {
+    "country": "말레이시아",
+    "region": "동남아",
+    "arr": "26",
+    "dep": "26",
+    "total": "52"
+   },
+   {
+    "country": "베트남",
+    "region": "동남아",
+    "arr": "129",
+    "dep": "130",
+    "total": "259"
+   },
+   {
+    "country": "싱가포르",
+    "region": "동남아",
+    "arr": "43",
+    "dep": "17",
+    "total": "60"
+   },
+   {
+    "country": "인도네시아",
+    "region": "동남아",
+    "arr": "0",
+    "dep": "1",
+    "total": "1"
+   },
+   {
+    "country": "태국",
+    "region": "동남아",
+    "arr": "9",
+    "dep": "9",
+    "total": "18"
+   },
+   {
+    "country": "필리핀",
+    "region": "동남아",
+    "arr": "0",
+    "dep": "0",
+    "total": "0"
+   },
+   {
+    "country": "대만",
+    "region": "동북아",
+    "arr": "3",
+    "dep": "2",
+    "total": "5"
+   },
+   {
+    "country": "몽골",
+    "region": "동북아",
+    "arr": "4",
+    "dep": "4",
+    "total": "8"
+   },
+   {
+    "country": "홍콩",
+    "region": "동북아",
+    "arr": "135",
+    "dep": "135",
+    "total": "270"
+   },
+   {
+    "country": "멕시코",
+    "region": "미주",
+    "arr": "28",
+    "dep": "29",
+    "total": "57"
+   },
+   {
+    "country": "미국",
+    "region": "미주",
+    "arr": "818",
+    "dep": "884",
+    "total": "1,702"
+   },
+   {
+    "country": "브라질",
+    "region": "미주",
+    "arr": "8",
+    "dep": "9",
+    "total": "17"
+   },
+   {
+    "country": "칠레",
+    "region": "미주",
+    "arr": "0",
+    "dep": "0",
+    "total": "0"
+   },
+   {
+    "country": "캐나다",
+    "region": "미주",
+    "arr": "8",
+    "dep": "8",
+    "total": "16"
+   },
+   {
+    "country": "페루",
+    "region": "미주",
+    "arr": "0",
+    "dep": "0",
+    "total": "0"
+   },
+   {
+    "country": "네덜란드",
+    "region": "유럽",
+    "arr": "25",
+    "dep": "25",
+    "total": "50"
+   },
+   {
+    "country": "노르웨이",
+    "region": "유럽",
+    "arr": "9",
+    "dep": "8",
+    "total": "17"
+   },
+   {
+    "country": "독일",
+    "region": "유럽",
+    "arr": "109",
+    "dep": "106",
+    "total": "215"
+   },
+   {
+    "country": "룩셈부르크",
+    "region": "유럽",
+    "arr": "13",
+    "dep": "13",
+    "total": "26"
+   },
+   {
+    "country": "벨기에",
+    "region": "유럽",
+    "arr": "13",
+    "dep": "13",
+    "total": "26"
+   },
+   {
+    "country": "스위스",
+    "region": "유럽",
+    "arr": "4",
+    "dep": "4",
+    "total": "8"
+   },
+   {
+    "country": "스페인",
+    "region": "유럽",
+    "arr": "9",
+    "dep": "8",
+    "total": "17"
+   },
+   {
+    "country": "아제르바이잔",
+    "region": "유럽",
+    "arr": "12",
+    "dep": "14",
+    "total": "26"
+   },
+   {
+    "country": "영국",
+    "region": "유럽",
+    "arr": "8",
+    "dep": "9",
+    "total": "17"
+   },
+   {
+    "country": "오스트리아",
+    "region": "유럽",
+    "arr": "0",
+    "dep": "0",
+    "total": "0"
+   },
+   {
+    "country": "이탈리아",
+    "region": "유럽",
+    "arr": "39",
+    "dep": "40",
+    "total": "79"
+   },
+   {
+    "country": "카자흐스탄",
+    "region": "유럽",
+    "arr": "0",
+    "dep": "0",
+    "total": "0"
+   },
+   {
+    "country": "투르크메니스탄",
+    "region": "유럽",
+    "arr": "4",
+    "dep": "4",
+    "total": "8"
+   },
+   {
+    "country": "튀르키예",
+    "region": "유럽",
+    "arr": "8",
+    "dep": "8",
+    "total": "16"
+   },
+   {
+    "country": "프랑스",
+    "region": "유럽",
+    "arr": "0",
+    "dep": "0",
+    "total": "0"
+   },
+   {
+    "country": "일본",
+    "region": "일본",
+    "arr": "151",
+    "dep": "151",
+    "total": "302"
+   },
+   {
+    "country": "중국",
+    "region": "중국",
+    "arr": "448",
+    "dep": "454",
+    "total": "902"
+   },
+   {
+    "country": "아랍에미리트",
+    "region": "중동",
+    "arr": "2",
+    "dep": "2",
+    "total": "4"
+   },
+   {
+    "country": "카타르",
+    "region": "중동",
+    "arr": "14",
+    "dep": "13",
+    "total": "27"
+   }
+  ],
+  "202605": [
+   {
+    "country": "에티오피아",
+    "region": "기타",
+    "arr": "11",
+    "dep": "11",
+    "total": "22"
+   },
+   {
+    "country": "인도",
+    "region": "기타",
+    "arr": "0",
+    "dep": "0",
+    "total": "0"
+   },
+   {
+    "country": "하와이",
+    "region": "대양주",
+    "arr": "0",
+    "dep": "1",
+    "total": "1"
+   },
+   {
+    "country": "호주",
+    "region": "대양주",
+    "arr": "0",
+    "dep": "0",
+    "total": "0"
+   },
+   {
+    "country": "말레이시아",
+    "region": "동남아",
+    "arr": "28",
+    "dep": "28",
+    "total": "56"
+   },
+   {
+    "country": "베트남",
+    "region": "동남아",
+    "arr": "115",
+    "dep": "122",
+    "total": "237"
+   },
+   {
+    "country": "싱가포르",
+    "region": "동남아",
+    "arr": "44",
+    "dep": "22",
+    "total": "66"
+   },
+   {
+    "country": "인도네시아",
+    "region": "동남아",
+    "arr": "2",
+    "dep": "0",
+    "total": "2"
+   },
+   {
+    "country": "태국",
+    "region": "동남아",
+    "arr": "9",
+    "dep": "10",
+    "total": "19"
+   },
+   {
+    "country": "필리핀",
+    "region": "동남아",
+    "arr": "0",
+    "dep": "0",
+    "total": "0"
+   },
+   {
+    "country": "대만",
+    "region": "동북아",
+    "arr": "4",
+    "dep": "3",
+    "total": "7"
+   },
+   {
+    "country": "몽골",
+    "region": "동북아",
+    "arr": "3",
+    "dep": "3",
+    "total": "6"
+   },
+   {
+    "country": "홍콩",
+    "region": "동북아",
+    "arr": "131",
+    "dep": "131",
+    "total": "262"
+   },
+   {
+    "country": "멕시코",
+    "region": "미주",
+    "arr": "27",
+    "dep": "27",
+    "total": "54"
+   },
+   {
+    "country": "미국",
+    "region": "미주",
+    "arr": "796",
+    "dep": "884",
+    "total": "1,680"
+   },
+   {
+    "country": "브라질",
+    "region": "미주",
+    "arr": "9",
+    "dep": "9",
+    "total": "18"
+   },
+   {
+    "country": "칠레",
+    "region": "미주",
+    "arr": "0",
+    "dep": "0",
+    "total": "0"
+   },
+   {
+    "country": "캐나다",
+    "region": "미주",
+    "arr": "9",
+    "dep": "9",
+    "total": "18"
+   },
+   {
+    "country": "페루",
+    "region": "미주",
+    "arr": "0",
+    "dep": "0",
+    "total": "0"
+   },
+   {
+    "country": "네덜란드",
+    "region": "유럽",
+    "arr": "24",
+    "dep": "25",
+    "total": "49"
+   },
+   {
+    "country": "노르웨이",
+    "region": "유럽",
+    "arr": "8",
+    "dep": "8",
+    "total": "16"
+   },
+   {
+    "country": "독일",
+    "region": "유럽",
+    "arr": "109",
+    "dep": "87",
+    "total": "196"
+   },
+   {
+    "country": "룩셈부르크",
+    "region": "유럽",
+    "arr": "13",
+    "dep": "13",
+    "total": "26"
+   },
+   {
+    "country": "벨기에",
+    "region": "유럽",
+    "arr": "13",
+    "dep": "14",
+    "total": "27"
+   },
+   {
+    "country": "스위스",
+    "region": "유럽",
+    "arr": "4",
+    "dep": "5",
+    "total": "9"
+   },
+   {
+    "country": "스페인",
+    "region": "유럽",
+    "arr": "9",
+    "dep": "9",
+    "total": "18"
+   },
+   {
+    "country": "아제르바이잔",
+    "region": "유럽",
+    "arr": "15",
+    "dep": "14",
+    "total": "29"
+   },
+   {
+    "country": "영국",
+    "region": "유럽",
+    "arr": "11",
+    "dep": "10",
+    "total": "21"
+   },
+   {
+    "country": "오스트리아",
+    "region": "유럽",
+    "arr": "0",
+    "dep": "0",
+    "total": "0"
+   },
+   {
+    "country": "이탈리아",
+    "region": "유럽",
+    "arr": "37",
+    "dep": "37",
+    "total": "74"
+   },
+   {
+    "country": "카자흐스탄",
+    "region": "유럽",
+    "arr": "0",
+    "dep": "0",
+    "total": "0"
+   },
+   {
+    "country": "투르크메니스탄",
+    "region": "유럽",
+    "arr": "5",
+    "dep": "5",
+    "total": "10"
+   },
+   {
+    "country": "튀르키예",
+    "region": "유럽",
+    "arr": "10",
+    "dep": "10",
+    "total": "20"
+   },
+   {
+    "country": "프랑스",
+    "region": "유럽",
+    "arr": "0",
+    "dep": "0",
+    "total": "0"
+   },
+   {
+    "country": "일본",
+    "region": "일본",
+    "arr": "151",
+    "dep": "151",
+    "total": "302"
+   },
+   {
+    "country": "중국",
+    "region": "중국",
+    "arr": "438",
+    "dep": "454",
+    "total": "892"
+   },
+   {
+    "country": "아랍에미리트",
+    "region": "중동",
+    "arr": "7",
+    "dep": "6",
+    "total": "13"
+   },
+   {
+    "country": "카타르",
+    "region": "중동",
+    "arr": "18",
+    "dep": "19",
+    "total": "37"
+   }
+  ],
+  "202606": [
+   {
+    "country": "에티오피아",
+    "region": "기타",
+    "arr": "13",
+    "dep": "13",
+    "total": "26"
+   },
+   {
+    "country": "인도",
+    "region": "기타",
+    "arr": "0",
+    "dep": "0",
+    "total": "0"
+   },
+   {
+    "country": "호주",
+    "region": "대양주",
+    "arr": "0",
+    "dep": "0",
+    "total": "0"
+   },
+   {
+    "country": "말레이시아",
+    "region": "동남아",
+    "arr": "24",
+    "dep": "24",
+    "total": "48"
+   },
+   {
+    "country": "베트남",
+    "region": "동남아",
+    "arr": "122",
+    "dep": "126",
+    "total": "248"
+   },
+   {
+    "country": "싱가포르",
+    "region": "동남아",
+    "arr": "42",
+    "dep": "17",
+    "total": "59"
+   },
+   {
+    "country": "인도네시아",
+    "region": "동남아",
+    "arr": "1",
+    "dep": "1",
+    "total": "2"
+   },
+   {
+    "country": "태국",
+    "region": "동남아",
+    "arr": "9",
+    "dep": "8",
+    "total": "17"
+   },
+   {
+    "country": "필리핀",
+    "region": "동남아",
+    "arr": "0",
+    "dep": "0",
+    "total": "0"
+   },
+   {
+    "country": "대만",
+    "region": "동북아",
+    "arr": "2",
+    "dep": "3",
+    "total": "5"
+   },
+   {
+    "country": "홍콩",
+    "region": "동북아",
+    "arr": "146",
+    "dep": "148",
+    "total": "294"
+   },
+   {
+    "country": "멕시코",
+    "region": "미주",
+    "arr": "30",
+    "dep": "31",
+    "total": "61"
+   },
+   {
+    "country": "미국",
+    "region": "미주",
+    "arr": "883",
+    "dep": "935",
+    "total": "1,818"
+   },
+   {
+    "country": "브라질",
+    "region": "미주",
+    "arr": "9",
+    "dep": "8",
+    "total": "17"
+   },
+   {
+    "country": "칠레",
+    "region": "미주",
+    "arr": "0",
+    "dep": "0",
+    "total": "0"
+   },
+   {
+    "country": "캐나다",
+    "region": "미주",
+    "arr": "9",
+    "dep": "9",
+    "total": "18"
+   },
+   {
+    "country": "페루",
+    "region": "미주",
+    "arr": "0",
+    "dep": "0",
+    "total": "0"
+   },
+   {
+    "country": "네덜란드",
+    "region": "유럽",
+    "arr": "26",
+    "dep": "25",
+    "total": "51"
+   },
+   {
+    "country": "노르웨이",
+    "region": "유럽",
+    "arr": "8",
+    "dep": "9",
+    "total": "17"
+   },
+   {
+    "country": "독일",
+    "region": "유럽",
+    "arr": "106",
+    "dep": "90",
+    "total": "196"
+   },
+   {
+    "country": "룩셈부르크",
+    "region": "유럽",
+    "arr": "12",
+    "dep": "12",
+    "total": "24"
+   },
+   {
+    "country": "벨기에",
+    "region": "유럽",
+    "arr": "13",
+    "dep": "13",
+    "total": "26"
+   },
+   {
+    "country": "스위스",
+    "region": "유럽",
+    "arr": "5",
+    "dep": "4",
+    "total": "9"
+   },
+   {
+    "country": "스페인",
+    "region": "유럽",
+    "arr": "8",
+    "dep": "9",
+    "total": "17"
+   },
+   {
+    "country": "아제르바이잔",
+    "region": "유럽",
+    "arr": "13",
+    "dep": "14",
+    "total": "27"
+   },
+   {
+    "country": "영국",
+    "region": "유럽",
+    "arr": "8",
+    "dep": "8",
+    "total": "16"
+   },
+   {
+    "country": "오스트리아",
+    "region": "유럽",
+    "arr": "0",
+    "dep": "0",
+    "total": "0"
+   },
+   {
+    "country": "우즈베키스탄",
+    "region": "유럽",
+    "arr": "1",
+    "dep": "1",
+    "total": "2"
+   },
+   {
+    "country": "이탈리아",
+    "region": "유럽",
+    "arr": "39",
+    "dep": "38",
+    "total": "77"
+   },
+   {
+    "country": "카자흐스탄",
+    "region": "유럽",
+    "arr": "0",
+    "dep": "0",
+    "total": "0"
+   },
+   {
+    "country": "투르크메니스탄",
+    "region": "유럽",
+    "arr": "3",
+    "dep": "3",
+    "total": "6"
+   },
+   {
+    "country": "튀르키예",
+    "region": "유럽",
+    "arr": "8",
+    "dep": "8",
+    "total": "16"
+   },
+   {
+    "country": "프랑스",
+    "region": "유럽",
+    "arr": "0",
+    "dep": "0",
+    "total": "0"
+   },
+   {
+    "country": "일본",
+    "region": "일본",
+    "arr": "151",
+    "dep": "151",
+    "total": "302"
+   },
+   {
+    "country": "중국",
+    "region": "중국",
+    "arr": "428",
+    "dep": "444",
+    "total": "872"
+   },
+   {
+    "country": "아랍에미리트",
+    "region": "중동",
+    "arr": "0",
+    "dep": "1",
+    "total": "1"
+   },
+   {
+    "country": "카타르",
+    "region": "중동",
+    "arr": "16",
+    "dep": "16",
+    "total": "32"
+   }
+  ],
+  "202607": [
+   {
+    "country": "에티오피아",
+    "region": "기타",
+    "arr": "14",
+    "dep": "14",
+    "total": "28"
+   },
+   {
+    "country": "인도",
+    "region": "기타",
+    "arr": "0",
+    "dep": "0",
+    "total": "0"
+   },
+   {
+    "country": "하와이",
+    "region": "대양주",
+    "arr": "0",
+    "dep": "0",
+    "total": "0"
+   },
+   {
+    "country": "호주",
+    "region": "대양주",
+    "arr": "0",
+    "dep": "0",
+    "total": "0"
+   },
+   {
+    "country": "말레이시아",
+    "region": "동남아",
+    "arr": "27",
+    "dep": "27",
+    "total": "54"
+   },
+   {
+    "country": "베트남",
+    "region": "동남아",
+    "arr": "125",
+    "dep": "122",
+    "total": "247"
+   },
+   {
+    "country": "싱가포르",
+    "region": "동남아",
+    "arr": "47",
+    "dep": "19",
+    "total": "66"
+   },
+   {
+    "country": "인도네시아",
+    "region": "동남아",
+    "arr": "0",
+    "dep": "0",
+    "total": "0"
+   },
+   {
+    "country": "태국",
+    "region": "동남아",
+    "arr": "9",
+    "dep": "9",
+    "total": "18"
+   },
+   {
+    "country": "필리핀",
+    "region": "동남아",
+    "arr": "0",
+    "dep": "0",
+    "total": "0"
+   },
+   {
+    "country": "대만",
+    "region": "동북아",
+    "arr": "0",
+    "dep": "1",
+    "total": "1"
+   },
+   {
+    "country": "몽골",
+    "region": "동북아",
+    "arr": "1",
+    "dep": "1",
+    "total": "2"
+   },
+   {
+    "country": "홍콩",
+    "region": "동북아",
+    "arr": "150",
+    "dep": "150",
+    "total": "300"
+   },
+   {
+    "country": "멕시코",
+    "region": "미주",
+    "arr": "27",
+    "dep": "27",
+    "total": "54"
+   },
+   {
+    "country": "미국",
+    "region": "미주",
+    "arr": "899",
+    "dep": "969",
+    "total": "1,868"
+   },
+   {
+    "country": "브라질",
+    "region": "미주",
+    "arr": "8",
+    "dep": "9",
+    "total": "17"
+   },
+   {
+    "country": "칠레",
+    "region": "미주",
+    "arr": "0",
+    "dep": "0",
+    "total": "0"
+   },
+   {
+    "country": "캐나다",
+    "region": "미주",
+    "arr": "8",
+    "dep": "8",
+    "total": "16"
+   },
+   {
+    "country": "페루",
+    "region": "미주",
+    "arr": "0",
+    "dep": "0",
+    "total": "0"
+   },
+   {
+    "country": "네덜란드",
+    "region": "유럽",
+    "arr": "24",
+    "dep": "24",
+    "total": "48"
+   },
+   {
+    "country": "노르웨이",
+    "region": "유럽",
+    "arr": "10",
+    "dep": "9",
+    "total": "19"
+   },
+   {
+    "country": "독일",
+    "region": "유럽",
+    "arr": "104",
+    "dep": "88",
+    "total": "192"
+   },
+   {
+    "country": "룩셈부르크",
+    "region": "유럽",
+    "arr": "13",
+    "dep": "13",
+    "total": "26"
+   },
+   {
+    "country": "벨기에",
+    "region": "유럽",
+    "arr": "13",
+    "dep": "13",
+    "total": "26"
+   },
+   {
+    "country": "스위스",
+    "region": "유럽",
+    "arr": "4",
+    "dep": "4",
+    "total": "8"
+   },
+   {
+    "country": "스페인",
+    "region": "유럽",
+    "arr": "9",
+    "dep": "9",
+    "total": "18"
+   },
+   {
+    "country": "아제르바이잔",
+    "region": "유럽",
+    "arr": "12",
+    "dep": "12",
+    "total": "24"
+   },
+   {
+    "country": "영국",
+    "region": "유럽",
+    "arr": "9",
+    "dep": "9",
+    "total": "18"
+   },
+   {
+    "country": "오스트리아",
+    "region": "유럽",
+    "arr": "0",
+    "dep": "0",
+    "total": "0"
+   },
+   {
+    "country": "이탈리아",
+    "region": "유럽",
+    "arr": "39",
+    "dep": "40",
+    "total": "79"
+   },
+   {
+    "country": "카자흐스탄",
+    "region": "유럽",
+    "arr": "0",
+    "dep": "0",
+    "total": "0"
+   },
+   {
+    "country": "투르크메니스탄",
+    "region": "유럽",
+    "arr": "2",
+    "dep": "2",
+    "total": "4"
+   },
+   {
+    "country": "튀르키예",
+    "region": "유럽",
+    "arr": "9",
+    "dep": "9",
+    "total": "18"
+   },
+   {
+    "country": "프랑스",
+    "region": "유럽",
+    "arr": "0",
+    "dep": "0",
+    "total": "0"
+   },
+   {
+    "country": "일본",
+    "region": "일본",
+    "arr": "160",
+    "dep": "161",
+    "total": "321"
+   },
+   {
+    "country": "중국",
+    "region": "중국",
+    "arr": "427",
+    "dep": "451",
+    "total": "878"
+   },
+   {
+    "country": "카타르",
+    "region": "중동",
+    "arr": "19",
+    "dep": "18",
+    "total": "37"
+   }
+  ],
+  "202608": [
+   {
+    "country": "에티오피아",
+    "region": "기타",
+    "arr": "13",
+    "dep": "13",
+    "total": "26"
+   },
+   {
+    "country": "인도",
+    "region": "기타",
+    "arr": "0",
+    "dep": "0",
+    "total": "0"
+   },
+   {
+    "country": "괌",
+    "region": "대양주",
+    "arr": "1",
+    "dep": "1",
+    "total": "2"
+   },
+   {
+    "country": "호주",
+    "region": "대양주",
+    "arr": "0",
+    "dep": "0",
+    "total": "0"
+   },
+   {
+    "country": "말레이시아",
+    "region": "동남아",
+    "arr": "26",
+    "dep": "27",
+    "total": "53"
+   },
+   {
+    "country": "베트남",
+    "region": "동남아",
+    "arr": "130",
+    "dep": "128",
+    "total": "258"
+   },
+   {
+    "country": "싱가포르",
+    "region": "동남아",
+    "arr": "45",
+    "dep": "19",
+    "total": "64"
+   },
+   {
+    "country": "인도네시아",
+    "region": "동남아",
+    "arr": "1",
+    "dep": "0",
+    "total": "1"
+   },
+   {
+    "country": "태국",
+    "region": "동남아",
+    "arr": "9",
+    "dep": "9",
+    "total": "18"
+   },
+   {
+    "country": "필리핀",
+    "region": "동남아",
+    "arr": "0",
+    "dep": "0",
+    "total": "0"
+   },
+   {
+    "country": "대만",
+    "region": "동북아",
+    "arr": "0",
+    "dep": "0",
+    "total": "0"
+   },
+   {
+    "country": "마카오",
+    "region": "동북아",
+    "arr": "0",
+    "dep": "0",
+    "total": "0"
+   },
+   {
+    "country": "몽골",
+    "region": "동북아",
+    "arr": "2",
+    "dep": "2",
+    "total": "4"
+   },
+   {
+    "country": "홍콩",
+    "region": "동북아",
+    "arr": "131",
+    "dep": "131",
+    "total": "262"
+   },
+   {
+    "country": "멕시코",
+    "region": "미주",
+    "arr": "26",
+    "dep": "26",
+    "total": "52"
+   },
+   {
+    "country": "미국",
+    "region": "미주",
+    "arr": "875",
+    "dep": "967",
+    "total": "1,842"
+   },
+   {
+    "country": "브라질",
+    "region": "미주",
+    "arr": "9",
+    "dep": "9",
+    "total": "18"
+   },
+   {
+    "country": "칠레",
+    "region": "미주",
+    "arr": "0",
+    "dep": "0",
+    "total": "0"
+   },
+   {
+    "country": "캐나다",
+    "region": "미주",
+    "arr": "10",
+    "dep": "10",
+    "total": "20"
+   },
+   {
+    "country": "페루",
+    "region": "미주",
+    "arr": "0",
+    "dep": "0",
+    "total": "0"
+   },
+   {
+    "country": "네덜란드",
+    "region": "유럽",
+    "arr": "23",
+    "dep": "23",
+    "total": "46"
+   },
+   {
+    "country": "노르웨이",
+    "region": "유럽",
+    "arr": "8",
+    "dep": "8",
+    "total": "16"
+   },
+   {
+    "country": "독일",
+    "region": "유럽",
+    "arr": "97",
+    "dep": "79",
+    "total": "176"
+   },
+   {
+    "country": "룩셈부르크",
+    "region": "유럽",
+    "arr": "14",
+    "dep": "14",
+    "total": "28"
+   },
+   {
+    "country": "벨기에",
+    "region": "유럽",
+    "arr": "13",
+    "dep": "13",
+    "total": "26"
+   },
+   {
+    "country": "스위스",
+    "region": "유럽",
+    "arr": "5",
+    "dep": "5",
+    "total": "10"
+   },
+   {
+    "country": "스페인",
+    "region": "유럽",
+    "arr": "9",
+    "dep": "8",
+    "total": "17"
+   },
+   {
+    "country": "아제르바이잔",
+    "region": "유럽",
+    "arr": "13",
+    "dep": "13",
+    "total": "26"
+   },
+   {
+    "country": "영국",
+    "region": "유럽",
+    "arr": "9",
+    "dep": "9",
+    "total": "18"
+   },
+   {
+    "country": "오스트리아",
+    "region": "유럽",
+    "arr": "0",
+    "dep": "0",
+    "total": "0"
+   },
+   {
+    "country": "이탈리아",
+    "region": "유럽",
+    "arr": "40",
+    "dep": "39",
+    "total": "79"
+   },
+   {
+    "country": "카자흐스탄",
+    "region": "유럽",
+    "arr": "0",
+    "dep": "0",
+    "total": "0"
+   },
+   {
+    "country": "투르크메니스탄",
+    "region": "유럽",
+    "arr": "2",
+    "dep": "2",
+    "total": "4"
+   },
+   {
+    "country": "튀르키예",
+    "region": "유럽",
+    "arr": "9",
+    "dep": "9",
+    "total": "18"
+   },
+   {
+    "country": "프랑스",
+    "region": "유럽",
+    "arr": "0",
+    "dep": "0",
+    "total": "0"
+   },
+   {
+    "country": "일본",
+    "region": "일본",
+    "arr": "139",
+    "dep": "139",
+    "total": "278"
+   },
+   {
+    "country": "중국",
+    "region": "중국",
+    "arr": "417",
+    "dep": "436",
+    "total": "853"
+   },
+   {
+    "country": "카타르",
+    "region": "중동",
+    "arr": "17",
+    "dep": "18",
+    "total": "35"
+   }
+  ]
+ }
+}

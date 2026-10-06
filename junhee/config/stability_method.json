@@ -1,0 +1,181 @@
+{
+  "method_version": "1.0",
+  "status": "확정",
+  "decided_by": "팀 (사용자 확인)",
+  "decided_on": "2026-09-23",
+  "indicator": {
+    "name": "결제통화 환율 (원/외화 월평균)",
+    "source": "Federal Reserve H.10 일별 환율 (FRED DEX* 시리즈) → 원/외화 교차환율을 일별로 계산 후 월평균 · H.10 미수록 통화는 한국은행 ECOS 731Y001 일별(원/통화)",
+    "alternative_source": "한국은행 ECOS 주요국 통화의 대원화 환율 월평균 (API 키 필요, 확보 시 교체)",
+    "krw_per_usd": "DEXKOUS",
+    "cross_rates": {
+      "USD": {
+        "series": null,
+        "op": "identity",
+        "desc": "KRW/USD"
+      },
+      "CNY": {
+        "series": "DEXCHUS",
+        "op": "divide",
+        "desc": "KRW/USD ÷ CNY/USD"
+      },
+      "JPY": {
+        "series": "DEXJPUS",
+        "op": "divide",
+        "desc": "KRW/USD ÷ JPY/USD"
+      },
+      "GBP": {
+        "series": "DEXUSUK",
+        "op": "multiply",
+        "desc": "KRW/USD × USD/GBP"
+      },
+      "EUR": {
+        "series": "DEXUSEU",
+        "op": "multiply",
+        "desc": "KRW/USD × USD/EUR"
+      },
+      "CAD": {
+        "series": "DEXCAUS",
+        "op": "divide",
+        "desc": "KRW/USD ÷ CAD/USD"
+      },
+      "MXN": {
+        "series": "DEXMXUS",
+        "op": "divide",
+        "desc": "KRW/USD ÷ MXN/USD"
+      },
+      "INR": {
+        "series": "DEXINUS",
+        "op": "divide",
+        "desc": "KRW/USD ÷ INR/USD"
+      },
+      "CHF": {
+        "series": "DEXSZUS",
+        "op": "divide",
+        "desc": "KRW/USD ÷ CHF/USD"
+      },
+      "COP": {
+        "series": "ECOS_COP",
+        "op": "direct",
+        "file": "ecos_COP_daily.csv",
+        "desc": "KRW/COP (한국은행 ECOS 731Y001, 단위는 fetch_meta 참조)"
+      },
+      "KHR": {
+        "series": "ECOS_KHR",
+        "op": "direct",
+        "file": "ecos_KHR_daily.csv",
+        "desc": "KRW/KHR (한국은행 ECOS 731Y001, 단위는 fetch_meta 참조)"
+      },
+      "VND": {
+        "series": "ECOS_VND",
+        "op": "direct",
+        "file": "ecos_VND_daily.csv",
+        "desc": "KRW/VND (한국은행 ECOS 731Y001, 단위는 fetch_meta 참조)"
+      },
+      "ZiG": {
+        "series": "ECOS_ZiG",
+        "op": "direct",
+        "file": "ecos_ZiG_daily.csv",
+        "desc": "KRW/ZiG (한국은행 ECOS 731Y001, 단위는 fetch_meta 참조)"
+      }
+    },
+    "currency_by_country": {
+      "미국": {
+        "ccy": "USD"
+      },
+      "중국": {
+        "ccy": "CNY"
+      },
+      "일본": {
+        "ccy": "JPY"
+      },
+      "영국": {
+        "ccy": "GBP"
+      },
+      "EU": {
+        "ccy": "EUR"
+      },
+      "독일": {
+        "ccy": "EUR"
+      },
+      "캐나다": {
+        "ccy": "CAD"
+      },
+      "멕시코": {
+        "ccy": "MXN"
+      },
+      "인도": {
+        "ccy": "INR"
+      },
+      "스위스": {
+        "ccy": "CHF"
+      },
+      "에콰도르": {
+        "ccy": "USD",
+        "note": "미 달러 법정통화"
+      },
+      "콜롬비아": {
+        "ccy": "COP",
+        "note": "ECOS 731Y001 (H.10 미수록). 항목이 없으면 자료 부족"
+      },
+      "캄보디아": {
+        "ccy": "KHR",
+        "note": "ECOS 731Y001 (H.10 미수록). 항목이 없으면 자료 부족"
+      },
+      "짐바브웨": {
+        "ccy": "ZiG",
+        "note": "ECOS 731Y001 (H.10 미수록). 항목이 없으면 자료 부족"
+      },
+      "베트남": {
+        "ccy": "VND",
+        "note": "ECOS 731Y001 (H.10 미수록). 항목이 없으면 자료 부족"
+      }
+    },
+    "min_trading_days_per_month": 10
+  },
+  "window": {
+    "months": 12,
+    "frequency": "monthly_average",
+    "exclude_current_month": true
+  },
+  "formula": {
+    "headline": "mean_abs_mom_pct",
+    "headline_desc": "최근 12개월 월평균 환율의 전월비 등락률 절대값 평균 (%)",
+    "note": "high_low_12m",
+    "note_desc": "최근 12개월 최고·최저 월평균",
+    "detail": [
+      "coefficient_of_variation_pct"
+    ]
+  },
+  "grading": {
+    "method": "tercile_vs_history",
+    "history_years": 10,
+    "min_history_windows": 36,
+    "desc": "같은 산식을 과거 10년의 모든 12개월 롤링 구간에 적용해 분포를 만들고, 최근 12개월 값이 하위 1/3이면 안정, 중간이면 보통, 상위 1/3이면 불안정. 과거 구간이 36개 미만이면 등급 없음",
+    "labels": {
+      "low": "안정",
+      "mid": "보통",
+      "high": "불안정",
+      "none": "등급 없음"
+    }
+  },
+  "secondary": {
+    "name": "한국→목적국 해상수출 컨테이너 운임 (천원/2TEU, 월별)",
+    "source": "관세청 보도자료 hwpx '해상 수출 운송비용 현황' 월별 표",
+    "route_by_country": {
+      "미국": "미국서부"
+    },
+    "role": "보조 지표. 카드 note 에 변동폭만 표시하고 등급·점수에는 쓰지 않음 (물류 항목과 중복 방지)",
+    "grading": "과거 분포가 부족하면 등급 없음"
+  },
+  "constraints": [
+    "시장성(WSTS)·가격(관세·물가지수) 자료를 재사용하지 않는다 (동일 위험 중복 반영 금지)",
+    "운임은 보조 지표로만 쓰고 등급에 반영하지 않는다",
+    "국가위험·신용등급과 동일시하지 않는다 (명세 §6)",
+    "임계값을 절대 숫자로 임의 설정하지 않는다"
+  ],
+  "open_items": [
+    "ECOS 에 항목이 없는 통화(있다면) 대체 출처",
+    "ECOS 로 전면 교체 여부(현재 H.10 주, ECOS 보조)"
+  ]
+}

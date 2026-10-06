@@ -1,0 +1,1140 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>AXPORT - 수출 적합도 분석</title>
+
+  <!-- Tailwind CSS CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <!-- Font Awesome 6 CDN -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  <!-- Google Fonts: Noto Sans KR & Plus Jakarta Sans -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;500;600;700;800;900&family=Plus+Jakarta+Sans:wght@500;600;700;800&display=swap" rel="stylesheet">
+
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          fontFamily: {
+            sans: ['"Noto Sans KR"', '"Plus Jakarta Sans"', 'sans-serif'],
+          },
+          colors: {
+            brandBlue: '#2563EB',
+            regPink: '#E11D48',
+            mktPurple: '#8B5CF6',
+            prcBlue: '#0284C7',
+            logAmber: '#D97706',
+            stbGreen: '#059669',
+          }
+        }
+      }
+    }
+  </script>
+
+  <style>
+    /* Strict viewport confinement and zero outer scrollbars */
+    html, body {
+      width: 100vw;
+      height: 100vh;
+      margin: 0;
+      padding: 0;
+      overflow: hidden;
+      background: #F1F5F9;
+      user-select: none;
+      -webkit-user-select: none;
+    }
+
+    /* Right Edge Vertical Bookmark Index (Image 11 / Image 22 Match) */
+    .bookmark-index-btn {
+      width: 52px;
+      height: 52px;
+      border-radius: 14px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      gap: 2px;
+      font-size: 11px;
+      font-weight: 600;
+      cursor: pointer;
+      transition: all 0.2s cubic-bezier(0.4, 0, 0.2, 1);
+      background-color: #FFFFFF;
+      color: #64748B;
+      box-shadow: 0 2px 6px rgba(0, 0, 0, 0.04);
+      border: 1px solid rgba(226, 232, 240, 0.8);
+      flex-shrink: 0;
+    }
+    .bookmark-index-btn:hover {
+      background-color: #F8FAFC;
+      color: #0F172A;
+      transform: translateX(2px);
+    }
+    .bookmark-index-btn.active-all {
+      background-color: #2563EB !important;
+      color: #FFFFFF !important;
+      border-color: #2563EB !important;
+      box-shadow: 0 6px 16px rgba(37, 99, 235, 0.35);
+    }
+    .bookmark-index-btn.active-reg {
+      background-color: #E11D48 !important; /* Image 11 Signature Vibrant Rose/Pink */
+      color: #FFFFFF !important;
+      border-color: #E11D48 !important;
+      box-shadow: 0 6px 16px rgba(225, 29, 72, 0.38);
+    }
+    .bookmark-index-btn.active-mkt {
+      background-color: #8B5CF6 !important;
+      color: #FFFFFF !important;
+      border-color: #8B5CF6 !important;
+      box-shadow: 0 6px 16px rgba(139, 92, 246, 0.35);
+    }
+    .bookmark-index-btn.active-prc {
+      background-color: #0284C7 !important;
+      color: #FFFFFF !important;
+      border-color: #0284C7 !important;
+      box-shadow: 0 6px 16px rgba(2, 132, 199, 0.35);
+    }
+    .bookmark-index-btn.active-log {
+      background-color: #D97706 !important;
+      color: #FFFFFF !important;
+      border-color: #D97706 !important;
+      box-shadow: 0 6px 16px rgba(217, 119, 6, 0.35);
+    }
+    .bookmark-index-btn.active-stb {
+      background-color: #059669 !important;
+      color: #FFFFFF !important;
+      border-color: #059669 !important;
+      box-shadow: 0 6px 16px rgba(5, 150, 105, 0.35);
+    }
+
+    /* Soft Pastel Slot Cards (Image 18 & 20: borderless, soft background fills, comfortable padding) */
+    .slot-card {
+      border: none !important;
+      border-radius: 16px;
+      padding: 13px 18px;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      transition: all 0.18s ease;
+      box-shadow: 0 1px 3px rgba(0, 0, 0, 0.02);
+    }
+    .slot-card:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 6px 18px rgba(0, 0, 0, 0.04);
+    }
+
+    /* Enlarged Circular Donut Ring Gauge Smooth SVG Animation (Image 19: r=74, circumference=465) */
+    .donut-progress {
+      fill: none;
+      stroke-linecap: round;
+      stroke-dasharray: 465; /* 2 * PI * 74 */
+      stroke-dashoffset: 465;
+      transition: stroke-dashoffset 1.3s cubic-bezier(0.16, 1, 0.3, 1);
+    }
+
+    /* Bold, Distinct Angular Polylines (Image 17/18/20: 4-5 bold inflection vertices + end dot/tail) */
+    .sparkline-poly {
+      fill: none;
+      stroke-width: 2.6;
+      stroke-linecap: round;
+      stroke-linejoin: round;
+    }
+
+    .detail-kpi{background:#fff;border-radius:16px;border:1px solid #f1f5f9;padding:11px 13px;box-shadow:0 1px 3px rgba(15,23,42,.025);min-width:0}
+    .detail-kpi span{display:block;font-size:10px;font-weight:700;color:#94a3b8;margin-bottom:3px}
+    .detail-kpi strong{display:block;font-size:20px;line-height:1.1;font-weight:900;color:#0f172a;letter-spacing:-.02em}
+    .detail-kpi small{display:block;font-size:9.5px;color:#94a3b8;margin-top:4px;font-weight:600}
+    .detail-kpi.reg{border-top:3px solid #E11D48}.detail-kpi.mkt{border-top:3px solid #8B5CF6}.detail-kpi.prc{border-top:3px solid #0284C7}.detail-kpi.log{border-top:3px solid #D97706}.detail-kpi.stb{border-top:3px solid #059669}
+    .section-title{font-size:12px;font-weight:800;color:#0f172a}.section-sub{font-size:9.5px;color:#94a3b8;font-weight:500;margin-top:2px}
+    .mini-source{font-size:9px;font-weight:800;padding:4px 7px;border-radius:999px;border:1px solid}.mini-source.rose{color:#E11D48;background:#FFF1F2;border-color:#FFE4E6}.mini-source.purple{color:#7C3AED;background:#F5F3FF;border-color:#EDE9FE}.mini-source.blue{color:#0284C7;background:#F0F9FF;border-color:#E0F2FE}.mini-source.amber{color:#D97706;background:#FFFBEB;border-color:#FEF3C7}.mini-source.green{color:#059669;background:#ECFDF5;border-color:#D1FAE5}
+    .data-table{width:100%;border-collapse:collapse;font-size:10px}.data-table th{color:#94a3b8;font-weight:800;text-align:left;padding:7px 6px;border-bottom:1px solid #f1f5f9;white-space:nowrap}.data-table td{color:#475569;font-weight:600;padding:8px 6px;border-bottom:1px solid #f8fafc;white-space:nowrap}.data-table tr:last-child td{border-bottom:0}
+    .status-pill{display:inline-flex;align-items:center;padding:3px 7px;border-radius:999px;font-size:9px;font-weight:800}.status-pill.warn{background:#FFF7ED;color:#C2410C}.status-pill.info{background:#EFF6FF;color:#2563EB}.status-pill.muted{background:#F1F5F9;color:#64748B}
+    canvas{width:100%!important;height:100%!important}
+  </style>
+</head>
+<body class="w-screen h-screen flex p-2.5 lg:p-3 overflow-hidden box-border bg-[#EEF2F6]">
+
+  <div class="relative w-full h-full flex items-stretch overflow-hidden">
+    
+    <!-- Main App Window Frame (Only the Window - No Background OS/Dock) -->
+    <div id="mainAppWindow" class="flex-1 bg-white rounded-3xl shadow-xl border border-slate-200/90 flex flex-col overflow-hidden">
+      
+      <!-- 1. Window Title Bar (Image 22 Match) -->
+      <div class="h-10 px-4 bg-white border-b border-slate-100 flex items-center justify-between flex-shrink-0 select-none">
+        <div class="flex items-center space-x-2">
+          <div class="w-5 h-5 rounded-md bg-purple-50 text-purple-600 flex items-center justify-center text-xs shadow-2xs">
+            <i class="fa-solid fa-compass"></i>
+          </div>
+          <span class="font-extrabold text-sm text-slate-900">수출 적합도 분석</span>
+          <span class="bg-slate-100 text-slate-500 font-semibold text-[10px] px-2 py-0.5 rounded-full">예시 데이터</span>
+        </div>
+
+        <!-- Native Window Control Action Buttons -->
+        <div class="flex items-center space-x-1.5">
+          <button onclick="showToast('대시보드가 최소 크기로 축소되었습니다.')" class="w-6 h-6 rounded hover:bg-slate-100 text-slate-400 hover:text-slate-800 flex items-center justify-center text-xs" title="작게보기">
+            <i class="fa-solid fa-minus"></i>
+          </button>
+          <button onclick="toggleFullScreen()" id="maxBtn" class="w-6 h-6 rounded hover:bg-slate-100 text-slate-400 hover:text-slate-800 flex items-center justify-center text-xs" title="크게보기">
+            <i class="fa-regular fa-square"></i>
+          </button>
+          <button onclick="showToast('기본 화면으로 초기화되었습니다.')" class="w-6 h-6 rounded hover:bg-rose-50 text-slate-400 hover:text-rose-600 flex items-center justify-center text-xs" title="창 닫기">
+            <i class="fa-solid fa-xmark"></i>
+          </button>
+        </div>
+      </div>
+
+      <!-- 2. Window Core Content Area (Sidebar + Main Workspace) -->
+      <div class="flex-1 flex overflow-hidden">
+        
+        <aside class="w-48 bg-[#FBFBFE] border-r border-slate-100 p-3.5 flex flex-col justify-between flex-shrink-0 select-none">
+          <div class="space-y-4">
+            <!-- SECTION: WORKSPACE -->
+            <div>
+              <div class="px-2 pb-1.5 text-[10px] font-extrabold tracking-wider text-slate-400 uppercase">WORKSPACE</div>
+              <nav class="space-y-1 text-xs font-semibold">
+                <button onclick="switchTab('all')" id="side-nav-dash" class="w-full flex items-center justify-between px-2.5 py-1.5 rounded-xl bg-blue-50/80 text-blue-600 font-bold transition-all">
+                  <div class="flex items-center space-x-2">
+                    <i class="fa-solid fa-table-cells-large text-xs"></i>
+                    <span>분석 대시보드</span>
+                  </div>
+                </button>
+
+                <button onclick="showToast('새 분석 생성 마법사가 호출되었습니다.')" class="w-full flex items-center space-x-2 px-2.5 py-1.5 rounded-xl text-slate-600 hover:bg-slate-100/80 hover:text-slate-900 transition-all">
+                  <i class="fa-solid fa-arrow-up-from-bracket text-xs text-slate-400"></i>
+                  <span>새 분석 만들기</span>
+                </button>
+
+                <button onclick="showToast('기업 데이터셋: AX_반도체 (1건 보유)')" class="w-full flex items-center justify-between px-2.5 py-1.5 rounded-xl text-slate-600 hover:bg-slate-100/80 hover:text-slate-900 transition-all">
+                  <div class="flex items-center space-x-2">
+                    <i class="fa-regular fa-folder text-xs text-slate-400"></i>
+                    <span>기업 데이터</span>
+                  </div>
+                  <span class="bg-slate-200/80 text-slate-600 text-[10px] font-bold px-1.5 py-0.2 rounded-md">1</span>
+                </button>
+
+                <button onclick="openModal('reportModal')" class="w-full flex items-center space-x-2 px-2.5 py-1.5 rounded-xl text-slate-600 hover:bg-slate-100/80 hover:text-slate-900 transition-all">
+                  <i class="fa-regular fa-file-lines text-xs text-slate-400"></i>
+                  <span>보고서 내보내기</span>
+                </button>
+              </nav>
+            </div>
+
+            <!-- SECTION: PREFERENCES -->
+            <div>
+              <div class="px-2 pb-1.5 text-[10px] font-extrabold tracking-wider text-slate-400 uppercase">PREFERENCES</div>
+              <nav class="space-y-1 text-xs font-semibold">
+                <button onclick="openModal('weightModal')" class="w-full flex items-center space-x-2 px-2.5 py-1.5 rounded-xl text-slate-600 hover:bg-slate-100/80 hover:text-slate-900 transition-all">
+                  <i class="fa-solid fa-sliders text-xs text-slate-400"></i>
+                  <span>가중치 설정</span>
+                </button>
+
+                <button onclick="resetWindowView()" class="w-full flex items-center space-x-2 px-2.5 py-1.5 rounded-xl text-slate-600 hover:bg-slate-100/80 hover:text-slate-900 transition-all">
+                  <i class="fa-solid fa-window-restore text-xs text-slate-400"></i>
+                  <span>창 배치 초기화</span>
+                </button>
+              </nav>
+            </div>
+          </div>
+
+          <!-- Bottom Disclaimer Box (Image 13 / Image 22 Match) -->
+          <div class="space-y-2 pt-2 border-t border-slate-100">
+            <div class="p-2.5 bg-slate-50 border border-slate-200/70 rounded-xl space-y-1">
+              <div class="flex items-center space-x-1.5 text-[11px] font-bold text-slate-700">
+                <i class="fa-solid fa-flask-vial text-amber-500 text-xs"></i>
+                <span>프론트엔드 시연</span>
+              </div>
+              <p class="text-[10px] text-slate-500 leading-tight">
+                실제 수출 판정은 진행되지 않습니다.
+              </p>
+            </div>
+
+            <button onclick="showToast('서비스 소개 홈 화면으로 이동합니다.')" class="w-full flex items-center space-x-1.5 px-2 py-1 text-[11px] font-semibold text-slate-500 hover:text-blue-600 transition-colors">
+              <i class="fa-solid fa-arrow-left text-[10px]"></i>
+              <span>홈으로 돌아가기</span>
+            </button>
+          </div>
+        </aside>
+
+        <main class="flex-1 bg-[#F8FAFC] flex flex-col overflow-hidden">
+          
+          <!-- Canvas Top Info Context Bar -->
+          <div class="h-10 px-5 bg-white border-b border-slate-100 flex items-center justify-between flex-shrink-0">
+            <div class="flex items-center space-x-3 text-xs font-semibold text-slate-700">
+              <div class="flex items-center space-x-1.5">
+                <i class="fa-regular fa-building text-slate-400"></i>
+                <span class="font-extrabold text-slate-900">AX 반도체</span>
+              </div>
+              <span class="text-slate-300">·</span>
+              <span class="text-slate-500 font-mono">HS 8542.31</span>
+              <span class="text-slate-300">·</span>
+              <span>미국 (USA)</span>
+              <button onclick="showToast('품목 및 대상국 수정 창을 엽니다.')" class="text-slate-400 hover:text-slate-600 ml-1">
+                <i class="fa-solid fa-pen text-[10px]"></i>
+              </button>
+            </div>
+
+            <div class="flex items-center space-x-2">
+              <button onclick="openModal('weightModal')" class="flex items-center space-x-1.5 px-3 py-1 bg-white hover:bg-slate-50 border border-slate-200 rounded-lg text-xs font-semibold text-slate-700 shadow-2xs transition-colors">
+                <i class="fa-solid fa-sliders text-slate-400 text-[11px]"></i>
+                <span>가중치 설정</span>
+              </button>
+              <button onclick="openModal('reportModal')" class="flex items-center space-x-1.5 px-3 py-1 bg-blue-50 hover:bg-blue-100 border border-blue-200 rounded-lg text-xs font-bold text-blue-600 shadow-2xs transition-colors">
+                <i class="fa-solid fa-download text-[11px]"></i>
+                <span>보고서</span>
+              </button>
+            </div>
+          </div>
+
+          <!-- Content Canvas (Zero-Scroll Single-Viewport) -->
+          <div class="flex-1 p-3 overflow-hidden flex flex-col justify-between">
+            
+            <!-- ============================================================= -->
+            <!-- VIEW 1: [종합] Overview (Image 22 1:1 Complete Match)           -->
+            <!-- ============================================================= -->
+            <div id="tabView-all" class="h-full flex flex-col lg:flex-row gap-3">
+              
+              <!-- Left Comprehensive Panel: Top Donut -> Factor List -> Bottom 3-4 Lines Insight -->
+              <div class="w-full lg:w-[350px] bg-white rounded-2xl p-3.5 shadow-sm border border-slate-100 flex flex-col justify-between flex-shrink-0">
+                
+                <!-- Top: Header & Significantly Enlarged Donut Ring Gauge (Image 19 1:1 Match) -->
+                <div>
+                  <div class="flex items-center justify-between">
+                    <div>
+                      <span class="text-[9.5px] font-bold tracking-wider text-slate-400 uppercase">OVERALL EXPORT SUITABILITY</span>
+                      <h2 class="text-base font-extrabold text-slate-900 mt-0.5">종합 수출적합도</h2>
+                    </div>
+                    <div class="flex items-center space-x-1 px-2.5 py-0.5 bg-blue-50 text-blue-600 font-bold text-[11px] rounded-full border border-blue-100">
+                      <i class="fa-solid fa-arrow-trend-up text-[9px]"></i>
+                      <span>전월 대비 +2.4%</span>
+                    </div>
+                  </div>
+                  <p class="text-[11px] text-slate-500 mt-0.5 leading-tight">다섯 가지 평가요인을 종합한 우리 기업의 수출 가능성입니다.</p>
+
+                  <!-- Enlarged Centered Circular Donut Ring Gauge (Image 19: r=74, viewBox 180x180) -->
+                  <div class="flex justify-center my-1.5">
+                    <div class="relative w-44 h-44 flex items-center justify-center">
+                      <svg class="w-full h-full -rotate-90" viewBox="0 0 180 180">
+                        <defs>
+                          <linearGradient id="gaugeGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+                            <stop offset="0%" stop-color="#2563EB" />
+                            <stop offset="60%" stop-color="#38BDF8" />
+                            <stop offset="100%" stop-color="#6366F1" />
+                          </linearGradient>
+                        </defs>
+                        <circle cx="90" cy="90" r="74" stroke="#EEF2F6" stroke-width="16" fill="none"/>
+                        <circle id="gaugeRing" class="donut-progress" cx="90" cy="90" r="74" stroke="url(#gaugeGradient)" stroke-width="16"/>
+                      </svg>
+                      <div class="absolute text-center select-none">
+                        <div id="overallScoreCounter" class="text-4xl font-extrabold text-slate-900 tracking-tight leading-none">0.0</div>
+                        <div class="text-[13px] font-medium text-slate-400 mt-1">/ 100</div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <!-- Middle: Factor Breakdown Underneath Gauge -->
+                <div class="text-xs px-1 my-0.5 border-t border-slate-100/90 pt-2 space-y-1.5">
+                  <div class="text-[11px] font-bold text-slate-500 pb-0.5">요인별 점수</div>
+                  
+                  <div class="flex items-center justify-between text-xs">
+                    <div class="flex items-center space-x-2 font-medium text-slate-800">
+                      <span class="w-2.5 h-2.5 rounded-full bg-rose-500"></span>
+                      <span class="font-bold">규제 관문</span>
+                    </div>
+                    <div class="flex items-center space-x-1 font-mono">
+                      <span class="font-extrabold text-slate-900 text-[13px]">88</span>
+                      <span class="text-xs text-slate-400">/ 100</span>
+                      <span class="text-xs font-bold text-blue-600 ml-1">+3.1</span>
+                    </div>
+                  </div>
+
+                  <div class="flex items-center justify-between text-xs">
+                    <div class="flex items-center space-x-2 font-medium text-slate-800">
+                      <span class="w-2.5 h-2.5 rounded-full bg-purple-500"></span>
+                      <span class="font-bold">시장성</span>
+                    </div>
+                    <div class="flex items-center space-x-1 font-mono">
+                      <span class="font-extrabold text-slate-900 text-[13px]">82</span>
+                      <span class="text-xs text-slate-400">/ 100</span>
+                      <span class="text-xs font-bold text-blue-600 ml-1">+2.7</span>
+                    </div>
+                  </div>
+
+                  <div class="flex items-center justify-between text-xs">
+                    <div class="flex items-center space-x-2 font-medium text-slate-800">
+                      <span class="w-2.5 h-2.5 rounded-full bg-sky-500"></span>
+                      <span class="font-bold">가격</span>
+                    </div>
+                    <div class="flex items-center space-x-1 font-mono">
+                      <span class="font-extrabold text-slate-900 text-[13px]">76</span>
+                      <span class="text-xs text-slate-400">/ 100</span>
+                      <span class="text-xs font-bold text-blue-600 ml-1">+1.8</span>
+                    </div>
+                  </div>
+
+                  <div class="flex items-center justify-between text-xs">
+                    <div class="flex items-center space-x-2 font-medium text-slate-800">
+                      <span class="w-2.5 h-2.5 rounded-full bg-amber-500"></span>
+                      <span class="font-bold">물류</span>
+                    </div>
+                    <div class="flex items-center space-x-1 font-mono">
+                      <span class="font-extrabold text-slate-900 text-[13px]">71</span>
+                      <span class="text-xs text-slate-400">/ 100</span>
+                      <span class="text-xs font-bold text-blue-600 ml-1">+2.2</span>
+                    </div>
+                  </div>
+
+                  <div class="flex items-center justify-between text-xs">
+                    <div class="flex items-center space-x-2 font-medium text-slate-800">
+                      <span class="w-2.5 h-2.5 rounded-full bg-emerald-500"></span>
+                      <span class="font-bold">안정성</span>
+                    </div>
+                    <div class="flex items-center space-x-1 font-mono">
+                      <span class="font-extrabold text-slate-900 text-[13px]">71</span>
+                      <span class="text-xs text-slate-400">/ 100</span>
+                      <span class="text-xs font-bold text-blue-600 ml-1">+1.6</span>
+                    </div>
+                  </div>
+                </div>
+
+                <!-- Bottom: Prominent 3-4 Lines Key Insight Box with Compass Icon -->
+                <div class="p-2.5 bg-slate-50 border border-slate-200/70 rounded-xl">
+                  <div class="flex items-center justify-between mb-1">
+                    <div class="flex items-center space-x-1 text-blue-600 font-bold text-[11px]">
+                      <i class="fa-regular fa-compass text-xs"></i>
+                      <span>핵심 포인트</span>
+                    </div>
+                    <button onclick="switchTab('market')" class="text-[10px] font-semibold text-blue-600 hover:underline">상세 리포트 보기 →</button>
+                  </div>
+                  <p class="text-[10.5px] text-slate-600 leading-relaxed">
+                    미국 내 시스템 반도체(HS 8542.31) 수입 수요 호조와 ITA 협정 무관세 혜택으로 시장성과 가격 경쟁력이 최상위 수준을 견인하고 있습니다. 
+                    항공 운송 위주의 원활한 물류 인프라를 유지하되 바이어별 납기 변동성을 사전 헤지하면 지속적인 흑자 수출이 가능합니다.
+                  </p>
+                </div>
+              </div>
+
+              <!-- Right 5 Soft Pastel Slot Cards (Image 20 & 22: Enlarged Titles text-xl font-extrabold) -->
+              <div class="flex-1 grid grid-cols-2 grid-rows-3 gap-3">
+                
+                <!-- 1. 규제 관문 (Soft Pink Fill: #FFF5F5, Title: text-base font-bold) -->
+                <div class="slot-card bg-[#FFF5F5]">
+                  <div class="flex items-center justify-between">
+                    <div class="flex items-center space-x-2.5">
+                      <div class="w-7 h-7 rounded-lg bg-white text-rose-500 flex items-center justify-center shadow-2xs">
+                        <i class="fa-solid fa-shield-halved text-xs"></i>
+                      </div>
+                      <div>
+                        <div class="text-[10px] font-bold text-rose-500 uppercase tracking-wide">REGULATION</div>
+                        <div class="text-base font-bold text-slate-900 leading-tight">규제 관문</div>
+                      </div>
+                    </div>
+                    <i class="fa-solid fa-ellipsis text-rose-300 text-xs cursor-pointer"></i>
+                  </div>
+
+                  <div class="flex items-center justify-between my-1">
+                    <div>
+                      <div class="flex items-baseline space-x-1.5">
+                        <span class="text-3xl font-black text-slate-900">88</span>
+                        <span class="text-[13px] font-medium text-slate-400">/ 100</span>
+                      </div>
+                      <div class="text-[12.5px] font-bold text-rose-600 mt-1">
+                        <span>↑ +3.1</span> <span class="font-normal text-slate-400 text-xs">(지난달 대비)</span>
+                      </div>
+                    </div>
+                    <!-- Image 17/18/20 Sparkline (4-5 bold angles, compact, end dot & tail) -->
+                    <svg class="w-24 h-9 overflow-visible" viewBox="0 0 80 32">
+                      <polyline class="sparkline-poly" stroke="#E11D48" points="14,23 28,23 44,16 54,20 68,9 76,9" />
+                      <circle cx="68" cy="9" r="2.6" fill="#E11D48" />
+                    </svg>
+                  </div>
+
+                  <div class="flex items-center justify-between pt-2 border-t border-rose-100/80 text-xs">
+                    <span class="text-slate-600 font-medium">수출 규제 리스크가 낮은 편입니다.</span>
+                    <button onclick="switchTab('regulation')" class="text-rose-600 font-bold hover:underline ml-2 flex-shrink-0">더보기 →</button>
+                  </div>
+                </div>
+
+                <!-- 2. 시장성 (Soft Lavender Fill: #FAF5FF, Title: text-base font-bold) -->
+                <div class="slot-card bg-[#FAF5FF]">
+                  <div class="flex items-center justify-between">
+                    <div class="flex items-center space-x-2.5">
+                      <div class="w-7 h-7 rounded-lg bg-white text-purple-600 flex items-center justify-center shadow-2xs">
+                        <i class="fa-solid fa-arrow-trend-up text-xs"></i>
+                      </div>
+                      <div>
+                        <div class="text-[10px] font-bold text-purple-500 uppercase tracking-wide">MARKETABILITY</div>
+                        <div class="text-base font-bold text-slate-900 leading-tight">시장성</div>
+                      </div>
+                    </div>
+                    <i class="fa-solid fa-ellipsis text-purple-300 text-xs cursor-pointer"></i>
+                  </div>
+
+                  <div class="flex items-center justify-between my-1">
+                    <div>
+                      <div class="flex items-baseline space-x-1.5">
+                        <span class="text-3xl font-black text-slate-900">82</span>
+                        <span class="text-[13px] font-medium text-slate-400">/ 100</span>
+                      </div>
+                      <div class="text-[12.5px] font-bold text-purple-600 mt-1">
+                        <span>↑ +2.7</span> <span class="font-normal text-slate-400 text-xs">(지난달 대비)</span>
+                      </div>
+                    </div>
+                    <!-- Image 17/18/20 Sparkline -->
+                    <svg class="w-24 h-9 overflow-visible" viewBox="0 0 80 32">
+                      <polyline class="sparkline-poly" stroke="#8B5CF6" points="14,24 30,24 46,16 56,19 68,8 76,8" />
+                      <circle cx="68" cy="8" r="2.6" fill="#8B5CF6" />
+                    </svg>
+                  </div>
+
+                  <div class="flex items-center justify-between pt-2 border-t border-purple-100/80 text-xs">
+                    <span class="text-slate-600 font-medium">시장 규모와 성장성이 양호합니다.</span>
+                    <button onclick="switchTab('market')" class="text-purple-600 font-bold hover:underline ml-2 flex-shrink-0">더보기 →</button>
+                  </div>
+                </div>
+
+                <!-- 3. 가격 (Soft Cyan Fill: #F0F9FF, Title: text-base font-bold) -->
+                <div class="slot-card bg-[#F0F9FF]">
+                  <div class="flex items-center justify-between">
+                    <div class="flex items-center space-x-2.5">
+                      <div class="w-7 h-7 rounded-lg bg-white text-sky-600 flex items-center justify-center shadow-2xs">
+                        <i class="fa-solid fa-coins text-xs"></i>
+                      </div>
+                      <div>
+                        <div class="text-[10px] font-bold text-sky-500 uppercase tracking-wide">PRICE & TARIFF</div>
+                        <div class="text-base font-bold text-slate-900 leading-tight">가격</div>
+                      </div>
+                    </div>
+                    <i class="fa-solid fa-ellipsis text-sky-300 text-xs cursor-pointer"></i>
+                  </div>
+
+                  <div class="flex items-center justify-between my-1">
+                    <div>
+                      <div class="flex items-baseline space-x-1.5">
+                        <span class="text-3xl font-black text-slate-900">76</span>
+                        <span class="text-[13px] font-medium text-slate-400">/ 100</span>
+                      </div>
+                      <div class="text-[12.5px] font-bold text-sky-600 mt-1">
+                        <span>↑ +1.8</span> <span class="font-normal text-slate-400 text-xs">(지난달 대비)</span>
+                      </div>
+                    </div>
+                    <!-- Image 17/18/20 Sparkline -->
+                    <svg class="w-24 h-9 overflow-visible" viewBox="0 0 80 32">
+                      <polyline class="sparkline-poly" stroke="#0284C7" points="14,22 28,22 44,17 54,21 68,9 76,9" />
+                      <circle cx="68" cy="9" r="2.6" fill="#0284C7" />
+                    </svg>
+                  </div>
+
+                  <div class="flex items-center justify-between pt-2 border-t border-sky-100/80 text-xs">
+                    <span class="text-slate-600 font-medium">관세 및 환율 변동성이 안정적입니다.</span>
+                    <button onclick="switchTab('price')" class="text-sky-600 font-bold hover:underline ml-2 flex-shrink-0">더보기 →</button>
+                  </div>
+                </div>
+
+                <!-- 4. 물류 (Soft Warm Amber Fill: #FFFDF0, Title: text-base font-bold) -->
+                <div class="slot-card bg-[#FFFDF0]">
+                  <div class="flex items-center justify-between">
+                    <div class="flex items-center space-x-2.5">
+                      <div class="w-7 h-7 rounded-lg bg-white text-amber-500 flex items-center justify-center shadow-2xs">
+                        <i class="fa-solid fa-truck-fast text-xs"></i>
+                      </div>
+                      <div>
+                        <div class="text-[10px] font-bold text-amber-500 uppercase tracking-wide">LOGISTICS</div>
+                        <div class="text-base font-bold text-slate-900 leading-tight">물류</div>
+                      </div>
+                    </div>
+                    <i class="fa-solid fa-ellipsis text-amber-300 text-xs cursor-pointer"></i>
+                  </div>
+
+                  <div class="flex items-center justify-between my-1">
+                    <div>
+                      <div class="flex items-baseline space-x-1.5">
+                        <span class="text-3xl font-black text-slate-900">71</span>
+                        <span class="text-[13px] font-medium text-slate-400">/ 100</span>
+                      </div>
+                      <div class="text-[12.5px] font-bold text-amber-600 mt-1">
+                        <span>↑ +2.2</span> <span class="font-normal text-slate-400 text-xs">(지난달 대비)</span>
+                      </div>
+                    </div>
+                    <!-- Image 17/18/20 Sparkline -->
+                    <svg class="w-24 h-9 overflow-visible" viewBox="0 0 80 32">
+                      <polyline class="sparkline-poly" stroke="#D97706" points="14,23 30,23 44,18 56,21 68,10 76,10" />
+                      <circle cx="68" cy="10" r="2.6" fill="#D97706" />
+                    </svg>
+                  </div>
+
+                  <div class="flex items-center justify-between pt-2 border-t border-amber-100/80 text-xs">
+                    <span class="text-slate-600 font-medium">운송 인프라가 원활한 편입니다.</span>
+                    <button onclick="switchTab('logistics')" class="text-amber-600 font-bold hover:underline ml-2 flex-shrink-0">더보기 →</button>
+                  </div>
+                </div>
+
+                <!-- 5. 안정성 (Soft Mint Green Fill: #F0FDF4, Span 2 Columns, Title: text-base font-bold) -->
+                <div class="slot-card col-span-2 bg-[#F0FDF4]">
+                  <div class="flex items-center justify-between">
+                    <div class="flex items-center space-x-2.5">
+                      <div class="w-7 h-7 rounded-lg bg-white text-emerald-600 flex items-center justify-center shadow-2xs">
+                        <i class="fa-solid fa-shield-heart text-xs"></i>
+                      </div>
+                      <div>
+                        <div class="text-[10px] font-bold text-emerald-600 uppercase tracking-wide">STABILITY</div>
+                        <div class="text-base font-bold text-slate-900 leading-tight">안정성</div>
+                      </div>
+                    </div>
+                    <i class="fa-solid fa-ellipsis text-emerald-300 text-xs cursor-pointer"></i>
+                  </div>
+
+                  <div class="flex items-center justify-between my-1">
+                    <div>
+                      <div class="flex items-baseline space-x-1.5">
+                        <span class="text-3xl font-black text-slate-900">71</span>
+                        <span class="text-[13px] font-medium text-slate-400">/ 100</span>
+                      </div>
+                      <div class="text-[12.5px] font-bold text-emerald-600 mt-1">
+                        <span>↑ +1.6</span> <span class="font-normal text-slate-400 text-xs">(지난달 대비)</span>
+                      </div>
+                    </div>
+                    <!-- Image 17/18/20 Sparkline (Wide Viewport) -->
+                    <svg class="w-40 h-9 overflow-visible" viewBox="0 0 140 32">
+                      <polyline class="sparkline-poly" stroke="#059669" points="16,23 42,23 72,16 92,20 118,9 132,9" />
+                      <circle cx="118" cy="9" r="2.8" fill="#059669" />
+                    </svg>
+                  </div>
+
+                  <div class="flex items-center justify-between pt-2 border-t border-emerald-100/80 text-xs">
+                    <span class="text-slate-600 font-medium">정치·경제적 리스크가 낮은 수준입니다.</span>
+                    <button onclick="switchTab('stability')" class="text-emerald-600 font-bold hover:underline ml-2 flex-shrink-0">더보기 →</button>
+                  </div>
+                </div>
+
+              </div>
+
+            </div>
+
+            <!-- ============================================================= -->
+            <!-- DETAIL VIEWS: 2~6                                            -->
+            <!-- Data-driven layout: replace only AXPORT_DATA values later.     -->
+            <!-- ============================================================= -->
+
+            <!-- VIEW 2: [규제] Regulation -->
+            <div id="tabView-regulation" class="hidden h-full flex flex-col gap-3 overflow-hidden">
+              <div class="flex items-start justify-between gap-3 flex-shrink-0">
+                <div>
+                  <span class="text-[10px] font-extrabold tracking-widest text-rose-500 uppercase">REGULATION GATE</span>
+                  <h2 class="text-xl font-extrabold text-slate-900 mt-0.5">규제 기록 및 수출통제 후보</h2>
+                  <p class="text-xs text-slate-500 font-medium">발견된 후보·기록을 보여주며, 기록 부재를 ‘규제 없음’으로 판정하지 않습니다.</p>
+                </div>
+                <div class="px-3 py-2 rounded-xl bg-rose-50 border border-rose-100 text-right">
+                  <div class="text-[9px] font-bold text-rose-400">DATA STATUS</div>
+                  <div id="reg-data-status" class="text-xs font-extrabold text-rose-600">자료 확인 필요</div>
+                </div>
+              </div>
+
+              <div class="grid grid-cols-4 gap-3 flex-shrink-0">
+                <div class="detail-kpi reg"><span>통제번호 후보</span><strong id="reg-control-count">—</strong><small>HSK 연결 후보</small></div>
+                <div class="detail-kpi reg"><span>수입규제 기록</span><strong id="reg-measure-count">—</strong><small>관련 기록 건수</small></div>
+                <div class="detail-kpi reg"><span>거래처 CSL 검색</span><strong id="reg-csl-count">—</strong><small>검색 결과</small></div>
+                <div class="detail-kpi reg"><span>검토 상태</span><strong class="text-[17px]">미판정</strong><small>추가 검증 필요</small></div>
+              </div>
+
+              <div class="grid grid-cols-5 gap-3 flex-1 min-h-0">
+                <div class="bg-white rounded-2xl border border-slate-100 shadow-xs p-3.5 col-span-3 flex flex-col min-h-0">
+                  <div class="flex items-center justify-between mb-2">
+                    <div><h3 class="section-title">관련 규제 기록</h3><p class="section-sub">규제 유형·원산지·진행상황·기간</p></div>
+                    <span class="mini-source rose">검색 기록 기반</span>
+                  </div>
+                  <div class="overflow-auto flex-1">
+                    <table class="data-table"><thead><tr><th>유형</th><th>대상 원산지</th><th>진행상황</th><th>기간</th></tr></thead><tbody id="reg-measure-table"></tbody></table>
+                  </div>
+                </div>
+                <div class="bg-white rounded-2xl border border-slate-100 shadow-xs p-3.5 col-span-2 flex flex-col min-h-0">
+                  <div class="flex items-center justify-between mb-2"><div><h3 class="section-title">수출통제 후보</h3><p class="section-sub">입력 HSK와 연결된 통제번호</p></div><span class="mini-source rose">후보</span></div>
+                  <div id="reg-control-list" class="space-y-2 overflow-auto flex-1"></div>
+                  <div class="mt-2 p-2.5 rounded-xl bg-rose-50/70 border border-rose-100 text-[10px] text-rose-700 leading-relaxed"><i class="fa-solid fa-circle-info mr-1"></i>후보가 발견되었다는 사실만 표시합니다. 수출금지·거래금지 여부는 별도 검증이 필요합니다.</div>
+                </div>
+              </div>
+            </div>
+
+            <!-- VIEW 3: [시장성] Market -->
+            <div id="tabView-market" class="hidden h-full flex flex-col gap-3 overflow-hidden">
+              <div class="flex items-start justify-between gap-3 flex-shrink-0">
+                <div><span class="text-[10px] font-extrabold tracking-widest text-purple-500 uppercase">MARKET DYNAMICS</span><h2 class="text-xl font-extrabold text-slate-900 mt-0.5">수입시장 규모 및 성장성</h2><p class="text-xs text-slate-500 font-medium">목적국 수입·한국 수출·반도체 업황을 서로 다른 지표로 구분합니다.</p></div>
+                <div class="px-3 py-2 rounded-xl bg-purple-50 border border-purple-100 text-right"><div class="text-[9px] font-bold text-purple-400">DATA PERIOD</div><div id="market-period" class="text-xs font-extrabold text-purple-600">—</div></div>
+              </div>
+              <div class="grid grid-cols-4 gap-3 flex-shrink-0">
+                <div class="detail-kpi mkt"><span>수입시장 규모</span><strong id="market-import">—</strong><small>목적국 → 전세계</small></div>
+                <div class="detail-kpi mkt"><span>한국 수출액</span><strong id="market-korea">—</strong><small>한국 → 목적국</small></div>
+                <div class="detail-kpi mkt"><span>YoY 성장률</span><strong id="market-yoy">—</strong><small>전년 동기 대비</small></div>
+                <div class="detail-kpi mkt"><span>한국산 점유율</span><strong id="market-share">—</strong><small>목적국 수입 기준</small></div>
+              </div>
+              <div class="grid grid-cols-5 gap-3 flex-1 min-h-0">
+                <div class="bg-white rounded-2xl border border-slate-100 shadow-xs p-3.5 col-span-3 min-h-0 flex flex-col"><div class="flex items-center justify-between mb-1"><div><h3 class="section-title">수입시장과 한국 수출 추이</h3><p class="section-sub">월별 금액 · 단위는 실제 API 응답에 맞춰 변경</p></div><span class="mini-source purple">무역통계</span></div><div class="relative flex-1 min-h-0"><canvas id="marketTrendChart"></canvas></div></div>
+                <div class="bg-white rounded-2xl border border-slate-100 shadow-xs p-3.5 col-span-2 min-h-0 flex flex-col"><div class="flex items-center justify-between mb-1"><div><h3 class="section-title">성장률 비교</h3><p class="section-sub">YoY · 최근 3개월 · 3년 CAGR</p></div><span class="mini-source purple">계산값</span></div><div class="relative flex-1 min-h-0"><canvas id="marketGrowthChart"></canvas></div><div class="mt-2 text-[10px] text-slate-400">자료가 충분한 기간에서만 성장률을 계산합니다.</div></div>
+              </div>
+            </div>
+
+            <!-- VIEW 4: [가격] Price -->
+            <div id="tabView-price" class="hidden h-full flex flex-col gap-3 overflow-hidden">
+              <div class="flex items-start justify-between gap-3 flex-shrink-0"><div><span class="text-[10px] font-extrabold tracking-widest text-sky-600 uppercase">PRICE & TARIFF</span><h2 class="text-xl font-extrabold text-slate-900 mt-0.5">통계상 단가·관세 참고치·환율</h2><p class="text-xs text-slate-500 font-medium">통계 단가는 실제 판매가가 아니며, 관세는 참고치로 표시합니다.</p></div><div class="px-3 py-2 rounded-xl bg-sky-50 border border-sky-100 text-right"><div class="text-[9px] font-bold text-sky-400">REFERENCE</div><div class="text-xs font-extrabold text-sky-600">통계·WTO·환율</div></div></div>
+              <div class="grid grid-cols-4 gap-3 flex-shrink-0">
+                <div class="detail-kpi prc"><span>통계상 단가</span><strong id="price-unit">—</strong><small>kg당 수출입 통계</small></div>
+                <div class="detail-kpi prc"><span>관세 참고율</span><strong id="price-tariff">—</strong><small>HS6·목적국 기준</small></div>
+                <div class="detail-kpi prc"><span>참고환율</span><strong id="price-fx">—</strong><small>선택 통화 / KRW</small></div>
+                <div class="detail-kpi prc"><span>산업 가격지수</span><strong id="price-index">—</strong><small>한국은행 실제 분류</small></div>
+              </div>
+              <div class="grid grid-cols-5 gap-3 flex-1 min-h-0">
+                <div class="bg-white rounded-2xl border border-slate-100 shadow-xs p-3.5 col-span-3 min-h-0 flex flex-col"><div class="flex items-center justify-between mb-1"><div><h3 class="section-title">참고환율 추이</h3><p class="section-sub">선택 결제통화의 원화 기준 환율</p></div><span class="mini-source blue">환율 API</span></div><div class="relative flex-1 min-h-0"><canvas id="fxChart"></canvas></div></div>
+                <div class="bg-white rounded-2xl border border-slate-100 shadow-xs p-3.5 col-span-2 min-h-0 flex flex-col"><div class="flex items-center justify-between mb-2"><div><h3 class="section-title">가격 관련 참고정보</h3><p class="section-sub">실제 판매가·적용세율과 구분</p></div></div><div id="price-reference-list" class="space-y-2 flex-1 overflow-auto"></div><div class="mt-2 p-2.5 rounded-xl bg-sky-50/70 border border-sky-100 text-[10px] text-sky-700 leading-relaxed"><i class="fa-solid fa-circle-info mr-1"></i>산업 가격지수는 반도체 개별 제품 가격이 아니며, 운송비는 수록 항로의 참고정보입니다.</div></div>
+              </div>
+            </div>
+
+            <!-- VIEW 5: [물류] Logistics -->
+            <div id="tabView-logistics" class="hidden h-full flex flex-col gap-3 overflow-hidden">
+              <div class="flex items-start justify-between gap-3 flex-shrink-0"><div><span class="text-[10px] font-extrabold tracking-widest text-amber-500 uppercase">LOGISTICS & FREIGHT</span><h2 class="text-xl font-extrabold text-slate-900 mt-0.5">화물 항공편 및 선박 입출항 기록</h2><p class="text-xs text-slate-500 font-medium">공항·항만·국가 기준의 운항 기록을 보여주며 배송시간을 추정하지 않습니다.</p></div><div class="px-3 py-2 rounded-xl bg-amber-50 border border-amber-100 text-right"><div class="text-[9px] font-bold text-amber-400">QUERY PERIOD</div><div id="log-period" class="text-xs font-extrabold text-amber-600">—</div></div></div>
+              <div class="grid grid-cols-4 gap-3 flex-shrink-0"><div class="detail-kpi log"><span>화물편 수</span><strong id="log-flight-count">—</strong><small>중복 제거 기준</small></div><div class="detail-kpi log"><span>출발편</span><strong id="log-departure-count">—</strong><small>조회기간 기준</small></div><div class="detail-kpi log"><span>도착편</span><strong id="log-arrival-count">—</strong><small>조회기간 기준</small></div><div class="detail-kpi log"><span>선박 기록</span><strong id="log-vessel-count">—</strong><small>API 응답 기준</small></div></div>
+              <div class="grid grid-cols-5 gap-3 flex-1 min-h-0">
+                <div class="bg-white rounded-2xl border border-slate-100 shadow-xs p-3.5 col-span-3 min-h-0 flex flex-col"><div class="flex items-center justify-between mb-1"><div><h3 class="section-title">월별 운항 횟수</h3><p class="section-sub">국가별 출발·도착편 수</p></div><span class="mini-source amber">공항 API</span></div><div class="relative flex-1 min-h-0"><canvas id="logFlightChart"></canvas></div></div>
+                <div class="bg-white rounded-2xl border border-slate-100 shadow-xs p-3.5 col-span-2 min-h-0 flex flex-col"><div class="flex items-center justify-between mb-2"><div><h3 class="section-title">최근 운항 기록</h3><p class="section-sub">항공사·편명·상대공항·상태</p></div></div><div class="overflow-auto flex-1"><table class="data-table"><thead><tr><th>항공사/편명</th><th>상대공항</th><th>예정</th><th>상태</th></tr></thead><tbody id="log-flight-table"></tbody></table></div><div class="mt-2 text-[10px] text-slate-400">직항 여부·전체 배송시간·운송 가능 여부는 이 기록만으로 확정하지 않습니다.</div></div>
+              </div>
+            </div>
+
+            <!-- VIEW 6: [안정성] Stability -->
+            <div id="tabView-stability" class="hidden h-full flex flex-col gap-3 overflow-hidden">
+              <div class="flex items-start justify-between gap-3 flex-shrink-0"><div><span class="text-[10px] font-extrabold tracking-widest text-emerald-600 uppercase">RISK & STABILITY</span><h2 class="text-xl font-extrabold text-slate-900 mt-0.5">수입금액 변동성과 급감 이력</h2><p class="text-xs text-slate-500 font-medium">과거 월별 변동을 보여주는 지표이며 미래 손실·수출 실패 확률을 의미하지 않습니다.</p></div><div class="px-3 py-2 rounded-xl bg-emerald-50 border border-emerald-100 text-right"><div class="text-[9px] font-bold text-emerald-400">CALCULATION</div><div id="stability-data-status" class="text-xs font-extrabold text-emerald-600">자료 확보 필요</div></div></div>
+              <div class="grid grid-cols-4 gap-3 flex-shrink-0"><div class="detail-kpi stb"><span>변동계수 CV</span><strong id="stability-cv">—</strong><small>월별 수입금액 기준</small></div><div class="detail-kpi stb"><span>급감 횟수</span><strong id="stability-drop-count">—</strong><small>전월 대비 -20% 이하</small></div><div class="detail-kpi stb"><span>급감 빈도</span><strong id="stability-drop-rate">—</strong><small>비교 가능한 기간 기준</small></div><div class="detail-kpi stb"><span>환율 변동성</span><strong id="stability-fx-vol">—</strong><small>보조정보</small></div></div>
+              <div class="grid grid-cols-5 gap-3 flex-1 min-h-0">
+                <div class="bg-white rounded-2xl border border-slate-100 shadow-xs p-3.5 col-span-3 min-h-0 flex flex-col"><div class="flex items-center justify-between mb-1"><div><h3 class="section-title">월별 수입금액과 증감률</h3><p class="section-sub">전월 대비 변화가 한눈에 보이도록 구성</p></div><span class="mini-source green">무역통계</span></div><div class="relative flex-1 min-h-0"><canvas id="stabilityChart"></canvas></div></div>
+                <div class="bg-white rounded-2xl border border-slate-100 shadow-xs p-3.5 col-span-2 min-h-0 flex flex-col"><div class="flex items-center justify-between mb-2"><div><h3 class="section-title">급감 이력</h3><p class="section-sub">전월 대비 20% 이상 감소한 달</p></div></div><div class="overflow-auto flex-1"><table class="data-table"><thead><tr><th>월</th><th>전월 대비</th><th>수입액</th></tr></thead><tbody id="stability-drop-table"></tbody></table></div><div class="mt-2 p-2.5 rounded-xl bg-emerald-50/70 border border-emerald-100 text-[10px] text-emerald-700 leading-relaxed"><i class="fa-solid fa-circle-info mr-1"></i>급감 이력은 과거 관측값이며 미래의 손실 가능성을 뜻하지 않습니다.</div></div>
+              </div>
+            </div>
+
+          </div>
+        </main>
+      </div>
+    </div>
+
+    <!-- Attached Right Bookmark Index Tabs (Image 11 / Image 22 Match) -->
+    <aside class="flex flex-col justify-start space-y-2.5 pl-2.5 py-2 select-none flex-shrink-0">
+      
+      <!-- 1) 종합 (Grid Icon) -->
+      <button onclick="switchTab('all')" id="btn-tab-all" class="bookmark-index-btn active-all" title="종합 대시보드">
+        <i class="fa-solid fa-table-cells-large text-base"></i>
+        <span>종합</span>
+      </button>
+
+      <!-- 2) 규제 (Shield with Checkmark, Vibrant Magenta in Image 11) -->
+      <button onclick="switchTab('regulation')" id="btn-tab-regulation" class="bookmark-index-btn" title="규제 관문">
+        <i class="fa-solid fa-shield-check text-base"></i>
+        <span>규제</span>
+      </button>
+
+      <!-- 3) 시장성 (Trend Up) -->
+      <button onclick="switchTab('market')" id="btn-tab-market" class="bookmark-index-btn" title="시장성">
+        <i class="fa-solid fa-arrow-trend-up text-base"></i>
+        <span>시장성</span>
+      </button>
+
+      <!-- 4) 가격 (Circle Dollar) -->
+      <button onclick="switchTab('price')" id="btn-tab-price" class="bookmark-index-btn" title="가격">
+        <i class="fa-solid fa-circle-dollar-to-slot text-base"></i>
+        <span>가격</span>
+      </button>
+
+      <!-- 5) 물류 (Airplane) -->
+      <button onclick="switchTab('logistics')" id="btn-tab-logistics" class="bookmark-index-btn" title="물류">
+        <i class="fa-solid fa-plane-departure text-base"></i>
+        <span>물류</span>
+      </button>
+
+      <!-- 6) 안정성 (Wave Sine) -->
+      <button onclick="switchTab('stability')" id="btn-tab-stability" class="bookmark-index-btn" title="안정성">
+        <i class="fa-solid fa-water text-base"></i>
+        <span>안정성</span>
+      </button>
+
+    </aside>
+
+  </div>
+
+  <!-- Weights Adjustment Modal -->
+  <div id="weightModal" class="fixed inset-0 bg-slate-900/40 backdrop-blur-xs hidden z-50 flex items-center justify-center p-4">
+    <div class="bg-white rounded-3xl shadow-2xl border border-slate-200 max-w-md w-full p-6">
+      <div class="flex items-center justify-between pb-3 border-b border-slate-100">
+        <div class="flex items-center space-x-2">
+          <i class="fa-solid fa-sliders text-blue-600"></i>
+          <h3 class="font-bold text-slate-800 text-base">5대 영역 가중치 설정</h3>
+        </div>
+        <button onclick="closeModal('weightModal')" class="text-slate-400 hover:text-slate-600">
+          <i class="fa-solid fa-xmark text-lg"></i>
+        </button>
+      </div>
+
+      <div class="py-4 space-y-3.5 text-xs">
+        <div class="bg-rose-50 text-rose-700 p-2.5 rounded-xl text-[11px] border border-rose-100 leading-snug">
+          <i class="fa-solid fa-shield-halved mr-1"></i> <strong>규제 관문(GATE)</strong>은 필수 조건으로 가중치 합산과 별도로 상시 통과(Pass)되어야 합니다.
+        </div>
+        <div>
+          <div class="flex justify-between font-semibold mb-1"><span>시장성</span><span id="slider-m-txt">35%</span></div>
+          <input type="range" id="slider-m" min="0" max="100" value="35" class="w-full accent-purple-600" oninput="calculateWeightSum()">
+        </div>
+        <div>
+          <div class="flex justify-between font-semibold mb-1"><span>가격</span><span id="slider-p-txt">30%</span></div>
+          <input type="range" id="slider-p" min="0" max="100" value="30" class="w-full accent-sky-600" oninput="calculateWeightSum()">
+        </div>
+        <div>
+          <div class="flex justify-between font-semibold mb-1"><span>물류</span><span id="slider-l-txt">20%</span></div>
+          <input type="range" id="slider-l" min="0" max="100" value="20" class="w-full accent-amber-500" oninput="calculateWeightSum()">
+        </div>
+        <div>
+          <div class="flex justify-between font-semibold mb-1"><span>안정성</span><span id="slider-s-txt">15%</span></div>
+          <input type="range" id="slider-s" min="0" max="100" value="15" class="w-full accent-emerald-600" oninput="calculateWeightSum()">
+        </div>
+
+        <div class="flex justify-between items-center p-2.5 rounded-xl bg-slate-100 font-bold">
+          <span>가중치 합계 (100% 필수)</span>
+          <span id="weight-sum-txt" class="text-emerald-600 text-sm font-extrabold">100%</span>
+        </div>
+      </div>
+
+      <div class="flex justify-end space-x-2 pt-3 border-t border-slate-100">
+        <button onclick="closeModal('weightModal')" class="px-4 py-2 text-xs text-slate-500 hover:bg-slate-50 rounded-xl">취소</button>
+        <button onclick="applyWeights()" class="px-5 py-2 text-xs font-bold text-white bg-blue-600 hover:bg-blue-700 rounded-xl shadow-xs">
+          가중치 적용
+        </button>
+      </div>
+    </div>
+  </div>
+
+  <!-- Report Download Modal -->
+  <div id="reportModal" class="fixed inset-0 bg-slate-900/40 backdrop-blur-xs hidden z-50 flex items-center justify-center p-4">
+    <div class="bg-white rounded-3xl shadow-2xl border border-slate-200 max-w-lg w-full p-6">
+      <div class="flex items-center justify-between pb-3 border-b border-slate-100">
+        <div class="flex items-center space-x-2">
+          <i class="fa-solid fa-file-lines text-blue-600 text-lg"></i>
+          <h3 class="font-bold text-slate-800 text-base">AXPORT 공식 수출적합도 분석 보고서</h3>
+        </div>
+        <button onclick="closeModal('reportModal')" class="text-slate-400 hover:text-slate-600">
+          <i class="fa-solid fa-xmark text-lg"></i>
+        </button>
+      </div>
+
+      <div class="py-4 space-y-3 text-xs">
+        <div class="bg-slate-50 p-3.5 rounded-xl border border-slate-200 space-y-1.5 font-medium">
+          <div class="flex justify-between"><span class="text-slate-500">평가 기업 / 품목</span><span class="font-bold text-slate-900">AX 반도체 (HS 8542.31)</span></div>
+          <div class="flex justify-between"><span class="text-slate-500">목적 국가</span><span class="font-bold text-slate-900">미국 (United States)</span></div>
+          <div class="flex justify-between"><span class="text-slate-500">기준 일자</span><span class="font-bold text-slate-900">2026-09-23</span></div>
+          <div class="flex justify-between pt-1 border-t border-slate-200"><span class="text-slate-500">종합 수출적합도</span><span class="font-extrabold text-blue-600 text-sm" id="modalScoreDisplay">79.8 / 100</span></div>
+        </div>
+        <p class="text-slate-600 leading-relaxed">
+          관세청 품목별 실적 및 ECOS 환율 기준이 반영된 공식 요약 보고서 파일(.txt)을 즉시 생성하여 다운로드합니다.
+        </p>
+      </div>
+
+      <div class="flex justify-end space-x-2 pt-3 border-t border-slate-100">
+        <button onclick="closeModal('reportModal')" class="px-4 py-2 text-xs text-slate-500 hover:bg-slate-50 rounded-xl">취소</button>
+        <button onclick="downloadOfficialReport()" class="px-5 py-2 text-xs font-bold text-white bg-blue-600 hover:bg-blue-700 rounded-xl shadow-xs">
+          <i class="fa-solid fa-download mr-1"></i> 파일 저장 (.txt)
+        </button>
+      </div>
+    </div>
+  </div>
+
+  <!-- Toast Notification Element -->
+  <div id="toast" class="fixed bottom-6 right-8 bg-slate-900/90 backdrop-blur-md text-white text-xs px-4 py-2.5 rounded-2xl shadow-xl transition-all duration-300 opacity-0 pointer-events-none z-50">
+    <span id="toast-msg">안내 메시지</span>
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.4/dist/chart.umd.min.js"></script>
+  <script>
+    let currentScore = 79.8;
+
+    // 1. Tab Switching System (Right Edge Vertical Index + Sidebar Integration)
+    function switchTab(tabKey) {
+      const tabKeys = ['all', 'regulation', 'market', 'price', 'logistics', 'stability'];
+
+      // Reset bookmark buttons
+      tabKeys.forEach(k => {
+        const btn = document.getElementById(`btn-tab-${k}`);
+        if (btn) btn.className = 'bookmark-index-btn';
+      });
+
+      // Activate target bookmark button
+      const activeBtn = document.getElementById(`btn-tab-${tabKey}`);
+      if (activeBtn) {
+        if (tabKey === 'all') activeBtn.classList.add('active-all');
+        else if (tabKey === 'regulation') activeBtn.classList.add('active-reg');
+        else if (tabKey === 'market') activeBtn.classList.add('active-mkt');
+        else if (tabKey === 'price') activeBtn.classList.add('active-prc');
+        else if (tabKey === 'logistics') activeBtn.classList.add('active-log');
+        else if (tabKey === 'stability') activeBtn.classList.add('active-stb');
+      }
+
+      // Sidebar highlight
+      const sideNav = document.getElementById('side-nav-dash');
+      if (sideNav) {
+        if (tabKey === 'all') {
+          sideNav.className = 'w-full flex items-center justify-between px-2.5 py-1.5 rounded-xl bg-blue-50/80 text-blue-600 font-bold transition-all';
+        } else {
+          sideNav.className = 'w-full flex items-center justify-between px-2.5 py-1.5 rounded-xl text-slate-600 hover:bg-slate-100/80 transition-all font-semibold';
+        }
+      }
+
+      // Show matching view canvas
+      tabKeys.forEach(k => {
+        const view = document.getElementById(`tabView-${k}`);
+        if (view) {
+          if (k === tabKey) view.classList.remove('hidden');
+          else view.classList.add('hidden');
+        }
+      });
+      if (tabKey !== 'all') { setTimeout(() => { initDetailCharts(); }, 50); }
+    }
+
+    // 2. Motion Graphic: Donut Ring Gauge & Counter Animation (Image 19: r=74, circumference=465)
+    function animateDonutGauge(targetScore) {
+      const ring = document.getElementById('gaugeRing');
+      const counter = document.getElementById('overallScoreCounter');
+      if (!ring || !counter) return;
+
+      const circumference = 465; // 2 * Math.PI * 74
+      const offset = circumference - (circumference * (targetScore / 100));
+
+      ring.style.strokeDashoffset = circumference;
+      setTimeout(() => {
+        ring.style.strokeDashoffset = offset;
+      }, 80);
+
+      const startTime = performance.now();
+      const duration = 1200;
+
+      function updateCounter(now) {
+        const elapsed = now - startTime;
+        const progress = Math.min(elapsed / duration, 1);
+        const easeVal = 1 - Math.pow(1 - progress, 3);
+        const current = (targetScore * easeVal).toFixed(1);
+        counter.innerText = current;
+
+        if (progress < 1) {
+          requestAnimationFrame(updateCounter);
+        } else {
+          counter.innerText = targetScore.toFixed(1);
+        }
+      }
+      requestAnimationFrame(updateCounter);
+    }
+
+    // 3. Fullscreen / Window Viewport Reset
+    function toggleFullScreen() {
+      if (!document.fullscreenElement) {
+        document.documentElement.requestFullscreen().catch(() => {});
+        document.getElementById('maxBtn').innerHTML = '<i class="fa-regular fa-window-restore"></i>';
+      } else {
+        if (document.exitFullscreen) {
+          document.exitFullscreen();
+          document.getElementById('maxBtn').innerHTML = '<i class="fa-regular fa-square"></i>';
+        }
+      }
+    }
+
+    function resetWindowView() {
+      switchTab('all');
+      animateDonutGauge(currentScore);
+      showToast('대시보드 뷰와 점수가 기본 상태로 초기화되었습니다.');
+    }
+
+    // 4. Weights Adjustment Calculations
+    function calculateWeightSum() {
+      const m = parseInt(document.getElementById('slider-m').value) || 0;
+      const p = parseInt(document.getElementById('slider-p').value) || 0;
+      const l = parseInt(document.getElementById('slider-l').value) || 0;
+      const s = parseInt(document.getElementById('slider-s').value) || 0;
+
+      document.getElementById('slider-m-txt').innerText = `${m}%`;
+      document.getElementById('slider-p-txt').innerText = `${p}%`;
+      document.getElementById('slider-l-txt').innerText = `${l}%`;
+      document.getElementById('slider-s-txt').innerText = `${s}%`;
+
+      const total = m + p + l + s;
+      const sumEl = document.getElementById('weight-sum-txt');
+      sumEl.innerText = `${total}%`;
+
+      if (total === 100) {
+        sumEl.className = 'text-emerald-600 text-sm font-extrabold';
+      } else {
+        sumEl.className = 'text-rose-600 text-sm font-extrabold';
+      }
+    }
+
+    function applyWeights() {
+      const m = parseInt(document.getElementById('slider-m').value) || 0;
+      const p = parseInt(document.getElementById('slider-p').value) || 0;
+      const l = parseInt(document.getElementById('slider-l').value) || 0;
+      const s = parseInt(document.getElementById('slider-s').value) || 0;
+      const total = m + p + l + s;
+
+      if (total !== 100) {
+        showToast('가중치 합계는 반드시 100%여야 합니다.');
+        return;
+      }
+
+      // Re-calculate weighted score
+      const newScore = ((82 * m + 76 * p + 71 * l + 71 * s) / 100).toFixed(1);
+      currentScore = parseFloat(newScore);
+
+      closeModal('weightModal');
+      switchTab('all');
+      animateDonutGauge(currentScore);
+      document.getElementById('modalScoreDisplay').innerText = `${currentScore} / 100`;
+      showToast(`새로운 가중치 조건이 적용되었습니다. (종합 점수: ${currentScore}점)`);
+    }
+
+    // 5. Official Trade Report Download
+    function downloadOfficialReport() {
+      const text = `==================================================
+AXPORT 수출적합도 종합 공식 분석 보고서
+==================================================
+발행일시: 2026-09-23 18:30
+평가대상: AX 반도체 (HS 8542.31 프로세서 및 컨트롤러)
+목적국가: 미국 (United States of America)
+
+[종합 수출적합도 판정: ${currentScore} / 100]
+- 규제 관문 (GATE): 88 / 100 (EAR99 NLR 적합 판정 완료)
+- 시장성 (Market): 82 / 100 (미국 수입 시장 YoY +14.2% 성장)
+- 가격 (Price): 76 / 100 (ITA 협정 무관세 0% 적용)
+- 물류 (Logistics): 71 / 100 (인천-LAX 2~3일 소요)
+- 안정성 (Stability): 71 / 100 (OECD 0등급 최상위 국가위험도)
+
+[실무 시사점 및 권고]
+미국 시장의 시스템 반도체 수요가 전년 동기 대비 급증하여 안정적인 시장 진입 궤도에 진입했습니다.
+한-미 FTA 무관세 적용과 안정적인 환율 채산성을 기반으로 지속적인 무역 흑자를 기대할 수 있습니다.
+==================================================`;
+
+      const blob = new Blob([text], { type: 'text/plain;charset=utf-8' });
+      const a = document.createElement('a');
+      a.href = URL.createObjectURL(blob);
+      a.download = `AXPORT_Report_AX_Semiconductor_${new Date().toISOString().slice(0, 10)}.txt`;
+      document.body.appendChild(a);
+      a.click();
+      document.body.removeChild(a);
+      closeModal('reportModal');
+      showToast('공식 보고서 파일 저장이 완료되었습니다.');
+    }
+
+    // 6. Modal Helpers
+    function openModal(id) {
+      const m = document.getElementById(id);
+      if (m) m.classList.remove('hidden');
+    }
+    function closeModal(id) {
+      const m = document.getElementById(id);
+      if (m) m.classList.add('hidden');
+    }
+
+    // 7. Toast Helper
+    function showToast(msg) {
+      const t = document.getElementById('toast');
+      const m = document.getElementById('toast-msg');
+      if (t && m) {
+        m.innerText = msg;
+        t.classList.remove('opacity-0', 'pointer-events-none');
+        t.classList.add('opacity-100');
+        setTimeout(() => {
+          t.classList.remove('opacity-100');
+          t.classList.add('opacity-0', 'pointer-events-none');
+        }, 2200);
+      }
+    }
+
+    // 8. Data-driven detail pages
+    // Replace the values inside AXPORT_DATA with real API responses later.
+    // Keep null for "자료 없음"; 0 remains a real zero.
+    const AXPORT_DATA = {
+      regulation: {
+        status: '자료 확인 필요',
+        controls: [
+          { no: '예시 통제번호', name: '연결된 품목명', source: '연결 API 대기' }
+        ],
+        measures: [
+          { type: '예시 규제 기록', origin: '확인 필요', status: '미확인', period: '—' }
+        ],
+        cslMatches: null
+      },
+      market: {
+        period: '예시 데이터',
+        importValue: 48200000000,
+        koreaExport: 7900000000,
+        yoy: 14.2,
+        koreaShare: 16.4,
+        monthly: [
+          { label:'4월', imports: 3.72, korea:0.58 }, { label:'5월', imports:3.88, korea:0.61 },
+          { label:'6월', imports:4.05, korea:0.64 }, { label:'7월', imports:4.21, korea:0.67 },
+          { label:'8월', imports:4.38, korea:0.71 }, { label:'9월', imports:4.51, korea:0.76 }
+        ],
+        growth: [{label:'전년 동기',value:14.2},{label:'최근 3개월',value:11.8},{label:'3년 CAGR',value:9.6}]
+      },
+      price: {
+        unitPrice: 184.2, tariff: 0, fx: 1352.4, index: 108.7,
+        fxSeries: [{label:'4월',value:1328},{label:'5월',value:1341},{label:'6월',value:1335},{label:'7월',value:1358},{label:'8월',value:1349},{label:'9월',value:1352}],
+        references: [
+          ['관세 참고치','0.0%','WTO HS6 참고율'],['단가 기준','184.2 USD/kg','금액 ÷ 중량'],['산업 가격지수','108.7','한국은행 실제 분류'],['운송비','자료 부족','수록 항로 확인 필요']
+        ]
+      },
+      logistics: {
+        period:'예시 최근 6개월', flightCount:128, departures:64, arrivals:64, vesselCount:null,
+        monthly:[{label:'4월',value:19},{label:'5월',value:21},{label:'6월',value:20},{label:'7월',value:23},{label:'8월',value:22},{label:'9월',value:23}],
+        flights:[
+          ['KE017','LAX','09:30','운항'],['OZ202','LAX','13:40','운항'],['KE023','SFO','16:20','변경'],['OZ212','JFK','18:10','예정']
+        ]
+      },
+      stability: {
+        status:'예시 계산값', cv:0.18, dropCount:1, dropRate:8.3, fxVol:2.1,
+        monthly:[
+          {label:'4월',value:3.72,change:0},{label:'5월',value:3.88,change:4.3},{label:'6월',value:4.05,change:4.4},
+          {label:'7월',value:4.21,change:4.0},{label:'8월',value:3.24,change:-23.0},{label:'9월',value:3.51,change:8.3}
+        ]
+      }
+    };
+
+    const chartInstances = {};
+    const chartBase = {
+      responsive:true, maintainAspectRatio:false,
+      plugins:{legend:{labels:{boxWidth:8,font:{size:9,family:'Noto Sans KR'}}},tooltip:{titleFont:{size:10},bodyFont:{size:10}}},
+      scales:{x:{grid:{display:false},ticks:{font:{size:9}}},y:{grid:{color:'#F1F5F9'},ticks:{font:{size:9}}}}
+    };
+    function makeChart(id, config){
+      const el=document.getElementById(id); if(!el || typeof Chart==='undefined') return;
+      if(chartInstances[id]) chartInstances[id].destroy();
+      chartInstances[id]=new Chart(el, config);
+    }
+    function initDetailCharts(){
+      const m=AXPORT_DATA.market;
+      makeChart('marketTrendChart',{type:'line',data:{labels:m.monthly.map(x=>x.label),datasets:[{label:'목적국 총수입',data:m.monthly.map(x=>x.imports),borderColor:'#8B5CF6',backgroundColor:'rgba(139,92,246,.08)',fill:true,tension:.35,pointRadius:2},{label:'한국 수출',data:m.monthly.map(x=>x.korea),borderColor:'#2563EB',tension:.35,pointRadius:2}]},options:{...chartBase,plugins:{...chartBase.plugins,tooltip:{callbacks:{label:c=>`${c.dataset.label}: ${c.parsed.y.toFixed(2)} B`}}},scales:{...chartBase.scales,y:{...chartBase.scales.y,title:{display:true,text:'USD B',font:{size:9}}}}}});
+      makeChart('marketGrowthChart',{type:'bar',data:{labels:m.growth.map(x=>x.label),datasets:[{label:'성장률',data:m.growth.map(x=>x.value),backgroundColor:'#8B5CF6',borderRadius:7,barThickness:24}]},options:{...chartBase,plugins:{...chartBase.plugins,legend:{display:false}},scales:{...chartBase.scales,y:{...chartBase.scales.y,ticks:{callback:v=>v+'%'}}}}});
+      const p=AXPORT_DATA.price;
+      makeChart('fxChart',{type:'line',data:{labels:p.fxSeries.map(x=>x.label),datasets:[{label:'원/달러 환율',data:p.fxSeries.map(x=>x.value),borderColor:'#0284C7',backgroundColor:'rgba(2,132,199,.08)',fill:true,tension:.3,pointRadius:2}]},options:{...chartBase,plugins:{...chartBase.plugins,legend:{display:false}}}});
+      const l=AXPORT_DATA.logistics;
+      makeChart('logFlightChart',{type:'bar',data:{labels:l.monthly.map(x=>x.label),datasets:[{label:'화물편 수',data:l.monthly.map(x=>x.value),backgroundColor:'#D97706',borderRadius:7}]},options:{...chartBase,plugins:{...chartBase.plugins,legend:{display:false}}}});
+      const st=AXPORT_DATA.stability;
+      makeChart('stabilityChart',{type:'line',data:{labels:st.monthly.map(x=>x.label),datasets:[{label:'수입금액',data:st.monthly.map(x=>x.value),borderColor:'#059669',backgroundColor:'rgba(5,150,105,.08)',fill:true,tension:.3,pointRadius:3}]},options:{...chartBase,plugins:{...chartBase.plugins,legend:{display:false}}}});
+    }
+    function fmtMoney(v){ if(v===null||v===undefined)return '—'; if(v>=1e9)return '$'+(v/1e9).toFixed(1)+' B'; if(v>=1e6)return '$'+(v/1e6).toFixed(1)+' M'; return '$'+v.toLocaleString(); }
+    function setText(id,v){const e=document.getElementById(id);if(e)e.innerText=(v===null||v===undefined?'자료 부족':v);}
+    function renderDetailData(){
+      const r=AXPORT_DATA.regulation; setText('reg-data-status',r.status);setText('reg-control-count',r.controls?.length??0);setText('reg-measure-count',r.measures?.length??0);setText('reg-csl-count',r.cslMatches===null?'자료 부족':r.cslMatches);
+      const ct=document.getElementById('reg-control-list'); if(ct)ct.innerHTML=(r.controls||[]).map(x=>`<div class="p-2.5 rounded-xl bg-rose-50/60 border border-rose-100"><div class="flex justify-between gap-2"><b class="text-[10px] text-slate-800">${x.no}</b><span class="text-[9px] text-rose-500 font-bold">후보</span></div><div class="text-[10px] text-slate-600 mt-1">${x.name}</div><div class="text-[9px] text-slate-400 mt-1">출처: ${x.source}</div></div>`).join('');
+      const rt=document.getElementById('reg-measure-table'); if(rt)rt.innerHTML=(r.measures||[]).map(x=>`<tr><td>${x.type}</td><td>${x.origin}</td><td><span class="status-pill warn">${x.status}</span></td><td>${x.period}</td></tr>`).join('');
+      const m=AXPORT_DATA.market;setText('market-period',m.period);setText('market-import',fmtMoney(m.importValue));setText('market-korea',fmtMoney(m.koreaExport));setText('market-yoy',m.yoy===null?'자료 부족':m.yoy+'%');setText('market-share',m.koreaShare===null?'자료 부족':m.koreaShare+'%');
+      const p=AXPORT_DATA.price;setText('price-unit',p.unitPrice===null?'자료 부족':p.unitPrice+' USD/kg');setText('price-tariff',p.tariff===null?'자료 부족':p.tariff+'%');setText('price-fx',p.fx===null?'자료 부족':p.fx.toLocaleString()+' KRW');setText('price-index',p.index===null?'자료 부족':p.index);
+      const pr=document.getElementById('price-reference-list');if(pr)pr.innerHTML=(p.references||[]).map(x=>`<div class="flex items-center justify-between p-2.5 rounded-xl bg-slate-50 border border-slate-100"><div><div class="text-[10px] font-bold text-slate-700">${x[0]}</div><div class="text-[9px] text-slate-400 mt-0.5">${x[2]}</div></div><b class="text-[11px] text-sky-600">${x[1]}</b></div>`).join('');
+      const l=AXPORT_DATA.logistics;setText('log-period',l.period);setText('log-flight-count',l.flightCount);setText('log-departure-count',l.departures);setText('log-arrival-count',l.arrivals);setText('log-vessel-count',l.vesselCount===null?'자료 부족':l.vesselCount);const lt=document.getElementById('log-flight-table');if(lt)lt.innerHTML=(l.flights||[]).map(x=>`<tr><td>${x[0]}</td><td>${x[1]}</td><td>${x[2]}</td><td><span class="status-pill ${x[3]==='변경'?'warn':'info'}">${x[3]}</span></td></tr>`).join('');
+      const st=AXPORT_DATA.stability;setText('stability-data-status',st.status);setText('stability-cv',st.cv===null?'자료 부족':st.cv);setText('stability-drop-count',st.dropCount===null?'자료 부족':st.dropCount+'회');setText('stability-drop-rate',st.dropRate===null?'자료 부족':st.dropRate+'%');setText('stability-fx-vol',st.fxVol===null?'자료 부족':st.fxVol+'%');const dt=document.getElementById('stability-drop-table');if(dt)dt.innerHTML=(st.monthly||[]).filter(x=>x.change<=-20).map(x=>`<tr><td>${x.label}</td><td class="font-extrabold text-rose-600">${x.change}%</td><td>${x.value.toFixed(2)} B</td></tr>`).join('') || `<tr><td colspan="3" class="text-slate-400">급감 기록 없음</td></tr>`;
+    }
+
+    // 8. Auto Initialization on Load
+    window.addEventListener('DOMContentLoaded', () => {
+      animateDonutGauge(currentScore);
+      renderDetailData(); });
+  </script>
+</body>
+</html>
