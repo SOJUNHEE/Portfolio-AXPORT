@@ -32,6 +32,7 @@ from .accounts import access_token, csrf_ok, request_user
 from .engine.company_analysis import CompanyAnalysis, public_result
 from .engine.company_import import MAX_COMPANY_BYTES
 from .engine.market_service import MarketError
+from .visitor_guard import parse_slot  # (2026-10-06) 엑셀 해석 동시 작업 수 제한
 from .engine.company_import import parse_company, validate_conditions
 from .engine_adapter import missing_inputs, to_handoff
 from .workspace_store import SupabaseRest, WorkspaceError
@@ -281,7 +282,10 @@ def upload_source():
     files = request.files.getlist('file')
     if len(files) != 1 or len(request.files) != 1:
         raise MarketError('invalid_upload', '기업 엑셀 한 개를 선택해 주세요.')
-    return jsonify(service().upload(request_user()['id'], files[0].read(MAX_COMPANY_BYTES + 1), files[0].filename)), 201
+    data = files[0].read(MAX_COMPANY_BYTES + 1)  # 본문을 다 받은 뒤에만 해석 자리를 잡는다
+    with parse_slot():
+        uploaded = service().upload(request_user()['id'], data, files[0].filename)
+    return jsonify(uploaded), 201
 
 
 @bp.get('/api/analysis/sources/<source_id>/file')
@@ -304,7 +308,9 @@ def create_assessment():
     if not (company_id.startswith('upload:') or company_id in service().samples):
         raise MarketError('invalid_company', '업로드한 기업 파일이나 샘플 파일을 선택해 주세요.')
     try:
-        return jsonify(_status(service().submit_for(request_user()['id'], access_token(), payload))), 202
+        with parse_slot():  # 제출 때 기업 파일을 한 번 해석한다
+            item = service().submit_for(request_user()['id'], access_token(), payload)
+        return jsonify(_status(item)), 202
     except MarketError as exc:
         running = service().running_for(request_user()['id'], payload) if exc.code == 'analysis_running' else None
         if running is None:
@@ -344,12 +350,13 @@ def upload_company_file():
     data = files[0].read(MAX_COMPANY_BYTES + 1)
     if not data or len(data) > MAX_COMPANY_BYTES:
         raise MarketError('invalid_upload', '0바이트보다 크고 20 MB 이하인 파일을 선택해 주세요.')
-    try:
-        company = parse_company(data, f'{stem}.{ext}')
-    except ValueError as exc:
-        raise MarketError('invalid_workbook', str(exc)) from None
     user_id = request_user()['id']
-    uploaded = service().upload(user_id, data, f'{stem}.{ext}')  # 계정 원본 등록이 먼저(보관 한도 초과 등이면 파일을 남기지 않음)
+    with parse_slot():
+        try:
+            company = parse_company(data, f'{stem}.{ext}')
+        except ValueError as exc:
+            raise MarketError('invalid_workbook', str(exc)) from None
+        uploaded = service().upload(user_id, data, f'{stem}.{ext}')  # 계정 원본 등록이 먼저(보관 한도 초과 등이면 파일을 남기지 않음)
     source_id = uploaded['company_id'][7:]
     known = service().company_file(user_id, source_id)
     if known:  # (검토 반영) 같은 내용을 다시 올리면 새 파일을 쓰지 않는다 → 반복 업로드로 서버 디스크가 차지 않음
@@ -384,10 +391,11 @@ def inspect_file():
         data = (ROOT / 'static' / 'samples' / name).read_bytes()
     else:
         raise MarketError('not_found', '파일을 찾을 수 없습니다.', 404)
-    try:
-        company = parse_company(data, name)
-    except ValueError as exc:
-        raise MarketError('invalid_workbook', str(exc)) from None
+    with parse_slot():
+        try:
+            company = parse_company(data, name)
+        except ValueError as exc:
+            raise MarketError('invalid_workbook', str(exc)) from None
     return jsonify(file_name=name, **missing_inputs(company))
 
 

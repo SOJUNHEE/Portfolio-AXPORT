@@ -118,6 +118,9 @@ class LocalWorkspaceRepository:
                        'state TEXT NOT NULL, updated_at REAL NOT NULL DEFAULT 0)')
             if 'updated_at' not in {r[1] for r in db.execute('PRAGMA table_info(visitor_workspaces)')}:
                 db.execute('ALTER TABLE visitor_workspaces ADD COLUMN updated_at REAL NOT NULL DEFAULT 0')  # 10-05 판 DB
+                db.execute('UPDATE visitor_workspaces SET updated_at=? WHERE updated_at=0', (time.time(),))  # 바로 정리되지 않게
+            # (2026-10-06) 방문자 마지막 사용 시각: 바탕화면·분석 자료를 같은 기준으로 보관/정리한다
+            db.execute('CREATE TABLE IF NOT EXISTS visitor_seen (user_id TEXT PRIMARY KEY, last_seen REAL NOT NULL)')
 
     def _db(self):
         return closing_commit(sqlite3.connect(self.path, timeout=10))
@@ -144,11 +147,28 @@ class LocalWorkspaceRepository:
             raise WorkspaceError('unavailable', 503) from None
         return {'user_id': user_id, 'revision': revision + 1}
 
-    def purge(self, prefix, before):
-        """(2026-10-06) 마지막 저장이 before(초) 이전인 방문자 바탕화면을 지운다."""
+    def touch(self, user_id, when):
+        """(2026-10-06) 방문자 마지막 사용 시각 기록(실패해도 요청은 계속)."""
+        try:
+            with self._db() as db:
+                db.execute('INSERT OR REPLACE INTO visitor_seen VALUES (?, ?)', (user_id, when))
+        except sqlite3.Error:
+            pass
+
+    def seen_since(self, prefix, since):
         with self._db() as db:
-            return db.execute('DELETE FROM visitor_workspaces WHERE user_id LIKE ? AND updated_at < ?',
-                              (prefix + '%', before)).rowcount
+            return {r[0] for r in db.execute('SELECT user_id FROM visitor_seen WHERE user_id LIKE ? AND last_seen >= ?',
+                                             (prefix + '%', since))}
+
+    def purge(self, prefix, before):
+        """(2026-10-06) 마지막 저장·마지막 사용이 모두 before(초) 이전인 방문자 바탕화면과 사용 기록을 지운다."""
+        like = prefix + '%'
+        with self._db() as db:
+            db.execute('BEGIN IMMEDIATE')
+            removed = db.execute('DELETE FROM visitor_workspaces WHERE user_id LIKE ? AND updated_at < ? AND user_id NOT IN '
+                                 '(SELECT user_id FROM visitor_seen WHERE last_seen >= ?)', (like, before, before)).rowcount
+            db.execute('DELETE FROM visitor_seen WHERE user_id LIKE ? AND last_seen < ?', (like, before))
+            return removed
 
 
 class closing_commit:

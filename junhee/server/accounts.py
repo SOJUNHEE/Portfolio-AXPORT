@@ -116,6 +116,9 @@ def request_user():
     if not (isinstance(vid, str) and re.fullmatch(r'visitor-[0-9a-f]{32}', vid)):
         vid = session['visitor_id'] = 'visitor-' + secrets.token_hex(16)
         session.permanent = True
+    today = time.strftime('%Y-%m-%d')
+    if session.get('seen') != today:
+        session['seen'] = today  # (2026-10-06) 하루 한 번 쿠키를 다시 발급해 '마지막 사용 후 7일' 기준이 되게 한다
     return {'id': vid, 'email': '', 'visitor': True}
 
 
