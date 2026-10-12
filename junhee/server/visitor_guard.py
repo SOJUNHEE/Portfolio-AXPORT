@@ -8,6 +8,8 @@
   해석 자리는 요청 본문을 다 받은 뒤 실제 해석하는 동안에만 잡는다(느린 업로드가 자리를 붙잡지 않게).
 - 방문자 데이터(업로드 원본·분석 결과) 전체 용량 상한(300 MB)
 - 마지막 사용 후 7일이 지난 방문자 데이터(원본·분석·바탕화면·업로드 파일) 자동 삭제(1시간에 한 번, 별도 스레드)
+  (2026-10-12 Vercel) 응답 뒤 스레드가 멈추는 서버리스라 스레드 대신 하루 한 번 크론(junhee/server/cron.py)이 지운다.
+  업로드 상한도 Vercel 요청 본문 한도(4.5 MB)보다 작은 4 MB 로 낮춘다.
 - 공개 데모 응답에 검색엔진 수집 금지(robots.txt·X-Robots-Tag)와 보안 헤더
 """
 from collections import deque
@@ -26,7 +28,8 @@ from .engine.market_service import MarketError
 log = logging.getLogger(__name__)
 
 VISITOR_PREFIX = 'visitor-'
-VISITOR_MAX_UPLOAD = 5 * 1024 * 1024
+ON_VERCEL = bool(os.environ.get('VERCEL'))
+VISITOR_MAX_UPLOAD = (4 if ON_VERCEL else 5) * 1024 * 1024
 VISITOR_TOTAL_BYTES = 300 * 1024 * 1024
 RETENTION = timedelta(days=7)
 UPLOAD_PATHS = ('/api/analysis/sources', '/api/analysis/company-files')
@@ -93,6 +96,8 @@ def attach_visitor_guard(app):
         return 0
 
     def maybe_purge():
+        if ON_VERCEL:  # 크론이 정리한다(멈춘 스레드가 정리 트랜잭션 잠금을 붙잡고 있지 않게)
+            return
         if time.time() - state['last_purge'] < 3600 or not state['purge_lock'].acquire(blocking=False):
             return
         state['last_purge'] = time.time()
@@ -142,11 +147,18 @@ def attach_visitor_guard(app):
             return response
         if kind == 'upload':
             if (request.content_length or 0) > VISITOR_MAX_UPLOAD + 64 * 1024:
-                return jsonify(error='invalid_upload', message='공개 데모에서는 5 MB 이하 파일만 올릴 수 있습니다.'), 413
+                return jsonify(error='invalid_upload',
+                               message=f'공개 데모에서는 {VISITOR_MAX_UPLOAD // (1024 * 1024)} MB 이하 파일만 올릴 수 있습니다.'), 413
             request.max_content_length = VISITOR_MAX_UPLOAD + 64 * 1024
         if kind in ('upload', 'analyze') and visitor_bytes(app) >= VISITOR_TOTAL_BYTES:
             return jsonify(error='storage_full', message='공개 데모의 저장 공간이 가득 찼습니다. 나중에 다시 시도해 주세요.'), 507
         return None
+
+    @app.context_processor
+    def _visitor_notice():
+        # (2026-10-12) 공개 데모 안내 문구: 업로드 상한, 외부 DB 저장 여부(있으면 서버 재시작과 관계없이 유지)
+        from . import dbcompat
+        return {'axport_visitor_upload_mb': VISITOR_MAX_UPLOAD // (1024 * 1024), 'axport_durable_storage': dbcompat.enabled()}
 
     @app.after_request
     def _public_demo_headers(response):

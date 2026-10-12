@@ -28,6 +28,7 @@ import time
 
 from flask import Blueprint, current_app, jsonify, request, send_file
 
+from . import dbcompat
 from .accounts import access_token, csrf_ok, request_user
 from .engine.company_analysis import CompanyAnalysis, public_result
 from .engine.company_import import MAX_COMPANY_BYTES
@@ -209,7 +210,18 @@ class JunheeAnalysis(CompanyAnalysis):
         """이 계정 원본을 이미 작업 데이터 폴더에 저장했으면 그 파일 이름(같은 파일을 다시 올려도 새로 쓰지 않음)."""
         with self.store.connection() as db:
             row = db.execute('SELECT file_name FROM junhee_company_files WHERE user_id=? AND source_id=?', (user_id, source_id)).fetchone()
-        return row[0] if row and (COMPANY_FILE_DIR / row[0]).is_file() else None
+        return row[0] if row and (not keep_upload_files() or (COMPANY_FILE_DIR / row[0]).is_file()) else None
+
+    def reserve_company_name(self, user_id, stem, ext):
+        """(2026-10-12 Vercel) 디스크에 쓰지 않을 때: 이 계정의 기존 이름과 겹치지 않는 표시 이름을 고른다(같으면 (2), (3)…)."""
+        with self.store.connection() as db:
+            if db.execute('SELECT COUNT(*) FROM junhee_company_files').fetchone()[0] >= MAX_COMPANY_FILES:
+                raise MarketError('storage_full', '작업 데이터 폴더가 가득 찼습니다. 쓰지 않는 파일을 휴지통에서 영구 삭제해 주세요.', 507)
+            taken = {r[0] for r in db.execute('SELECT file_name FROM junhee_company_files WHERE user_id=?', (user_id,))}
+        name, n = f'{stem}.{ext}', 2
+        while name in taken:
+            name, n = f'{stem} ({n}).{ext}', n + 1
+        return name
 
     def remember_company_file(self, user_id, source_id, file_name):
         with self.store.connection() as db:
@@ -330,6 +342,12 @@ COMPANY_FILE_DIR = ROOT / 'junhee' / 'data' / 'samples' / 'uploads'  # (junhee) 
 MAX_COMPANY_FILES = 300  # 작업 데이터 폴더 전체 파일 수 상한(서버 디스크 보호)
 
 
+def keep_upload_files():
+    """(2026-10-12) 업로드 엑셀을 작업 데이터 폴더에도 파일로 남길지. 원본 내용은 어차피 분석 저장소(market_sources)에 있으므로
+    외부 DB(DATABASE_URL)를 쓰거나 배포 디렉터리가 읽기 전용인 Vercel 에서는 파일을 쓰지 않고 이름만 기록한다."""
+    return not (dbcompat.enabled() or os.environ.get('VERCEL'))
+
+
 def _safe_file_name(name):
     """경로 문자·예약 문자를 빼고 확장자는 .xlsx/.xls 만 남긴다."""
     base = re.sub(r'[\\/:*?"<>|\x00-\x1f]', '_', os.path.basename(str(name or '')).strip()) or 'company.xlsx'
@@ -361,6 +379,9 @@ def upload_company_file():
     known = service().company_file(user_id, source_id)
     if known:  # (검토 반영) 같은 내용을 다시 올리면 새 파일을 쓰지 않는다 → 반복 업로드로 서버 디스크가 차지 않음
         target = COMPANY_FILE_DIR / known
+    elif not keep_upload_files():
+        target = COMPANY_FILE_DIR / service().reserve_company_name(user_id, stem, ext)
+        service().remember_company_file(user_id, source_id, target.name)
     else:
         COMPANY_FILE_DIR.mkdir(parents=True, exist_ok=True)
         if sum(1 for p in COMPANY_FILE_DIR.iterdir() if p.suffix.lower() in ('.xlsx', '.xls')) >= MAX_COMPANY_FILES:
@@ -375,7 +396,9 @@ def upload_company_file():
                 target, n = COMPANY_FILE_DIR / f'{stem} ({n}).{ext}', n + 1
         service().remember_company_file(user_id, source_id, target.name)
     return jsonify(company_id=uploaded['company_id'], name=target.name, size=len(data),
-                   saved_path=target.relative_to(ROOT).as_posix(), missing=missing_inputs(company)), 201
+                   # 파일로 남기지 않는 배포(외부 DB·Vercel)는 실제 경로가 없으므로 이름만 알려 준다
+                   saved_path=target.relative_to(ROOT).as_posix() if keep_upload_files() else target.name,
+                   missing=missing_inputs(company)), 201
 
 
 @bp.get('/api/analysis/inspect')

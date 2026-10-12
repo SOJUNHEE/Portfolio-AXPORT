@@ -24,6 +24,7 @@ from urllib.request import Request
 
 from flask import Blueprint, current_app, jsonify, request
 
+from . import dbcompat  # (2026-10-12) DATABASE_URL 이 있으면 Postgres(Vercel 배포)
 from .accounts import access_token, csrf_ok, request_user
 from .auth_core import _OPENER
 
@@ -112,7 +113,8 @@ class LocalWorkspaceRepository:
 
     def __init__(self, path):
         self.path = str(path)
-        Path(self.path).parent.mkdir(parents=True, exist_ok=True)
+        if not dbcompat.enabled():
+            Path(self.path).parent.mkdir(parents=True, exist_ok=True)
         with self._db() as db:
             db.execute('CREATE TABLE IF NOT EXISTS visitor_workspaces (user_id TEXT PRIMARY KEY, revision INTEGER NOT NULL, '
                        'state TEXT NOT NULL, updated_at REAL NOT NULL DEFAULT 0)')
@@ -123,7 +125,7 @@ class LocalWorkspaceRepository:
             db.execute('CREATE TABLE IF NOT EXISTS visitor_seen (user_id TEXT PRIMARY KEY, last_seen REAL NOT NULL)')
 
     def _db(self):
-        return closing_commit(sqlite3.connect(self.path, timeout=10))
+        return closing_commit(dbcompat.connect(self.path, timeout=10))
 
     def load(self, user_id, token=None):
         try:

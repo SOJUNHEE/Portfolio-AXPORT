@@ -25,6 +25,8 @@ _started = False
 
 
 def enabled():
+    if os.environ.get('VERCEL'):  # (2026-10-12) 서버리스는 응답 뒤 스레드가 멈춘다 → 크론(cron.py)이 대신 갱신
+        return False
     value = os.environ.get('AXPORT_WIDGET_REFRESH', '').strip()
     return value == '1' if value in ('0', '1') else bool(os.environ.get('RENDER'))
 

@@ -26,7 +26,8 @@ sys.path.insert(0, str(Path(__file__).resolve().parent))
 from api_keys import MissingKey, get_key, scrub  # noqa: E402
 
 ROOT = Path(__file__).resolve().parents[2]
-OUT = ROOT / "static" / "data" / "widgets" / "widgets.json"
+# (2026-10-12) AXPORT_WIDGETS_OUT: 배포 디렉터리에 쓸 수 없는 서버(Vercel 크론)는 임시 파일로 받아 DB 에 저장한다
+OUT = Path(os.environ.get("AXPORT_WIDGETS_OUT") or ROOT / "static" / "data" / "widgets" / "widgets.json")
 TODAY = date.today()
 # minjung 위젯의 수출기상도 품목군 (sx_widgets/weather.py GROUPS 와 같은 구분)
 GROUPS = {"memory": ["854232"], "processor": ["854231"], "other": ["854233", "854239", "854290"], "device": ["8541"]}
@@ -190,7 +191,7 @@ def main():
     tmp = OUT.with_suffix(".json.tmp")  # (2026-09-27) 임시 파일에 쓴 뒤 바꿔치기 → 서버가 반쯤 쓴 파일을 내보내지 않음
     tmp.write_text(json.dumps(data, ensure_ascii=False, indent=1), encoding="utf-8")
     os.replace(tmp, OUT)
-    print(f"저장 {OUT.relative_to(ROOT)}")
+    print(f"저장 {OUT.relative_to(ROOT) if OUT.is_relative_to(ROOT) else OUT}")
     return 0 if ok else 1
 
 

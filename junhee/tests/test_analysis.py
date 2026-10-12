@@ -118,7 +118,9 @@ class EngineFlow(unittest.TestCase):
         from junhee.server import analysis
         data = (SAMPLES / '기업데이터_가상_미리내전자_결측.xlsx').read_bytes()
         other = (SAMPLES / '기업데이터_가상_가온반도체.xlsx').read_bytes()
-        with tempfile.TemporaryDirectory(dir=ROOT / 'junhee') as tmp, mock.patch.object(analysis, 'COMPANY_FILE_DIR', Path(tmp) / 'uploads'):
+        # (2026-10-12) 파일로 남기는 모드를 검사한다(외부 DB·Vercel 모드는 test_vercel_support 에서)
+        with tempfile.TemporaryDirectory(dir=ROOT / 'junhee') as tmp, mock.patch.object(analysis, 'COMPANY_FILE_DIR', Path(tmp) / 'uploads'), \
+                mock.patch.object(analysis, 'keep_upload_files', return_value=True):
             folder = Path(tmp) / 'uploads'
 
             def up(body, name):

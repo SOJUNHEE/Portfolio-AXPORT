@@ -12,3 +12,5 @@ et-xmlfile==2.0.0
 xlrd==2.0.2
 olefile==0.47
 gunicorn==23.0.0
+psycopg[binary]==3.3.6
+psycopg-pool==3.3.3

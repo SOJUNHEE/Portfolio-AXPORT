@@ -12,6 +12,7 @@ SESSION_COOKIE_SECURE(선택, 기본: Render 면 true), AXPORT_PUBLIC_URL(선택
 """
 from collections import deque
 from datetime import timedelta
+import hashlib
 import os
 from pathlib import Path
 import re
@@ -419,6 +420,12 @@ def change_password():
 
 # ---------- 연결 ----------
 
+def _fallback_secret():
+    from .dbcompat import database_url
+    url = database_url()
+    return hashlib.sha256(b'axport-session-key-v1:' + url.encode('utf-8')).hexdigest() if url else ''
+
+
 def attach_accounts(app):
     """app.py 에서 한 번 부른다. 로그인 검사·보안 헤더·세션 쿠키 설정을 붙인다."""
     if app.extensions.get('junhee_accounts'):
@@ -428,7 +435,7 @@ def attach_accounts(app):
     key = os.environ.get('SUPABASE_PUBLISHABLE_KEY', '').strip()
     secret = os.environ.get('FLASK_SECRET_KEY', '')
     problem = _config_problem(url, key, secret)
-    on_render = bool(os.environ.get('RENDER'))
+    on_render = bool(os.environ.get('RENDER') or os.environ.get('VERCEL'))  # (2026-10-12) Vercel 도 앞단 프록시에서 TLS 를 끝낸다
     ext = {'app': app, 'ready': problem is None, 'problem': problem, 'auth_hits': {}, 'auth_lock': threading.Lock()}
     if on_render or _env_bool('AXPORT_TRUST_PROXY', False):
         # Render 는 TLS 를 앞단 프록시에서 끝낸다. X-Forwarded-Proto/For 를 1단계만 믿는다.
@@ -446,6 +453,11 @@ def attach_accounts(app):
         if not app.config.get('SECRET_KEY'):
             if isinstance(secret, str) and len(secret) >= 32:
                 app.config['SECRET_KEY'] = secret
+            elif os.environ.get('VERCEL') and _fallback_secret():
+                # (2026-10-12) Vercel 은 요청마다 다른 인스턴스가 응답한다. 인스턴스마다 임의 키를 쓰면 방문자 세션이 끊기므로
+                # 키를 아직 넣지 않았을 때만 DB 접속 문자열(비밀 값)에서 고정 키를 만든다. FLASK_SECRET_KEY 를 넣으면 그 값을 쓴다.
+                app.config['SECRET_KEY'] = _fallback_secret()
+                app.logger.warning('FLASK_SECRET_KEY 가 없어 DB 접속 정보에서 만든 세션 키를 씁니다. 환경변수로 넣어 주세요.')
             else:
                 app.config['SECRET_KEY'] = secrets.token_hex(32)
                 app.logger.warning('FLASK_SECRET_KEY 가 없어 임시 세션 키를 씁니다. 서버를 다시 시작하면 방문자 작업이 이어지지 않습니다.')
@@ -467,6 +479,8 @@ def attach_accounts(app):
     attach_visitor_guard(app)
     from .widget_refresh import start as start_widget_refresh  # (2026-09-27) 위젯 공식 자료 자동 갱신(Render 기본 켜짐)
     start_widget_refresh()
+    from .cron import attach_cron  # (2026-10-12) Vercel 크론: 방문자 정리·위젯 자료 갱신(스레드 대신)
+    attach_cron(app)
 
     # (2026-10-05) 로그인 검사(_junhee_login_gate)는 뺐다. /app 과 분석·바탕화면 API 는 방문자도 쓴다(request_user()).
 

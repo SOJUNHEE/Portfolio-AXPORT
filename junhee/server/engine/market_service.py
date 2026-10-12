@@ -15,6 +15,7 @@ from threading import Lock
 import time
 from uuid import uuid4
 
+from .. import dbcompat  # (2026-10-12) DATABASE_URL 이 있으면 Postgres(Vercel 배포)
 from .market_data import collect_market, validate_inputs
 from .market_wsts import MAX_FILE_BYTES, parse_wsts
 
@@ -163,8 +164,10 @@ class MarketStore:
 
     @contextmanager
     def _journal_connection(self):
-        self.deletion_journal_path.parent.mkdir(parents=True, exist_ok=True)
-        with closing(sqlite3.connect(str(self.deletion_journal_path), timeout=10)) as db:
+        if not dbcompat.enabled():
+            self.deletion_journal_path.parent.mkdir(parents=True, exist_ok=True)
+        with closing(dbcompat.connect(self.deletion_journal_path, timeout=10,
+                                       aliases={'workspace_source_deletions': 'workspace_source_deletion_journal'})) as db:
             db.row_factory = sqlite3.Row
             # FULL is SQLite's normal durability level; state it explicitly for
             # the small journal that bridges local storage and remote metadata.
@@ -208,8 +211,9 @@ class MarketStore:
 
     def _connect(self):
         with self._lock:
-            self.path.parent.mkdir(parents=True, exist_ok=True)
-            db = sqlite3.connect(str(self.path), timeout=10)
+            if not dbcompat.enabled():
+                self.path.parent.mkdir(parents=True, exist_ok=True)
+            db = dbcompat.connect(self.path, timeout=10)
             db.row_factory = sqlite3.Row
             db.execute('PRAGMA journal_mode=WAL')
             db.executescript('''

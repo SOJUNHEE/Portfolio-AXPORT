@@ -18,6 +18,7 @@ import time
 from urllib.error import HTTPError, URLError
 from urllib.parse import parse_qsl, urlencode
 from urllib.request import HTTPRedirectHandler, Request, build_opener
+from . import dbcompat  # (2026-10-12) DATABASE_URL 이 있으면 Postgres(Vercel 배포)
 
 from cryptography.fernet import Fernet, InvalidToken
 from cryptography.hazmat.primitives import hashes
@@ -184,7 +185,8 @@ class SessionStore:
 
     def __init__(self, path, secret_key, ttl=604800, refresh_margin=60):
         self.path = Path(path)
-        self.path.parent.mkdir(parents=True, exist_ok=True)
+        if not dbcompat.enabled():
+            self.path.parent.mkdir(parents=True, exist_ok=True)
         self.ttl = ttl
         self.refresh_margin = refresh_margin
         key = HKDF(algorithm=hashes.SHA256(), length=32, salt=b'axport-auth-session-v1',
@@ -198,7 +200,7 @@ class SessionStore:
 
     @contextmanager
     def _connect(self):
-        conn = sqlite3.connect(self.path, timeout=15)
+        conn = dbcompat.connect(self.path, timeout=15)
         conn.row_factory = sqlite3.Row
         try:
             with conn:
@@ -312,7 +314,7 @@ class MailCooldown:
 
     @contextmanager
     def _connect(self):
-        db = sqlite3.connect(self.database, timeout=10)
+        db = dbcompat.connect(self.database, timeout=10)
         try:
             with db:
                 yield db

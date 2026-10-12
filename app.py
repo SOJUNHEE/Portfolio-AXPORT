@@ -13,6 +13,16 @@ from flask import jsonify, request
 app = Flask(__name__)
 app.config['TEMPLATES_AUTO_RELOAD'] = True
 
+# (2026-10-12) Vercel 배포: 배포 디렉터리는 읽기 전용이고, 응답이 끝나면 백그라운드 작업이 멈춘다.
+#  - 분석은 요청 안에서 끝까지 실행(AXPORT_ANALYSIS_INLINE). 화면은 완료 상태를 바로 받아도 그대로 동작한다
+#  - 실제 저장은 DATABASE_URL 의 Postgres(junhee/server/dbcompat.py). 없으면 /tmp 의 SQLite(인스턴스마다 따로 → 임시)
+if _os.environ.get('VERCEL'):
+    _os.environ.setdefault('AXPORT_ANALYSIS_INLINE', '1')
+    for _name, _file in (('AXPORT_ANALYSIS_DB', 'company-assessments.sqlite3'), ('AXPORT_VISITOR_DB', 'visitor-workspaces.sqlite3'),
+                         ('AXPORT_AUTH_DB', 'auth-sessions.sqlite3')):
+        _os.environ.setdefault(_name, '/tmp/axport/' + _file)
+    app.instance_path = '/tmp/axport'
+
 @app.get('/')
 def home():
     return render_template('home.html')
@@ -75,6 +85,16 @@ def contact():
     if errors:
         return jsonify(ok=False, error='invalid', message=' '.join(errors)), 400
     record = {'ts': _datetime.now(_timezone.utc).isoformat(timespec='seconds'), 'type': kind, 'field': field, 'name': name, 'email': email, 'message': message}
+    from junhee.server import dbcompat
+    if dbcompat.enabled():  # (2026-10-12 Vercel) 외부 DB 에 저장: 배포 디렉터리는 읽기 전용이고 인스턴스마다 디스크가 다르다
+        db = dbcompat.connect('contact_messages.sqlite3')
+        try:
+            with db:
+                db.execute('CREATE TABLE IF NOT EXISTS contact_messages (ts TEXT NOT NULL, record TEXT NOT NULL)')
+                db.execute('INSERT INTO contact_messages VALUES (?, ?)', (record['ts'], _json.dumps(record, ensure_ascii=False)))
+        finally:
+            db.close()
+        return jsonify(ok=True)
     _os.makedirs(app.instance_path, exist_ok=True)
     with open(_os.path.join(app.instance_path, 'contact_messages.jsonl'), 'a', encoding='utf-8') as fh:
         fh.write(_json.dumps(record, ensure_ascii=False) + '\n')
