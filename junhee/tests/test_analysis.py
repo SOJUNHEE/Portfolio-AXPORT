@@ -10,6 +10,7 @@ import re
 import sys
 import tempfile
 import unittest
+from datetime import date
 from pathlib import Path
 from unittest import mock
 
@@ -24,6 +25,21 @@ from junhee.tests.test_accounts import ENV, TOKENS, USER, csrf, load_app  # noqa
 
 SAMPLES = ROOT / 'static' / 'samples'
 EXAMPLE = '기업데이터_예시1_한울메모리.xlsx'
+
+
+def pinned_today(day):
+    """분석 기준일(company_import.validate_conditions의 date.today())을 고정한다.
+    엔진은 작성기준일 후 30일(0~29일)이 지난 기업 계획을 평가하지 않으므로(analysis_suitability.py),
+    실제 오늘 날짜에 기대는 테스트는 예시 파일의 작성기준일(2026-09-27)로부터 30일이 지나면 결과가 바뀐다."""
+    class _Pinned(date):
+        @classmethod
+        def today(cls):
+            return day
+    return mock.patch('junhee.server.engine.company_import.date', _Pinned)
+
+
+IN_WINDOW = date(2026, 10, 6)    # 작성기준일 + 9일: 기업 계획 적용기간 안
+OUT_WINDOW = date(2026, 11, 10)  # 작성기준일 + 44일: 적용기간 밖
 
 
 class EngineFlow(unittest.TestCase):
@@ -55,7 +71,8 @@ class EngineFlow(unittest.TestCase):
         return r.get_json()
 
     def test_simple_template_to_dashboard_doc(self):
-        st = self.analyze(EXAMPLE)
+        with pinned_today(IN_WINDOW):
+            st = self.analyze(EXAMPLE)
         self.assertEqual(st['status'], 'COMPLETED')
         doc = self.c.get(f"/api/analysis/assessments/{st['assessment_id']}/handoff").get_json()
         self.assertEqual((doc['schema'], doc['score_source'], doc['company_name']), ('handoff-v1', 'engine', '테스트기업'))
@@ -79,6 +96,18 @@ class EngineFlow(unittest.TestCase):
         self.assertEqual(len(self.saved), 1)
         self.assertEqual((self.saved[0][0], self.saved[0][2]), (USER['id'], st['assessment_id']))
         json.dumps(doc, allow_nan=False)
+
+    def test_expired_company_plan_is_not_scored(self):
+        """같은 예시 파일이라도 작성기준일 후 30일이 지나면 기업 계획(희망물량·30일 공급량·출고 준비기간)을
+        평가하지 않는다 → 물류 근거 반영률 0%, 자료 부족. 오래된 계획으로 점수를 만들지 않는 규칙 확인."""
+        with pinned_today(OUT_WINDOW):
+            st = self.analyze(EXAMPLE)
+        self.assertEqual(st['status'], 'COMPLETED')
+        doc = self.c.get(f"/api/analysis/assessments/{st['assessment_id']}/handoff").get_json()
+        logistics = {f['key']: f for f in doc['score']['per_country']['미국']['factors']}['logistics']
+        self.assertEqual(logistics['inputs']['coverage_pct'], 0)
+        self.assertEqual((logistics['state'], logistics['score']), ('insufficient', None))
+        self.assertEqual(doc['engine']['as_of'], OUT_WINDOW.isoformat())  # 고정한 기준일이 실제로 쓰였는지
 
     def test_sanghyeob_samples_by_id(self):
         """바탕화면 샘플(sanghyeob v0.1 상세양식 · 간편입력 예시)은 업로드 없이 샘플 id 로 분석한다."""
